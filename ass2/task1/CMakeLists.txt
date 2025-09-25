@@ -14,8 +14,8 @@ add_executable(HelloWorld
   HelloWorld.S
 )
 
-pico_enable_stdio_uart(HelloWorld 1)
-pico_enable_stdio_usb(HelloWorld 0)
+pico_enable_stdio_uart(HelloWorld 0)
+pico_enable_stdio_usb(HelloWorld 1)
 
 pico_add_extra_outputs(HelloWorld)
 
