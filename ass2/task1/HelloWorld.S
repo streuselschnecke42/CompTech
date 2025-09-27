@@ -18,7 +18,7 @@ loop:
 	SUB	R7, #1		@ Decrement counter
 	MOV	R1, R7		@ Move the counter to second parameter
 	BL	printf		@ Call pico_printf
-	CMP R7, #0	    @ Compare value of register 7 with dec 100
+	CMP R7, #0	    @ Compare value of register 7 with dec 0
 	BEQ reset       @ If counter equals 0 go to reset function
 	B	loop		@ (otherwise) loop forever
 		
