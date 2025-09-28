@@ -38,8 +38,8 @@ main:
 	MOV	R1, #GPIO_OUT
 	BL	link_gpio_set_dir
 
-	MOV R7, #0          @ initialize counter
-	@BL	stdio_init_all	@ initialize uart or usb
+	MOV R7, #0             @ initialize counter
+	@BL	stdio_init_all	   @ initialize uart or usb
 	
 forwards:
   @MOV R9, #0            @ set loop flag
