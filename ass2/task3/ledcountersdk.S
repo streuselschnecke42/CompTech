@@ -39,42 +39,9 @@ main:
     BL	link_gpio_set_dir
 
     MOV R7, #0             	@ initialize counter
-	
-forwards:
-    @ check first bit
-    MOV R0, R7            	@ value = R7 (binary counter)
-    MOV R1, #0            	@ position = 0
-    BL get_binary         	@ get bit value (return value on R0)
-    MOV R1, R0            	@ returned bit will be value for LED output
-    MOV R0, #LED_PIN1     	@ LED1 represents bit at pos 0
-    BL link_gpio_put      	@ R0 = argument 1, R1 = argument 2
+    MOV R6, #0			@ initialize loop flag
 
-    @ check secondbit
-    MOV R0, R7
-    MOV R1, #1
-    BL get_binary
-    MOV R1, R0
-    MOV R0, #LED_PIN2
-    BL link_gpio_put
-
-    @ check third bit
-    MOV R0, R7
-    MOV R1, #2
-    BL get_binary
-    MOV R1, R0
-    MOV R0, #LED_PIN3
-    BL link_gpio_put
-
-    @ pause for 1 second
-    LDR R0, =sleep_time
-    BL sleep_ms
-
-    ADD R7, R7, #0b001    	@ count 0001 up
-    CMP R7, #0b111        	@ see if R7 has reached limit of 0111
-    BEQ backwards         	@ if so, count backwards now
-    B forwards            	@ otherwise continue current loop
-
-backwards:
+checkbits:
     @ check first bit
     MOV R0, R7            	@ value = R7 (binary counter)
     MOV R1, #0            	@ position = 0
@@ -90,7 +57,6 @@ backwards:
     MOV R1, R0
     MOV R0, #LED_PIN2
     BL link_gpio_put
-    @ B checkthirdbit
 
     @ check third bit
     MOV R0, R7
@@ -99,12 +65,31 @@ backwards:
     MOV R1, R0
     MOV R0, #LED_PIN3
     BL link_gpio_put
-
+    
     @ pause for 1 second
     LDR R0, =sleep_time
     BL sleep_ms
+    
+    CMP R6, #0
+    BEQ forwards
+    B backwards
 
+forwards:
+    ADD R7, R7, #0b001    	@ count 0001 up
+    CMP R7, #0b111        	@ see if R7 has reached limit of 0111
+    BEQ changeflagone
+    B checkbits
+
+backwards:
     SUB R7, R7, #0b001    	@ count 0001 down
     CMP R7, #0b000        	@ see if R7 has reached limit of 0111
-    BEQ forwards          	@ if so, count forwards now
-    B backwards           	@ otherwise continue current loop
+    BEQ changeflagzero        	@ if so, count forwards now
+    B checkbits          	@ otherwise continue main loop
+
+changeflagzero:
+    MOV R6, #0
+    B checkbits
+    
+changeflagone:
+    MOV R6, #1
+    B checkbits

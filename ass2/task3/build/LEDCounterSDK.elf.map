@@ -3300,7 +3300,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x10000100                __boot2_end__ = .
                 0x00000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x10000100     0x1904
+.text           0x10000100     0x18dc
                 0x10000100                __logical_binary_start = .
  *(.vectors)
  .vectors       0x10000100       0xd4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
@@ -3363,207 +3363,206 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x10000284                _init
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .text*)
  .text          0x10000288       0x98 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
- .text          0x10000320       0xac CMakeFiles/LEDCounterSDK.dir/ledcountersdk.S.o
+ .text          0x10000320       0x88 CMakeFiles/LEDCounterSDK.dir/ledcountersdk.S.o
                 0x10000320                main
  .text.link_gpio_set_dir
-                0x100003cc       0x14 CMakeFiles/LEDCounterSDK.dir/sdklink.c.o
-                0x100003cc                link_gpio_set_dir
+                0x100003a8       0x14 CMakeFiles/LEDCounterSDK.dir/sdklink.c.o
+                0x100003a8                link_gpio_set_dir
  .text.link_gpio_put
-                0x100003e0       0x14 CMakeFiles/LEDCounterSDK.dir/sdklink.c.o
-                0x100003e0                link_gpio_put
+                0x100003bc       0x14 CMakeFiles/LEDCounterSDK.dir/sdklink.c.o
+                0x100003bc                link_gpio_put
  .text.get_binary
-                0x100003f4        0xc CMakeFiles/LEDCounterSDK.dir/sdklink.c.o
-                0x100003f4                get_binary
+                0x100003d0        0xc CMakeFiles/LEDCounterSDK.dir/sdklink.c.o
+                0x100003d0                get_binary
  .text.gpio_init
-                0x10000400       0x40 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
-                0x10000400                gpio_init
- .text.panic    0x10000440       0x30 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
-                0x10000440                panic
+                0x100003dc       0x40 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+                0x100003dc                gpio_init
+ .text.panic    0x1000041c       0x30 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+                0x1000041c                panic
  .text.hw_claim_or_assert
-                0x10000470       0x44 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.o
-                0x10000470                hw_claim_or_assert
+                0x1000044c       0x44 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+                0x1000044c                hw_claim_or_assert
  .text.next_striped_spin_lock_num
-                0x100004b4       0x18 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
-                0x100004b4                next_striped_spin_lock_num
+                0x10000490       0x18 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+                0x10000490                next_striped_spin_lock_num
  .text.spin_locks_reset
-                0x100004cc       0x1c CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
-                0x100004cc                spin_locks_reset
+                0x100004a8       0x1c CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+                0x100004a8                spin_locks_reset
  .text.runtime_init_per_core_irq_priorities
-                0x100004e8       0x24 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x100004e8                runtime_init_per_core_irq_priorities
+                0x100004c4       0x24 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x100004c4                runtime_init_per_core_irq_priorities
  .text.irq_set_enabled
-                0x1000050c       0x24 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x1000050c                irq_set_enabled
+                0x100004e8       0x24 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x100004e8                irq_set_enabled
  .text.irq_set_exclusive_handler
-                0x10000530       0x54 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x10000530                irq_set_exclusive_handler
+                0x1000050c       0x54 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x1000050c                irq_set_exclusive_handler
  .text.lock_init
-                0x10000584       0x10 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
-                0x10000584                lock_init
+                0x10000560       0x10 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
+                0x10000560                lock_init
  .text.runtime_init_mutex
-                0x10000594       0x68 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o
-                0x10000594                runtime_init_mutex
+                0x10000570       0x68 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x10000570                runtime_init_mutex
  .text.sleep_until_callback
-                0x100005fc       0x30 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x100005d8       0x30 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
  .text.alarm_pool_irq_handler
-                0x1000062c      0x318 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10000608      0x318 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
  .text.runtime_init_default_alarm_pool
-                0x10000944       0xdc CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10000944                runtime_init_default_alarm_pool
+                0x10000920       0xdc CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10000920                runtime_init_default_alarm_pool
  .text.alarm_pool_add_alarm_at_force_in_context
-                0x10000a20       0xa8 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10000a20                alarm_pool_add_alarm_at_force_in_context
+                0x100009fc       0xa8 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x100009fc                alarm_pool_add_alarm_at_force_in_context
  .text.alarm_pool_cancel_alarm
-                0x10000ac8       0x78 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10000ac8                alarm_pool_cancel_alarm
+                0x10000aa4       0x78 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10000aa4                alarm_pool_cancel_alarm
  .text.sleep_until
-                0x10000b40       0xd0 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10000b40                sleep_until
+                0x10000b1c       0xd0 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10000b1c                sleep_until
  .text.sleep_ms
-                0x10000c10       0x34 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10000c10                sleep_ms
+                0x10000bec       0x34 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10000bec                sleep_ms
  .text.best_effort_wfe_or_timeout
-                0x10000c44       0xfc CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10000c44                best_effort_wfe_or_timeout
+                0x10000c20       0xfc CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10000c20                best_effort_wfe_or_timeout
  .text.timer_hardware_alarm_claim
-                0x10000d40       0x14 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10000d40                timer_hardware_alarm_claim
+                0x10000d1c       0x14 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10000d1c                timer_hardware_alarm_claim
  .text.timer_time_us_64
-                0x10000d54       0x14 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10000d54                timer_time_us_64
+                0x10000d30       0x14 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10000d30                timer_time_us_64
  .text.time_us_64
-                0x10000d68       0x18 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10000d68                time_us_64
+                0x10000d44       0x18 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10000d44                time_us_64
  .text.busy_wait_until
-                0x10000d80       0x20 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10000d80                busy_wait_until
+                0x10000d5c       0x20 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10000d5c                busy_wait_until
  .text.clock_configure_int_divider
-                0x10000da0      0x128 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-                0x10000da0                clock_configure_int_divider
+                0x10000d7c      0x128 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x10000d7c                clock_configure_int_divider
  .text.clock_configure_undivided
-                0x10000ec8      0x128 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-                0x10000ec8                clock_configure_undivided
+                0x10000ea4      0x128 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x10000ea4                clock_configure_undivided
  .text.clock_get_hz
-                0x10000ff0        0xc CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-                0x10000ff0                clock_get_hz
+                0x10000fcc        0xc CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x10000fcc                clock_get_hz
  .text.pll_init
-                0x10000ffc       0xa0 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
-                0x10000ffc                pll_init
+                0x10000fd8       0xa0 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+                0x10000fd8                pll_init
  .text.tick_start
-                0x1000109c       0x10 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
-                0x1000109c                tick_start
+                0x10001078       0x10 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+                0x10001078                tick_start
  .text.rom_func_lookup
-                0x100010ac       0x10 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-                0x100010ac                rom_func_lookup
+                0x10001088       0x10 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x10001088                rom_func_lookup
  .text.rom_data_lookup
-                0x100010bc       0x10 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-                0x100010bc                rom_data_lookup
+                0x10001098       0x10 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x10001098                rom_data_lookup
  .text.rom_funcs_lookup
-                0x100010cc       0x3c CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-                0x100010cc                rom_funcs_lookup
+                0x100010a8       0x3c CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x100010a8                rom_funcs_lookup
  .text.xosc_init
-                0x10001108       0x28 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
-                0x10001108                xosc_init
+                0x100010e4       0x28 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+                0x100010e4                xosc_init
  .text.first_per_core_initializer
-                0x10001130        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x1000110c        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
  .text.hard_assertion_failure
-                0x10001134        0xc CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-                0x10001134                hard_assertion_failure
+                0x10001110        0xc CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x10001110                hard_assertion_failure
  .text.runtime_run_initializers
-                0x10001140       0x28 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-                0x10001140                runtime_run_initializers
+                0x1000111c       0x28 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x1000111c                runtime_run_initializers
  .text.runtime_init_early_resets
-                0x10001168       0x2c CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10001168                runtime_init_early_resets
+                0x10001144       0x2c CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001144                runtime_init_early_resets
  .text.runtime_init_usb_power_down
-                0x10001194       0x1c CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10001194                runtime_init_usb_power_down
+                0x10001170       0x1c CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001170                runtime_init_usb_power_down
  .text.runtime_init_post_clock_resets
-                0x100011b0       0x20 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100011b0                runtime_init_post_clock_resets
+                0x1000118c       0x20 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x1000118c                runtime_init_post_clock_resets
  .text.runtime_init_rp2040_gpio_ie_disable
-                0x100011d0       0x14 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100011d0                runtime_init_rp2040_gpio_ie_disable
+                0x100011ac       0x14 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x100011ac                runtime_init_rp2040_gpio_ie_disable
  .text.runtime_init_spin_locks_reset
-                0x100011e4        0x8 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100011e4                runtime_init_spin_locks_reset
+                0x100011c0        0x8 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x100011c0                runtime_init_spin_locks_reset
  .text.runtime_init_install_ram_vector_table
-                0x100011ec       0xb8 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100011ec                runtime_init_install_ram_vector_table
+                0x100011c8       0xb8 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x100011c8                runtime_init_install_ram_vector_table
  .text.runtime_init_clocks
-                0x100012a4       0xd8 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
-                0x100012a4                runtime_init_clocks
- .text          0x1000137c       0x10 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+                0x10001280       0xd8 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+                0x10001280                runtime_init_clocks
+ .text          0x10001358       0x10 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
  .text.__wrap___aeabi_uidiv
-                0x1000138c       0x4c CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
-                0x1000138c                __wrap___aeabi_uidiv
-                0x1000138c                __wrap___aeabi_uidivmod
-                0x1000138c                div_u32u32
-                0x1000138c                divmod_u32u32
-                0x10001394                divmod_u32u32_unsafe
-                0x100013bc                divmod_u32u32_savestate
+                0x10001368       0x4c CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+                0x10001368                __wrap___aeabi_uidiv
+                0x10001368                __wrap___aeabi_uidivmod
+                0x10001368                div_u32u32
+                0x10001368                divmod_u32u32
+                0x10001370                divmod_u32u32_unsafe
+                0x10001398                divmod_u32u32_savestate
  .text.__aeabi_double_init
-                0x100013d8       0xc8 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
-                0x100013d8                __aeabi_double_init
+                0x100013b4       0xc8 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+                0x100013b4                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x100014a0       0x2c CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-                0x100014a0                double_table_shim_on_use_helper
+                0x1000147c       0x2c CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x1000147c                double_table_shim_on_use_helper
  .text.__aeabi_lmul
-                0x100014cc       0x32 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
-                0x100014cc                __wrap___aeabi_lmul
- *fill*         0x100014fe        0x2 
+                0x100014a8       0x32 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+                0x100014a8                __wrap___aeabi_lmul
+ *fill*         0x100014da        0x2 
  .text.__aeabi_float_init
-                0x10001500       0x68 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
-                0x10001500                __aeabi_float_init
+                0x100014dc       0x68 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+                0x100014dc                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x10001568       0x2c CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
-                0x10001568                float_table_shim_on_use_helper
- .text          0x10001594       0x10 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-                0x10001594                __aeabi_mem_init
- .text.memset   0x100015a4        0xc CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-                0x100015a4                __wrap_memset
- .text.memcpy   0x100015b0        0xc CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-                0x100015b0                __wrap___aeabi_memcpy
-                0x100015b0                __wrap_memcpy
+                0x10001544       0x2c CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+                0x10001544                float_table_shim_on_use_helper
+ .text          0x10001570       0x10 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x10001570                __aeabi_mem_init
+ .text.memset   0x10001580        0xc CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x10001580                __wrap_memset
+ .text.memcpy   0x1000158c        0xc CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x1000158c                __wrap___aeabi_memcpy
+                0x1000158c                __wrap_memcpy
  .text._out_char
-                0x100015bc       0x10 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10001598       0x10 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text.weak_raw_vprintf
-                0x100015cc       0x30 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
-                0x100015cc                weak_raw_vprintf
- .text._exit    0x100015fc        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x100015fc                _exit
- .text.exit     0x10001600        0x8 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x10001600                exit
+                0x100015a8       0x30 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x100015a8                weak_raw_vprintf
+ .text._exit    0x100015d8        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x100015d8                _exit
+ .text.exit     0x100015dc        0x8 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x100015dc                exit
  .text.runtime_init
-                0x10001608       0x2c CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x10001608                runtime_init
+                0x100015e4       0x2c CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x100015e4                runtime_init
  .text.stdio_out_chars_no_crlf
-                0x10001634       0x10 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10001610       0x10 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .text.stdio_out_chars_crlf
-                0x10001644       0xac CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10001620       0xac CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .text.stdio_put_string
-                0x100016f0      0x100 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x100016f0                stdio_put_string
+                0x100016cc      0x100 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x100016cc                stdio_put_string
  .text.__wrap_putchar
-                0x100017f0       0x98 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x100017f0                stdio_putchar
-                0x100017f0                __wrap_putchar
+                0x100017cc       0x98 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x100017cc                stdio_putchar
+                0x100017cc                __wrap_putchar
  .text.__wrap_puts
-                0x10001888       0x3c CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10001888                __wrap_puts
-                0x10001888                stdio_puts
+                0x10001864       0x3c CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10001864                __wrap_puts
+                0x10001864                stdio_puts
  .text.startup._retrieve_unique_id_on_boot
-                0x100018c4       0x10 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+                0x100018a0       0x10 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
  .text.flash_get_unique_id
-                0x100018d4       0x3c CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
-                0x100018d4                flash_get_unique_id
- .text          0x10001910       0x68 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
-                0x10001910                strlen
+                0x100018b0       0x3c CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+                0x100018b0                flash_get_unique_id
+ .text          0x100018ec       0x68 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
+                0x100018ec                strlen
  *(.fini)
- .fini          0x10001978        0x4 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crti.o
-                0x10001978                _fini
- *fill*         0x1000197c        0x4 
- .fini.__stub   0x10001980       0x40 linker stubs
+ .fini          0x10001954        0x4 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crti.o
+                0x10001954                _fini
+ .fini.__stub   0x10001958       0x40 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -3574,146 +3573,146 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
-                0x100019c0                . = ALIGN (0x4)
-                0x100019c0                PROVIDE (__preinit_array_start = .)
+                0x10001998                . = ALIGN (0x4)
+                0x10001998                PROVIDE (__preinit_array_start = .)
  *(SORT_BY_NAME(.preinit_array.*))
  .preinit_array.00100
-                0x100019c0        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100019c0                __pre_init_runtime_init_early_resets
+                0x10001998        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001998                __pre_init_runtime_init_early_resets
  .preinit_array.00101
-                0x100019c4        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100019c4                __pre_init_runtime_init_usb_power_down
+                0x1000199c        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x1000199c                __pre_init_runtime_init_usb_power_down
  .preinit_array.00275
-                0x100019c8        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+                0x100019a0        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
  .preinit_array.00300
-                0x100019cc        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x100019a4        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
  .preinit_array.00350
-                0x100019d0        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x100019a8        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
  .preinit_array.00350
-                0x100019d4        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+                0x100019ac        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
  .preinit_array.00500
-                0x100019d8        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100019d8                __pre_init_runtime_init_clocks
+                0x100019b0        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x100019b0                __pre_init_runtime_init_clocks
  .preinit_array.00600
-                0x100019dc        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100019dc                __pre_init_runtime_init_post_clock_resets
+                0x100019b4        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x100019b4                __pre_init_runtime_init_post_clock_resets
  .preinit_array.00700
-                0x100019e0        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100019e0                __pre_init_runtime_init_rp2040_gpio_ie_disable
+                0x100019b8        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x100019b8                __pre_init_runtime_init_rp2040_gpio_ie_disable
  .preinit_array.01000
-                0x100019e4        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100019e4                __pre_init_runtime_init_spin_locks_reset
+                0x100019bc        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x100019bc                __pre_init_runtime_init_spin_locks_reset
  .preinit_array.01100
-                0x100019e8        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o
-                0x100019e8                __pre_init_runtime_init_mutex
+                0x100019c0        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x100019c0                __pre_init_runtime_init_mutex
  .preinit_array.10080
-                0x100019ec        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100019ec                __pre_init_runtime_init_install_ram_vector_table
+                0x100019c4        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x100019c4                __pre_init_runtime_init_install_ram_vector_table
  .preinit_array.11000
-                0x100019f0        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x100019f0                __pre_init_runtime_init_default_alarm_pool
+                0x100019c8        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x100019c8                __pre_init_runtime_init_default_alarm_pool
  .preinit_array.YYYYY
-                0x100019f4        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-                0x100019f4                __pre_init_first_per_core_initializer
+                0x100019cc        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x100019cc                __pre_init_first_per_core_initializer
  .preinit_array.ZZZZZ.01200
-                0x100019f8        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x100019f8                __pre_init_runtime_init_per_core_irq_priorities
+                0x100019d0        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x100019d0                __pre_init_runtime_init_per_core_irq_priorities
  *(.preinit_array)
-                0x100019fc                PROVIDE (__preinit_array_end = .)
-                0x100019fc                . = ALIGN (0x4)
-                0x100019fc                PROVIDE (__init_array_start = .)
+                0x100019d4                PROVIDE (__preinit_array_end = .)
+                0x100019d4                . = ALIGN (0x4)
+                0x100019d4                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.01000
-                0x100019fc        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+                0x100019d4        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
  *(.init_array)
- .init_array    0x10001a00        0x4 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x10001a04                PROVIDE (__init_array_end = .)
-                0x10001a04                . = ALIGN (0x4)
-                0x10001a04                PROVIDE (__fini_array_start = .)
+ .init_array    0x100019d8        0x4 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x100019dc                PROVIDE (__init_array_end = .)
+                0x100019dc                . = ALIGN (0x4)
+                0x100019dc                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array)
-                0x10001a04                PROVIDE (__fini_array_end = .)
+                0x100019dc                PROVIDE (__fini_array_end = .)
  *(.eh_frame*)
- .eh_frame      0x10001a04        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x10001a04                . = ALIGN (0x4)
+ .eh_frame      0x100019dc        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x100019dc                . = ALIGN (0x4)
 
-.glue_7         0x10001a04        0x0
- .glue_7        0x10001a04        0x0 linker stubs
+.glue_7         0x100019dc        0x0
+ .glue_7        0x100019dc        0x0 linker stubs
 
-.glue_7t        0x10001a04        0x0
- .glue_7t       0x10001a04        0x0 linker stubs
+.glue_7t        0x100019dc        0x0
+ .glue_7t       0x100019dc        0x0 linker stubs
 
-.vfp11_veneer   0x10001a04        0x0
- .vfp11_veneer  0x10001a04        0x0 linker stubs
+.vfp11_veneer   0x100019dc        0x0
+ .vfp11_veneer  0x100019dc        0x0 linker stubs
 
-.v4_bx          0x10001a04        0x0
- .v4_bx         0x10001a04        0x0 linker stubs
+.v4_bx          0x100019dc        0x0
+ .v4_bx         0x100019dc        0x0 linker stubs
 
-.iplt           0x10001a04        0x0
- .iplt          0x10001a04        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x100019dc        0x0
+ .iplt          0x100019dc        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x10001a04       0xe0
+.rodata         0x100019dc       0xe0
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.panic.str1.4
-                0x10001a04       0x12 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
- *fill*         0x10001a16        0x2 
+                0x100019dc       0x12 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+ *fill*         0x100019ee        0x2 
  .rodata.timer_hardware_alarm_claim.str1.4
-                0x10001a18       0x22 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
- *fill*         0x10001a3a        0x2 
+                0x100019f0       0x22 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+ *fill*         0x10001a12        0x2 
  .rodata.hard_assertion_failure.str1.4
-                0x10001a3c        0xc CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x10001a14        0xc CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
  .rodata.__bi_26
-                0x10001a48        0xc CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10001a20        0xc CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_34
-                0x10001a54        0xc CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10001a2c        0xc CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_42
-                0x10001a60        0xc CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10001a38        0xc CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_48
-                0x10001a6c        0xc CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10001a44        0xc CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_54
-                0x10001a78        0xc CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10001a50        0xc CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_78
-                0x10001a84        0xc CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10001a5c        0xc CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_84
-                0x10001a90        0xc CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10001a68        0xc CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.str1.4
-                0x10001a9c       0x44 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10001a74       0x44 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.crlf_str.6195
-                0x10001ae0        0x2 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10001ae4                . = ALIGN (0x4)
- *fill*         0x10001ae2        0x2 
+                0x10001ab8        0x2 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10001abc                . = ALIGN (0x4)
+ *fill*         0x10001aba        0x2 
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x10001ae4                . = ALIGN (0x4)
+                0x10001abc                . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x10001ae4                __exidx_start = .
+                0x10001abc                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x10001ae4                __exidx_end = .
-                0x10001ae4                . = ALIGN (0x4)
-                0x10001ae4                __binary_info_start = .
+                0x10001abc                __exidx_end = .
+                0x10001abc                . = ALIGN (0x4)
+                0x10001abc                __binary_info_start = .
 
-.binary_info    0x10001ae4       0x1c
+.binary_info    0x10001abc       0x1c
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr26
-                0x10001ae4        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10001abc        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr34
-                0x10001ae8        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10001ac0        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr42
-                0x10001aec        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10001ac4        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr48
-                0x10001af0        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10001ac8        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr54
-                0x10001af4        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10001acc        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr78
-                0x10001af8        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10001ad0        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr84
-                0x10001afc        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10001ad4        0x4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  *(.binary_info.*)
-                0x10001b00                __binary_info_end = .
-                0x10001b00                . = ALIGN (0x4)
+                0x10001ad8                __binary_info_end = .
+                0x10001ad8                . = ALIGN (0x4)
 
 .ram_vector_table
                 0x20000000       0xc0
@@ -3727,7 +3726,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x200000c0                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.data           0x200000c0      0x2c8 load address 0x10001b00
+.data           0x200000c0      0x2c8 load address 0x10001ad8
                 0x200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -3786,23 +3785,23 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x20000388                . = ALIGN (0x4)
 
 .tm_clone_table
-                0x20000388        0x0 load address 0x10001dc8
+                0x20000388        0x0 load address 0x10001da0
  .tm_clone_table
                 0x20000388        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x20000388        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x20000388        0x0 load address 0x10001dc8
+.igot.plt       0x20000388        0x0 load address 0x10001da0
  .igot.plt      0x20000388        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.tdata          0x20000388        0x0 load address 0x10001dc8
+.tdata          0x20000388        0x0 load address 0x10001da0
                 0x20000388                . = ALIGN (0x4)
  *(.tdata .tdata.* .gnu.linkonce.td.*)
                 0x20000388                __tdata_end = .
                 0x20000388                PROVIDE (__data_end__ = .)
-                0x10001b00                __etext = LOADADDR (.data)
+                0x10001ad8                __etext = LOADADDR (.data)
 
-.tbss           0x20000388        0x0 load address 0x10001dc8
+.tbss           0x20000388        0x0 load address 0x10001da0
                 0x20000388                . = ALIGN (0x4)
                 0x20000388                __bss_start__ = .
                 0x20000388                __tls_base = .
@@ -3810,7 +3809,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  *(.tcommon)
                 0x20000388                __tls_end = .
 
-.bss            0x20000388      0x4f8 load address 0x10001dc8
+.bss            0x20000388      0x4f8 load address 0x10001da0
                 0x20000388                . = ALIGN (0x4)
                 0x20000388                __tbss_end = .
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.bss*)))
@@ -3846,26 +3845,26 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x20000880                . = ALIGN (0x4)
                 0x20000880                __bss_end__ = .
 
-.heap           0x20000880      0x800 load address 0x10001dc8
+.heap           0x20000880      0x800 load address 0x10001da0
                 0x20000880                __end__ = .
                 0x20000880                end = __end__
  *(.heap*)
  .heap          0x20000880      0x800 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
                 0x20040000                __HeapLimit = (ORIGIN (RAM) + LENGTH (RAM))
 
-.scratch_x      0x20040000        0x0 load address 0x10001dc8
+.scratch_x      0x20040000        0x0 load address 0x10001da0
                 0x20040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20040000                . = ALIGN (0x4)
                 0x20040000                __scratch_x_end__ = .
-                0x10001dc8                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x10001da0                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20041000        0x0 load address 0x10001dc8
+.scratch_y      0x20041000        0x0 load address 0x10001da0
                 0x20041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20041000                . = ALIGN (0x4)
                 0x20041000                __scratch_y_end__ = .
-                0x10001dc8                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x10001da0                __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .stack1_dummy   0x20040000        0x0
  *(.stack1*)
@@ -3877,9 +3876,9 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
 .rel.dyn        0x20041800        0x0
  .rel.iplt      0x20041800        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.flash_end      0x10001dc8        0x0
+.flash_end      0x10001da0        0x0
  *(.embedded_end_block*)
-                0x10001dc8                PROVIDE (__flash_binary_end = .)
+                0x10001da0                PROVIDE (__flash_binary_end = .)
                 0x20040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -4119,46 +4118,46 @@ LOAD linker stubs
                                  0x4f (size before relaxing)
  .comment       0x0000009f       0x52 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtend.o
 
-.debug_line     0x00000000    0x144de
- .debug_line    0x00000000       0xa9 CMakeFiles/LEDCounterSDK.dir/ledcountersdk.S.o
- .debug_line    0x000000a9      0x30b CMakeFiles/LEDCounterSDK.dir/sdklink.c.o
- .debug_line    0x000003b4     0x1a2d CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
- .debug_line    0x00001de1      0x21e CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
- .debug_line    0x00001fff      0x872 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.o
- .debug_line    0x00002871      0x406 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
- .debug_line    0x00002c77      0x2ee CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
- .debug_line    0x00002f65     0x16a5 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
- .debug_line    0x0000460a      0x286 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
- .debug_line    0x00004890     0x1a52 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o
- .debug_line    0x000062e2     0x2e95 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
- .debug_line    0x00009177     0x1d39 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
- .debug_line    0x0000aeb0     0x1c04 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
- .debug_line    0x0000cab4      0x484 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
- .debug_line    0x0000cf38      0x27e CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
- .debug_line    0x0000d1b6      0x34a CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
- .debug_line    0x0000d500      0x2b4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
- .debug_line    0x0000d7b4      0x251 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
- .debug_line    0x0000da05      0x57b CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
- .debug_line    0x0000df80      0x48e CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
- .debug_line    0x0000e40e      0x137 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
- .debug_line    0x0000e545      0x2db CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
- .debug_line    0x0000e820      0x486 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
- .debug_line    0x0000eca6      0x359 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
- .debug_line    0x0000efff      0x6a7 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
- .debug_line    0x0000f6a6       0x99 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
- .debug_line    0x0000f73f      0x404 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
- .debug_line    0x0000fb43      0x2d6 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
- .debug_line    0x0000fe19      0x1cd CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
- .debug_line    0x0000ffe6       0xc3 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
- .debug_line    0x000100a9      0x165 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .debug_line    0x0001020e     0x1683 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- .debug_line    0x00011891       0xc5 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
- .debug_line    0x00011956      0x7ef CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
- .debug_line    0x00012145     0x1324 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
- .debug_line    0x00013469      0x3e6 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
- .debug_line    0x0001384f      0xa6d CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
- .debug_line    0x000142bc       0x60 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_line    0x0001431c      0x1c2 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
+.debug_line     0x00000000    0x144d2
+ .debug_line    0x00000000       0x9d CMakeFiles/LEDCounterSDK.dir/ledcountersdk.S.o
+ .debug_line    0x0000009d      0x30b CMakeFiles/LEDCounterSDK.dir/sdklink.c.o
+ .debug_line    0x000003a8     0x1a2d CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+ .debug_line    0x00001dd5      0x21e CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+ .debug_line    0x00001ff3      0x872 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+ .debug_line    0x00002865      0x406 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+ .debug_line    0x00002c6b      0x2ee CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+ .debug_line    0x00002f59     0x16a5 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+ .debug_line    0x000045fe      0x286 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
+ .debug_line    0x00004884     0x1a52 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+ .debug_line    0x000062d6     0x2e95 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
+ .debug_line    0x0000916b     0x1d39 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+ .debug_line    0x0000aea4     0x1c04 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+ .debug_line    0x0000caa8      0x484 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+ .debug_line    0x0000cf2c      0x27e CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+ .debug_line    0x0000d1aa      0x34a CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+ .debug_line    0x0000d4f4      0x2b4 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+ .debug_line    0x0000d7a8      0x251 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+ .debug_line    0x0000d9f9      0x57b CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+ .debug_line    0x0000df74      0x48e CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+ .debug_line    0x0000e402      0x137 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+ .debug_line    0x0000e539      0x2db CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+ .debug_line    0x0000e814      0x486 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+ .debug_line    0x0000ec9a      0x359 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+ .debug_line    0x0000eff3      0x6a7 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+ .debug_line    0x0000f69a       0x99 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+ .debug_line    0x0000f733      0x404 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+ .debug_line    0x0000fb37      0x2d6 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+ .debug_line    0x0000fe0d      0x1cd CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+ .debug_line    0x0000ffda       0xc3 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+ .debug_line    0x0001009d      0x165 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .debug_line    0x00010202     0x1683 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ .debug_line    0x00011885       0xc5 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+ .debug_line    0x0001194a      0x7ef CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+ .debug_line    0x00012139     0x1324 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+ .debug_line    0x0001345d      0x3e6 CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+ .debug_line    0x00013843      0xa6d CMakeFiles/LEDCounterSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+ .debug_line    0x000142b0       0x60 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x00014310      0x1c2 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
 
 .debug_info     0x00000000    0x207d0
  .debug_info    0x00000000       0x26 CMakeFiles/LEDCounterSDK.dir/ledcountersdk.S.o
