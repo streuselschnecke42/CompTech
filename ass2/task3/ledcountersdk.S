@@ -42,7 +42,7 @@ main:
 	@BL	stdio_init_all	@ initialize uart or usb
 	
 forwards:
-  MOV R9, #0            @ set loop flag
+  @MOV R9, #0            @ set loop flag
 
   BL checkbits
   LDR R0, =sleep_time
@@ -54,7 +54,7 @@ forwards:
 	B forwards            @ otherwise continue current loop
 
 backwards:
-  MOV R9, #1            @ set loop flag
+  @MOV R9, #1            @ set loop flag
 
   BL checkbits
   LDR R0, =sleep_time
