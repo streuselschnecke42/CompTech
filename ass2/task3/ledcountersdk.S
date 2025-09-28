@@ -9,7 +9,7 @@
 	.EQU	LED_PIN3, 2
 	.EQU	GPIO_OUT, 1	    @ define GPIO_OUT address (reuse task2)
 								        @ (datasheet 2.3.1.7 address doesnt work)
-	.EQU	sleep_time, 300		@ var sleep_time is now value 300
+	.EQU	sleep_time, 400		@ var sleep_time is now value 300
 
 .thumb_func		  @ Necessary because sdk uses BLX
 .global main    @ Provide program starting address
@@ -45,6 +45,8 @@ forwards:
   MOV R9, #0            @ set loop flag
 
   BL checkbits
+  LDR R0, =sleep_time
+  BL sleep_ms
 
 	ADD R7, R7, #0b001    @ count 0001 up
 	CMP R7, #0b111        @ see if R7 has reached limit of 0111
@@ -55,6 +57,8 @@ backwards:
   MOV R9, #1            @ set loop flag
 
   BL checkbits
+  LDR R0, =sleep_time
+  BL sleep_ms
 
 	SUB R7, R7, #0b001    @ count 0001 down
 	CMP R7, #0b000        @ see if R7 has reached limit of 0111
