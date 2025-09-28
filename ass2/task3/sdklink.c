@@ -14,3 +14,8 @@ void link_gpio_put(int pin, int value)
 {
 		gpio_put(pin, value);
 }
+
+int get_binary(int value, int position)
+{
+  return ((value >> position) & 0x1);
+}
