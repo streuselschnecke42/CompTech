@@ -29,7 +29,7 @@ main:
     BL	link_gpio_set_dir	@ go to function to configure output pin
 	
     @ --- configure LED B ---
-    MOV	R0, #LED_B		@ store var LED_B on register 0
+    MOV	R0, #LED_B		    @ store var LED_B on register 0
     BL	gpio_init		    @ ... same as LED A...
     MOV	R0, #LED_B
     MOV	R1, #GPIO_OUT

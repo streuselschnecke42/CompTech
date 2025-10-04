@@ -82,7 +82,7 @@ forwards:
 
 backwards:
     SUB R7, R7, #0b001    	@ count 0001 down
-    CMP R7, #0b000        	@ see if R7 has reached limit of 0111
+    CMP R7, #0b000        	@ see if R7 has reached limit of 0000
     BEQ changeflagzero        @ if so, count forwards now
     B checkbits          	@ otherwise continue main loop
 
