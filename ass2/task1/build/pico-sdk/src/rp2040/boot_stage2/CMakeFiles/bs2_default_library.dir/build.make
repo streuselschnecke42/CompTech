@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/michelle/pico/comp_tech/ass2/task1
+CMAKE_SOURCE_DIR = /home/michelle/pico/comptech/ass2/task1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/michelle/pico/comp_tech/ass2/task1/build
+CMAKE_BINARY_DIR = /home/michelle/pico/comptech/ass2/task1/build
 
 # Include any dependencies generated for this target.
 include pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/depend.make
@@ -77,17 +77,17 @@ include pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/progr
 include pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/flags.make
 
 pico-sdk/src/rp2040/boot_stage2/bs2_default_padded_checksummed.S: pico-sdk/src/rp2040/boot_stage2/bs2_default.bin
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michelle/pico/comp_tech/ass2/task1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating bs2_default_padded_checksummed.S"
-	cd /home/michelle/pico/comp_tech/ass2/task1/build/pico-sdk/src/rp2040/boot_stage2 && /usr/bin/python3.9 /home/michelle/pico/pico-sdk/src/rp2040/boot_stage2/pad_checksum -s 0xffffffff /home/michelle/pico/comp_tech/ass2/task1/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin /home/michelle/pico/comp_tech/ass2/task1/build/pico-sdk/src/rp2040/boot_stage2/bs2_default_padded_checksummed.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michelle/pico/comptech/ass2/task1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating bs2_default_padded_checksummed.S"
+	cd /home/michelle/pico/comptech/ass2/task1/build/pico-sdk/src/rp2040/boot_stage2 && /usr/bin/python3.9 /home/michelle/pico/pico-sdk/src/rp2040/boot_stage2/pad_checksum -s 0xffffffff /home/michelle/pico/comptech/ass2/task1/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin /home/michelle/pico/comptech/ass2/task1/build/pico-sdk/src/rp2040/boot_stage2/bs2_default_padded_checksummed.S
 
 pico-sdk/src/rp2040/boot_stage2/bs2_default.bin: pico-sdk/src/rp2040/boot_stage2/bs2_default.elf
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michelle/pico/comp_tech/ass2/task1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating bs2_default.bin"
-	cd /home/michelle/pico/comp_tech/ass2/task1/build/pico-sdk/src/rp2040/boot_stage2 && /usr/bin/arm-none-eabi-objcopy -Obinary /home/michelle/pico/comp_tech/ass2/task1/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.elf /home/michelle/pico/comp_tech/ass2/task1/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michelle/pico/comptech/ass2/task1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating bs2_default.bin"
+	cd /home/michelle/pico/comptech/ass2/task1/build/pico-sdk/src/rp2040/boot_stage2 && /usr/bin/arm-none-eabi-objcopy -Obinary /home/michelle/pico/comptech/ass2/task1/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.elf /home/michelle/pico/comptech/ass2/task1/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin
 
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/flags.make
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o: pico-sdk/src/rp2040/boot_stage2/bs2_default_padded_checksummed.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comp_tech/ass2/task1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building ASM object pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o"
-	cd /home/michelle/pico/comp_tech/ass2/task1/build/pico-sdk/src/rp2040/boot_stage2 && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o   -c /home/michelle/pico/comp_tech/ass2/task1/build/pico-sdk/src/rp2040/boot_stage2/bs2_default_padded_checksummed.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass2/task1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building ASM object pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o"
+	cd /home/michelle/pico/comptech/ass2/task1/build/pico-sdk/src/rp2040/boot_stage2 && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o   -c /home/michelle/pico/comptech/ass2/task1/build/pico-sdk/src/rp2040/boot_stage2/bs2_default_padded_checksummed.S
 
 bs2_default_library: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o
 bs2_default_library: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/build.make
@@ -100,11 +100,11 @@ pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/build: bs2_de
 .PHONY : pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/build
 
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/clean:
-	cd /home/michelle/pico/comp_tech/ass2/task1/build/pico-sdk/src/rp2040/boot_stage2 && $(CMAKE_COMMAND) -P CMakeFiles/bs2_default_library.dir/cmake_clean.cmake
+	cd /home/michelle/pico/comptech/ass2/task1/build/pico-sdk/src/rp2040/boot_stage2 && $(CMAKE_COMMAND) -P CMakeFiles/bs2_default_library.dir/cmake_clean.cmake
 .PHONY : pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/clean
 
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/depend: pico-sdk/src/rp2040/boot_stage2/bs2_default_padded_checksummed.S
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/depend: pico-sdk/src/rp2040/boot_stage2/bs2_default.bin
-	cd /home/michelle/pico/comp_tech/ass2/task1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/michelle/pico/comp_tech/ass2/task1 /home/michelle/pico/pico-sdk/src/rp2040/boot_stage2 /home/michelle/pico/comp_tech/ass2/task1/build /home/michelle/pico/comp_tech/ass2/task1/build/pico-sdk/src/rp2040/boot_stage2 /home/michelle/pico/comp_tech/ass2/task1/build/pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/michelle/pico/comptech/ass2/task1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/michelle/pico/comptech/ass2/task1 /home/michelle/pico/pico-sdk/src/rp2040/boot_stage2 /home/michelle/pico/comptech/ass2/task1/build /home/michelle/pico/comptech/ass2/task1/build/pico-sdk/src/rp2040/boot_stage2 /home/michelle/pico/comptech/ass2/task1/build/pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/depend
 

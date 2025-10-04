@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/michelle/pico/comp_tech/ass2/task1/HelloWorld.S
+/home/michelle/pico/comptech/ass2/task1/HelloWorld.S
 
 /home/michelle/pico/pico-sdk/src/boards/include/boards/pico.h
 
