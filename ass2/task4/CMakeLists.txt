@@ -10,14 +10,14 @@ pico_sdk_init()
 
 include_directories(${CMAKE_SOURCE_DIR})
 
-add_executable(LEDCounterSDK
-  ledcountersdk.S
+add_executable(DisplayCounterSDK
+  DisplayCounterSDK.S
   sdklink.c
 )
 
-pico_enable_stdio_uart(LEDCounterSDK 0)
-pico_enable_stdio_usb(LEDCounterSDK 1)
+pico_enable_stdio_uart(DisplayCounterSDK 0)
+pico_enable_stdio_usb(DisplayCounterSDK 1)
 
-pico_add_extra_outputs(LEDCounterSDK)
+pico_add_extra_outputs(DisplayCounterSDK)
 
-target_link_libraries(LEDCounterSDK pico_stdlib)
+target_link_libraries(DisplayCounterSDK pico_stdlib)
