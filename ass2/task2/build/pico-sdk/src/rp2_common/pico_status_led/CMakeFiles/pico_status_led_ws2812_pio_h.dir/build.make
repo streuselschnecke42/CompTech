@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/michelle/pico/comp_tech/ass2/task2
+CMAKE_SOURCE_DIR = /home/michelle/pico/comptech/ass2/task2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/michelle/pico/comp_tech/ass2/task2/build
+CMAKE_BINARY_DIR = /home/michelle/pico/comptech/ass2/task2/build
 
 # Utility rule file for pico_status_led_ws2812_pio_h.
 
@@ -76,8 +76,8 @@ pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h:
 
 
 pico-sdk/src/rp2_common/pico_status_led/ws2812.pio.h: /home/michelle/pico/pico-sdk/src/rp2_common/pico_status_led/ws2812.pio
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michelle/pico/comp_tech/ass2/task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ws2812.pio.h"
-	cd /home/michelle/pico/comp_tech/ass2/task2/build/pico-sdk/src/rp2_common/pico_status_led && ../../../../pioasm-install/pioasm/pioasm -o c-sdk -v 0 /home/michelle/pico/pico-sdk/src/rp2_common/pico_status_led/ws2812.pio /home/michelle/pico/comp_tech/ass2/task2/build/pico-sdk/src/rp2_common/pico_status_led/ws2812.pio.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michelle/pico/comptech/ass2/task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ws2812.pio.h"
+	cd /home/michelle/pico/comptech/ass2/task2/build/pico-sdk/src/rp2_common/pico_status_led && ../../../../pioasm-install/pioasm/pioasm -o c-sdk -v 0 /home/michelle/pico/pico-sdk/src/rp2_common/pico_status_led/ws2812.pio /home/michelle/pico/comptech/ass2/task2/build/pico-sdk/src/rp2_common/pico_status_led/ws2812.pio.h
 
 pico_status_led_ws2812_pio_h: pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h
 pico_status_led_ws2812_pio_h: pico-sdk/src/rp2_common/pico_status_led/ws2812.pio.h
@@ -91,10 +91,10 @@ pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.
 .PHONY : pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/build
 
 pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/clean:
-	cd /home/michelle/pico/comp_tech/ass2/task2/build/pico-sdk/src/rp2_common/pico_status_led && $(CMAKE_COMMAND) -P CMakeFiles/pico_status_led_ws2812_pio_h.dir/cmake_clean.cmake
+	cd /home/michelle/pico/comptech/ass2/task2/build/pico-sdk/src/rp2_common/pico_status_led && $(CMAKE_COMMAND) -P CMakeFiles/pico_status_led_ws2812_pio_h.dir/cmake_clean.cmake
 .PHONY : pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/clean
 
 pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/depend:
-	cd /home/michelle/pico/comp_tech/ass2/task2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/michelle/pico/comp_tech/ass2/task2 /home/michelle/pico/pico-sdk/src/rp2_common/pico_status_led /home/michelle/pico/comp_tech/ass2/task2/build /home/michelle/pico/comp_tech/ass2/task2/build/pico-sdk/src/rp2_common/pico_status_led /home/michelle/pico/comp_tech/ass2/task2/build/pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/michelle/pico/comptech/ass2/task2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/michelle/pico/comptech/ass2/task2 /home/michelle/pico/pico-sdk/src/rp2_common/pico_status_led /home/michelle/pico/comptech/ass2/task2/build /home/michelle/pico/comptech/ass2/task2/build/pico-sdk/src/rp2_common/pico_status_led /home/michelle/pico/comptech/ass2/task2/build/pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/depend
 

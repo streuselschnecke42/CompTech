@@ -1,5 +1,5 @@
 
-/home/michelle/pico/comp_tech/ass2/task2/build/FlashLEDsSDK.elf:     file format elf32-littlearm
+/home/michelle/pico/comptech/ass2/task2/build/FlashLEDsSDK.elf:     file format elf32-littlearm
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
@@ -35,24 +35,24 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY
  15 .comment      0000009f  00000000  00000000  000033b0  2**0
                   CONTENTS, READONLY
- 16 .debug_line   000144a8  00000000  00000000  0000344f  2**0
+ 16 .debug_line   000144a6  00000000  00000000  0000344f  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_info   00020793  00000000  00000000  000178f7  2**0
+ 17 .debug_info   00020793  00000000  00000000  000178f5  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_abbrev 0000584c  00000000  00000000  0003808a  2**0
+ 18 .debug_abbrev 0000584c  00000000  00000000  00038088  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  19 .debug_aranges 00000f88  00000000  00000000  0003d8d8  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .debug_str    000049a3  00000000  00000000  0003e860  2**0
+ 20 .debug_str    000049a0  00000000  00000000  0003e860  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_loc    00017528  00000000  00000000  00043203  2**0
+ 21 .debug_loc    00017528  00000000  00000000  00043200  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 22 .debug_ranges 00008938  00000000  00000000  0005a730  2**3
+ 22 .debug_ranges 00008938  00000000  00000000  0005a728  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 23 .debug_frame  00001b74  00000000  00000000  00063068  2**2
+ 23 .debug_frame  00001b74  00000000  00000000  00063060  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
-/home/michelle/pico/comp_tech/ass2/task2/build/FlashLEDsSDK.elf:     file format elf32-littlearm
+/home/michelle/pico/comptech/ass2/task2/build/FlashLEDsSDK.elf:     file format elf32-littlearm
 
 
 Disassembly of section .boot2:

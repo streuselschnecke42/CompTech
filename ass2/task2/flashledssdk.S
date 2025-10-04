@@ -4,7 +4,7 @@
 @
 
 	.EQU	LED_PIN1, 0			@ equate which means define
-	.EQU	LED_PIN2, 1			@ define var LED_PIN2 as GP2 (pico pin 2)
+	.EQU	LED_PIN2, 1			@ define var LED_PIN2 as GP1 (pico pin 2)
 	.EQU	LED_PIN3, 2
 	.EQU	GPIO_OUT, 1			@ define output as 1
 	.EQU	sleep_time, 200		@ var sleep_time is now value 200
