@@ -75,26 +75,39 @@ Let's interpret the 4-ring resistor together:
 - 2.Ring: black = 0
 - 3.Ring: red   = x100 OHM
 - 4.Ring: gold  = +/- 5% tolerance
-So, we get: 10 * 100 OHM = 1000 OHM with +/- 5% tolerance which is exactly what the right corner next to the 4-ring resistor shows.
+
+So, we get: 10 * 100 OHM = 1000 OHM with +/- 5% tolerance which is exactly what the right corner next to the 4-ring resistor shows.\
 ![Resistor_Colour_Rules](../ass2/images/bauteil_widerstand_kennzeichnung.png)
+
 ### Method 2 - Using a multimeter
 Before you measure: Make sure to start by putting the multimeter on the highest OHMs it has. Then, you measure and if nothing shows, you put the dial one level lower, measure again and so on, until you see something on the multimeter. This is to protect your multimeter from breaking or loosing accuracy (if it's analogue).
 
 When it comes to putting which multimeter probe on what side, it didn't seem to change any of the results, even when flipping the multimeter probes. Just make sure not to touch the metal part when measuring. Otherwise, you might loose accuracy.\
-The image below, shows the result of measuring my 330 OHM resistor with a low-end multimeter (119 SEK at BILTEMA). The result may have some tolerances but it was always somewhere near 330 OHM.
+The image below, shows the result of measuring my 330 OHM resistor with a low-end multimeter (119 SEK at BILTEMA). The result may have some tolerances but it was always somewhere near 330 OHM.\
 ![Resistor_MeasuringWithMultimeter](../ass2/images/Widerstandstest.jpg)
 
 ### Hardware - How know the direction of the LED
 (LED = Light Emitting Diode)
+
 ### Method 1 - Don't PANIC
-// TODO: Explain this
+It is always helpful to have some Phrases, Puns or Acronyms or similar to remember which is cathode and which is anode. This image below is just one of many examples on how to remember which is which.
+It is also helpful to remember that the long wire on the LED is the positive part (anode) and the short part of the LED is the negative part (catode).\
 ![Dont_PANIC](../ass2/images/dont_panic.jpg)
+
 ### Method 2 - Using a multimeter (Diodetest)
-// TODO: Explain this
-// TODO: insert image of diodetest with multimeter
+If you don't know which part is which, maybe because both wire parts have been cut to the same length or damaged etc., you can always rely on a multimeter.\
+First you turn your multimeter' dial to the Diode Test like the [image](../ass2/images/Diodentest.jpg) below shows. Also, make sure to connect the black wire (multimeter probe) to the COM socket and the red wire (multimeter probe) into any socket that shows something like "V/OHM/mA" (thats at least for my multimeter).\
+![Multimeter_Dial](../ass2/images/Diodentest.jpg)\
+Next, you should hold both probes (metal ends of the wires) together to check if they work like in the [image](../ass2/images/DiodentestCheckFunktion.jpg) below. Most multimeters beep when doing so, and this is how you can check that everything works so far.\
+![Multimeter_FunctionCheck](../ass2/images/DiodentestCheckFunktion.jpg)\
+Now, you hold either probe on one side and the other probe on the other side. The [image](../ass2/images/Diodentest_DiodeLeuchtet.jpg) below shows, that it was done correctly. This is proven by the LED glowing. The black probe represents the negative part and the red probe represents the positive part. Hence, the left wire of that LED is the cathode (negative) and the right wire is the anode (positive).\
+![Multimeter_DiodeCheckCorrect](../ass2/images/Diodentest_DiodeLeuchtet.jpg)\
+It could also happen that the probes would be put onto the LED's wires the wrong way like in the [image](../ass2/images/Diodentest_DiodeLeuchtetNicht.jpg) below. If that happens, the LED wont glow, and you know that you should try to switch the sides and measure again. However, if even after switching, the LED won't glow, the LED could also be burned out (broken) or it was not measured correctly.
+![Multimeter_DiodeCheckWrong](../ass2/images/Diodentest_DiodeLeuchtetNicht.jpg)
 
 ### Hardware - Layout
-![picoLEDImage](../ass2/images/instert_image_here)
+Note: I don't have green LEDs, so the cable colours will imitate the colours of the LEDs instead.
+![picoLEDImage](../ass2/images/Task2+3_Layout.jpg)
 
 // TODO: Explain wiring or make electric circuit plan
 
