@@ -78,8 +78,11 @@ Let's interpret the 4-ring resistor together:
 So, we get: 10 * 100 OHM = 1000 OHM with +/- 5% tolerance which is exactly what the right corner next to the 4-ring resistor shows.
 ![Resistor_Colour_Rules](../ass2/images/bauteil_widerstand_kennzeichnung.png)
 ### Method 2 - Using a multimeter
-// TODO: Explain this
-// TODO: insert image of measuring one resistor with multimeter
+Before you measure: Make sure to start by putting the multimeter on the highest OHMs it has. Then, you measure and if nothing shows, you put the dial one level lower, measure again and so on, until you see something on the multimeter. This is to protect your multimeter from breaking or loosing accuracy (if it's analogue).
+
+When it comes to putting which multimeter probe on what side, it didn't seem to change any of the results, even when flipping the multimeter probes. Just make sure not to touch the metal part when measuring. Otherwise, you might loose accuracy.\
+The image below, shows the result of measuring my 330 OHM resistor with a low-end multimeter (119 SEK at BILTEMA). The result may have some tolerances but it was always somewhere near 330 OHM.
+![Resistor_MeasuringWithMultimeter](../ass2/images/Widerstandstest.jpg)
 
 ### Hardware - How know the direction of the LED
 (LED = Light Emitting Diode)
