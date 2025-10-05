@@ -15,8 +15,10 @@ Discipline: NGDNS, NGDPV
 time the loop is repeated. Print the text Hello World followed by the counter
 number. When the counter reaches 0, it shall be reset to 100 and start
 decreasing again, in an infinite loop
+- Compile and upload the program to the Pico. Open minicom, putty or a
+similar terminal to show the result
 
-### Explanation
+### Explanation Code
 For this task, minicom was used to display the output. The task was pretty straightforward.
 
 The pre-written program already had needed variables assigned and a working code. So, all that was needed to do was to change it, so it counts from 100 to 0 with endless repetitions.\
@@ -37,4 +39,40 @@ This whole program will loop forever, until you unplug the pico or press Ctrl A 
 [HelloWorld.uf2](../ass2/task1/build/HelloWorld.uf2)
 
 To get to the whole Task 1 directory instead, click [here](../ass2/task1/).
+
+## Task 2
+Connect one green, one yellow and one red light to three of the pins, in the same
+order as a traffic light. Then, write a program to make them flash like a traffic light.\
+Use pins GP0 for green, GP1 for yellow and GP2 for green LED! Also, make sure
+you understand how to connect an LED and remember to ALWAYS connect it in
+series to a resistor
+
+You can use the code in Listing 8-1 (page 150). Copy everything from folder
+Chapter 8/1/ and edit the .S file to write your own code!
+Note: The functions link_gpio_put and link_gpio_set_dir are C functions, not
+assembly, but you don’t need to care much about this, just remember to copy the
+file sdklink.c!
+
+### Explanation Code
+//TODO: enter explanation of code here
+
+### Hardware Layout
+![picoLEDImage](../ass2/images/instert_image_here)
+
+// TODO: Explain wiring or make electric circuit plan
+
+### Execution
+The program can be visible by using minicom. When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you load the file onto the pico with "sudo picotool load HelloWorld.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico.
+
+//TODO: enter further explanation here
+
+**Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
+
+### Sourcecode files
+[flashledssdk.S](../ass2/task2/flashledssdk.S)\
+[CMakeLists.txt](../ass2/task2/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass2/task2/pico_sdk_import.cmake)\
+[FlashLEDsSDK.uf2](../ass2/task2/build/FlashLEDsSDK.uf2)
+
+To get to the whole Task 1 directory instead, click [here](../ass2/task2/).
 
