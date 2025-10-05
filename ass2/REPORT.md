@@ -74,5 +74,40 @@ The program can be visible by using minicom. When the build file has been made a
 [pico_sdk_import.cmake](../ass2/task2/pico_sdk_import.cmake)\
 [FlashLEDsSDK.uf2](../ass2/task2/build/FlashLEDsSDK.uf2)
 
-To get to the whole Task 1 directory instead, click [here](../ass2/task2/).
+To get to the whole Task 2 directory instead, click [here](../ass2/task2/).
 
+## Task 3
+Use the same setup as in Task 2 and create a binary conter that counts from 000 up
+to 111. The picture below shows the first 4 steps. When the counter reaches its final
+value 111, count back to 000 one step at a time, repeate infinitely. Make one second
+delay between the counter values.
+
+### Explanation Code
+//TODO: enter explanation of code here
+
+// TODO: Maybe enter explanation for c function??
+
+#### Explanation of the C function "get_binary" in sdklink.c
+Here is an example from the [testing_playground](../testing_playground/binary_values.c) to show how the function "get_binary" in [sdklink.c](../ass2/task3/sdklink.c) works:
+![binary_shift_function_in_C](../ass2/images/getting_bits_explained.PNG)
+
+### Hardware Layout
+![picoLEDImage](../ass2/images/instert_image_here)
+
+// TODO: Explain wiring or make electric circuit plan\
+~ same as task 2 ~
+
+### Execution
+The program can be visible by using minicom. When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you load the file onto the pico with "sudo picotool load HelloWorld.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico.
+
+//TODO: enter further explanation here
+
+**Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
+
+### Sourcecode files
+[ledcountersdk.S](../ass2/task3/ledcountersdk.S)\
+[CMakeLists.txt](../ass2/task3/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass2/task3/pico_sdk_import.cmake)\
+[LEDCounterSDK.uf2](../ass2/task3/build/LEDCounterSDK.uf2)
+
+To get to the whole Task 3 directory instead, click [here](../ass2/task3/).
