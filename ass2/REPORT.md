@@ -132,16 +132,15 @@ value 111, count back to 000 one step at a time, repeate infinitely. Make one se
 delay between the counter values.
 
 ### Explanation Code
-//TODO: enter explanation of code here
-
-// TODO: Maybe enter explanation for c function??
+//TODO: enter further explanation of code here
 
 #### Explanation of the C function "get_binary" in sdklink.c
 Here is an example from the [testing_playground](../testing_playground/binary_values.c) to show how the function "get_binary" in [sdklink.c](../ass2/task3/sdklink.c) works:
 ![binary_shift_function_in_C](../ass2/images/getting_bits_explained.PNG)
 
 ### Hardware Layout
-![picoLEDImage](../ass2/images/instert_image_here)
+Note: I don't have green LEDs, so the cable colours will imitate the colours of the LEDs instead.
+![picoLEDImage](../ass2/images/Task2+3_Layout.jpg)
 
 // TODO: Explain wiring or make electric circuit plan\
 ~ same as task 2 ~
@@ -172,12 +171,29 @@ called gpio_put_all(…) can be useful!
 
 ### Explanation Code
 //TODO: enter explanation of code here
-// TODO: also enter image of new C function and another image describing how the input and bits / byte works (maybe use ur notes? are videos allowed?)
+
+![link_gpio_put_all_function](../ass2/images/gpio_put_all_function.PNG)
+
+// TODO: enter another image describing how the input and bits / byte works (maybe use ur notes? are videos allowed?)
+
+### Hardware - Finding out which pins are which - finding common cathode/anode
+Some of us lost the datasheet or just aren't sure which direction the current flows. In order not to accidentally break the 7 segment display, it can be tested using a much safer method. Such as using a multimeter. Use the same setup for the multimeter as in task 2. \
+![Diodentest_Display_Setup](../ass2/images/Diodentest_Display_RichtungMesstäbe.jpg)\
+As previously in task 2, your black probe will be the negative and your red probe will the the positive part. It is adviced to put the black probe (negative part) on one pin and keeping it there while testing all the other pins on the display one by one with the red probe. If something glows, you write it down and move one further with the black probe and repeat the previously mentioned testing with the red probe on all other pins one by one.\
+![Diodentest_Display_Setup](../ass2/images/Diodentest_Display.jpg)\
+Here is the backside for a better understanding of how many pins and where the pins are.\
+![Diodentest_Display_Setup](../ass2/images/Diodentest_DisplayRückseite.jpg)\
+Once you have tested all pins or most of them, you should now know if your display uses common anode or common cathode. Depending on what display you use, your notes may vary but should look similar when it comes to the layout itself. Writing down what pin stands for what letter of the display and if it's a cathode or an anode.\
+![Display_Pinout_plan](../ass2/images/Display_Pinout_plan.jpg)\
+For this task, it is also helpful to write down what number needs what letters and what the pins on the display and the pico are for each letter.\
+![Digits_Display](../ass2/images/Digits_Display.jpg)
 
 ### Hardware Layout
-![picoLEDImage](../ass2/images/instert_image_here)
+![Layout_Display_Front](../ass2/images/Task4_Layout_FRONT.jpg)
+![Layout_Display_Front](../ass2/images/Task4_Layout_BACK.jpg)
+![Layout_Display_Front](../ass2/images/Task4_Layout_TOP.jpg)
 
-// TODO: Explain wiring or make electric circuit plan\
+// TODO: Explain wiring or make electric circuit plan
 
 ### Execution
 The program can be visible by using minicom. When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you load the file onto the pico with "sudo picotool load HelloWorld.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico.
