@@ -189,6 +189,7 @@ For this task, it is also helpful to write down what number needs what letters a
 ![Digits_Display](../ass2/images/Digits_Display.jpg)
 
 ### Hardware Layout
+Note: We were 2 people, but only had one 1 digit 7-segment display. Therefore, one of us was using their personal project for this task. **The Code is still the same and the wiring from A to G with the pico pins, was still done according to the task!**\
 ![Layout_Display_Front](../ass2/images/Task4_Layout_FRONT.jpg)
 ![Layout_Display_Front](../ass2/images/Task4_Layout_BACK.jpg)
 ![Layout_Display_Front](../ass2/images/Task4_Layout_TOP.jpg)
