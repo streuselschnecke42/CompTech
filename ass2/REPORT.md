@@ -178,28 +178,28 @@ https://datasheets.raspberrypi.com/pico/Pico-R3-A4-Pinout.pdf
 
 **7 Segment Display**\
 **Note:** Some of those links refer to/contain information about 4 digit displays. This is because each group only got 1 One digit display and we were 2 people. One of us already had a 4 digit display at home, while the other was able to use the given one by the school.\
-https://forum.digikey.com/t/checking-7-segment-display/750?utm_source=chatgpt.com\
-https://soldered.com/productdata/2015/09/Soldered_LD3361BS_datasheet.pdf?srsltid=AfmBOoq0jtcJOlz52ymj_aYuQtiQMwl3hg2E0N3lksU43k0632qJvjb5\
-https://www.xlitx.com/7-segment-led-dot-matrix/2841as.html\
-https://www.xlitx.com/7-segment-led-dot-matrix/2841as.html\
-https://www.youtube.com/watch?v=7Y_uvV22_X0&list=WL&index=2&t=366s\
-https://www.youtube.com/watch?v=V5S8Vvrn6cY\
-https://www.youtube.com/watch?v=qE5ycgqswGY\
-https://www.youtube.com/watch?v=fYAlE1u5rno\
+https://forum.digikey.com/t/checking-7-segment-display/750?utm_source=chatgpt.com \
+https://soldered.com/productdata/2015/09/Soldered_LD3361BS_datasheet.pdf?srsltid=AfmBOoq0jtcJOlz52ymj_aYuQtiQMwl3hg2E0N3lksU43k0632qJvjb5 \
+https://www.xlitx.com/7-segment-led-dot-matrix/2841as.html \
+https://www.xlitx.com/7-segment-led-dot-matrix/2841as.html \
+https://www.youtube.com/watch?v=7Y_uvV22_X0&list=WL&index=2&t=366s \
+https://www.youtube.com/watch?v=V5S8Vvrn6cY \
+https://www.youtube.com/watch?v=qE5ycgqswGY \
+https://www.youtube.com/watch?v=fYAlE1u5rno \
 https://www.youtube.com/watch?v=5d-dtMyqUpc
 
 **Pico Instructions**\
-https://developer.arm.com/documentation/dui0473/m/arm-and-thumb-instructions/arm-and-thumb-instruction-summary\
-https://github.com/Apress/RP2040-Assembly-Language-Programming/tree/main\
+https://developer.arm.com/documentation/dui0473/m/arm-and-thumb-instructions/arm-and-thumb-instruction-summary \
+https://github.com/Apress/RP2040-Assembly-Language-Programming/tree/main \
 https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf
 
 **C coding**\
-https://stackoverflow.com/questions/55330597/how-do-i-execute-a-c-file\
-https://www.geeksforgeeks.org/c/c-switch-statement/\
+https://stackoverflow.com/questions/55330597/how-do-i-execute-a-c-file \
+https://www.geeksforgeeks.org/c/c-switch-statement/ \
 https://www.youtube.com/watch?v=ciio80nkjB8&list=WL&index=12&t=240s
 
 **For general studying / Other**\
-https://www.raspberrypi.com/documentation/computers/getting-started.html\
-https://www.raspberrypi.com/documentation/microcontrollers/c_sdk.html\
-https://studio2.org.uk/jack/RP2040%20Assembly%20Language%20Programming%20%28Smith%29.pdf\
+https://www.raspberrypi.com/documentation/computers/getting-started.html \
+https://www.raspberrypi.com/documentation/microcontrollers/c_sdk.html \
+https://studio2.org.uk/jack/RP2040%20Assembly%20Language%20Programming%20%28Smith%29.pdf \
 https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico
