@@ -67,7 +67,15 @@ The path for the gpio.h file may differ from device to device but should be acce
 
 ### Hardware - How to use the right resisor
 ### Method 1 - Reading the colours on the resistor
-// TODO: Explain this
+The resistor has colour stripes on its' body, which tell you what resistance in OHM it has.\
+If it has 4 rings, there is usally a space on the right side between the last ring and the other rings. Thats how you know where the end is and where to start reading. If there are 5, it sometimes may be hard to tell, but interpreting it both ways and also looking at its size and common right-sided colours, sometimes clears up the confusion.\
+The image here shows 2 resistors. One with 4 rings and one with 5. It even shows you what colour each ring means and how each ring should be interpreted.\
+Let's interpret the 4-ring resistor together:
+- 1.Ring: brown = 1
+- 2.Ring: black = 0
+- 3.Ring: red   = x100 OHM
+- 4.Ring: gold  = +/- 5% tolerance
+So, we get: 10 * 100 OHM = 1000 OHM with +/- 5% tolerance which is exactly what the right corner next to the 4-ring resistor shows.
 ![Resistor_Colour_Rules](../ass2/images/bauteil_widerstand_kennzeichnung.png)
 ### Method 2 - Using a multimeter
 // TODO: Explain this
