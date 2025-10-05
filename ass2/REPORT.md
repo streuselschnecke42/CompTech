@@ -168,9 +168,9 @@ To get to the whole Task 4 directory instead, click [here](../ass2/task4/).
 ---
 ### Sources
 **Images that weren't taken by ourselves**\
-https://www.elektronik-kompendium.de/sites/bau/1109051.htm\
-https://files.schudio.com/bishop-challoner-catholic-college/files/documents/Yr10-Chemistry-10Y3-Miss_Mayor-Week_5-4th_May-Products_of_Electrolysis.pdf\
-https://chemistry.stackexchange.com/questions/68533/which-is-anode-and-which-is-cathode\
+https://www.elektronik-kompendium.de/sites/bau/1109051.htm \
+https://files.schudio.com/bishop-challoner-catholic-college/files/documents/Yr10-Chemistry-10Y3-Miss_Mayor-Week_5-4th_May-Products_of_Electrolysis.pdf \
+https://chemistry.stackexchange.com/questions/68533/which-is-anode-and-which-is-cathode
 
 **Pico Pinout**\
 https://pico2.pinout.xyz/ \
