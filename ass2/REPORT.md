@@ -66,7 +66,16 @@ file sdklink.c!
 // TODO: Explain this
 // TODO: insert image of measuring one resistor with multimeter
 
-### Hardware Layout
+### Hardware - How know the direction of the LED
+(LED = Light Emitting Diode)
+### Method 1 - Don't PANIC
+// TODO: Explain this
+![Dont_PANIC](../ass2/images/dont_panic.jpg)
+### Method 2 - Using a multimeter (Diodetest)
+// TODO: Explain this
+// TODO: insert image of diodetest with multimeter
+
+### Hardware - Layout
 ![picoLEDImage](../ass2/images/instert_image_here)
 
 // TODO: Explain wiring or make electric circuit plan
@@ -155,3 +164,42 @@ The program can be visible by using minicom. When the build file has been made a
 [DisplayCounterSDK.uf2](../ass2/task4/build/DisplayCounterSDK.uf2)
 
 To get to the whole Task 4 directory instead, click [here](../ass2/task4/).
+
+---
+### Sources
+**Images that weren't taken by ourselves**\
+https://www.elektronik-kompendium.de/sites/bau/1109051.htm\
+https://files.schudio.com/bishop-challoner-catholic-college/files/documents/Yr10-Chemistry-10Y3-Miss_Mayor-Week_5-4th_May-Products_of_Electrolysis.pdf\
+https://chemistry.stackexchange.com/questions/68533/which-is-anode-and-which-is-cathode\
+
+**Pico Pinout**\
+https://pico2.pinout.xyz/ \
+https://datasheets.raspberrypi.com/pico/Pico-R3-A4-Pinout.pdf
+
+**7 Segment Display**\
+**Note:** Some of those links refer to/contain information about 4 digit displays. This is because each group only got 1 One digit display and we were 2 people. One of us already had a 4 digit display at home, while the other was able to use the given one by the school.\
+https://forum.digikey.com/t/checking-7-segment-display/750?utm_source=chatgpt.com\
+https://soldered.com/productdata/2015/09/Soldered_LD3361BS_datasheet.pdf?srsltid=AfmBOoq0jtcJOlz52ymj_aYuQtiQMwl3hg2E0N3lksU43k0632qJvjb5\
+https://www.xlitx.com/7-segment-led-dot-matrix/2841as.html\
+https://www.xlitx.com/7-segment-led-dot-matrix/2841as.html\
+https://www.youtube.com/watch?v=7Y_uvV22_X0&list=WL&index=2&t=366s\
+https://www.youtube.com/watch?v=V5S8Vvrn6cY\
+https://www.youtube.com/watch?v=qE5ycgqswGY\
+https://www.youtube.com/watch?v=fYAlE1u5rno\
+https://www.youtube.com/watch?v=5d-dtMyqUpc
+
+**Pico Instructions**\
+https://developer.arm.com/documentation/dui0473/m/arm-and-thumb-instructions/arm-and-thumb-instruction-summary\
+https://github.com/Apress/RP2040-Assembly-Language-Programming/tree/main\
+https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf
+
+**C coding**\
+https://stackoverflow.com/questions/55330597/how-do-i-execute-a-c-file\
+https://www.geeksforgeeks.org/c/c-switch-statement/\
+https://www.youtube.com/watch?v=ciio80nkjB8&list=WL&index=12&t=240s
+
+**For general studying / Other**\
+https://www.raspberrypi.com/documentation/computers/getting-started.html\
+https://www.raspberrypi.com/documentation/microcontrollers/c_sdk.html\
+https://studio2.org.uk/jack/RP2040%20Assembly%20Language%20Programming%20%28Smith%29.pdf\
+https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico
