@@ -7,6 +7,7 @@ Examiner: Mehdi Saman Azari\
 Semester: HT25\
 Discipline: NGDNS, NGDPV
 
+
 # Tasks
 ## Task 1
 - Download the source code for the Hello World program presented on page
@@ -40,6 +41,7 @@ This whole program will loop forever, until you unplug the pico or press Ctrl A 
 
 To get to the whole Task 1 directory instead, click [here](../ass2/task1/).
 
+
 ## Task 2
 Connect one green, one yellow and one red light to three of the pins, in the same
 order as a traffic light. Then, write a program to make them flash like a traffic light.\
@@ -55,6 +57,14 @@ file sdklink.c!
 
 ### Explanation Code
 //TODO: enter explanation of code here
+
+### Hardware - How to use the right resisor
+### Method 1 - Reading the colours on the resistor
+// TODO: Explain this
+![Resistor_Colour_Rules](../ass2/images/bauteil_widerstand_kennzeichnung.png)
+### Method 2 - Using a multimeter
+// TODO: Explain this
+// TODO: insert image of measuring one resistor with multimeter
 
 ### Hardware Layout
 ![picoLEDImage](../ass2/images/instert_image_here)
@@ -75,6 +85,7 @@ The program can be visible by using minicom. When the build file has been made a
 [FlashLEDsSDK.uf2](../ass2/task2/build/FlashLEDsSDK.uf2)
 
 To get to the whole Task 2 directory instead, click [here](../ass2/task2/).
+
 
 ## Task 3
 Use the same setup as in Task 2 and create a binary conter that counts from 000 up
@@ -111,3 +122,36 @@ The program can be visible by using minicom. When the build file has been made a
 [LEDCounterSDK.uf2](../ass2/task3/build/LEDCounterSDK.uf2)
 
 To get to the whole Task 3 directory instead, click [here](../ass2/task3/).
+
+
+## Task 4
+Connect a 7-segment display to the Pico. Implement a counter that counts from 0 up
+to 9, then count back to 0, and repeats infinitely. Make a delay of 1 second between
+the increments/decrements of the counter!\
+Use pins GP0, GP1, …, GP6 for segments A, B, …, G, respectively!
+Hint: If you want to set several GPIO ports using only one instruction, a C function
+called gpio_put_all(…) can be useful!
+
+### Explanation Code
+//TODO: enter explanation of code here
+// TODO: also enter image of new C function and another image describing how the input and bits / byte works (maybe use ur notes? are videos allowed?)
+
+### Hardware Layout
+![picoLEDImage](../ass2/images/instert_image_here)
+
+// TODO: Explain wiring or make electric circuit plan\
+
+### Execution
+The program can be visible by using minicom. When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you load the file onto the pico with "sudo picotool load HelloWorld.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico.
+
+//TODO: enter further explanation here
+
+**Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
+
+### Sourcecode files
+[DisplayCounterSDK.S](../ass2/task4/DisplayCounterSDK.S)\
+[CMakeLists.txt](../ass2/task4/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass2/task4/pico_sdk_import.cmake)\
+[DisplayCounterSDK.uf2](../ass2/task4/build/DisplayCounterSDK.uf2)
+
+To get to the whole Task 4 directory instead, click [here](../ass2/task4/).
