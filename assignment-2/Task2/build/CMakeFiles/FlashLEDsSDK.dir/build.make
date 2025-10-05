@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/student/Computer Technology/assignment-2/Task2"
+CMAKE_SOURCE_DIR = /home/student/CompTech/assignment-2/Task2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/student/Computer Technology/assignment-2/Task2/build"
+CMAKE_BINARY_DIR = /home/student/CompTech/assignment-2/Task2/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/FlashLEDsSDK.dir/depend.make
@@ -78,25 +78,25 @@ include CMakeFiles/FlashLEDsSDK.dir/flags.make
 
 CMakeFiles/FlashLEDsSDK.dir/flashledssdk.S.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/flashledssdk.S.obj: ../flashledssdk.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building ASM object CMakeFiles/FlashLEDsSDK.dir/flashledssdk.S.obj"
-	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/flashledssdk.S.obj   -c "/home/student/Computer Technology/assignment-2/Task2/flashledssdk.S"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building ASM object CMakeFiles/FlashLEDsSDK.dir/flashledssdk.S.obj"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/flashledssdk.S.obj   -c /home/student/CompTech/assignment-2/Task2/flashledssdk.S
 
 CMakeFiles/FlashLEDsSDK.dir/sdklink.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/sdklink.c.obj: ../sdklink.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/FlashLEDsSDK.dir/sdklink.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/sdklink.c.obj -c "/home/student/Computer Technology/assignment-2/Task2/sdklink.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/FlashLEDsSDK.dir/sdklink.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/sdklink.c.obj -c /home/student/CompTech/assignment-2/Task2/sdklink.c
 
 CMakeFiles/FlashLEDsSDK.dir/sdklink.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FlashLEDsSDK.dir/sdklink.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/student/Computer Technology/assignment-2/Task2/sdklink.c" > CMakeFiles/FlashLEDsSDK.dir/sdklink.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/student/CompTech/assignment-2/Task2/sdklink.c > CMakeFiles/FlashLEDsSDK.dir/sdklink.c.i
 
 CMakeFiles/FlashLEDsSDK.dir/sdklink.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FlashLEDsSDK.dir/sdklink.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/student/Computer Technology/assignment-2/Task2/sdklink.c" -o CMakeFiles/FlashLEDsSDK.dir/sdklink.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/student/CompTech/assignment-2/Task2/sdklink.c -o CMakeFiles/FlashLEDsSDK.dir/sdklink.c.s
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: /home/student/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj -c /home/student/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i: cmake_force
@@ -109,7 +109,7 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdli
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: /home/student/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj -c /home/student/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i: cmake_force
@@ -122,7 +122,7 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_g
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: /home/student/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj -c /home/student/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i: cmake_force
@@ -135,7 +135,7 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: /home/student/pico/pico-sdk/src/rp2_common/pico_platform/platform.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj -c /home/student/pico/pico-sdk/src/rp2_common/pico_platform/platform.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i: cmake_force
@@ -148,7 +148,7 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_platf
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: /home/student/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj -c /home/student/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i: cmake_force
@@ -161,7 +161,7 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_s
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: /home/student/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj -c /home/student/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i: cmake_force
@@ -174,12 +174,12 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_i
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: /home/student/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building ASM object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building ASM object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj   -c /home/student/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_sync/sem.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_sync/sem.c.obj: /home/student/pico/pico-sdk/src/common/pico_sync/sem.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_sync/sem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_sync/sem.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_sync/sem.c.obj -c /home/student/pico/pico-sdk/src/common/pico_sync/sem.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_sync/sem.c.i: cmake_force
@@ -192,7 +192,7 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_sync/sem.
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj: /home/student/pico/pico-sdk/src/common/pico_sync/lock_core.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj -c /home/student/pico/pico-sdk/src/common/pico_sync/lock_core.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_sync/lock_core.c.i: cmake_force
@@ -205,7 +205,7 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_sync/lock
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_time/time.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_time/time.c.obj: /home/student/pico/pico-sdk/src/common/pico_time/time.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_time/time.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_time/time.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_time/time.c.obj -c /home/student/pico/pico-sdk/src/common/pico_time/time.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_time/time.c.i: cmake_force
@@ -218,7 +218,7 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_time/time
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj: /home/student/pico/pico-sdk/src/common/pico_time/timeout_helper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj -c /home/student/pico/pico-sdk/src/common/pico_time/timeout_helper.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i: cmake_force
@@ -231,7 +231,7 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_time/time
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: /home/student/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj -c /home/student/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i: cmake_force
@@ -244,7 +244,7 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_t
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_util/datetime.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_util/datetime.c.obj: /home/student/pico/pico-sdk/src/common/pico_util/datetime.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_util/datetime.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_util/datetime.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_util/datetime.c.obj -c /home/student/pico/pico-sdk/src/common/pico_util/datetime.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_util/datetime.c.i: cmake_force
@@ -257,7 +257,7 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_util/date
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_util/pheap.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_util/pheap.c.obj: /home/student/pico/pico-sdk/src/common/pico_util/pheap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_util/pheap.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_util/pheap.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_util/pheap.c.obj -c /home/student/pico/pico-sdk/src/common/pico_util/pheap.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_util/pheap.c.i: cmake_force
@@ -270,7 +270,7 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_util/phea
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_util/queue.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_util/queue.c.obj: /home/student/pico/pico-sdk/src/common/pico_util/queue.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_util/queue.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_util/queue.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_util/queue.c.obj -c /home/student/pico/pico-sdk/src/common/pico_util/queue.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_util/queue.c.i: cmake_force
@@ -283,7 +283,7 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_util/queu
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_sync/mutex.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_sync/mutex.c.obj: /home/student/pico/pico-sdk/src/common/pico_sync/mutex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_sync/mutex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_sync/mutex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_sync/mutex.c.obj -c /home/student/pico/pico-sdk/src/common/pico_sync/mutex.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_sync/mutex.c.i: cmake_force
@@ -296,7 +296,7 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_sync/mute
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj: /home/student/pico/pico-sdk/src/common/pico_sync/critical_section.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj -c /home/student/pico/pico-sdk/src/common/pico_sync/critical_section.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_sync/critical_section.c.i: cmake_force
@@ -309,7 +309,7 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/common/pico_sync/crit
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: /home/student/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj -c /home/student/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i: cmake_force
@@ -322,12 +322,12 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_u
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj: /home/student/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building ASM object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building ASM object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj   -c /home/student/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: /home/student/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj -c /home/student/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i: cmake_force
@@ -340,7 +340,7 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_runti
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: /home/student/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj -c /home/student/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i: cmake_force
@@ -353,7 +353,7 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: /home/student/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj -c /home/student/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i: cmake_force
@@ -366,7 +366,7 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_p
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: /home/student/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj -c /home/student/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i: cmake_force
@@ -379,7 +379,7 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_v
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: /home/student/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj -c /home/student/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i: cmake_force
@@ -392,7 +392,7 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_w
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: /home/student/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj -c /home/student/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
@@ -405,7 +405,7 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_x
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: /home/student/pico/pico-sdk/src/rp2_common/pico_printf/printf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj -c /home/student/pico/pico-sdk/src/rp2_common/pico_printf/printf.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i: cmake_force
@@ -418,12 +418,12 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_print
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: /home/student/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building ASM object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building ASM object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj   -c /home/student/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: /home/student/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj -c /home/student/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i: cmake_force
@@ -436,17 +436,17 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_bootr
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj: /home/student/pico/pico-sdk/src/rp2_common/pico_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Building ASM object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building ASM object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj   -c /home/student/pico/pico-sdk/src/rp2_common/pico_divider/divider.S
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj: /home/student/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_32) "Building ASM object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building ASM object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj   -c /home/student/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: /home/student/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj -c /home/student/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i: cmake_force
@@ -459,7 +459,7 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_doubl
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: /home/student/pico/pico-sdk/src/rp2_common/pico_double/double_math.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj -c /home/student/pico/pico-sdk/src/rp2_common/pico_double/double_math.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i: cmake_force
@@ -472,22 +472,22 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_doubl
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: /home/student/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_35) "Building ASM object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building ASM object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj   -c /home/student/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: /home/student/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_36) "Building ASM object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building ASM object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj   -c /home/student/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj: /home/student/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_37) "Building ASM object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building ASM object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj   -c /home/student/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: /home/student/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj -c /home/student/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i: cmake_force
@@ -500,7 +500,7 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_float
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: /home/student/pico/pico-sdk/src/rp2_common/pico_float/float_math.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj -c /home/student/pico/pico-sdk/src/rp2_common/pico_float/float_math.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i: cmake_force
@@ -513,12 +513,12 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_float
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: /home/student/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_40) "Building ASM object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building ASM object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj   -c /home/student/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: /home/student/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj -c /home/student/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i: cmake_force
@@ -531,17 +531,17 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_mallo
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: /home/student/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_42) "Building ASM object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building ASM object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj   -c /home/student/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: /home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_43) "Building ASM object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building ASM object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj   -c /home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: /home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
 	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj -c /home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i: cmake_force
@@ -554,7 +554,7 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stand
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: /home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj -c /home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i: cmake_force
@@ -567,7 +567,7 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stand
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: /home/student/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj -c /home/student/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i: cmake_force
@@ -580,7 +580,7 @@ CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: CMakeFiles/FlashLEDsSDK.dir/flags.make
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: /home/student/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj -c /home/student/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
 
 CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i: cmake_force
@@ -694,13 +694,13 @@ FlashLEDsSDK.elf: CMakeFiles/FlashLEDsSDK.dir/home/student/pico/pico-sdk/src/rp2
 FlashLEDsSDK.elf: CMakeFiles/FlashLEDsSDK.dir/build.make
 FlashLEDsSDK.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 FlashLEDsSDK.elf: CMakeFiles/FlashLEDsSDK.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_48) "Linking CXX executable FlashLEDsSDK.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/CompTech/assignment-2/Task2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Linking CXX executable FlashLEDsSDK.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FlashLEDsSDK.dir/link.txt --verbose=$(VERBOSE)
-	/usr/bin/arm-none-eabi-objcopy -Oihex /home/student/Computer\ Technology/assignment-2/Task2/build/FlashLEDsSDK.elf FlashLEDsSDK.hex
-	/usr/bin/arm-none-eabi-objcopy -Obinary /home/student/Computer\ Technology/assignment-2/Task2/build/FlashLEDsSDK.elf FlashLEDsSDK.bin
-	/usr/bin/arm-none-eabi-objdump -h /home/student/Computer\ Technology/assignment-2/Task2/build/FlashLEDsSDK.elf >FlashLEDsSDK.dis
-	/usr/bin/arm-none-eabi-objdump -d /home/student/Computer\ Technology/assignment-2/Task2/build/FlashLEDsSDK.elf >>FlashLEDsSDK.dis
-	elf2uf2/elf2uf2 /home/student/Computer\ Technology/assignment-2/Task2/build/FlashLEDsSDK.elf FlashLEDsSDK.uf2
+	/usr/bin/arm-none-eabi-objcopy -Oihex /home/student/CompTech/assignment-2/Task2/build/FlashLEDsSDK.elf FlashLEDsSDK.hex
+	/usr/bin/arm-none-eabi-objcopy -Obinary /home/student/CompTech/assignment-2/Task2/build/FlashLEDsSDK.elf FlashLEDsSDK.bin
+	/usr/bin/arm-none-eabi-objdump -h /home/student/CompTech/assignment-2/Task2/build/FlashLEDsSDK.elf >FlashLEDsSDK.dis
+	/usr/bin/arm-none-eabi-objdump -d /home/student/CompTech/assignment-2/Task2/build/FlashLEDsSDK.elf >>FlashLEDsSDK.dis
+	elf2uf2/elf2uf2 /home/student/CompTech/assignment-2/Task2/build/FlashLEDsSDK.elf FlashLEDsSDK.uf2
 
 # Rule to build all files generated by this target.
 CMakeFiles/FlashLEDsSDK.dir/build: FlashLEDsSDK.elf
@@ -712,6 +712,6 @@ CMakeFiles/FlashLEDsSDK.dir/clean:
 .PHONY : CMakeFiles/FlashLEDsSDK.dir/clean
 
 CMakeFiles/FlashLEDsSDK.dir/depend:
-	cd "/home/student/Computer Technology/assignment-2/Task2/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/student/Computer Technology/assignment-2/Task2" "/home/student/Computer Technology/assignment-2/Task2" "/home/student/Computer Technology/assignment-2/Task2/build" "/home/student/Computer Technology/assignment-2/Task2/build" "/home/student/Computer Technology/assignment-2/Task2/build/CMakeFiles/FlashLEDsSDK.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /home/student/CompTech/assignment-2/Task2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/CompTech/assignment-2/Task2 /home/student/CompTech/assignment-2/Task2 /home/student/CompTech/assignment-2/Task2/build /home/student/CompTech/assignment-2/Task2/build /home/student/CompTech/assignment-2/Task2/build/CMakeFiles/FlashLEDsSDK.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/FlashLEDsSDK.dir/depend
 

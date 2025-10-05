@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/student/Computer Technology/assignment-2/Task2/sdklink.c
+/home/student/CompTech/assignment-2/Task2/sdklink.c
 hardware/gpio.h
-/home/student/Computer Technology/assignment-2/Task2/hardware/gpio.h
+/home/student/CompTech/assignment-2/Task2/hardware/gpio.h
 
 /home/student/pico/pico-sdk/src/boards/include/boards/pico.h
 

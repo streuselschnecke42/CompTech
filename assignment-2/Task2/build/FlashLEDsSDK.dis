@@ -1,5 +1,5 @@
 
-/home/student/Computer Technology/assignment-2/Task2/build/FlashLEDsSDK.elf:     file format elf32-littlearm
+/home/student/CompTech/assignment-2/Task2/build/FlashLEDsSDK.elf:     file format elf32-littlearm
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
@@ -46,7 +46,7 @@ Idx Name          Size      VMA       LMA       File off  Algn
  20 .debug_frame  00000028  00000000  00000000  00006878  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
-/home/student/Computer Technology/assignment-2/Task2/build/FlashLEDsSDK.elf:     file format elf32-littlearm
+/home/student/CompTech/assignment-2/Task2/build/FlashLEDsSDK.elf:     file format elf32-littlearm
 
 
 Disassembly of section .boot2:
@@ -368,45 +368,45 @@ Disassembly of section .text:
 10000358:	10002238 	.word	0x10002238
 
 1000035c <main>:
-1000035c:	2012      	movs	r0, #18
+1000035c:	2000      	movs	r0, #0
 1000035e:	f000 f84b 	bl	100003f8 <gpio_init>
-10000362:	2012      	movs	r0, #18
+10000362:	2000      	movs	r0, #0
 10000364:	2101      	movs	r1, #1
 10000366:	f000 f833 	bl	100003d0 <link_gpio_set_dir>
-1000036a:	2013      	movs	r0, #19
+1000036a:	2001      	movs	r0, #1
 1000036c:	f000 f844 	bl	100003f8 <gpio_init>
-10000370:	2013      	movs	r0, #19
+10000370:	2001      	movs	r0, #1
 10000372:	2101      	movs	r1, #1
 10000374:	f000 f82c 	bl	100003d0 <link_gpio_set_dir>
-10000378:	2014      	movs	r0, #20
+10000378:	2002      	movs	r0, #2
 1000037a:	f000 f83d 	bl	100003f8 <gpio_init>
-1000037e:	2014      	movs	r0, #20
+1000037e:	2002      	movs	r0, #2
 10000380:	2101      	movs	r1, #1
 10000382:	f000 f825 	bl	100003d0 <link_gpio_set_dir>
 
 10000386 <loop>:
-10000386:	2012      	movs	r0, #18
+10000386:	2000      	movs	r0, #0
 10000388:	2101      	movs	r1, #1
 1000038a:	f000 f82b 	bl	100003e4 <link_gpio_put>
 1000038e:	480f      	ldr	r0, [pc, #60]	; (100003cc <loop+0x46>)
 10000390:	f000 fd2c 	bl	10000dec <sleep_ms>
-10000394:	2012      	movs	r0, #18
+10000394:	2000      	movs	r0, #0
 10000396:	2100      	movs	r1, #0
 10000398:	f000 f824 	bl	100003e4 <link_gpio_put>
-1000039c:	2013      	movs	r0, #19
+1000039c:	2001      	movs	r0, #1
 1000039e:	2101      	movs	r1, #1
 100003a0:	f000 f820 	bl	100003e4 <link_gpio_put>
 100003a4:	4809      	ldr	r0, [pc, #36]	; (100003cc <loop+0x46>)
 100003a6:	f000 fd21 	bl	10000dec <sleep_ms>
-100003aa:	2013      	movs	r0, #19
+100003aa:	2001      	movs	r0, #1
 100003ac:	2100      	movs	r1, #0
 100003ae:	f000 f819 	bl	100003e4 <link_gpio_put>
-100003b2:	2014      	movs	r0, #20
+100003b2:	2002      	movs	r0, #2
 100003b4:	2101      	movs	r1, #1
 100003b6:	f000 f815 	bl	100003e4 <link_gpio_put>
 100003ba:	4804      	ldr	r0, [pc, #16]	; (100003cc <loop+0x46>)
 100003bc:	f000 fd16 	bl	10000dec <sleep_ms>
-100003c0:	2014      	movs	r0, #20
+100003c0:	2002      	movs	r0, #2
 100003c2:	2100      	movs	r1, #0
 100003c4:	f000 f80e 	bl	100003e4 <link_gpio_put>
 100003c8:	e7dd      	b.n	10000386 <loop>
