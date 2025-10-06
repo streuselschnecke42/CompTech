@@ -203,7 +203,7 @@ For this task, it is also helpful to write down what number needs what letters a
 ![Digits_Display](../ass2/images/Digits_Display.jpg)
 
 ### Hardware Layout
-Note: We were 2 people, but only had one 1 digit 7-segment display. Therefore, one of us was using their personal project for this task. **The Code is still the same and the wiring from A to G with the pico pins, was still done according to the task!**\
+Note: We were 2 people, but only had one 1 digit 7-segment display. Therefore, one of us was using their personal project for this task. **The Code is still the same and the wiring from A to G with the pico pins, is still done according to the task! There are just some additional pins on this display which are also connected to the pico but won't be used in this task and can therefore be ignored!**\
 ![Layout_Display_Front](../ass2/images/Task4_Layout_FRONT.jpg)
 ![Layout_Display_Front](../ass2/images/Task4_Layout_BACK.jpg)
 ![Layout_Display_Front](../ass2/images/Task4_Layout_TOP.jpg)
@@ -211,9 +211,8 @@ Note: We were 2 people, but only had one 1 digit 7-segment display. Therefore, o
 // TODO: Explain wiring or make electric circuit plan
 
 ### Execution
-The program can be visible by using minicom. When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you load the file onto the pico with "sudo picotool load HelloWorld.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico.
-
-//TODO: enter further explanation here
+When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you hold down the BOOTSEL button while plugging the pico into your device.Then, load the file onto the pico with "sudo picotool load FlashLEDsSDK.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico.\
+The 7 segment display should now count from 0 up to 9 and back to 0 in an endless loop. Each diode on the display represents 1 bit in the binary number that is used in the [link_gpio_put_all](../ass2/images/gpio_put_all_function.PNG) function. Each counting demontration has a 1-second-pause inbetween.
 
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
