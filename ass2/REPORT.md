@@ -132,10 +132,15 @@ value 111, count back to 000 one step at a time, repeate infinitely. Make one se
 delay between the counter values.
 
 ### Explanation Code
-//TODO: enter further explanation of code here
+To get the 3 LEDs working for this task, it was easier to just copy the base setup of Task 2. Therefore, [sdklink.c](../ass2/task3/sdklink.c) and [flashledssdk.S](../ass2/task2/flashledssdk.S) was copied and reused for this task. Functions like nk_gpio_put and link_gpio_set_dir were still used here afterall. The definition of the 3 LEDs (.EQU	LED_PINx, 0) was also reused. The main function also stayed the same, since we still need to initialize all LEDs again, just like last time. The rest of the program used a different code.\
+After main, the program goes to the checkbits function, which checks each bit one by one and turns on the specific LEDs that are connected to a bit that is equal to 1. The [sdklink.c](../ass2/task3/sdklink.c) file now contains a new C function, that takes the counter variable stored in R7 as input (by moving it to R0) and another variable stored in R1, that represents the position of the bit that we want. The C function takes the binary value of the decimal value that was entered (counter that was originally from R7) and shifts the pointer to the desired position (second input of function; R1). It basically shifts "off" all non-relevant bits until it reaches the specific position, it then replaces all the other non-relevant values with 0 and only that one bit value remains, which will then be returned to the checkbits function in the assembly code. The value, that the bit holds will be put into the link_gpio_put function together with the corresponding LED. If the bit value was 1, that LED will then glow and if it was 0, the LED will turn off or remain off. \
+The checkbits function will check all 3 bits, then pause for 1 second using sleep_ms. It will then redirect the program to either the backwards or forwards function, depending on the value in the loop flag stored in Register 6.\
+The forwards function adds 0001 in binary (value 1 in decimal) and then compares the value to the binary value 0111. If the counter R7 has reached 0111, the function changeflagzero is called, which sets the value in Register 6 (loop flag) to 0, to signal to the checkbits function that it now has to send the program to the backwards method instead, when it reaches the end of its' program.\
+The backwards function subtracts 0001 in binary (value 1 in decimal) and then compares the value to the binary value 0000. If the counter R7 has reached 0000, the function changeflagone is called, which sets the value in Register 6 (loop flag) to 1, to signal to the checkbits function that it now has to send the program to the forwards method instead, when it reaches the end of its' program.\
+This will loop endlessly, as visible in the program, since there are no conditions set to end the program.
 
-#### Explanation of the C function "get_binary" in sdklink.c
-Here is an example from the [testing_playground](../testing_playground/binary_values.c) to show how the function "get_binary" in [sdklink.c](../ass2/task3/sdklink.c) works:
+#### The new C function "get_binary" in sdklink.c
+Here is an example from the [testing_playground](../testing_playground/binary_values.c) to show how the function "get_binary" in [sdklink.c](../ass2/task3/sdklink.c) works:\
 ![binary_shift_function_in_C](../ass2/images/getting_bits_explained.PNG)
 
 ### Hardware Layout
