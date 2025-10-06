@@ -135,7 +135,7 @@ delay between the counter values.
 //TODO: enter further explanation of code here
 
 #### Explanation of the C function "get_binary" in sdklink.c
-Here is an example from the [testing_playground](../testing_playground/binary_values.c) to show how the function "get_binary" in [sdklink.c](../ass2/task3/sdklink.c) works:
+Here is an example from the [testing_playground](../testing_playground/binary_values.c) to show how the function "get_binary" in [sdklink.c](../ass2/task3/sdklink.c) works:\
 ![binary_shift_function_in_C](../ass2/images/getting_bits_explained.PNG)
 
 ### Hardware Layout
