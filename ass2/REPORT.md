@@ -151,9 +151,8 @@ Note: I don't have green LEDs, so the cable colours will imitate the colours of 
 ~ same as task 2 ~
 
 ### Execution
-The program can be visible by using minicom. When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you load the file onto the pico with "sudo picotool load HelloWorld.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico.
-
-//TODO: enter further explanation here
+When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you hold down the BOOTSEL button while plugging the pico into your device.Then, load the file onto the pico with "sudo picotool load FlashLEDsSDK.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico.\
+The LEDs should now count up in binary from 0000 to 0111 and back to 0000 in an endless loop. Each LED represents 1 bit in the binary number. For this layout, the top LED represents the bit at position 0 (rightmost bit), the middle LED is representing the bit at position 1, and the bottom LED is representing the bit at position 2. It will only count to 0111, so only 3 LEDs are needed. Each counting demontration has a 1-second-pause inbetween.
 
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
