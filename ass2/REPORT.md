@@ -9,7 +9,8 @@ Discipline: NGDNS, NGDPV
 
 
 # Tasks
-## Task 1
+
+# Task 1
 - Download the source code for the Hello World program presented on page
 24 in Stephen Smith’s book.
 - Modify the program so that the counter starts at 100, decreases by one each
@@ -19,7 +20,7 @@ decreasing again, in an infinite loop
 - Compile and upload the program to the Pico. Open minicom, putty or a
 similar terminal to show the result
 
-### Explanation Code
+## Explanation Code
 For this task, minicom was used to display the output. The task was pretty straightforward.
 
 The pre-written program already had needed variables assigned and a working code. So, all that was needed to do was to change it, so it counts from 100 to 0 with endless repetitions.\
@@ -27,13 +28,13 @@ The main program set the counter (Register 7) to 101. This way, the counter woul
 The loop starts by storing the address "helloworld" of the string "Hello World %d\n" onto Register 0. It then decreases the counter (Register 7) by 1, moves that new value in Register 7 onto Register 1, and calls the print function. This function then prints the String "Hello World " combined with the value in Register 1 "%d" and a new line at the end "\n".\
 Afterwards the value of Register 7 will be compared to 0 to see if the value is already at 0 and needs to be reset or not. If the value in Register 7 is not 0 yet, the loop will continue (start over) until it reaches 0. If the value is indeed 0, the "pointer" will be moved to the reset function, which then resets the value of Register 7 to 101, and sends you back to the top of the loop function.
 
-### Execution
+## Execution
 The program can be visible by using minicom. When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you load the file onto the pico with "sudo picotool load HelloWorld.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico. Use the command "minicom -b 115200 -o -D /dev/ttyACM0" to open minicom and see the program's output.\
 ![hello_world_minicom](../ass2/images/hello_world_minicom.png)\
 This whole program will loop forever, until you unplug the pico or press Ctrl A and then Z for help and choose X for "reset and exit".\
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
-### Sourcecode files
+## Sourcecode files
 [HelloWorld.S](../ass2/task1/HelloWorld.S)\
 [CMakeLists.txt](../ass2/task1/HelloWorld.S)\
 [pico_sdk_import.cmake](../ass2/task1/pico_sdk_import.cmake)\
@@ -42,7 +43,7 @@ This whole program will loop forever, until you unplug the pico or press Ctrl A 
 To get to the whole Task 1 directory instead, click [here](../ass2/task1/).
 
 
-## Task 2
+# Task 2
 Connect one green, one yellow and one red light to three of the pins, in the same
 order as a traffic light. Then, write a program to make them flash like a traffic light.\
 Use pins GP0 for green, GP1 for yellow and GP2 for green LED! Also, make sure
@@ -55,7 +56,7 @@ Note: The functions link_gpio_put and link_gpio_set_dir are C functions, not
 assembly, but you don’t need to care much about this, just remember to copy the
 file sdklink.c!
 
-### Explanation Code
+## Explanation Code
 We start off by defining 3 LEDs using .EQU LED_PIN followed by the number (for example LED_PIN1). We then use a comma in the same line to set the GP (pico output pin). So for example, LED 1 would be set on GP0 which would look something like this in Assembly: ".EQU	LED_PIN1, 0". Doing that with all 3 LEDS, and also setting the output to GPIO_OUT on 1, makes it now possible to integrate the pico pins in the program. We also set a pause timer for 200ms: ".EQU	sleep_time, 200	".\
 The main code is to configure all LEDS. Each LED_PIN will be initialized, by using the pre-written gpio_init function that comes from the [sdklink.c](../ass2/task2/sdklink.c) file, that calls the original function in the gpio.h file. Next, the GPIO_OUT will be set as second variable (so, Register 1), while the LED_PIN will remain in Register 0 as first variable that will be handed down in the function "link_gpio_set_dir". This function configures the output pins that will be used.\
 After all 3 LEDs have been initialized and configured, the loop will start. Here, the first LED will be turned on first, by setting it to 1 using the pre-written link_gpio_put function in the [sdklink.c](../ass2/task2/sdklink.c) file (that then calls the original function in the gpio.h file). After an LED is turned on, it will stay on for 200ms using the pre-written sleep_ms function. After 200ms have passed, the LED will be turned off again using the same procedure that was used to turn it on, only that to turn it off, value 0 will be used instead of 1.\
@@ -65,7 +66,7 @@ The [sdklink.c](../ass2/task2/sdklink.c) file itself uses pre-written functions 
 The path for the gpio.h file may differ from device to device but should be accessible through this path or similar:\
 **/home/username/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h**
 
-### Hardware - How to use the right resisor
+## Hardware - How to use the right resisor
 ### Method 1 - Reading the colours on the resistor
 The resistor has colour stripes on its' body, which tell you what resistance in OHM it has.\
 If it has 4 rings, there is usally a space on the right side between the last ring and the other rings. Thats how you know where the end is and where to start reading. If there are 5, it sometimes may be hard to tell, but interpreting it both ways and also looking at its size and common right-sided colours, sometimes clears up the confusion.\
@@ -86,7 +87,7 @@ When it comes to putting which multimeter probe on what side, it didn't seem to 
 The image below, shows the result of measuring my 330 OHM resistor with a low-end multimeter (119 SEK at BILTEMA). The result may have some tolerances but it was always somewhere near 330 OHM.\
 ![Resistor_MeasuringWithMultimeter](../ass2/images/Widerstandstest.jpg)
 
-### Hardware - How know the direction of the LED
+## Hardware - How to know the direction of the LED
 (LED = Light Emitting Diode)
 
 ### Method 1 - Don't PANIC
@@ -105,18 +106,18 @@ Now, you hold either probe on one side and the other probe on the other side. Th
 It could also happen that the probes would be put onto the LED's wires the wrong way like in the [image](../ass2/images/Diodentest_DiodeLeuchtetNicht.jpg) below. If that happens, the LED wont glow, and you know that you should try to switch the sides and measure again. However, if even after switching, the LED won't glow, the LED could also be burned out (broken) or it was not measured correctly.
 ![Multimeter_DiodeCheckWrong](../ass2/images/Diodentest_DiodeLeuchtetNicht.jpg)
 
-### Hardware - Layout
+## Hardware - Layout
 Note: I don't have green LEDs, so the cable colours will imitate the colours of the LEDs instead.
 ![picoLEDImage](../ass2/images/Task2+3_Layout.jpg)
 
 // TODO: Explain wiring or make electric circuit plan
 
-### Execution
+## Execution
 When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you hold down the BOOTSEL button while plugging the pico into your device.Then, load the file onto the pico with "sudo picotool load FlashLEDsSDK.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico. Afterwards the LEDs should glow in the pattern: green -> yellow -> red -> yellow, and back to green in an infinite loop.
 
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
-### Sourcecode files
+## Sourcecode files
 [flashledssdk.S](../ass2/task2/flashledssdk.S)\
 [CMakeLists.txt](../ass2/task2/CMakeLists.txt)\
 [pico_sdk_import.cmake](../ass2/task2/pico_sdk_import.cmake)\
@@ -125,13 +126,13 @@ When the build file has been made and "cmake .." and "make" has been successfull
 To get to the whole Task 2 directory instead, click [here](../ass2/task2/).
 
 
-## Task 3
+# Task 3
 Use the same setup as in Task 2 and create a binary conter that counts from 000 up
 to 111. The picture below shows the first 4 steps. When the counter reaches its final
 value 111, count back to 000 one step at a time, repeate infinitely. Make one second
 delay between the counter values.
 
-### Explanation Code
+## Explanation Code
 To get the 3 LEDs working for this task, it was easier to just copy the base setup of Task 2. Therefore, [sdklink.c](../ass2/task2/sdklink.c) and [flashledssdk.S](../ass2/task2/flashledssdk.S) was copied and reused for this task. Functions like link_gpio_put and link_gpio_set_dir were still used here afterall. The definition of the 3 LEDs (.EQU	LED_PINx, 0) was also reused. The main function also stayed the same, since we still need to initialize all LEDs again, just like last time. The rest of the program used a different code.\
 After main, the program goes to the checkbits function, which checks each bit one by one and turns on the specific LEDs that are connected to a bit that is equal to 1. The [sdklink.c](../ass2/task3/sdklink.c) file now contains a new C function, that takes the counter variable stored in R7 as input (by moving it to R0) and another variable stored in R1, that represents the position of the bit that we want. The C function takes the binary value of the decimal value that was entered (counter that was originally from R7) and shifts the pointer to the desired position (second input of function; R1). It basically shifts "off" all non-relevant bits until it reaches the specific position, it then replaces all the other non-relevant values with 0 and only that one bit value remains, which will then be returned to the checkbits function in the assembly code. The value, that the bit holds will be put into the link_gpio_put function together with the corresponding LED. If the bit value was 1, that LED will then glow and if it was 0, the LED will turn off or remain off. \
 The checkbits function will check all 3 bits, then pause for 1 second using sleep_ms. It will then redirect the program to either the backwards or forwards function, depending on the value in the loop flag stored in Register 6.\
@@ -139,24 +140,24 @@ The forwards function adds 0001 in binary (value 1 in decimal) and then compares
 The backwards function subtracts 0001 in binary (value 1 in decimal) and then compares the value to the binary value 0000. If the counter R7 has reached 0000, the function changeflagone is called, which sets the value in Register 6 (loop flag) to 1, to signal to the checkbits function that it now has to send the program to the forwards function instead, when it reaches the end of its' program.\
 This will loop endlessly, as visible in the program, since there are no conditions set to end the program.
 
-#### The new C function "get_binary" in sdklink.c
+### The new C function "get_binary" in sdklink.c
 Here is an example from the [testing_playground](../testing_playground/binary_values.c) to show how the function "get_binary" in [sdklink.c](../ass2/task3/sdklink.c) works:\
 ![binary_shift_function_in_C](../ass2/images/getting_bits_explained.PNG)
 
-### Hardware Layout
+## Hardware Layout
 Note: I don't have green LEDs, so the cable colours will imitate the colours of the LEDs instead.
 ![picoLEDImage](../ass2/images/Task2+3_Layout.jpg)
 
 // TODO: Explain wiring or make electric circuit plan\
 ~ same as task 2 ~
 
-### Execution
+## Execution
 When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you hold down the BOOTSEL button while plugging the pico into your device.Then, load the file onto the pico with "sudo picotool load FlashLEDsSDK.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico.\
 The LEDs should now count up in binary from 0000 to 0111 and back to 0000 in an endless loop. Each LED represents 1 bit in the binary number. For this layout, the top LED represents the bit at position 0 (rightmost bit), the middle LED is representing the bit at position 1, and the bottom LED is representing the bit at position 2. It will only count to 0111, so only 3 LEDs are needed. Each counting demontration has a 1-second-pause inbetween.
 
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
-### Sourcecode files
+## Sourcecode files
 [ledcountersdk.S](../ass2/task3/ledcountersdk.S)\
 [CMakeLists.txt](../ass2/task3/CMakeLists.txt)\
 [pico_sdk_import.cmake](../ass2/task3/pico_sdk_import.cmake)\
@@ -165,7 +166,7 @@ The LEDs should now count up in binary from 0000 to 0111 and back to 0000 in an 
 To get to the whole Task 3 directory instead, click [here](../ass2/task3/).
 
 
-## Task 4
+# Task 4
 Connect a 7-segment display to the Pico. Implement a counter that counts from 0 up
 to 9, then count back to 0, and repeats infinitely. Make a delay of 1 second between
 the increments/decrements of the counter!\
@@ -173,7 +174,7 @@ Use pins GP0, GP1, …, GP6 for segments A, B, …, G, respectively!
 Hint: If you want to set several GPIO ports using only one instruction, a C function
 called gpio_put_all(…) can be useful!
 
-### Explanation Code
+## Explanation Code
 To get the 7-segment Display working for this task, it was easier to just copy the base setup of Task 3. Therefore, [sdklink.c](../ass2/task3/sdklink.c) and [ledcountersdk.S](../ass2/task3/ledcountersdk.S) was copied and reused for this task. Functions like link_gpio_set_dir were still used here afterall. However, the function link_gpio_put was obsolete for this task, since gpio_put_all was used instead. Even in Task 3, gpio_put_all would have been a **much** better choice in terms of code improvement (shortening). The definition of the LEDs (.EQU	LED_PINx, 0) from task 3 was reused in a more expanded way. Now, there are 7 variables to define, since the task asks for the display's LEDs A to G (so without DP sadly). The main function is also quite similar, just a little more expanded to set all 7 LEDs of the display, instead of just 3 LEDs like in task 2 and 3.\
 Some other functions were reused aswell, such as the forwards, backwards, chageflagzero (renamed) and changeflagone (renamed). The values for the counter in Register 7 was adjusted to the task and the checkbits function was replaced with the start function, but the value for the loop flag, that was stored in Register 6, remained.
 
@@ -190,7 +191,7 @@ The forwards function will increment the current counter (R7) by value 1 and the
 The backwards function decements the current counter (R7) by value 1 and then compares the value to the decimal value of 0. If the counter R7 has reached 0, the function changeflagtozero is called, which sets the value in Register 6 (loop flag) to 0, to signal to the start function that it now has to send the program to the forwards function instead, when it reaches the end of its' program.\
 This will loop endlessly, as visible in the program, since there are no conditions set to end the program.
 
-### Hardware - Finding out which pins are which - finding common cathode/anode
+## Hardware - Finding out which pins are which - Finding common cathode/anode
 Some of us lost the datasheet or just aren't sure which direction the current flows. In order not to accidentally break the 7 segment display, it can be tested using a much safer method. Such as using a multimeter. Use the same setup for the multimeter as in task 2. \
 ![Diodentest_Display_Setup](../ass2/images/Diodentest_Display_RichtungMesstäbe.jpg)\
 As previously in task 2, your black probe will be the negative and your red probe will the the positive part. It is adviced to put the black probe (negative part) on one pin and keeping it there while testing all the other pins on the display one by one with the red probe. If something glows, you write it down and move one further with the black probe and repeat the previously mentioned testing with the red probe on all other pins one by one.\
@@ -202,7 +203,7 @@ Once you have tested all pins or most of them, you should now know if your displ
 For this task, it is also helpful to write down what number needs what letters and what the pins on the display and the pico are for each letter.\
 ![Digits_Display](../ass2/images/Digits_Display.jpg)
 
-### Hardware Layout
+## Hardware Layout
 Note: We were 2 people, but only had one 1 digit 7-segment display. Therefore, one of us was using their personal project for this task. **The Code is still the same and the wiring from A to G with the pico pins, is still done according to the task! There are just some additional pins on this display which are also connected to the pico but won't be used in this task and can therefore be ignored!**\
 ![Layout_Display_Front](../ass2/images/Task4_Layout_FRONT.jpg)
 ![Layout_Display_Front](../ass2/images/Task4_Layout_BACK.jpg)
@@ -210,13 +211,13 @@ Note: We were 2 people, but only had one 1 digit 7-segment display. Therefore, o
 
 // TODO: Explain wiring or make electric circuit plan
 
-### Execution
+## Execution
 When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you hold down the BOOTSEL button while plugging the pico into your device.Then, load the file onto the pico with "sudo picotool load FlashLEDsSDK.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico.\
 The 7 segment display should now count from 0 up to 9 and back to 0 in an endless loop. Each diode on the display represents 1 bit in the binary number that is used in the [link_gpio_put_all](../ass2/images/gpio_put_all_function.PNG) function. Each counting demontration has a 1-second-pause inbetween.
 
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
-### Sourcecode files
+## Sourcecode files
 [DisplayCounterSDK.S](../ass2/task4/DisplayCounterSDK.S)\
 [CMakeLists.txt](../ass2/task4/CMakeLists.txt)\
 [pico_sdk_import.cmake](../ass2/task4/pico_sdk_import.cmake)\
@@ -225,17 +226,17 @@ The 7 segment display should now count from 0 up to 9 and back to 0 in an endles
 To get to the whole Task 4 directory instead, click [here](../ass2/task4/).
 
 ---
-### Sources
-**Images that weren't taken by ourselves**\
+# Sources
+## Images that weren't taken by ourselves
 https://www.elektronik-kompendium.de/sites/bau/1109051.htm \
 https://files.schudio.com/bishop-challoner-catholic-college/files/documents/Yr10-Chemistry-10Y3-Miss_Mayor-Week_5-4th_May-Products_of_Electrolysis.pdf \
 https://chemistry.stackexchange.com/questions/68533/which-is-anode-and-which-is-cathode
 
-**Pico Pinout**\
+## Pico Pinout
 https://pico2.pinout.xyz/ \
 https://datasheets.raspberrypi.com/pico/Pico-R3-A4-Pinout.pdf
 
-**7 Segment Display**\
+## 7 Segment Display
 **Note:** Some of those links refer to/contain information about 4 digit displays. This is because each group only got 1 One digit display and we were 2 people. One of us already had a 4 digit display at home, while the other was able to use the given one by the school.\
 https://forum.digikey.com/t/checking-7-segment-display/750?utm_source=chatgpt.com \
 https://soldered.com/productdata/2015/09/Soldered_LD3361BS_datasheet.pdf?srsltid=AfmBOoq0jtcJOlz52ymj_aYuQtiQMwl3hg2E0N3lksU43k0632qJvjb5 \
@@ -247,17 +248,17 @@ https://www.youtube.com/watch?v=qE5ycgqswGY \
 https://www.youtube.com/watch?v=fYAlE1u5rno \
 https://www.youtube.com/watch?v=5d-dtMyqUpc
 
-**Pico Instructions**\
+## Pico Instructions
 https://developer.arm.com/documentation/dui0473/m/arm-and-thumb-instructions/arm-and-thumb-instruction-summary \
 https://github.com/Apress/RP2040-Assembly-Language-Programming/tree/main \
 https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf
 
-**C coding**\
+## C coding
 https://stackoverflow.com/questions/55330597/how-do-i-execute-a-c-file \
 https://www.geeksforgeeks.org/c/c-switch-statement/ \
 https://www.youtube.com/watch?v=ciio80nkjB8&list=WL&index=12&t=240s
 
-**For general studying / Other**\
+## For general studying / Other
 https://www.raspberrypi.com/documentation/computers/getting-started.html \
 https://www.raspberrypi.com/documentation/microcontrollers/c_sdk.html \
 https://studio2.org.uk/jack/RP2040%20Assembly%20Language%20Programming%20%28Smith%29.pdf \
