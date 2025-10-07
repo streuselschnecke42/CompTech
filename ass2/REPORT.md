@@ -110,7 +110,9 @@ It could also happen that the probes would be put onto the LED's wires the wrong
 Note: I don't have green LEDs, so the cable colours will imitate the colours of the LEDs instead.
 ![picoLEDImage](../ass2/images/Task2+3_Layout.jpg)
 
-// TODO: Explain wiring or make electric circuit plan
+### Electric Circuit Plan
+Note: The application didn't have Pico H, so I used the normal Pico instead. Pin connection should still be correct **where it was used**.\
+![circuit_task2+3](../ass2/images/circuit_task2+3.png)
 
 ## Execution
 When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you hold down the BOOTSEL button while plugging the pico into your device.Then, load the file onto the pico with "sudo picotool load FlashLEDsSDK.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico. Afterwards the LEDs should glow in the pattern: green -> yellow -> red -> yellow, and back to green in an infinite loop.
@@ -148,8 +150,9 @@ Here is an example from the [testing_playground](../testing_playground/binary_va
 Note: I don't have green LEDs, so the cable colours will imitate the colours of the LEDs instead.
 ![picoLEDImage](../ass2/images/Task2+3_Layout.jpg)
 
-// TODO: Explain wiring or make electric circuit plan\
-~ same as task 2 ~
+### Electric Circuit Plan (same as task 2)
+Note: The application didn't have Pico H, so I used the normal Pico instead. Pin connection should still be correct **where it was used**.\
+![circuit_task2+3](../ass2/images/circuit_task2+3.png)
 
 ## Execution
 When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you hold down the BOOTSEL button while plugging the pico into your device.Then, load the file onto the pico with "sudo picotool load FlashLEDsSDK.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico.\
@@ -209,7 +212,11 @@ Note: We were 2 people, but only had one 1 digit 7-segment display. Therefore, o
 ![Layout_Display_Front](../ass2/images/Task4_Layout_BACK.jpg)
 ![Layout_Display_Front](../ass2/images/Task4_Layout_TOP.jpg)
 
-// TODO: Explain wiring or make electric circuit plan
+### Electric Circuit Plan
+Note: The application didn't have Pico H, so I used the normal Pico instead. Pin connection should still be correct **where it matters**.\
+If you connect common cathodes to a Pico output pins and leave them on LOW, the display will show something. This is used for multi-digit displays, when for example, displaying multiple digits at once (which isn't possible, so it's coded as an optical illusion to make it look like it can).\
+The task's code and principle still stays the same.\
+![circuit_task2+3](../ass2/images/circuit_task4.png)
 
 ## Execution
 When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you hold down the BOOTSEL button while plugging the pico into your device.Then, load the file onto the pico with "sudo picotool load FlashLEDsSDK.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico.\
@@ -262,4 +269,5 @@ https://www.youtube.com/watch?v=ciio80nkjB8&list=WL&index=12&t=240s
 https://www.raspberrypi.com/documentation/computers/getting-started.html \
 https://www.raspberrypi.com/documentation/microcontrollers/c_sdk.html \
 https://studio2.org.uk/jack/RP2040%20Assembly%20Language%20Programming%20%28Smith%29.pdf \
-https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico
+https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico \
+https://www.circuit-diagram.org/editor/
