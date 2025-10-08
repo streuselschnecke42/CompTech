@@ -13,22 +13,28 @@
 .global main    @ Provide program starting address
 
 main:
+	@Initialize Pin1
 	MOV	R0, #LED_PIN1
 	BL	gpio_init
 	MOV	R0, #LED_PIN1
 	MOV	R1, #GPIO_OUT
 	BL	link_gpio_set_dir
+	
+	@Initialize Pin2
 	MOV	R0, #LED_PIN2
 	BL	gpio_init
 	MOV	R0, #LED_PIN2
 	MOV	R1, #GPIO_OUT
 	BL	link_gpio_set_dir
+	
+	@Initialize Pin3
 	MOV	R0, #LED_PIN3
 	BL	gpio_init
 	MOV	R0, #LED_PIN3
 	MOV	R1, #GPIO_OUT
 	BL	link_gpio_set_dir
-loop:   MOV	R0, #LED_PIN1
+loop:   
+	MOV	R0, #LED_PIN1
 	MOV	R1, #1
 	BL	link_gpio_put
 	LDR	R0, =sleep_time
@@ -36,6 +42,7 @@ loop:   MOV	R0, #LED_PIN1
 	MOV	R0, #LED_PIN1
 	MOV	R1, #0
 	BL	link_gpio_put
+	
 	MOV	R0, #LED_PIN2
 	MOV	R1, #1
 	BL	link_gpio_put
@@ -44,6 +51,7 @@ loop:   MOV	R0, #LED_PIN1
 	MOV	R0, #LED_PIN2
 	MOV	R1, #0
 	BL	link_gpio_put
+	
 	MOV	R0, #LED_PIN3
 	MOV	R1, #1
 	BL	link_gpio_put
@@ -52,4 +60,14 @@ loop:   MOV	R0, #LED_PIN1
 	MOV	R0, #LED_PIN3
 	MOV	R1, #0
 	BL	link_gpio_put
-	B       loop
+	
+	MOV	R0, #LED_PIN2
+	MOV	R1, #1
+	BL	link_gpio_put
+	LDR	R0, =sleep_time
+	BL	sleep_ms
+	MOV	R0, #LED_PIN2
+	MOV	R1, #0
+	BL	link_gpio_put
+	
+	B       loop @loop infinitely

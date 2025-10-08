@@ -1051,9 +1051,9 @@ Discarded input sections
  .comment       0x00000000       0x52 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .ARM.attributes
                 0x00000000       0x2c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .text          0x00000000        0x0 /tmp/cchP1H2M.o
- .data          0x00000000        0x0 /tmp/cchP1H2M.o
- .bss           0x00000000        0x0 /tmp/cchP1H2M.o
+ .text          0x00000000        0x0 /tmp/ccWFY0JW.o
+ .data          0x00000000        0x0 /tmp/ccWFY0JW.o
+ .bss           0x00000000        0x0 /tmp/ccWFY0JW.o
  .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x00000000       0x10 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-atexit.o)
@@ -1317,11 +1317,11 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
 .boot2          0x10000000      0x100
                 0x10000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x10000000      0x100 /tmp/cchP1H2M.o
+ .boot2         0x10000000      0x100 /tmp/ccWFY0JW.o
                 0x10000100                __boot2_end__ = .
                 0x00000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x10000100     0x22c0
+.text           0x10000100     0x22a0
                 0x10000100                __logical_binary_start = .
  *(.vectors)
  .vectors       0x10000100       0xd4 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1383,198 +1383,198 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x100002c0                _init
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .text*)
  .text          0x100002c4       0x98 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
- .text          0x1000035c      0x1f8 CMakeFiles/binaryCounter.dir/binaryCounter.S.obj
+ .text          0x1000035c      0x1d8 CMakeFiles/binaryCounter.dir/binaryCounter.S.obj
                 0x1000035c                main
  .text.link_gpio_set_dir
-                0x10000554       0x14 CMakeFiles/binaryCounter.dir/sdklink.c.obj
-                0x10000554                link_gpio_set_dir
+                0x10000534       0x14 CMakeFiles/binaryCounter.dir/sdklink.c.obj
+                0x10000534                link_gpio_set_dir
  .text.link_gpio_put
-                0x10000568       0x14 CMakeFiles/binaryCounter.dir/sdklink.c.obj
-                0x10000568                link_gpio_put
+                0x10000548       0x14 CMakeFiles/binaryCounter.dir/sdklink.c.obj
+                0x10000548                link_gpio_put
  .text.gpio_init
-                0x1000057c       0x3c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x1000057c                gpio_init
+                0x1000055c       0x3c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x1000055c                gpio_init
  .text.hw_claim_or_assert
-                0x100005b8       0x44 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x100005b8                hw_claim_or_assert
+                0x10000598       0x44 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x10000598                hw_claim_or_assert
  .text.running_on_fpga
-                0x100005fc       0x10 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                0x100005fc                running_on_fpga
+                0x100005dc       0x10 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x100005dc                running_on_fpga
  .text.spin_locks_reset
-                0x1000060c       0x1c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x1000060c                spin_locks_reset
+                0x100005ec       0x1c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x100005ec                spin_locks_reset
  .text.next_striped_spin_lock_num
-                0x10000628       0x18 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x10000628                next_striped_spin_lock_num
+                0x10000608       0x18 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x10000608                next_striped_spin_lock_num
  .text.irq_set_enabled
-                0x10000640       0x24 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000640                irq_set_enabled
+                0x10000620       0x24 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000620                irq_set_enabled
  .text.irq_get_vtable_handler
-                0x10000664       0x10 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000664                irq_get_vtable_handler
+                0x10000644       0x10 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000644                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x10000674       0x54 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000674                irq_set_exclusive_handler
+                0x10000654       0x54 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000654                irq_set_exclusive_handler
  .text.irq_remove_handler
-                0x100006c8      0x1b4 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x100006c8                irq_remove_handler
+                0x100006a8      0x1b4 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x100006a8                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x1000087c       0xb4 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x1000087c                irq_add_tail_to_free_list
+                0x1000085c       0xb4 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x1000085c                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x10000930       0x24 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000930                irq_init_priorities
+                0x10000910       0x24 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000910                irq_init_priorities
  .text.lock_init
-                0x10000954       0x10 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x10000954                lock_init
+                0x10000934       0x10 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x10000934                lock_init
  .text.timer_pool_entry_comparator
-                0x10000964       0x34 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x10000964                timer_pool_entry_comparator
+                0x10000944       0x34 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000944                timer_pool_entry_comparator
  .text.sleep_until_callback
-                0x10000998       0x30 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000978       0x30 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.add_alarm_under_lock
-                0x100009c8      0x114 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x100009a8      0x114 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x10000adc      0x1d0 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000abc      0x1d0 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x10000cac       0x64 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x10000cac                alarm_pool_init_default
+                0x10000c8c       0x64 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000c8c                alarm_pool_init_default
  .text.alarm_pool_add_alarm_at
-                0x10000d10      0x19c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x10000d10                alarm_pool_add_alarm_at
+                0x10000cf0      0x19c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000cf0                alarm_pool_add_alarm_at
  .text.sleep_until
-                0x10000eac       0xc4 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x10000eac                sleep_until
+                0x10000e8c       0xc4 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000e8c                sleep_until
  .text.sleep_ms
-                0x10000f70       0x38 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x10000f70                sleep_ms
+                0x10000f50       0x38 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000f50                sleep_ms
  .text.hardware_alarm_irq_handler
-                0x10000fa8       0xb0 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10000f88       0xb0 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x10001058       0x18 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001058                hardware_alarm_claim
+                0x10001038       0x18 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001038                hardware_alarm_claim
  .text.time_us_64
-                0x10001070       0x18 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001070                time_us_64
+                0x10001050       0x18 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001050                time_us_64
  .text.busy_wait_until
-                0x10001088       0x20 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001088                busy_wait_until
+                0x10001068       0x20 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001068                busy_wait_until
  .text.hardware_alarm_set_callback
-                0x100010a8       0x8c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x100010a8                hardware_alarm_set_callback
+                0x10001088       0x8c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001088                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x10001134       0xe8 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001134                hardware_alarm_set_target
+                0x10001114       0xe8 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001114                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x1000121c       0x40 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x1000121c                hardware_alarm_cancel
+                0x100011fc       0x40 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x100011fc                hardware_alarm_cancel
  .text.ph_merge_nodes
-                0x1000125c       0x5c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x1000123c       0x5c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_post_alloc_init
-                0x100012b8      0x1b8 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x100012b8                ph_post_alloc_init
+                0x10001298      0x1b8 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001298                ph_post_alloc_init
  .text.ph_merge_two_pass
-                0x10001470       0x4c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001470                ph_merge_two_pass
+                0x10001450       0x4c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001450                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x100014bc      0x1b8 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x1000149c      0x1b8 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x10001674      0x1bc CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001674                ph_remove_head
+                0x10001654      0x1bc CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001654                ph_remove_head
  .text.ph_remove_and_free_node
-                0x10001830       0x7c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001830                ph_remove_and_free_node
+                0x10001810       0x7c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001810                ph_remove_and_free_node
  .text.mutex_init
-                0x100018ac       0x1c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x100018ac                mutex_init
+                0x1000188c       0x1c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x1000188c                mutex_init
  .text.recursive_mutex_init
-                0x100018c8       0x1c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x100018c8                recursive_mutex_init
+                0x100018a8       0x1c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x100018a8                recursive_mutex_init
  .text.runtime_init
-                0x100018e4       0xf4 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x100018e4                runtime_init
- .text.exit     0x100019d8        0x4 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x100019d8                exit
- .text.panic    0x100019dc       0x30 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x100019dc                panic
+                0x100018c4       0xf4 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x100018c4                runtime_init
+ .text.exit     0x100019b8        0x4 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x100019b8                exit
+ .text.panic    0x100019bc       0x30 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x100019bc                panic
  .text.hard_assertion_failure
-                0x10001a0c        0xc CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001a0c                hard_assertion_failure
+                0x100019ec        0xc CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x100019ec                hard_assertion_failure
  .text.clocks_init
-                0x10001a18      0x2c0 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x10001a18                clocks_init
+                0x100019f8      0x2c0 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x100019f8                clocks_init
  .text.pll_init
-                0x10001cd8       0xa8 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x10001cd8                pll_init
+                0x10001cb8       0xa8 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x10001cb8                pll_init
  .text.watchdog_start_tick
-                0x10001d80       0x10 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x10001d80                watchdog_start_tick
+                0x10001d60       0x10 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x10001d60                watchdog_start_tick
  .text.xosc_init
-                0x10001d90       0x28 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x10001d90                xosc_init
+                0x10001d70       0x28 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x10001d70                xosc_init
  .text._out_char
-                0x10001db8       0x10 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10001d98       0x10 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.weak_raw_vprintf
-                0x10001dc8       0x30 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x10001dc8                weak_raw_vprintf
- .text          0x10001df8       0x10 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x10001da8       0x30 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10001da8                weak_raw_vprintf
+ .text          0x10001dd8       0x10 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x10001e08       0x10 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10001e08                rom_func_lookup
+                0x10001de8       0x10 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10001de8                rom_func_lookup
  .text.rom_data_lookup
-                0x10001e18       0x10 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10001e18                rom_data_lookup
+                0x10001df8       0x10 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10001df8                rom_data_lookup
  .text.rom_funcs_lookup
-                0x10001e28       0x3c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10001e28                rom_funcs_lookup
+                0x10001e08       0x3c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10001e08                rom_funcs_lookup
  .text.__wrap___aeabi_uidiv
-                0x10001e64       0x4c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x10001e64                __wrap___aeabi_uidiv
-                0x10001e64                __wrap___aeabi_uidivmod
-                0x10001e64                div_u32u32
-                0x10001e64                divmod_u32u32
-                0x10001e6c                divmod_u32u32_unsafe
-                0x10001e94                divmod_u32u32_savestate
+                0x10001e44       0x4c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x10001e44                __wrap___aeabi_uidiv
+                0x10001e44                __wrap___aeabi_uidivmod
+                0x10001e44                div_u32u32
+                0x10001e44                divmod_u32u32
+                0x10001e4c                divmod_u32u32_unsafe
+                0x10001e74                divmod_u32u32_savestate
  .text.__aeabi_double_init
-                0x10001eb0       0xbc CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x10001eb0                __aeabi_double_init
+                0x10001e90       0xbc CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x10001e90                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x10001f6c       0x2c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10001f6c                double_table_shim_on_use_helper
+                0x10001f4c       0x2c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10001f4c                double_table_shim_on_use_helper
  .text.__aeabi_lmul
-                0x10001f98       0x32 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-                0x10001f98                __wrap___aeabi_lmul
- *fill*         0x10001fca        0x2 
+                0x10001f78       0x32 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                0x10001f78                __wrap___aeabi_lmul
+ *fill*         0x10001faa        0x2 
  .text.__aeabi_float_init
-                0x10001fcc       0x68 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x10001fcc                __aeabi_float_init
+                0x10001fac       0x68 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x10001fac                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x10002034       0x2c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x10002034                float_table_shim_on_use_helper
- .text          0x10002060       0x10 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x10002060                __aeabi_mem_init
- .text.memcpy   0x10002070        0xc CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x10002070                __wrap___aeabi_memcpy
-                0x10002070                __wrap_memcpy
+                0x10002014       0x2c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x10002014                float_table_shim_on_use_helper
+ .text          0x10002040       0x10 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x10002040                __aeabi_mem_init
+ .text.memcpy   0x10002050        0xc CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x10002050                __wrap___aeabi_memcpy
+                0x10002050                __wrap_memcpy
  .text.stdio_out_chars_no_crlf
-                0x1000207c       0x10 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x1000205c       0x10 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_out_chars_crlf
-                0x1000208c       0xac CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x1000206c       0xac CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_put_string
-                0x10002138       0xf8 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10002118       0xf8 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_putchar
-                0x10002230       0xa4 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10002230                __wrap_putchar
+                0x10002210       0xa4 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10002210                __wrap_putchar
  .text.__wrap_puts
-                0x100022d4       0x3c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x100022d4                __wrap_puts
- .text          0x10002310       0x68 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
-                0x10002310                strlen
+                0x100022b4       0x3c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100022b4                __wrap_puts
+ .text          0x100022f0       0x68 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+                0x100022f0                strlen
  *(.fini)
- .fini          0x10002378        0x4 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crti.o
-                0x10002378                _fini
- *fill*         0x1000237c        0x4 
- .fini.__stub   0x10002380       0x40 linker stubs
+ .fini          0x10002358        0x4 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crti.o
+                0x10002358                _fini
+ *fill*         0x1000235c        0x4 
+ .fini.__stub   0x10002360       0x40 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -1586,82 +1586,82 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x100023c0        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x100023c0                . = ALIGN (0x4)
+ .eh_frame      0x100023a0        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x100023a0                . = ALIGN (0x4)
 
-.glue_7         0x100023c0        0x0
- .glue_7        0x100023c0        0x0 linker stubs
+.glue_7         0x100023a0        0x0
+ .glue_7        0x100023a0        0x0 linker stubs
 
-.glue_7t        0x100023c0        0x0
- .glue_7t       0x100023c0        0x0 linker stubs
+.glue_7t        0x100023a0        0x0
+ .glue_7t       0x100023a0        0x0 linker stubs
 
-.vfp11_veneer   0x100023c0        0x0
- .vfp11_veneer  0x100023c0        0x0 linker stubs
+.vfp11_veneer   0x100023a0        0x0
+ .vfp11_veneer  0x100023a0        0x0 linker stubs
 
-.v4_bx          0x100023c0        0x0
- .v4_bx         0x100023c0        0x0 linker stubs
+.v4_bx          0x100023a0        0x0
+ .v4_bx         0x100023a0        0x0 linker stubs
 
-.iplt           0x100023c0        0x0
- .iplt          0x100023c0        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x100023a0        0x0
+ .iplt          0x100023a0        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x100023c0       0xb0
+.rodata         0x100023a0       0xb0
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.hardware_alarm_claim.str1.4
-                0x100023c0       0x22 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x100023e2        0x2 
+                0x100023a0       0x22 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x100023c2        0x2 
  .rodata.hard_assertion_failure.str1.4
-                0x100023e4        0xc CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x100023c4        0xc CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata.panic.str1.4
-                0x100023f0       0x12 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x10002402        0x2 
+                0x100023d0       0x12 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x100023e2        0x2 
  .rodata.__bi_44
-                0x10002404        0xc CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100023e4        0xc CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x10002410        0xc CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100023f0        0xc CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x1000241c        0xc CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100023fc        0xc CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.str1.4
-                0x10002428       0x44 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10002408       0x44 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.crlf_str.6110
-                0x1000246c        0x2 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10002470                . = ALIGN (0x4)
- *fill*         0x1000246e        0x2 
+                0x1000244c        0x2 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10002450                . = ALIGN (0x4)
+ *fill*         0x1000244e        0x2 
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x10002470                . = ALIGN (0x4)
+                0x10002450                . = ALIGN (0x4)
 
-.rel.dyn        0x10002470        0x0
- .rel.iplt      0x10002470        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
+.rel.dyn        0x10002450        0x0
+ .rel.iplt      0x10002450        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x10002470                __exidx_start = .
+                0x10002450                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x10002470                __exidx_end = .
-                0x10002470                . = ALIGN (0x4)
-                0x10002470                __binary_info_start = .
+                0x10002450                __exidx_end = .
+                0x10002450                . = ALIGN (0x4)
+                0x10002450                __binary_info_start = .
 
-.binary_info    0x10002470       0x1c
+.binary_info    0x10002450       0x1c
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr22
-                0x10002470        0x4 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10002450        0x4 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr30
-                0x10002474        0x4 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10002454        0x4 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr38
-                0x10002478        0x4 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10002458        0x4 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr44
-                0x1000247c        0x4 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x1000245c        0x4 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr50
-                0x10002480        0x4 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10002460        0x4 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr75
-                0x10002484        0x4 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10002464        0x4 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr81
-                0x10002488        0x4 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10002468        0x4 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
-                0x1000248c                __binary_info_end = .
-                0x1000248c                . = ALIGN (0x4)
-                0x1000248c                __etext = .
+                0x1000246c                __binary_info_end = .
+                0x1000246c                . = ALIGN (0x4)
+                0x1000246c                __etext = .
 
 .ram_vector_table
                 0x20000000       0xc0
@@ -1670,7 +1670,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x20000000       0xc0 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x20000000                ram_vector_table
 
-.data           0x200000c0      0x16c load address 0x1000248c
+.data           0x200000c0      0x16c load address 0x1000246c
                 0x200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -1747,33 +1747,33 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x2000022c                __data_end__ = .
 
 .tm_clone_table
-                0x2000022c        0x0 load address 0x100025f8
+                0x2000022c        0x0 load address 0x100025d8
  .tm_clone_table
                 0x2000022c        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x2000022c        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x2000022c        0x0 load address 0x100025f8
+.igot.plt       0x2000022c        0x0 load address 0x100025d8
  .igot.plt      0x2000022c        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x2000022c        0x0 load address 0x100025f8
+                0x2000022c        0x0 load address 0x100025d8
                 0x2000022c                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x20040000        0x0 load address 0x100025f8
+.scratch_x      0x20040000        0x0 load address 0x100025d8
                 0x20040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20040000                . = ALIGN (0x4)
                 0x20040000                __scratch_x_end__ = .
-                0x100025f8                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x100025d8                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20041000        0x0 load address 0x100025f8
+.scratch_y      0x20041000        0x0 load address 0x100025d8
                 0x20041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20041000                . = ALIGN (0x4)
                 0x20041000                __scratch_y_end__ = .
-                0x100025f8                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x100025d8                __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .bss            0x20000230      0x3cc
                 0x20000230                . = ALIGN (0x4)
@@ -1830,8 +1830,8 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  *(.stack*)
  .stack         0x20041000      0x800 CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x100025f8        0x0
-                0x100025f8                __flash_binary_end = .
+.flash_end      0x100025d8        0x0
+                0x100025d8                __flash_binary_end = .
                 0x20040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -1887,7 +1887,7 @@ LOAD CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico
 LOAD CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 LOAD CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 LOAD CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-LOAD /tmp/cchP1H2M.o
+LOAD /tmp/ccWFY0JW.o
 LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -1977,7 +1977,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000055c       0x2c CMakeFiles/binaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .ARM.attributes
-                0x00000588       0x22 /tmp/cchP1H2M.o
+                0x00000588       0x22 /tmp/ccWFY0JW.o
  .ARM.attributes
                 0x000005aa       0x1e /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes

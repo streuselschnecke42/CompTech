@@ -245,19 +245,4 @@ loop:
 	LDR R0, =sleep_time
 	BL sleep_ms
 	
-	@ Counter 0 (000)
-	MOV R0, #LED_PIN1
-	MOV R1, #0
-	BL link_gpio_put
-	
-	MOV R0, #LED_PIN2
-	MOV R1, #0
-	BL link_gpio_put
-	
-	MOV R0, #LED_PIN3
-	MOV R1, #0
-	BL link_gpio_put
-	LDR R0, =sleep_time
-	BL sleep_ms
-	
 	B loop

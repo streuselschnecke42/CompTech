@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/student/Computer Technology/assignment-2/Task1"
+CMAKE_SOURCE_DIR = /home/student/CompTech/assignment-2/Task1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/student/Computer Technology/assignment-2/Task1/build"
+CMAKE_BINARY_DIR = /home/student/CompTech/assignment-2/Task1/build
 
 # Utility rule file for cyw43_firmware_package.
 
@@ -76,8 +76,8 @@ pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package: pico-sdk
 
 
 pico-sdk/src/rp2_common/cyw43_driver/cyw43_resource.o: /home/student/pico/pico-sdk/lib/cyw43-driver/firmware/43439A0-7.95.49.00.combined
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/student/Computer Technology/assignment-2/Task1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Generating cyw43_resource.o"
-	cd /home/student/pico/pico-sdk/lib/cyw43-driver/firmware && /usr/bin/arm-none-eabi-objcopy -I binary -O elf32-littlearm -B arm --readonly-text --rename-section .data=.big_const,contents,alloc,load,readonly,data --redefine-sym _binary_43439A0_7_95_49_00_combined_start=fw_43439A0_7_95_49_00_start --redefine-sym _binary_43439A0_7_95_49_00_combined_end=fw_43439A0_7_95_49_00_end --redefine-sym _binary_43439A0_7_95_49_00_combined_size=fw_43439A0_7_95_49_00_size 43439A0-7.95.49.00.combined /home/student/Computer\ Technology/assignment-2/Task1/build/pico-sdk/src/rp2_common/cyw43_driver/cyw43_resource.o
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/CompTech/assignment-2/Task1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating cyw43_resource.o"
+	cd /home/student/pico/pico-sdk/lib/cyw43-driver/firmware && /usr/bin/arm-none-eabi-objcopy -I binary -O elf32-littlearm -B arm --readonly-text --rename-section .data=.big_const,contents,alloc,load,readonly,data --redefine-sym _binary_43439A0_7_95_49_00_combined_start=fw_43439A0_7_95_49_00_start --redefine-sym _binary_43439A0_7_95_49_00_combined_end=fw_43439A0_7_95_49_00_end --redefine-sym _binary_43439A0_7_95_49_00_combined_size=fw_43439A0_7_95_49_00_size 43439A0-7.95.49.00.combined /home/student/CompTech/assignment-2/Task1/build/pico-sdk/src/rp2_common/cyw43_driver/cyw43_resource.o
 
 cyw43_firmware_package: pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package
 cyw43_firmware_package: pico-sdk/src/rp2_common/cyw43_driver/cyw43_resource.o
@@ -91,10 +91,10 @@ pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/build
 .PHONY : pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/build
 
 pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/clean:
-	cd "/home/student/Computer Technology/assignment-2/Task1/build/pico-sdk/src/rp2_common/cyw43_driver" && $(CMAKE_COMMAND) -P CMakeFiles/cyw43_firmware_package.dir/cmake_clean.cmake
+	cd /home/student/CompTech/assignment-2/Task1/build/pico-sdk/src/rp2_common/cyw43_driver && $(CMAKE_COMMAND) -P CMakeFiles/cyw43_firmware_package.dir/cmake_clean.cmake
 .PHONY : pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/clean
 
 pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/depend:
-	cd "/home/student/Computer Technology/assignment-2/Task1/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/student/Computer Technology/assignment-2/Task1" /home/student/pico/pico-sdk/src/rp2_common/cyw43_driver "/home/student/Computer Technology/assignment-2/Task1/build" "/home/student/Computer Technology/assignment-2/Task1/build/pico-sdk/src/rp2_common/cyw43_driver" "/home/student/Computer Technology/assignment-2/Task1/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /home/student/CompTech/assignment-2/Task1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/CompTech/assignment-2/Task1 /home/student/pico/pico-sdk/src/rp2_common/cyw43_driver /home/student/CompTech/assignment-2/Task1/build /home/student/CompTech/assignment-2/Task1/build/pico-sdk/src/rp2_common/cyw43_driver /home/student/CompTech/assignment-2/Task1/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/depend
 

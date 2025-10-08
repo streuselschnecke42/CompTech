@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/student/Computer Technology/assignment-2/Task1"
+CMAKE_SOURCE_DIR = /home/student/CompTech/assignment-2/Task1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/student/Computer Technology/assignment-2/Task1/build"
+CMAKE_BINARY_DIR = /home/student/CompTech/assignment-2/Task1/build
 
 # Utility rule file for cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.
 
@@ -76,8 +76,8 @@ pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio
 
 
 pico-sdk/src/rp2_common/cyw43_driver/cyw43_bus_pio_spi.pio.h: /home/student/pico/pico-sdk/src/rp2_common/cyw43_driver/cyw43_bus_pio_spi.pio
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/student/Computer Technology/assignment-2/Task1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Generating cyw43_bus_pio_spi.pio.h"
-	cd "/home/student/Computer Technology/assignment-2/Task1/build/pico-sdk/src/rp2_common/cyw43_driver" && ../../../../pioasm/pioasm -o c-sdk /home/student/pico/pico-sdk/src/rp2_common/cyw43_driver/cyw43_bus_pio_spi.pio /home/student/Computer\ Technology/assignment-2/Task1/build/pico-sdk/src/rp2_common/cyw43_driver/cyw43_bus_pio_spi.pio.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/CompTech/assignment-2/Task1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating cyw43_bus_pio_spi.pio.h"
+	cd /home/student/CompTech/assignment-2/Task1/build/pico-sdk/src/rp2_common/cyw43_driver && ../../../../pioasm/pioasm -o c-sdk /home/student/pico/pico-sdk/src/rp2_common/cyw43_driver/cyw43_bus_pio_spi.pio /home/student/CompTech/assignment-2/Task1/build/pico-sdk/src/rp2_common/cyw43_driver/cyw43_bus_pio_spi.pio.h
 
 cyw43_driver_picow_cyw43_bus_pio_spi_pio_h: pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h
 cyw43_driver_picow_cyw43_bus_pio_spi_pio_h: pico-sdk/src/rp2_common/cyw43_driver/cyw43_bus_pio_spi.pio.h
@@ -91,10 +91,10 @@ pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio
 .PHONY : pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 
 pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/clean:
-	cd "/home/student/Computer Technology/assignment-2/Task1/build/pico-sdk/src/rp2_common/cyw43_driver" && $(CMAKE_COMMAND) -P CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/cmake_clean.cmake
+	cd /home/student/CompTech/assignment-2/Task1/build/pico-sdk/src/rp2_common/cyw43_driver && $(CMAKE_COMMAND) -P CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/cmake_clean.cmake
 .PHONY : pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/clean
 
 pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/depend:
-	cd "/home/student/Computer Technology/assignment-2/Task1/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/student/Computer Technology/assignment-2/Task1" /home/student/pico/pico-sdk/src/rp2_common/cyw43_driver "/home/student/Computer Technology/assignment-2/Task1/build" "/home/student/Computer Technology/assignment-2/Task1/build/pico-sdk/src/rp2_common/cyw43_driver" "/home/student/Computer Technology/assignment-2/Task1/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /home/student/CompTech/assignment-2/Task1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/CompTech/assignment-2/Task1 /home/student/pico/pico-sdk/src/rp2_common/cyw43_driver /home/student/CompTech/assignment-2/Task1/build /home/student/CompTech/assignment-2/Task1/build/pico-sdk/src/rp2_common/cyw43_driver /home/student/CompTech/assignment-2/Task1/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/depend
 
