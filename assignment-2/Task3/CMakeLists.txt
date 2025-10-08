@@ -10,13 +10,13 @@ pico_sdk_init()
 
 include_directories(${CMAKE_SOURCE_DIR})
 
-add_executable(FlashLEDsSDK
-  flashledssdk.S
+add_executable(binaryCounter
+  binaryCounter.S
   sdklink.c
 )
 
-pico_enable_stdio_uart(FlashLEDsSDK 1)
+pico_enable_stdio_uart(binaryCounter 1)
 
-pico_add_extra_outputs(FlashLEDsSDK)
+pico_add_extra_outputs(binaryCounter)
 
-target_link_libraries(FlashLEDsSDK pico_stdlib)
+target_link_libraries(binaryCounter pico_stdlib)
