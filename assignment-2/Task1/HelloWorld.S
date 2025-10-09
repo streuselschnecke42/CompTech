@@ -11,17 +11,17 @@
 .global main	            @ Provide program starting address to linker
 
 main:
-	MOV	R7, #101		@ initialize counter to 101
+	MOV	R7, #101		@ initialize counter to 101 (will print 100 times counting down)
 	BL	stdio_init_all	@ initialize uart or usb
 loop:
 	LDR	R0, =helloworld	@ load address of helloworld string
 	
 	SUB R7, R7, #1	@ decrement counter by 1
-	MOV	R1, R7		@ Move the counter to second parameter
+	MOV	R1, R7		@ Move the updated counter to second parameter
 	BL	printf		@ Call pico_printf
 	CMP R7, #0		@ check if counter reached 0
-	BNE loop		@ if not 0, continue to loop
-	MOV R7, #101	@ reset counter to 101
+	BNE loop		@ if not 0, branch back to continue to loop
+	MOV R7, #101	@ reset counter to 101 when it reaches 0
 	B	loop		@ loop forever
 		
 .data

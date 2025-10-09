@@ -4,25 +4,26 @@
 @ and connected to RaspberryPi Pico GPIO port using the Pico SDK
 @
 
-	.EQU	LED_A, 0
-	.EQU	LED_B, 1
-	.EQU	LED_C, 2
-	.EQU	LED_D, 3
-	.EQU	LED_E, 4
-	.EQU	LED_F, 5
-	.EQU	LED_G, 6
-	.EQU	GPIO_OUT, 1
+	.EQU	LED_A, 0	@ Segment A on GPIO 0
+	.EQU	LED_B, 1	@ Segment B on GPIO 1
+	.EQU	LED_C, 2	@ Segment C on GPIO 2
+	.EQU	LED_D, 3	@ Segment D on GPIO 3
+	.EQU	LED_E, 4	@ Segment E on GPIO 4
+	.EQU	LED_F, 5	@ Segment F on GPIO 5
+	.EQU	LED_G, 6	@ Segment G on GPIO 6
+	.EQU	GPIO_OUT, 1	@ Constant for "output" direction
 	.EQU	sleep_time, 1000 @delay time of 1 second
 
 .thumb_func	@ Necessary because sdk uses BLX
 .global main    @ Provide program starting address
 
 main:
-	MOV	R0, #LED_A
-	BL	gpio_init
-	MOV	R0, #LED_A
-	MOV	R1, #GPIO_OUT
-	BL	link_gpio_set_dir
+	@ Configure all seven GPIO pins as outputs
+	MOV	R0, #LED_A	@ R0 = 0, select GPIO 0
+	BL	gpio_init	@ Call SDK, initialize GPIO 0
+	MOV	R0, #LED_A	@ R0 = 0 again
+	MOV	R1, #GPIO_OUT	@ R1 = 1 (output mode)
+	BL	link_gpio_set_dir	@ Set GPIO 0 as output
 	
 	MOV	R0, #LED_B
 	BL	gpio_init
@@ -62,8 +63,8 @@ main:
 	
 	
 loop:
-	BL reset
-	@Zero
+	BL reset	@ Clear all segments before showing next digit
+	@Display digit zero (Segments A, B, C, D, E, F ON)
 	MOV R0, #LED_A
 	MOV R1, #1
 	BL link_gpio_put
@@ -82,7 +83,7 @@ loop:
 	MOV R0, #LED_F
 	MOV R1, #1
 	BL link_gpio_put
-	LDR R0, =sleep_time
+	LDR R0, =sleep_time	@ Wait one second
 	BL sleep_ms
 	BL reset
 	
@@ -414,7 +415,8 @@ loop:
 	B loop
 	
 reset:
-	PUSH {LR}
+	@ Subroutine reset which turns all segments off
+	PUSH {LR}	@ Save return address on stack
 	MOV R0, #LED_A
 	MOV R1, #0
 	BL link_gpio_put
@@ -436,5 +438,5 @@ reset:
 	MOV R0, #LED_G
 	MOV R1, #0
 	BL link_gpio_put
-	POP {PC}
-	BX LR
+	POP {PC}	@ Restore PC (turn to caller)
+	BX LR		@ safety branch (never reached)
