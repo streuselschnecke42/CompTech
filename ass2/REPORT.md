@@ -160,13 +160,21 @@ The LEDs should now count up in binary from 0000 to 0111 and back to 0000 in an 
 
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
-## Sourcecode files
+## Sourcecode files - Michelle's Solution
 [ledcountersdk.S](../ass2/task3/ledcountersdk.S)\
 [CMakeLists.txt](../ass2/task3/CMakeLists.txt)\
 [pico_sdk_import.cmake](../ass2/task3/pico_sdk_import.cmake)\
 [LEDCounterSDK.uf2](../ass2/task3/build/LEDCounterSDK.uf2)
 
 To get to the whole Task 3 directory instead, click [here](../ass2/task3/).
+
+## Sourcecode files - Sanja's Solution
+[binaryCounter.S](../ass2/Task3_Sanja/binaryCounter.S)\
+[CMakeLists.txt](../ass2/Task3_Sanja/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass2/Task3_Sanja/pico_sdk_import.cmake)\
+[binaryCounter.uf2](../ass2/Task3_Sanja/build/binaryCounter.uf2)
+
+To get to the whole Task 3 directory instead, click [here](../ass2/Task3_Sanja/).
 
 
 # Task 4
@@ -224,13 +232,21 @@ The 7 segment display should now count from 0 up to 9 and back to 0 in an endles
 
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
-## Sourcecode files
+## Sourcecode files - Michelle's Solution
 [DisplayCounterSDK.S](../ass2/task4/DisplayCounterSDK.S)\
 [CMakeLists.txt](../ass2/task4/CMakeLists.txt)\
 [pico_sdk_import.cmake](../ass2/task4/pico_sdk_import.cmake)\
 [DisplayCounterSDK.uf2](../ass2/task4/build/DisplayCounterSDK.uf2)
 
 To get to the whole Task 4 directory instead, click [here](../ass2/task4/).
+
+## Sourcecode files - Sanja's Solution
+[sevenSegmentDisplay.S](../ass2/Task4_Sanja/sevenSegmentDisplay.S)\
+[CMakeLists.txt](../ass2/Task4_Sanja/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass2/Task4_Sanja/pico_sdk_import.cmake)\
+[sevenSegmentDisplay.uf2](../ass2/Task4_Sanja/build/sevenSegmentDisplay.uf2)
+
+To get to the whole Task 4 directory instead, click [here](../ass2/Task4_Sanja/).
 
 ---
 # Sources
