@@ -17,7 +17,7 @@ void link_gpio_put(int pin, int value)
 
 int link_gpio_get(int pin)
 {
-	gpio_get(pin);
+	return gpio_get(pin);
 }
 
 void link_gpio_put_all(int value)

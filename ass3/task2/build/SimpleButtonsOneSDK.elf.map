@@ -3316,7 +3316,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x10000100                __boot2_end__ = .
                 0x00000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x10000100     0x17ac
+.text           0x10000100     0x17bc
                 0x10000100                __logical_binary_start = .
  *(.vectors)
  .vectors       0x10000100       0xd4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
@@ -3385,193 +3385,194 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x1000038c       0x14 CMakeFiles/SimpleButtonsOneSDK.dir/sdklink.c.o
                 0x1000038c                link_gpio_set_dir
  .text.link_gpio_get
-                0x100003a0        0x8 CMakeFiles/SimpleButtonsOneSDK.dir/sdklink.c.o
+                0x100003a0       0x14 CMakeFiles/SimpleButtonsOneSDK.dir/sdklink.c.o
                 0x100003a0                link_gpio_get
  .text.link_gpio_put_all
-                0x100003a8       0x1c CMakeFiles/SimpleButtonsOneSDK.dir/sdklink.c.o
-                0x100003a8                link_gpio_put_all
+                0x100003b4       0x1c CMakeFiles/SimpleButtonsOneSDK.dir/sdklink.c.o
+                0x100003b4                link_gpio_put_all
  .text.link_gpio_pull_up
-                0x100003c4        0xc CMakeFiles/SimpleButtonsOneSDK.dir/sdklink.c.o
-                0x100003c4                link_gpio_pull_up
+                0x100003d0        0xc CMakeFiles/SimpleButtonsOneSDK.dir/sdklink.c.o
+                0x100003d0                link_gpio_pull_up
  .text.gpio_set_pulls
-                0x100003d0       0x34 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
-                0x100003d0                gpio_set_pulls
+                0x100003dc       0x34 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+                0x100003dc                gpio_set_pulls
  .text.gpio_init
-                0x10000404       0x40 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
-                0x10000404                gpio_init
- .text.panic    0x10000444       0x30 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
-                0x10000444                panic
+                0x10000410       0x40 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+                0x10000410                gpio_init
+ .text.panic    0x10000450       0x30 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+                0x10000450                panic
  .text.hw_claim_or_assert
-                0x10000474       0x44 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.o
-                0x10000474                hw_claim_or_assert
+                0x10000480       0x44 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+                0x10000480                hw_claim_or_assert
  .text.next_striped_spin_lock_num
-                0x100004b8       0x18 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
-                0x100004b8                next_striped_spin_lock_num
+                0x100004c4       0x18 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+                0x100004c4                next_striped_spin_lock_num
  .text.spin_locks_reset
-                0x100004d0       0x1c CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
-                0x100004d0                spin_locks_reset
+                0x100004dc       0x1c CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+                0x100004dc                spin_locks_reset
  .text.runtime_init_per_core_irq_priorities
-                0x100004ec       0x24 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x100004ec                runtime_init_per_core_irq_priorities
+                0x100004f8       0x24 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x100004f8                runtime_init_per_core_irq_priorities
  .text.irq_set_enabled
-                0x10000510       0x24 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x10000510                irq_set_enabled
+                0x1000051c       0x24 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x1000051c                irq_set_enabled
  .text.irq_set_exclusive_handler
-                0x10000534       0x54 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x10000534                irq_set_exclusive_handler
+                0x10000540       0x54 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x10000540                irq_set_exclusive_handler
  .text.lock_init
-                0x10000588       0x10 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
-                0x10000588                lock_init
+                0x10000594       0x10 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
+                0x10000594                lock_init
  .text.runtime_init_mutex
-                0x10000598       0x68 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o
-                0x10000598                runtime_init_mutex
+                0x100005a4       0x68 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x100005a4                runtime_init_mutex
  .text.sleep_until_callback
-                0x10000600       0x30 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x1000060c       0x30 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
  .text.alarm_pool_irq_handler
-                0x10000630      0x318 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x1000063c      0x318 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
  .text.runtime_init_default_alarm_pool
-                0x10000948       0xdc CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10000948                runtime_init_default_alarm_pool
+                0x10000954       0xdc CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10000954                runtime_init_default_alarm_pool
  .text.alarm_pool_add_alarm_at_force_in_context
-                0x10000a24       0xa8 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10000a24                alarm_pool_add_alarm_at_force_in_context
+                0x10000a30       0xa8 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10000a30                alarm_pool_add_alarm_at_force_in_context
  .text.alarm_pool_cancel_alarm
-                0x10000acc       0x78 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10000acc                alarm_pool_cancel_alarm
+                0x10000ad8       0x78 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10000ad8                alarm_pool_cancel_alarm
  .text.best_effort_wfe_or_timeout
-                0x10000b44       0xfc CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10000b44                best_effort_wfe_or_timeout
+                0x10000b50       0xfc CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10000b50                best_effort_wfe_or_timeout
  .text.timer_hardware_alarm_claim
-                0x10000c40       0x14 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10000c40                timer_hardware_alarm_claim
+                0x10000c4c       0x14 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10000c4c                timer_hardware_alarm_claim
  .text.timer_time_us_64
-                0x10000c54       0x14 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10000c54                timer_time_us_64
+                0x10000c60       0x14 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10000c60                timer_time_us_64
  .text.time_us_64
-                0x10000c68       0x18 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10000c68                time_us_64
+                0x10000c74       0x18 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10000c74                time_us_64
  .text.clock_configure_int_divider
-                0x10000c80      0x128 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-                0x10000c80                clock_configure_int_divider
+                0x10000c8c      0x128 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x10000c8c                clock_configure_int_divider
  .text.clock_configure_undivided
-                0x10000da8      0x128 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-                0x10000da8                clock_configure_undivided
+                0x10000db4      0x128 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x10000db4                clock_configure_undivided
  .text.clock_get_hz
-                0x10000ed0        0xc CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-                0x10000ed0                clock_get_hz
+                0x10000edc        0xc CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x10000edc                clock_get_hz
  .text.pll_init
-                0x10000edc       0xa0 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
-                0x10000edc                pll_init
+                0x10000ee8       0xa0 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+                0x10000ee8                pll_init
  .text.tick_start
-                0x10000f7c       0x10 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
-                0x10000f7c                tick_start
+                0x10000f88       0x10 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+                0x10000f88                tick_start
  .text.rom_func_lookup
-                0x10000f8c       0x10 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-                0x10000f8c                rom_func_lookup
+                0x10000f98       0x10 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x10000f98                rom_func_lookup
  .text.rom_data_lookup
-                0x10000f9c       0x10 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-                0x10000f9c                rom_data_lookup
+                0x10000fa8       0x10 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x10000fa8                rom_data_lookup
  .text.rom_funcs_lookup
-                0x10000fac       0x3c CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-                0x10000fac                rom_funcs_lookup
+                0x10000fb8       0x3c CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x10000fb8                rom_funcs_lookup
  .text.xosc_init
-                0x10000fe8       0x28 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
-                0x10000fe8                xosc_init
+                0x10000ff4       0x28 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+                0x10000ff4                xosc_init
  .text.first_per_core_initializer
-                0x10001010        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x1000101c        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
  .text.hard_assertion_failure
-                0x10001014        0xc CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-                0x10001014                hard_assertion_failure
+                0x10001020        0xc CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x10001020                hard_assertion_failure
  .text.runtime_run_initializers
-                0x10001020       0x28 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-                0x10001020                runtime_run_initializers
+                0x1000102c       0x28 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x1000102c                runtime_run_initializers
  .text.runtime_init_early_resets
-                0x10001048       0x2c CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10001048                runtime_init_early_resets
+                0x10001054       0x2c CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001054                runtime_init_early_resets
  .text.runtime_init_usb_power_down
-                0x10001074       0x1c CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10001074                runtime_init_usb_power_down
+                0x10001080       0x1c CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001080                runtime_init_usb_power_down
  .text.runtime_init_post_clock_resets
-                0x10001090       0x20 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10001090                runtime_init_post_clock_resets
+                0x1000109c       0x20 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x1000109c                runtime_init_post_clock_resets
  .text.runtime_init_rp2040_gpio_ie_disable
-                0x100010b0       0x14 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100010b0                runtime_init_rp2040_gpio_ie_disable
+                0x100010bc       0x14 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x100010bc                runtime_init_rp2040_gpio_ie_disable
  .text.runtime_init_spin_locks_reset
-                0x100010c4        0x8 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100010c4                runtime_init_spin_locks_reset
+                0x100010d0        0x8 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x100010d0                runtime_init_spin_locks_reset
  .text.runtime_init_install_ram_vector_table
-                0x100010cc       0xb8 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100010cc                runtime_init_install_ram_vector_table
+                0x100010d8       0xb8 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x100010d8                runtime_init_install_ram_vector_table
  .text.runtime_init_clocks
-                0x10001184       0xd8 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
-                0x10001184                runtime_init_clocks
- .text          0x1000125c       0x10 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+                0x10001190       0xd8 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+                0x10001190                runtime_init_clocks
+ .text          0x10001268       0x10 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
  .text.__wrap___aeabi_uidiv
-                0x1000126c       0x4c CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
-                0x1000126c                __wrap___aeabi_uidiv
-                0x1000126c                __wrap___aeabi_uidivmod
-                0x1000126c                div_u32u32
-                0x1000126c                divmod_u32u32
-                0x10001274                divmod_u32u32_unsafe
-                0x1000129c                divmod_u32u32_savestate
+                0x10001278       0x4c CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+                0x10001278                __wrap___aeabi_uidiv
+                0x10001278                __wrap___aeabi_uidivmod
+                0x10001278                div_u32u32
+                0x10001278                divmod_u32u32
+                0x10001280                divmod_u32u32_unsafe
+                0x100012a8                divmod_u32u32_savestate
  .text.__aeabi_double_init
-                0x100012b8       0xc8 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
-                0x100012b8                __aeabi_double_init
+                0x100012c4       0xc8 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+                0x100012c4                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x10001380       0x2c CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-                0x10001380                double_table_shim_on_use_helper
+                0x1000138c       0x2c CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x1000138c                double_table_shim_on_use_helper
  .text.__aeabi_float_init
-                0x100013ac       0x68 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
-                0x100013ac                __aeabi_float_init
+                0x100013b8       0x68 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+                0x100013b8                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x10001414       0x2c CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
-                0x10001414                float_table_shim_on_use_helper
- .text          0x10001440       0x10 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-                0x10001440                __aeabi_mem_init
- .text.memset   0x10001450        0xc CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-                0x10001450                __wrap_memset
- .text.memcpy   0x1000145c        0xc CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-                0x1000145c                __wrap___aeabi_memcpy
-                0x1000145c                __wrap_memcpy
+                0x10001420       0x2c CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+                0x10001420                float_table_shim_on_use_helper
+ .text          0x1000144c       0x10 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x1000144c                __aeabi_mem_init
+ .text.memset   0x1000145c        0xc CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x1000145c                __wrap_memset
+ .text.memcpy   0x10001468        0xc CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x10001468                __wrap___aeabi_memcpy
+                0x10001468                __wrap_memcpy
  .text._out_char
-                0x10001468       0x10 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10001474       0x10 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text.weak_raw_vprintf
-                0x10001478       0x30 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
-                0x10001478                weak_raw_vprintf
- .text._exit    0x100014a8        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x100014a8                _exit
- .text.exit     0x100014ac        0x8 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x100014ac                exit
+                0x10001484       0x30 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10001484                weak_raw_vprintf
+ .text._exit    0x100014b4        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x100014b4                _exit
+ .text.exit     0x100014b8        0x8 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x100014b8                exit
  .text.runtime_init
-                0x100014b4       0x2c CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x100014b4                runtime_init
+                0x100014c0       0x2c CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x100014c0                runtime_init
  .text.stdio_out_chars_no_crlf
-                0x100014e0       0x10 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x100014ec       0x10 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .text.stdio_out_chars_crlf
-                0x100014f0       0xac CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x100014fc       0xac CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .text.stdio_put_string
-                0x1000159c      0x100 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x1000159c                stdio_put_string
+                0x100015a8      0x100 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x100015a8                stdio_put_string
  .text.__wrap_putchar
-                0x1000169c       0x98 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x1000169c                stdio_putchar
-                0x1000169c                __wrap_putchar
+                0x100016a8       0x98 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x100016a8                stdio_putchar
+                0x100016a8                __wrap_putchar
  .text.__wrap_puts
-                0x10001734       0x3c CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10001734                __wrap_puts
-                0x10001734                stdio_puts
+                0x10001740       0x3c CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10001740                __wrap_puts
+                0x10001740                stdio_puts
  .text.startup._retrieve_unique_id_on_boot
-                0x10001770       0x10 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+                0x1000177c       0x10 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
  .text.flash_get_unique_id
-                0x10001780       0x3c CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
-                0x10001780                flash_get_unique_id
- .text          0x100017bc       0x68 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
-                0x100017bc                strlen
+                0x1000178c       0x3c CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+                0x1000178c                flash_get_unique_id
+ .text          0x100017c8       0x68 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
+                0x100017c8                strlen
  *(.fini)
- .fini          0x10001824        0x4 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crti.o
-                0x10001824                _fini
- .fini.__stub   0x10001828       0x40 linker stubs
+ .fini          0x10001830        0x4 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crti.o
+                0x10001830                _fini
+ *fill*         0x10001834        0x4 
+ .fini.__stub   0x10001838       0x40 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -3582,146 +3583,146 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
-                0x10001868                . = ALIGN (0x4)
-                0x10001868                PROVIDE (__preinit_array_start = .)
+                0x10001878                . = ALIGN (0x4)
+                0x10001878                PROVIDE (__preinit_array_start = .)
  *(SORT_BY_NAME(.preinit_array.*))
  .preinit_array.00100
-                0x10001868        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10001868                __pre_init_runtime_init_early_resets
+                0x10001878        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001878                __pre_init_runtime_init_early_resets
  .preinit_array.00101
-                0x1000186c        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x1000186c                __pre_init_runtime_init_usb_power_down
+                0x1000187c        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x1000187c                __pre_init_runtime_init_usb_power_down
  .preinit_array.00275
-                0x10001870        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+                0x10001880        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
  .preinit_array.00300
-                0x10001874        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x10001884        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
  .preinit_array.00350
-                0x10001878        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x10001888        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
  .preinit_array.00350
-                0x1000187c        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+                0x1000188c        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
  .preinit_array.00500
-                0x10001880        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10001880                __pre_init_runtime_init_clocks
+                0x10001890        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001890                __pre_init_runtime_init_clocks
  .preinit_array.00600
-                0x10001884        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10001884                __pre_init_runtime_init_post_clock_resets
- .preinit_array.00700
-                0x10001888        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10001888                __pre_init_runtime_init_rp2040_gpio_ie_disable
- .preinit_array.01000
-                0x1000188c        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x1000188c                __pre_init_runtime_init_spin_locks_reset
- .preinit_array.01100
-                0x10001890        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o
-                0x10001890                __pre_init_runtime_init_mutex
- .preinit_array.10080
                 0x10001894        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10001894                __pre_init_runtime_init_install_ram_vector_table
+                0x10001894                __pre_init_runtime_init_post_clock_resets
+ .preinit_array.00700
+                0x10001898        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001898                __pre_init_runtime_init_rp2040_gpio_ie_disable
+ .preinit_array.01000
+                0x1000189c        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x1000189c                __pre_init_runtime_init_spin_locks_reset
+ .preinit_array.01100
+                0x100018a0        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x100018a0                __pre_init_runtime_init_mutex
+ .preinit_array.10080
+                0x100018a4        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x100018a4                __pre_init_runtime_init_install_ram_vector_table
  .preinit_array.11000
-                0x10001898        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10001898                __pre_init_runtime_init_default_alarm_pool
+                0x100018a8        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x100018a8                __pre_init_runtime_init_default_alarm_pool
  .preinit_array.YYYYY
-                0x1000189c        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-                0x1000189c                __pre_init_first_per_core_initializer
+                0x100018ac        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x100018ac                __pre_init_first_per_core_initializer
  .preinit_array.ZZZZZ.01200
-                0x100018a0        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x100018a0                __pre_init_runtime_init_per_core_irq_priorities
+                0x100018b0        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x100018b0                __pre_init_runtime_init_per_core_irq_priorities
  *(.preinit_array)
-                0x100018a4                PROVIDE (__preinit_array_end = .)
-                0x100018a4                . = ALIGN (0x4)
-                0x100018a4                PROVIDE (__init_array_start = .)
+                0x100018b4                PROVIDE (__preinit_array_end = .)
+                0x100018b4                . = ALIGN (0x4)
+                0x100018b4                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.01000
-                0x100018a4        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+                0x100018b4        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
  *(.init_array)
- .init_array    0x100018a8        0x4 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x100018ac                PROVIDE (__init_array_end = .)
-                0x100018ac                . = ALIGN (0x4)
-                0x100018ac                PROVIDE (__fini_array_start = .)
+ .init_array    0x100018b8        0x4 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x100018bc                PROVIDE (__init_array_end = .)
+                0x100018bc                . = ALIGN (0x4)
+                0x100018bc                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array)
-                0x100018ac                PROVIDE (__fini_array_end = .)
+                0x100018bc                PROVIDE (__fini_array_end = .)
  *(.eh_frame*)
- .eh_frame      0x100018ac        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x100018ac                . = ALIGN (0x4)
+ .eh_frame      0x100018bc        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x100018bc                . = ALIGN (0x4)
 
-.glue_7         0x100018ac        0x0
- .glue_7        0x100018ac        0x0 linker stubs
+.glue_7         0x100018bc        0x0
+ .glue_7        0x100018bc        0x0 linker stubs
 
-.glue_7t        0x100018ac        0x0
- .glue_7t       0x100018ac        0x0 linker stubs
+.glue_7t        0x100018bc        0x0
+ .glue_7t       0x100018bc        0x0 linker stubs
 
-.vfp11_veneer   0x100018ac        0x0
- .vfp11_veneer  0x100018ac        0x0 linker stubs
+.vfp11_veneer   0x100018bc        0x0
+ .vfp11_veneer  0x100018bc        0x0 linker stubs
 
-.v4_bx          0x100018ac        0x0
- .v4_bx         0x100018ac        0x0 linker stubs
+.v4_bx          0x100018bc        0x0
+ .v4_bx         0x100018bc        0x0 linker stubs
 
-.iplt           0x100018ac        0x0
- .iplt          0x100018ac        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x100018bc        0x0
+ .iplt          0x100018bc        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x100018ac       0xe4
+.rodata         0x100018bc       0xe4
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.panic.str1.4
-                0x100018ac       0x12 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
- *fill*         0x100018be        0x2 
+                0x100018bc       0x12 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+ *fill*         0x100018ce        0x2 
  .rodata.timer_hardware_alarm_claim.str1.4
-                0x100018c0       0x22 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
- *fill*         0x100018e2        0x2 
+                0x100018d0       0x22 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+ *fill*         0x100018f2        0x2 
  .rodata.hard_assertion_failure.str1.4
-                0x100018e4        0xc CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x100018f4        0xc CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
  .rodata.__bi_26
-                0x100018f0        0xc CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10001900        0xc CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_34
-                0x100018fc        0xc CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1000190c        0xc CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_42
-                0x10001908        0xc CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10001918        0xc CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_48
-                0x10001914        0xc CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10001924        0xc CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_54
-                0x10001920        0xc CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10001930        0xc CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_78
-                0x1000192c        0xc CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1000193c        0xc CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_84
-                0x10001938        0xc CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10001948        0xc CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.str1.4
-                0x10001944       0x48 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10001954       0x48 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.crlf_str.6195
-                0x1000198c        0x2 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10001990                . = ALIGN (0x4)
- *fill*         0x1000198e        0x2 
+                0x1000199c        0x2 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x100019a0                . = ALIGN (0x4)
+ *fill*         0x1000199e        0x2 
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x10001990                . = ALIGN (0x4)
+                0x100019a0                . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x10001990                __exidx_start = .
+                0x100019a0                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x10001990                __exidx_end = .
-                0x10001990                . = ALIGN (0x4)
-                0x10001990                __binary_info_start = .
+                0x100019a0                __exidx_end = .
+                0x100019a0                . = ALIGN (0x4)
+                0x100019a0                __binary_info_start = .
 
-.binary_info    0x10001990       0x1c
+.binary_info    0x100019a0       0x1c
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr26
-                0x10001990        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .binary_info.keep.__bi_ptr34
-                0x10001994        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .binary_info.keep.__bi_ptr42
-                0x10001998        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .binary_info.keep.__bi_ptr48
-                0x1000199c        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .binary_info.keep.__bi_ptr54
                 0x100019a0        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .binary_info.keep.__bi_ptr78
+ .binary_info.keep.__bi_ptr34
                 0x100019a4        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .binary_info.keep.__bi_ptr84
+ .binary_info.keep.__bi_ptr42
                 0x100019a8        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .binary_info.keep.__bi_ptr48
+                0x100019ac        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .binary_info.keep.__bi_ptr54
+                0x100019b0        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .binary_info.keep.__bi_ptr78
+                0x100019b4        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .binary_info.keep.__bi_ptr84
+                0x100019b8        0x4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  *(.binary_info.*)
-                0x100019ac                __binary_info_end = .
-                0x100019ac                . = ALIGN (0x4)
+                0x100019bc                __binary_info_end = .
+                0x100019bc                . = ALIGN (0x4)
 
 .ram_vector_table
                 0x20000000       0xc0
@@ -3735,7 +3736,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x200000c0                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.data           0x200000c0      0x2c8 load address 0x100019ac
+.data           0x200000c0      0x2c8 load address 0x100019bc
                 0x200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -3794,23 +3795,23 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x20000388                . = ALIGN (0x4)
 
 .tm_clone_table
-                0x20000388        0x0 load address 0x10001c74
+                0x20000388        0x0 load address 0x10001c84
  .tm_clone_table
                 0x20000388        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x20000388        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x20000388        0x0 load address 0x10001c74
+.igot.plt       0x20000388        0x0 load address 0x10001c84
  .igot.plt      0x20000388        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.tdata          0x20000388        0x0 load address 0x10001c74
+.tdata          0x20000388        0x0 load address 0x10001c84
                 0x20000388                . = ALIGN (0x4)
  *(.tdata .tdata.* .gnu.linkonce.td.*)
                 0x20000388                __tdata_end = .
                 0x20000388                PROVIDE (__data_end__ = .)
-                0x100019ac                __etext = LOADADDR (.data)
+                0x100019bc                __etext = LOADADDR (.data)
 
-.tbss           0x20000388        0x0 load address 0x10001c74
+.tbss           0x20000388        0x0 load address 0x10001c84
                 0x20000388                . = ALIGN (0x4)
                 0x20000388                __bss_start__ = .
                 0x20000388                __tls_base = .
@@ -3818,7 +3819,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  *(.tcommon)
                 0x20000388                __tls_end = .
 
-.bss            0x20000388      0x4f8 load address 0x10001c74
+.bss            0x20000388      0x4f8 load address 0x10001c84
                 0x20000388                . = ALIGN (0x4)
                 0x20000388                __tbss_end = .
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.bss*)))
@@ -3854,26 +3855,26 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x20000880                . = ALIGN (0x4)
                 0x20000880                __bss_end__ = .
 
-.heap           0x20000880      0x800 load address 0x10001c74
+.heap           0x20000880      0x800 load address 0x10001c84
                 0x20000880                __end__ = .
                 0x20000880                end = __end__
  *(.heap*)
  .heap          0x20000880      0x800 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
                 0x20040000                __HeapLimit = (ORIGIN (RAM) + LENGTH (RAM))
 
-.scratch_x      0x20040000        0x0 load address 0x10001c74
+.scratch_x      0x20040000        0x0 load address 0x10001c84
                 0x20040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20040000                . = ALIGN (0x4)
                 0x20040000                __scratch_x_end__ = .
-                0x10001c74                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x10001c84                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20041000        0x0 load address 0x10001c74
+.scratch_y      0x20041000        0x0 load address 0x10001c84
                 0x20041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20041000                . = ALIGN (0x4)
                 0x20041000                __scratch_y_end__ = .
-                0x10001c74                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x10001c84                __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .stack1_dummy   0x20040000        0x0
  *(.stack1*)
@@ -3885,9 +3886,9 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
 .rel.dyn        0x20041800        0x0
  .rel.iplt      0x20041800        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.flash_end      0x10001c74        0x0
+.flash_end      0x10001c84        0x0
  *(.embedded_end_block*)
-                0x10001c74                PROVIDE (__flash_binary_end = .)
+                0x10001c84                PROVIDE (__flash_binary_end = .)
                 0x20040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -4125,85 +4126,85 @@ LOAD linker stubs
                                  0x4f (size before relaxing)
  .comment       0x0000009f       0x52 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtend.o
 
-.debug_line     0x00000000    0x144b3
+.debug_line     0x00000000    0x144cb
  .debug_line    0x00000000       0x94 CMakeFiles/SimpleButtonsOneSDK.dir/SimpleButtonsOneSDK.S.o
- .debug_line    0x00000094      0x38e CMakeFiles/SimpleButtonsOneSDK.dir/sdklink.c.o
- .debug_line    0x00000422     0x1a2d CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
- .debug_line    0x00001e4f      0x21e CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
- .debug_line    0x0000206d      0x872 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.o
- .debug_line    0x000028df      0x406 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
- .debug_line    0x00002ce5      0x2ee CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
- .debug_line    0x00002fd3     0x16a5 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
- .debug_line    0x00004678      0x286 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
- .debug_line    0x000048fe     0x1a52 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o
- .debug_line    0x00006350     0x2e95 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
- .debug_line    0x000091e5     0x1d39 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
- .debug_line    0x0000af1e     0x1c04 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
- .debug_line    0x0000cb22      0x484 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
- .debug_line    0x0000cfa6      0x27e CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
- .debug_line    0x0000d224      0x34a CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
- .debug_line    0x0000d56e      0x2b4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
- .debug_line    0x0000d822      0x251 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
- .debug_line    0x0000da73      0x57b CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
- .debug_line    0x0000dfee      0x48e CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
- .debug_line    0x0000e47c      0x137 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
- .debug_line    0x0000e5b3      0x2db CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
- .debug_line    0x0000e88e      0x486 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
- .debug_line    0x0000ed14      0x359 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
- .debug_line    0x0000f06d      0x6a7 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
- .debug_line    0x0000f714      0x404 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
- .debug_line    0x0000fb18      0x2d6 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
- .debug_line    0x0000fdee      0x1cd CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
- .debug_line    0x0000ffbb       0xc3 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
- .debug_line    0x0001007e      0x165 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .debug_line    0x000101e3     0x1683 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- .debug_line    0x00011866       0xc5 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
- .debug_line    0x0001192b      0x7ef CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
- .debug_line    0x0001211a     0x1324 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
- .debug_line    0x0001343e      0x3e6 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
- .debug_line    0x00013824      0xa6d CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
- .debug_line    0x00014291       0x60 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_line    0x000142f1      0x1c2 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
+ .debug_line    0x00000094      0x3a6 CMakeFiles/SimpleButtonsOneSDK.dir/sdklink.c.o
+ .debug_line    0x0000043a     0x1a2d CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+ .debug_line    0x00001e67      0x21e CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+ .debug_line    0x00002085      0x872 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+ .debug_line    0x000028f7      0x406 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+ .debug_line    0x00002cfd      0x2ee CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+ .debug_line    0x00002feb     0x16a5 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+ .debug_line    0x00004690      0x286 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
+ .debug_line    0x00004916     0x1a52 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+ .debug_line    0x00006368     0x2e95 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
+ .debug_line    0x000091fd     0x1d39 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+ .debug_line    0x0000af36     0x1c04 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+ .debug_line    0x0000cb3a      0x484 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+ .debug_line    0x0000cfbe      0x27e CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+ .debug_line    0x0000d23c      0x34a CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+ .debug_line    0x0000d586      0x2b4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+ .debug_line    0x0000d83a      0x251 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+ .debug_line    0x0000da8b      0x57b CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+ .debug_line    0x0000e006      0x48e CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+ .debug_line    0x0000e494      0x137 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+ .debug_line    0x0000e5cb      0x2db CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+ .debug_line    0x0000e8a6      0x486 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+ .debug_line    0x0000ed2c      0x359 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+ .debug_line    0x0000f085      0x6a7 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+ .debug_line    0x0000f72c      0x404 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+ .debug_line    0x0000fb30      0x2d6 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+ .debug_line    0x0000fe06      0x1cd CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+ .debug_line    0x0000ffd3       0xc3 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+ .debug_line    0x00010096      0x165 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .debug_line    0x000101fb     0x1683 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ .debug_line    0x0001187e       0xc5 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+ .debug_line    0x00011943      0x7ef CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+ .debug_line    0x00012132     0x1324 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+ .debug_line    0x00013456      0x3e6 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+ .debug_line    0x0001383c      0xa6d CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+ .debug_line    0x000142a9       0x60 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x00014309      0x1c2 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
 
-.debug_info     0x00000000    0x208f5
+.debug_info     0x00000000    0x208f1
  .debug_info    0x00000000       0x26 CMakeFiles/SimpleButtonsOneSDK.dir/SimpleButtonsOneSDK.S.o
- .debug_info    0x00000026      0x745 CMakeFiles/SimpleButtonsOneSDK.dir/sdklink.c.o
- .debug_info    0x0000076b     0x244e CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
- .debug_info    0x00002bb9      0xa6d CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
- .debug_info    0x00003626      0xa3f CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.o
- .debug_info    0x00004065      0x3dd CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
- .debug_info    0x00004442      0x242 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
- .debug_info    0x00004684     0x22ce CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
- .debug_info    0x00006952      0x189 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
- .debug_info    0x00006adb     0x2b0a CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o
- .debug_info    0x000095e5     0x52bd CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
- .debug_info    0x0000e8a2     0x2aef CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
- .debug_info    0x00011391     0x2621 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
- .debug_info    0x000139b2      0x4de CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
- .debug_info    0x00013e90      0x246 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
- .debug_info    0x000140d6      0xd80 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
- .debug_info    0x00014e56      0x1c1 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
- .debug_info    0x00015017      0x208 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
- .debug_info    0x0001521f      0x802 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
- .debug_info    0x00015a21      0x6df CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
- .debug_info    0x00016100       0x22 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
- .debug_info    0x00016122       0x22 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
- .debug_info    0x00016144       0x22 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
- .debug_info    0x00016166      0xaaa CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
- .debug_info    0x00016c10       0x22 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
- .debug_info    0x00016c32       0x22 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
- .debug_info    0x00016c54      0xab0 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
- .debug_info    0x00017704       0x22 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
- .debug_info    0x00017726       0x22 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
- .debug_info    0x00017748      0x2cb CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .debug_info    0x00017a13     0x25d8 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- .debug_info    0x00019feb       0x22 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
- .debug_info    0x0001a00d     0x147c CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
- .debug_info    0x0001b489     0x24c4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
- .debug_info    0x0001d94d      0xa75 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
- .debug_info    0x0001e3c2     0x1b9a CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
- .debug_info    0x0001ff5c       0x26 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_info    0x0001ff82      0x973 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
+ .debug_info    0x00000026      0x741 CMakeFiles/SimpleButtonsOneSDK.dir/sdklink.c.o
+ .debug_info    0x00000767     0x244e CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+ .debug_info    0x00002bb5      0xa6d CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+ .debug_info    0x00003622      0xa3f CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+ .debug_info    0x00004061      0x3dd CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+ .debug_info    0x0000443e      0x242 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+ .debug_info    0x00004680     0x22ce CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+ .debug_info    0x0000694e      0x189 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
+ .debug_info    0x00006ad7     0x2b0a CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+ .debug_info    0x000095e1     0x52bd CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
+ .debug_info    0x0000e89e     0x2aef CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+ .debug_info    0x0001138d     0x2621 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+ .debug_info    0x000139ae      0x4de CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+ .debug_info    0x00013e8c      0x246 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+ .debug_info    0x000140d2      0xd80 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+ .debug_info    0x00014e52      0x1c1 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+ .debug_info    0x00015013      0x208 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+ .debug_info    0x0001521b      0x802 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+ .debug_info    0x00015a1d      0x6df CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+ .debug_info    0x000160fc       0x22 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+ .debug_info    0x0001611e       0x22 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+ .debug_info    0x00016140       0x22 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+ .debug_info    0x00016162      0xaaa CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+ .debug_info    0x00016c0c       0x22 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+ .debug_info    0x00016c2e       0x22 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+ .debug_info    0x00016c50      0xab0 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+ .debug_info    0x00017700       0x22 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+ .debug_info    0x00017722       0x22 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+ .debug_info    0x00017744      0x2cb CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .debug_info    0x00017a0f     0x25d8 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ .debug_info    0x00019fe7       0x22 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+ .debug_info    0x0001a009     0x147c CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+ .debug_info    0x0001b485     0x24c4 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+ .debug_info    0x0001d949      0xa75 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+ .debug_info    0x0001e3be     0x1b9a CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+ .debug_info    0x0001ff58       0x26 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_info    0x0001ff7e      0x973 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
 
 .debug_abbrev   0x00000000     0x58cf
  .debug_abbrev  0x00000000       0x14 CMakeFiles/SimpleButtonsOneSDK.dir/SimpleButtonsOneSDK.S.o
@@ -4428,41 +4429,41 @@ LOAD linker stubs
  .debug_loc     0x000166f1      0xe3e CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
  .debug_loc     0x0001752f       0xa3 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
 
-.debug_ranges   0x00000000     0x8968
- .debug_ranges  0x00000000       0xb8 CMakeFiles/SimpleButtonsOneSDK.dir/sdklink.c.o
- .debug_ranges  0x000000b8      0xce8 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
- .debug_ranges  0x00000da0       0x18 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
- .debug_ranges  0x00000db8      0x440 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.o
- .debug_ranges  0x000011f8       0xd8 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
- .debug_ranges  0x000012d0       0xa0 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
- .debug_ranges  0x00001370      0xa88 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
- .debug_ranges  0x00001df8       0x28 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
- .debug_ranges  0x00001e20     0x1730 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o
- .debug_ranges  0x00003550     0x1e58 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
- .debug_ranges  0x000053a8     0x1088 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
- .debug_ranges  0x00006430      0xae8 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
- .debug_ranges  0x00006f18       0xc0 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
- .debug_ranges  0x00006fd8       0x20 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
- .debug_ranges  0x00006ff8      0x128 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
- .debug_ranges  0x00007120       0x20 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
- .debug_ranges  0x00007140       0x58 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
- .debug_ranges  0x00007198       0xc8 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
- .debug_ranges  0x00007260       0x28 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
- .debug_ranges  0x00007288       0x58 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
- .debug_ranges  0x000072e0       0x38 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
- .debug_ranges  0x00007318      0x148 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
- .debug_ranges  0x00007460       0x50 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
- .debug_ranges  0x000074b0       0xc0 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
- .debug_ranges  0x00007570      0x130 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
- .debug_ranges  0x000076a0       0x10 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
- .debug_ranges  0x000076b0       0x48 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
- .debug_ranges  0x000076f8       0x30 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
- .debug_ranges  0x00007728      0x478 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- .debug_ranges  0x00007ba0       0x20 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
- .debug_ranges  0x00007bc0      0x128 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
- .debug_ranges  0x00007ce8      0x898 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
- .debug_ranges  0x00008580       0xb0 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
- .debug_ranges  0x00008630      0x338 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+.debug_ranges   0x00000000     0x8980
+ .debug_ranges  0x00000000       0xd0 CMakeFiles/SimpleButtonsOneSDK.dir/sdklink.c.o
+ .debug_ranges  0x000000d0      0xce8 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+ .debug_ranges  0x00000db8       0x18 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+ .debug_ranges  0x00000dd0      0x440 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+ .debug_ranges  0x00001210       0xd8 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+ .debug_ranges  0x000012e8       0xa0 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+ .debug_ranges  0x00001388      0xa88 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+ .debug_ranges  0x00001e10       0x28 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
+ .debug_ranges  0x00001e38     0x1730 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+ .debug_ranges  0x00003568     0x1e58 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
+ .debug_ranges  0x000053c0     0x1088 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+ .debug_ranges  0x00006448      0xae8 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+ .debug_ranges  0x00006f30       0xc0 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+ .debug_ranges  0x00006ff0       0x20 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+ .debug_ranges  0x00007010      0x128 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+ .debug_ranges  0x00007138       0x20 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+ .debug_ranges  0x00007158       0x58 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+ .debug_ranges  0x000071b0       0xc8 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+ .debug_ranges  0x00007278       0x28 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+ .debug_ranges  0x000072a0       0x58 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+ .debug_ranges  0x000072f8       0x38 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+ .debug_ranges  0x00007330      0x148 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+ .debug_ranges  0x00007478       0x50 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+ .debug_ranges  0x000074c8       0xc0 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+ .debug_ranges  0x00007588      0x130 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+ .debug_ranges  0x000076b8       0x10 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+ .debug_ranges  0x000076c8       0x48 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+ .debug_ranges  0x00007710       0x30 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+ .debug_ranges  0x00007740      0x478 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ .debug_ranges  0x00007bb8       0x20 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+ .debug_ranges  0x00007bd8      0x128 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+ .debug_ranges  0x00007d00      0x898 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+ .debug_ranges  0x00008598       0xb0 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+ .debug_ranges  0x00008648      0x338 CMakeFiles/SimpleButtonsOneSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
 
 .debug_frame    0x00000000     0x1bac
  .debug_frame   0x00000000       0x68 CMakeFiles/SimpleButtonsOneSDK.dir/sdklink.c.o
