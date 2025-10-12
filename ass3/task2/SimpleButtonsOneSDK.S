@@ -13,7 +13,7 @@
 .EQU LED2, 1
 .EQU BTN1, 2
 .EQU BTN2, 3
-.EQU GPIO_IN, 0          @ pgio_set_dir(second value)
+.EQU GPIO_IN, 0          @ gpio_set_dir(second value)
 						 @ second value == 0 means input (output = false)
 .EQU GPIO_OUT, 1         @ second value == 1 means output (output = true)
 
