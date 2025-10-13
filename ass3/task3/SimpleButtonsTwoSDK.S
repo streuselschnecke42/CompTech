@@ -26,30 +26,45 @@
 .global main             @ Provide program starting address to linker
 
 main:
-	LDR R1, =SIO_BASE
+    LDR R1, =SIO_BASE
 
-	@ --- configure LED1 as OUTPUT ---
-  MOV R0, #LED1_PIN_MASK
-  STR R0, [R1, #GPIO_OE_SET]    @ write in register that LED1 is output pin
+    @ --- configure LED1 as OUTPUT ---
+    LDR R0, =LED1_PIN_MASK
+    STR R0, [R1, #GPIO_OE_SET]    @ write in register that LED1
+				  @ is output pin
 	
-	@ --- configure LED2 as OUTPUT ---
-  MOV R0, #LED2_PIN_MASK
-  STR R0, [R1, #GPIO_OE_SET]    @ ..same procedure as LED1
+    @ --- configure LED2 as OUTPUT ---
+    LDR R0, =LED2_PIN_MASK
+    STR R0, [R1, #GPIO_OE_SET]    @ ..same procedure as LED1
 	
-	@ --- configure BTN1 ---
+    @ --- configure BTN1 ---
 
 
-	@ --- configure BTN2 ---
+    @ --- configure BTN2 ---
 
 
-checkBtnOne:
+checkAllInputs:
+    LDR R2, [R1, #GPIO_IN]        @ Load address of SIO_Base + 0x004
+				  @ (all current input values) onto R2
+    
+    TST R2, #BTN1_PIN_MASK	  @ test bit of button 1 address for
+				  @ LOW (means pressed)
+    BEQ turnOn			  @ if button pressed -> turn LEDs on
+    
+    TST R2, #BTN2_PIN_MASK	  @ test bit of button 2 address for
+				  @ LOW (means pressed)
+    BEQ turnOff			  @ if button pressed -> turn LEDs off
 
-	
-checkBtnTwo:
-
-	
 turnOn:
+    MOV R0, #LED1_PIN_MASK	  @ Move address of LED1 to R0
+    STR R0, [R1, #GPIO_OUT_SET]   @ Set LED1 to HIGH (turn on)
+    MOV R0, #LED2_PIN_MASK	  @ .. same procedure as LED1
+    STR R0, [R1, #GPIO_OUT_SET]
+    B checkAllInputs
 
-	
 turnOff:
-
+    MOV R0, #LED1_PIN_MASK	  @ Move address of LED1 to R0
+    STR R0, [R1, #GPIO_OUT_CLR]   @ Set LED1 to LOW (clear bits; off)
+    MOV R0, #LED2_PIN_MASK	  @ .. same procedure as LED1
+    STR R0, [R1, #GPIO_OUT_CLR]
+    B checkAllInputs

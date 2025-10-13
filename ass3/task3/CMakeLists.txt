@@ -10,7 +10,7 @@ pico_sdk_init()
 
 include_directories(${CMAKE_SOURCE_DIR})
 
-add_executable(SimpleButtonsOneSDK
+add_executable(SimpleButtonsTwoSDK
   SimpleButtonsTwoSDK.S
   sdklink.c
 )
