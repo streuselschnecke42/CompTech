@@ -47,11 +47,11 @@ checkAllInputs:
     LDR R2, [R1, #GPIO_IN]        @ Load address of SIO_Base + 0x004
 				  @ (all current input values) onto R2
     
-    TST R2, #BTN1_PIN_MASK	  @ test bit of button 1 address for
+    TST R2, #4	  		  @ test bit of button 1 address for
 				  @ LOW (means pressed)
     BEQ turnOn			  @ if button pressed -> turn LEDs on
     
-    TST R2, #BTN2_PIN_MASK	  @ test bit of button 2 address for
+    TST R2, #8	  		  @ test bit of button 2 address for
 				  @ LOW (means pressed)
     BEQ turnOff			  @ if button pressed -> turn LEDs off
 
