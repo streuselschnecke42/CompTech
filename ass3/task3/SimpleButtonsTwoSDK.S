@@ -9,18 +9,23 @@
 @ GPIO 3 is BUTTON2 (BTN2)
 @
 
-.EQU SIO_BASE, 0xD0000000
-.EQU GPIO_IN, 0x004         @ read all current GPIO IN values
-.EQU GPIO_OUT, 0x010        @ write GPIO output
+.EQU SIO_BASE 0xd0000000
+.EQU IO_BANK0_BASE 0x40014000
+.EQU PADS_BANK0_BASE 0x4001c000
+
+.EQU PADS_GPIO0_OFFSET @ mach hier weiter
+
+.EQU REG_ALIAS_SET_BITS (0x2 << 12)
+
 .EQU GPIO_OUT_SET, 0x014    @ set bits to HIGH; output
 .EQU GPIO_OUT_CLR, 0x018    @ set bits to LOW (clear); output
 .EQU GPIO_OE_SET, 0x024     @ activate pin as output; OE = Output Enable
 .EQU GPIO_OE_CLR, 0x028     @ deactivate pin as output (revert GPIO_OE_SET)
 
-.EQU LED1_PIN_MASK, (1 << 0)    @ LED1 at GP0
-.EQU LED2_PIN_MASK, (1 << 1)    @ LED2 at GP1
-.EQU BTN1_PIN_MASK, (1 << 2)    @ BUTTON1 at GP2
-.EQU BTN2_PIN_MASK, (1 << 3)    @ BUTTON2 at GP3
+.EQU LED1_PIN_MASK, (0)    @ LED1 at GP0
+.EQU LED2_PIN_MASK, (1)    @ LED2 at GP1
+.EQU BTN1_PIN_MASK, (2)    @ BUTTON1 at GP2
+.EQU BTN2_PIN_MASK, (3)    @ BUTTON2 at GP3
 
 .thumb_func              @ Necessary because sdk uses BLX
 .global main             @ Provide program starting address to linker
@@ -29,9 +34,7 @@ main:
     LDR R1, =SIO_BASE
 
     @ --- configure LED1 as OUTPUT ---
-    LDR R0, =LED1_PIN_MASK
-    STR R0, [R1, #GPIO_OE_SET]    @ write in register that LED1
-				  @ is output pin
+    MOV R0, LED1_PIN_MASK
 	
     @ --- configure LED2 as OUTPUT ---
     LDR R0, =LED2_PIN_MASK
@@ -42,8 +45,7 @@ main:
     STR R0, [R1, #GPIO_OE_CLR]
 
     @ --- configure BTN2 ---
-    LDR R0, =BTN2_PIN_MASK
-    STR R0, [R1, #GPIO_OE_CLR]
+    
 
 checkAllInputs:
     LDR R2, [R1, #GPIO_IN]        @ Load address of SIO_Base + 0x004
@@ -89,3 +91,6 @@ turnOff:
     MOV R0, #LED2_PIN_MASK	  @ .. same procedure as LED1
     STR R0, [R1, #GPIO_OUT_CLR]
     B checkAllInputs
+
+initializeGpio:
+    
