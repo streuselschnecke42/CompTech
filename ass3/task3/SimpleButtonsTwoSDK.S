@@ -38,10 +38,12 @@ main:
     STR R0, [R1, #GPIO_OE_SET]    @ ..same procedure as LED1
 	
     @ --- configure BTN1 ---
-
+    LDR R0, =BTN1_PIN_MASK
+    STR R0, [R1, #GPIO_OE_CLR]
 
     @ --- configure BTN2 ---
-
+    LDR R0, =BTN2_PIN_MASK
+    STR R0, [R1, #GPIO_OE_CLR]
 
 checkAllInputs:
     LDR R2, [R1, #GPIO_IN]        @ Load address of SIO_Base + 0x004
@@ -60,7 +62,7 @@ checkAllInputs:
 				  @ position of LSB
 				  @ (least significant bit; bit at
 				  @ rightmost position = pos. 0)
-    CMP R4, #0			  @ check if button was pressed (LOW)
+    CMP R4, #1			  @ check if button was pressed (LOW)
     BEQ turnOn			  @ if button pressed -> turn LEDs on
     
     MOV R3, #BTN2_PIN_MASK	  @ FIX: unshifted register required
