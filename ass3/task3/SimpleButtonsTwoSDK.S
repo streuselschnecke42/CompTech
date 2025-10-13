@@ -46,13 +46,32 @@ main:
 checkAllInputs:
     LDR R2, [R1, #GPIO_IN]        @ Load address of SIO_Base + 0x004
 				  @ (all current input values) onto R2
-    
-    TST R2, #4	  		  @ test bit of button 1 address for
-				  @ LOW (means pressed)
+    MOV R3, #BTN1_PIN_MASK	  @ FIX: unshifted register required
+				  @ error line 52 (AND)
+    MOV R4, R2			  @ Copy R2 onto R4
+    AND R4, R4, R3                @ find bit that has common 1
+				  @ bit address in R2 (example case):
+				  @                00001010
+				  @ bit mask btn1: 00001000
+				  @ AND:           00001000
+				  @ keep only matching bit value 1 at
+				  @ position of btn1 mask
+    LSR R4, R4, #2		  @ shift bit 2 (because 2²=4) to
+				  @ position of LSB
+				  @ (least significant bit; bit at
+				  @ rightmost position = pos. 0)
+    CMP R4, #0			  @ check if button was pressed (LOW)
     BEQ turnOn			  @ if button pressed -> turn LEDs on
     
-    TST R2, #8	  		  @ test bit of button 2 address for
-				  @ LOW (means pressed)
+    MOV R3, #BTN2_PIN_MASK	  @ FIX: unshifted register required
+				  @ error line 71 (AND)
+				  
+				  @ no need for another R2 copy since
+				  @ its end of function (where it was
+				  @ needed)
+    AND R2, R2, R3                @ get bit at position BTN2_PIN_MASK
+    LSR R2, R2, #3		  @ 2³=8
+    CMP R2, #0
     BEQ turnOff			  @ if button pressed -> turn LEDs off
 
 turnOn:
