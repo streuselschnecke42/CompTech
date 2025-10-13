@@ -10,80 +10,46 @@
 @
 
 .EQU SIO_BASE, 0xD0000000
-.EQU GPIO_IN, 0x004         @ read all current GPIO values
+.EQU GPIO_IN, 0x004         @ read all current GPIO IN values
 .EQU GPIO_OUT, 0x010        @ write GPIO output
 .EQU GPIO_OUT_SET, 0x014    @ set bits to HIGH; output
 .EQU GPIO_OUT_CLR, 0x018    @ set bits to LOW (clear); output
 .EQU GPIO_OE_SET, 0x024     @ activate pin as output; OE = Output Enable
 .EQU GPIO_OE_CLR, 0x028     @ deactivate pin as output (revert GPIO_OE_SET)
 
-.EQU LED1, 0
-.EQU LED2, 1
-.EQU BTN1, 2
-.EQU BTN2, 3
-//.EQU GPIO_IN, 0          @ gpio_set_dir(second value)
-						             @ second value == 0 means input (output = false)
-//.EQU GPIO_OUT, 1         @ second value == 1 means output (output = true)
+.EQU LED1_PIN_MASK, (1 << 0)    @ LED1 at GP0
+.EQU LED2_PIN_MASK, (1 << 1)    @ LED2 at GP1
+.EQU BTN1_PIN_MASK, (1 << 2)    @ BUTTON1 at GP2
+.EQU BTN2_PIN_MASK, (1 << 3)    @ BUTTON2 at GP3
 
 .thumb_func              @ Necessary because sdk uses BLX
 .global main             @ Provide program starting address to linker
 
 main:
-	@ --- configure LED1 ---
-	MOV R0, #LED1
-	BL gpio_init
-	MOV R0, #LED1
-	MOV R1, #GPIO_OUT
-	BL link_gpio_set_dir
+	LDR R1, =SIO_BASE
+
+	@ --- configure LED1 as OUTPUT ---
+  MOV R0, #LED1_PIN_MASK
+  STR R0, [R1, #GPIO_OE_SET]    @ write in register that LED1 is output pin
 	
-	@ --- configure LED2 ---
-	MOV R0, #LED2
-	BL gpio_init
-	MOV R0, #LED2
-	MOV R1, #GPIO_OUT
-	BL link_gpio_set_dir
+	@ --- configure LED2 as OUTPUT ---
+  MOV R0, #LED2_PIN_MASK
+  STR R0, [R1, #GPIO_OE_SET]    @ ..same procedure as LED1
 	
 	@ --- configure BTN1 ---
-	MOV R0, #BTN1
-	BL gpio_init
-	MOV R0, #BTN1
-	MOV R1, #GPIO_IN
-	BL link_gpio_set_dir
-	MOV R0, #BTN1
-	BL link_gpio_pull_up		@ pull up sets internal pull-up-resistor
-								          @ without method, value would float
-								          @ around and return unstable or 
-								          @ arbitrary values
-	
+
+
 	@ --- configure BTN2 ---
-	MOV R0, #BTN2
-	BL gpio_init
-	MOV R0, #BTN2
-	MOV R1, #GPIO_IN
-	BL link_gpio_set_dir
-	MOV R0, #BTN2
-	BL link_gpio_pull_up
+
 
 checkBtnOne:
-	MOV R0, #BTN1
-	BL link_gpio_get
-	CMP R0, #0					    @ 0 means button is pressed
-	BEQ turnOn
-	B checkBtnTwo
+
 	
 checkBtnTwo:
-	MOV R0, #BTN2
-	BL link_gpio_get
-	CMP R0, #0
-	BEQ turnOff
-	B checkBtnOne
+
 	
 turnOn:
-	MOV R0, #1
-	BL link_gpio_put_all
-	B checkBtnTwo
+
 	
 turnOff:
-	MOV R0, #0
-	BL link_gpio_put_all
-	B checkBtnOne
+
