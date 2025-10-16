@@ -169,7 +169,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=SimpleButtonsTwoSDK
+CMAKE_PROJECT_NAME:STATIC=DisapointmentSDK
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/arm-none-eabi-ranlib
@@ -241,6 +241,12 @@ DOXYGEN_DOT_EXECUTABLE:FILEPATH=DOXYGEN_DOT_EXECUTABLE-NOTFOUND
 
 //Doxygen documentation generation tool (http://www.doxygen.org)
 DOXYGEN_EXECUTABLE:FILEPATH=DOXYGEN_EXECUTABLE-NOTFOUND
+
+//Value Computed by CMake
+DisapointmentSDK_BINARY_DIR:STATIC=/home/michelle/pico/comptech/ass3/task3/build
+
+//Value Computed by CMake
+DisapointmentSDK_SOURCE_DIR:STATIC=/home/michelle/pico/comptech/ass3/task3
 
 //Directory under which to collect all populated content
 FETCHCONTENT_BASE_DIR:PATH=/home/michelle/pico/comptech/ass3/task3/build/_deps
@@ -317,12 +323,6 @@ PICO_STDIO_USB:BOOL=OFF
 
 //Directory where pioasm has been installed
 PIOASM_INSTALL_DIR:PATH=/home/michelle/pico/comptech/ass3/task3/build/pioasm-install
-
-//Value Computed by CMake
-SimpleButtonsTwoSDK_BINARY_DIR:STATIC=/home/michelle/pico/comptech/ass3/task3/build
-
-//Value Computed by CMake
-SimpleButtonsTwoSDK_SOURCE_DIR:STATIC=/home/michelle/pico/comptech/ass3/task3
 
 //Value Computed by CMake
 pico_sdk_BINARY_DIR:STATIC=/home/michelle/pico/comptech/ass3/task3/build/pico-sdk

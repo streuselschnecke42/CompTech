@@ -21,7 +21,7 @@
 @ Wish there was more detailed documentation to find
 @ those values, so i can fix my shit :)))
 @.EQU IO_BANK0_GPIO3_CTRL_FUNCSEL_VALUE_SIO_3, 0x0000001f @ ??
-@.EQU IO_BANK0_GPIO0_CTRL_OFFSET, 0x04 @ ??
+@.EQU IO_BANK0_GPIO0_CTRL_OFFSET, 0x00000004 @ ??
 
 .EQU PADS_BANK0_BASE, 0x4001c000
 .EQU PADS_BANK0_GPIO0_IE_BITS, 0x00000040 @ Input Enable?
@@ -107,22 +107,22 @@ checkAllInputs:
 
 turnOn:
     MOV R3, #LED1_BITMASK
-    LDR R2, R7                    @ SIO_BASE
+    MOV R2, R7                    @ SIO_BASE
     STR R3, [R2, #SIO_GPIO_OUT_SET_OFFSET]
 
     MOV R3, #LED2_BITMASK
-    LDR R2, R7                    @ SIO_BASE
+    MOV R2, R7                    @ SIO_BASE
     STR R3, [R2, #SIO_GPIO_OUT_SET_OFFSET]
 
     BX LR
 
 turnOff:
     MOV R3, #LED1_BITMASK
-    LDR R2, R7              @ SIO_BASE
+    MOV R2, R7              @ SIO_BASE
     STR R3, [R2, #SIO_GPIO_OUT_CLR_OFFSET]
 
     MOV R3, #LED2_BITMASK
-    LDR R2, R7              @ SIO_BASE
+    MOV R2, R7              @ SIO_BASE
     STR R3, [R2, #SIO_GPIO_OUT_CLR_OFFSET]
 
     BX LR
@@ -150,6 +150,11 @@ gpioinit:
     LSL R2, R2, #3
     LDR R4, =IO_BANK0_BASE
     ADD R2, R2, R4
+    
+    @ if the program tells you to change those 2 lines below,
+    @ dont believe it. no matter how many times you adjust it
+    @ to its liking it will never be pleased.
+    @ it will always find a way to not compile. scheiß assembly
     MOV R5, #IO_BANK0_GPIO3_CTRL_FUNCSEL_VALUE_SIO_3
     STR R5, [R2, #IO_BANK0_GPIO0_CTRL_OFFSET]
     BX LR

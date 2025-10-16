@@ -72,7 +72,7 @@ CMAKE_BINARY_DIR = /home/michelle/pico/comptech/ass3/task3/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/SimpleButtonsTwoSDK.dir/all
+all: CMakeFiles/DisapointmentSDK.dir/all
 all: pico-sdk/all
 
 .PHONY : all
@@ -83,7 +83,7 @@ preinstall: pico-sdk/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/SimpleButtonsTwoSDK.dir/clean
+clean: CMakeFiles/DisapointmentSDK.dir/clean
 clean: pico-sdk/clean
 
 .PHONY : clean
@@ -2113,31 +2113,31 @@ pico-sdk/tools/clean:
 .PHONY : pico-sdk/tools/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/SimpleButtonsTwoSDK.dir
+# Target rules for target CMakeFiles/DisapointmentSDK.dir
 
 # All Build rule for target.
-CMakeFiles/SimpleButtonsTwoSDK.dir/all: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/michelle/pico/comptech/ass3/task3/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84 "Built target SimpleButtonsTwoSDK"
-.PHONY : CMakeFiles/SimpleButtonsTwoSDK.dir/all
+CMakeFiles/DisapointmentSDK.dir/all: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/michelle/pico/comptech/ass3/task3/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84 "Built target DisapointmentSDK"
+.PHONY : CMakeFiles/DisapointmentSDK.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/SimpleButtonsTwoSDK.dir/rule: cmake_check_build_system
+CMakeFiles/DisapointmentSDK.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/michelle/pico/comptech/ass3/task3/build/CMakeFiles 89
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SimpleButtonsTwoSDK.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/DisapointmentSDK.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/michelle/pico/comptech/ass3/task3/build/CMakeFiles 0
-.PHONY : CMakeFiles/SimpleButtonsTwoSDK.dir/rule
+.PHONY : CMakeFiles/DisapointmentSDK.dir/rule
 
 # Convenience name for target.
-SimpleButtonsTwoSDK: CMakeFiles/SimpleButtonsTwoSDK.dir/rule
+DisapointmentSDK: CMakeFiles/DisapointmentSDK.dir/rule
 
-.PHONY : SimpleButtonsTwoSDK
+.PHONY : DisapointmentSDK
 
 # clean rule for target.
-CMakeFiles/SimpleButtonsTwoSDK.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/clean
-.PHONY : CMakeFiles/SimpleButtonsTwoSDK.dir/clean
+CMakeFiles/DisapointmentSDK.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/clean
+.PHONY : CMakeFiles/DisapointmentSDK.dir/clean
 
 #=============================================================================
 # Target rules for target pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir
