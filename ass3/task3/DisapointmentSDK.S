@@ -9,6 +9,8 @@
 @ GPIO 3 is BUTTON2 (BTN2)
 @
 
+#include "hardware/regs/io_bank0.h"
+
 .EQU SIO_BASE, 0xd0000000
 .EQU SIO_GPIO_OE_SET_OFFSET, 0x00000024
 .EQU SIO_GPIO_OUT_SET_OFFSET, 0x00000014
@@ -16,11 +18,13 @@
 
 .EQU IO_BANK0_BASE, 0x40014000
 .EQU IO_BANK0_BASE, 0x40014000
-.EQU IO_BANK0_GPIO3_CTRL_FUNCSEL_VALUE_SIO_3, 0x0000001f @ ??
-.EQU IO_BANK0_GPIO0_CTRL_OFFSET, 0x04 @ ??
+@ Wish there was more detailed documentation to find
+@ those values, so i can fix my shit :)))
+@.EQU IO_BANK0_GPIO3_CTRL_FUNCSEL_VALUE_SIO_3, 0x0000001f @ ??
+@.EQU IO_BANK0_GPIO0_CTRL_OFFSET, 0x04 @ ??
 
 .EQU PADS_BANK0_BASE, 0x4001c000
-.EQU PADS_BANK0_GPIO0_IE_BITS, 0x00000040
+.EQU PADS_BANK0_GPIO0_IE_BITS, 0x00000040 @ Input Enable?
 .EQU PADS_BANK0_GPIO0_OD_BITS, 0x00000080 @ Output Disable
 .EQU PADS_BANK0_GPIO0_OFFSET, 0x00000000 @ No proper documentation found
 
@@ -44,6 +48,8 @@
 .thumb_func              @ Necessary because sdk uses BLX
 .global main             @ Provide program starting address to linker
 
+    .align 4             @ testing a theory
+
 main:
     LDR R7, =SIO_BASE
     LDR R6, =PADS_BANK0_BASE
@@ -54,19 +60,80 @@ main:
     BL gpioinit
     
     @ --- configure LED2 as OUTPUT ---
-    LDR R0, =LED2
-    STR R0, [R1, #GPIO_OE_SET]    @ ..same procedure as LED1
-	
+    MOV R0, #LED2_BITMASK
+    MOV R1, #LED2
+    BL gpioinit
+
     @ --- configure BTN1 ---
-    LDR R0, =BTN1
-    STR R0, [R1, #GPIO_OE_CLR]
+    @ TODO
+    @ maybe set flag R2 and if 1 its in and 0 means out like c function
+    @LDR R0, =BTN1
+    @STR R0, [R1, #GPIO_OE_CLR]
 
     @ --- configure BTN2 ---
-    
-    
-testfiller:
-    MOV R5, #1
+    @ TODO
 
+checkAllInputs:
+    @ TODO fix this garbage, cuz it sux rn
+    LDR R2, [R1, #GPIO_IN]        @ Load address of SIO_Base + 0x004
+				                          @ (all current input values) onto R2
+    MOV R3, #BTN1                 @ FIX: unshifted register required
+				                          @ error line 52 (AND)
+    MOV R4, R2			              @ Copy R2 onto R4
+    AND R4, R4, R3                @ find bit that has common 1
+                                  @ bit address in R2 (example case):
+                                  @                00001010
+                                  @ bit mask btn1: 00001000
+                                  @ AND:           00001000
+                                  @ keep only matching bit value 1 at
+                                  @ position of btn1 mask
+    LSR R4, R4, #2		            @ shift bit 2 (because 2²=4) to
+                                  @ position of LSB
+                                  @ (least significant bit; bit at
+                                  @ rightmost position = pos. 0)
+    CMP R4, #1			              @ check if button was pressed (LOW)
+    BEQ turnOn			              @ if button pressed -> turn LEDs on
+    
+    MOV R3, #BTN2	                @ FIX: unshifted register required
+                                  @ error line 71 (AND)
+                                  
+                                  @ no need for another R2 copy since
+                                  @ its end of function (where it was
+                                  @ needed)
+    AND R2, R2, R3                @ get bit at position BTN2_PIN_MASK
+    LSR R2, R2, #3		            @ 2³=8
+    CMP R2, #0
+    BEQ turnOff			              @ if button pressed -> turn LEDs off
+
+turnOn:
+    MOV R3, #LED1_BITMASK
+    LDR R2, R7                    @ SIO_BASE
+    STR R3, [R2, #SIO_GPIO_OUT_SET_OFFSET]
+
+    MOV R3, #LED2_BITMASK
+    LDR R2, R7                    @ SIO_BASE
+    STR R3, [R2, #SIO_GPIO_OUT_SET_OFFSET]
+
+    BX LR
+
+turnOff:
+    MOV R3, #LED1_BITMASK
+    LDR R2, R7              @ SIO_BASE
+    STR R3, [R2, #SIO_GPIO_OUT_CLR_OFFSET]
+
+    MOV R3, #LED2_BITMASK
+    LDR R2, R7              @ SIO_BASE
+    STR R3, [R2, #SIO_GPIO_OUT_CLR_OFFSET]
+
+    BX LR
+
+@ INPUT: R0 - PIN BITMASK
+@ INPUT: R1 - PIN NUMBER (NORMAL)
+@ PRE-SET INPUT: R6 - PADS_BANK0_BASE address
+@ PRE-SET INPUT: R7 - SIO_BASE address
+@ R2 - (temp) used for shifting 4 and 8 bits and adding
+@ R4 - (temp) used for loading addresses onto
+@ R5 - (temp) used for moving addresses onto + STR
 gpioinit:
     STR R0, [R7, #SIO_GPIO_OE_SET_OFFSET]   @ set pin to output
     STR R0, [R7, #SIO_GPIO_OUT_CLR_OFFSET]  @ set output pin to 0
@@ -86,48 +153,3 @@ gpioinit:
     MOV R5, #IO_BANK0_GPIO3_CTRL_FUNCSEL_VALUE_SIO_3
     STR R5, [R2, #IO_BANK0_GPIO0_CTRL_OFFSET]
     BX LR
-
-checkAllInputs:
-    LDR R2, [R1, #GPIO_IN]        @ Load address of SIO_Base + 0x004
-				  @ (all current input values) onto R2
-    MOV R3, #BTN1  @ FIX: unshifted register required
-				  @ error line 52 (AND)
-    MOV R4, R2			  @ Copy R2 onto R4
-    AND R4, R4, R3                @ find bit that has common 1
-				  @ bit address in R2 (example case):
-				  @                00001010
-				  @ bit mask btn1: 00001000
-				  @ AND:           00001000
-				  @ keep only matching bit value 1 at
-				  @ position of btn1 mask
-    LSR R4, R4, #2		  @ shift bit 2 (because 2²=4) to
-				  @ position of LSB
-				  @ (least significant bit; bit at
-				  @ rightmost position = pos. 0)
-    CMP R4, #1			  @ check if button was pressed (LOW)
-    BEQ turnOn			  @ if button pressed -> turn LEDs on
-    
-    MOV R3, #BTN2	  @ FIX: unshifted register required
-				  @ error line 71 (AND)
-				  
-				  @ no need for another R2 copy since
-				  @ its end of function (where it was
-				  @ needed)
-    AND R2, R2, R3                @ get bit at position BTN2_PIN_MASK
-    LSR R2, R2, #3		  @ 2³=8
-    CMP R2, #0
-    BEQ turnOff			  @ if button pressed -> turn LEDs off
-
-turnOn:
-    MOV R0, #LED1	  @ Move address of LED1 to R0
-    STR R0, [R1, #GPIO_OUT_SET]   @ Set LED1 to HIGH (turn on)
-    MOV R0, #LED2	  @ .. same procedure as LED1
-    STR R0, [R1, #GPIO_OUT_SET]
-    B checkAllInputs
-
-turnOff:
-    MOV R0, #LED1	  @ Move address of LED1 to R0
-    STR R0, [R1, #GPIO_OUT_CLR]   @ Set LED1 to LOW (clear bits; off)
-    MOV R0, #LED2	  @ .. same procedure as LED1
-    STR R0, [R1, #GPIO_OUT_CLR]
-    B checkAllInputs
