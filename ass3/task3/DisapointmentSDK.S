@@ -13,8 +13,6 @@
 .EQU BTN1, 2
 .EQU BTN2, 3
 
-.EQU sleep_time, 200
-
 .thumb_func
 .global main                        @ Provide program starting address
 
@@ -39,16 +37,16 @@ main:
 
 checkBtnOne:
 	MOV R0, #BTN1
-	BL gpioget
-	TST R0, R1
-	BEQ turnOn
+	BL gpioget            @ <-- prob this function's fault or button init
+	TST R0, R1            @ FIX SHIT
+	BEQ turnOn            @ ERROR: CONSTANTLY EQUAL
 	B checkBtnTwo
   
 checkBtnTwo:
 	MOV R0, #BTN2
 	BL gpioget
 	TST R0, R1
-	BEQ turnOff
+	BEQ turnOff           @ ERROR: CONSTANTLY EQUAL
 	B checkBtnOne
 
 @ Initialize the GPIO to SIO. r0 = pin to init.
@@ -65,8 +63,8 @@ gpioinit_in:
   ADD R2, R3                          @ Actual set of registers for pin
   
   LDR R1, [R2]                        @ read current register (current PAD config)
-  LDR R7, =PADS_BANK0_GPIO0_IE_BITS
-  LDR R6, =PADS_BANK0_GPIO0_PUE_BITS
+  MOV R7, #PADS_BANK0_GPIO0_IE_BITS
+  MOV R6, #PADS_BANK0_GPIO0_PUE_BITS
   ORR R1, R1, R7                      @ set bit 6 (IE) Input Enable
   ORR R1, R1, R6                      @ set bit 8 (PUE) Pull Up Enable
   STR R1, [R2]                        @ write new value back onto R2
@@ -111,7 +109,6 @@ gpioget:
   LDR R0, [R2, #SIO_GPIO_IN_OFFSET]
   BX LR
 
-@ Turn on a GPIO pin.
 turnOn:
   MOV R0, #LED_PIN1
   MOV R3, #1
@@ -126,8 +123,7 @@ turnOn:
   STR R3, [R2, #SIO_GPIO_OUT_SET_OFFSET]
   
   BX LR
-  
-@ Turn off a GPIO pin.
+
 turnOff:
   MOV R0, #LED_PIN1
   MOV R3, #1
