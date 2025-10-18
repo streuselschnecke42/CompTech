@@ -3352,7 +3352,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x10000100                __boot2_end__ = .
                 0x00000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x10000100     0x170c
+.text           0x10000100     0x1754
                 0x10000100                __logical_binary_start = .
  *(.vectors)
  .vectors       0x10000100       0xd4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
@@ -3415,181 +3415,182 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x10000284                _init
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .text*)
  .text          0x10000288       0x98 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
- .text          0x10000320       0x84 CMakeFiles/DisapointmentSDK.dir/DisapointmentSDK.S.o
+ .text          0x10000320       0xc8 CMakeFiles/DisapointmentSDK.dir/DisapointmentSDK.S.o
                 0x10000320                main
- .text.panic    0x100003a4       0x30 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
-                0x100003a4                panic
+ .text.panic    0x100003e8       0x30 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+                0x100003e8                panic
  .text.hw_claim_or_assert
-                0x100003d4       0x44 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.o
-                0x100003d4                hw_claim_or_assert
+                0x10000418       0x44 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+                0x10000418                hw_claim_or_assert
  .text.next_striped_spin_lock_num
-                0x10000418       0x18 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
-                0x10000418                next_striped_spin_lock_num
+                0x1000045c       0x18 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+                0x1000045c                next_striped_spin_lock_num
  .text.spin_locks_reset
-                0x10000430       0x1c CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
-                0x10000430                spin_locks_reset
+                0x10000474       0x1c CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+                0x10000474                spin_locks_reset
  .text.runtime_init_per_core_irq_priorities
-                0x1000044c       0x24 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x1000044c                runtime_init_per_core_irq_priorities
+                0x10000490       0x24 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x10000490                runtime_init_per_core_irq_priorities
  .text.irq_set_enabled
-                0x10000470       0x24 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x10000470                irq_set_enabled
+                0x100004b4       0x24 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x100004b4                irq_set_enabled
  .text.irq_set_exclusive_handler
-                0x10000494       0x54 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x10000494                irq_set_exclusive_handler
+                0x100004d8       0x54 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x100004d8                irq_set_exclusive_handler
  .text.lock_init
-                0x100004e8       0x10 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
-                0x100004e8                lock_init
+                0x1000052c       0x10 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
+                0x1000052c                lock_init
  .text.runtime_init_mutex
-                0x100004f8       0x68 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o
-                0x100004f8                runtime_init_mutex
+                0x1000053c       0x68 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x1000053c                runtime_init_mutex
  .text.sleep_until_callback
-                0x10000560       0x30 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x100005a4       0x30 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
  .text.alarm_pool_irq_handler
-                0x10000590      0x318 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x100005d4      0x318 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
  .text.runtime_init_default_alarm_pool
-                0x100008a8       0xdc CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x100008a8                runtime_init_default_alarm_pool
+                0x100008ec       0xdc CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x100008ec                runtime_init_default_alarm_pool
  .text.alarm_pool_add_alarm_at_force_in_context
-                0x10000984       0xa8 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10000984                alarm_pool_add_alarm_at_force_in_context
+                0x100009c8       0xa8 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x100009c8                alarm_pool_add_alarm_at_force_in_context
  .text.alarm_pool_cancel_alarm
-                0x10000a2c       0x78 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10000a2c                alarm_pool_cancel_alarm
+                0x10000a70       0x78 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10000a70                alarm_pool_cancel_alarm
  .text.best_effort_wfe_or_timeout
-                0x10000aa4       0xfc CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10000aa4                best_effort_wfe_or_timeout
+                0x10000ae8       0xfc CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10000ae8                best_effort_wfe_or_timeout
  .text.timer_hardware_alarm_claim
-                0x10000ba0       0x14 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10000ba0                timer_hardware_alarm_claim
+                0x10000be4       0x14 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10000be4                timer_hardware_alarm_claim
  .text.timer_time_us_64
-                0x10000bb4       0x14 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10000bb4                timer_time_us_64
+                0x10000bf8       0x14 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10000bf8                timer_time_us_64
  .text.time_us_64
-                0x10000bc8       0x18 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10000bc8                time_us_64
+                0x10000c0c       0x18 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10000c0c                time_us_64
  .text.clock_configure_int_divider
-                0x10000be0      0x128 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-                0x10000be0                clock_configure_int_divider
+                0x10000c24      0x128 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x10000c24                clock_configure_int_divider
  .text.clock_configure_undivided
-                0x10000d08      0x128 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-                0x10000d08                clock_configure_undivided
+                0x10000d4c      0x128 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x10000d4c                clock_configure_undivided
  .text.clock_get_hz
-                0x10000e30        0xc CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-                0x10000e30                clock_get_hz
+                0x10000e74        0xc CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x10000e74                clock_get_hz
  .text.pll_init
-                0x10000e3c       0xa0 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
-                0x10000e3c                pll_init
+                0x10000e80       0xa0 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+                0x10000e80                pll_init
  .text.tick_start
-                0x10000edc       0x10 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
-                0x10000edc                tick_start
+                0x10000f20       0x10 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+                0x10000f20                tick_start
  .text.rom_func_lookup
-                0x10000eec       0x10 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-                0x10000eec                rom_func_lookup
+                0x10000f30       0x10 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x10000f30                rom_func_lookup
  .text.rom_data_lookup
-                0x10000efc       0x10 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-                0x10000efc                rom_data_lookup
+                0x10000f40       0x10 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x10000f40                rom_data_lookup
  .text.rom_funcs_lookup
-                0x10000f0c       0x3c CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-                0x10000f0c                rom_funcs_lookup
+                0x10000f50       0x3c CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x10000f50                rom_funcs_lookup
  .text.xosc_init
-                0x10000f48       0x28 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
-                0x10000f48                xosc_init
+                0x10000f8c       0x28 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+                0x10000f8c                xosc_init
  .text.first_per_core_initializer
-                0x10000f70        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x10000fb4        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
  .text.hard_assertion_failure
-                0x10000f74        0xc CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-                0x10000f74                hard_assertion_failure
+                0x10000fb8        0xc CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x10000fb8                hard_assertion_failure
  .text.runtime_run_initializers
-                0x10000f80       0x28 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-                0x10000f80                runtime_run_initializers
+                0x10000fc4       0x28 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x10000fc4                runtime_run_initializers
  .text.runtime_init_early_resets
-                0x10000fa8       0x2c CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10000fa8                runtime_init_early_resets
+                0x10000fec       0x2c CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10000fec                runtime_init_early_resets
  .text.runtime_init_usb_power_down
-                0x10000fd4       0x1c CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10000fd4                runtime_init_usb_power_down
+                0x10001018       0x1c CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001018                runtime_init_usb_power_down
  .text.runtime_init_post_clock_resets
-                0x10000ff0       0x20 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10000ff0                runtime_init_post_clock_resets
+                0x10001034       0x20 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001034                runtime_init_post_clock_resets
  .text.runtime_init_rp2040_gpio_ie_disable
-                0x10001010       0x14 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10001010                runtime_init_rp2040_gpio_ie_disable
+                0x10001054       0x14 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001054                runtime_init_rp2040_gpio_ie_disable
  .text.runtime_init_spin_locks_reset
-                0x10001024        0x8 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10001024                runtime_init_spin_locks_reset
+                0x10001068        0x8 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001068                runtime_init_spin_locks_reset
  .text.runtime_init_install_ram_vector_table
-                0x1000102c       0xb8 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x1000102c                runtime_init_install_ram_vector_table
+                0x10001070       0xb8 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001070                runtime_init_install_ram_vector_table
  .text.runtime_init_clocks
-                0x100010e4       0xd8 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
-                0x100010e4                runtime_init_clocks
- .text          0x100011bc       0x10 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+                0x10001128       0xd8 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+                0x10001128                runtime_init_clocks
+ .text          0x10001200       0x10 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
  .text.__wrap___aeabi_uidiv
-                0x100011cc       0x4c CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
-                0x100011cc                __wrap___aeabi_uidiv
-                0x100011cc                __wrap___aeabi_uidivmod
-                0x100011cc                div_u32u32
-                0x100011cc                divmod_u32u32
-                0x100011d4                divmod_u32u32_unsafe
-                0x100011fc                divmod_u32u32_savestate
+                0x10001210       0x4c CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+                0x10001210                __wrap___aeabi_uidiv
+                0x10001210                __wrap___aeabi_uidivmod
+                0x10001210                div_u32u32
+                0x10001210                divmod_u32u32
+                0x10001218                divmod_u32u32_unsafe
+                0x10001240                divmod_u32u32_savestate
  .text.__aeabi_double_init
-                0x10001218       0xc8 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
-                0x10001218                __aeabi_double_init
+                0x1000125c       0xc8 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+                0x1000125c                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x100012e0       0x2c CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-                0x100012e0                double_table_shim_on_use_helper
+                0x10001324       0x2c CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x10001324                double_table_shim_on_use_helper
  .text.__aeabi_float_init
-                0x1000130c       0x68 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
-                0x1000130c                __aeabi_float_init
+                0x10001350       0x68 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+                0x10001350                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x10001374       0x2c CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
-                0x10001374                float_table_shim_on_use_helper
- .text          0x100013a0       0x10 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-                0x100013a0                __aeabi_mem_init
- .text.memset   0x100013b0        0xc CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-                0x100013b0                __wrap_memset
- .text.memcpy   0x100013bc        0xc CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-                0x100013bc                __wrap___aeabi_memcpy
-                0x100013bc                __wrap_memcpy
+                0x100013b8       0x2c CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+                0x100013b8                float_table_shim_on_use_helper
+ .text          0x100013e4       0x10 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x100013e4                __aeabi_mem_init
+ .text.memset   0x100013f4        0xc CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x100013f4                __wrap_memset
+ .text.memcpy   0x10001400        0xc CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x10001400                __wrap___aeabi_memcpy
+                0x10001400                __wrap_memcpy
  .text._out_char
-                0x100013c8       0x10 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x1000140c       0x10 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text.weak_raw_vprintf
-                0x100013d8       0x30 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
-                0x100013d8                weak_raw_vprintf
- .text._exit    0x10001408        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x10001408                _exit
- .text.exit     0x1000140c        0x8 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x1000140c                exit
+                0x1000141c       0x30 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x1000141c                weak_raw_vprintf
+ .text._exit    0x1000144c        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x1000144c                _exit
+ .text.exit     0x10001450        0x8 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x10001450                exit
  .text.runtime_init
-                0x10001414       0x2c CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x10001414                runtime_init
+                0x10001458       0x2c CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x10001458                runtime_init
  .text.stdio_out_chars_no_crlf
-                0x10001440       0x10 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10001484       0x10 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .text.stdio_out_chars_crlf
-                0x10001450       0xac CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10001494       0xac CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .text.stdio_put_string
-                0x100014fc      0x100 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x100014fc                stdio_put_string
+                0x10001540      0x100 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10001540                stdio_put_string
  .text.__wrap_putchar
-                0x100015fc       0x98 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x100015fc                stdio_putchar
-                0x100015fc                __wrap_putchar
+                0x10001640       0x98 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10001640                stdio_putchar
+                0x10001640                __wrap_putchar
  .text.__wrap_puts
-                0x10001694       0x3c CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10001694                __wrap_puts
-                0x10001694                stdio_puts
+                0x100016d8       0x3c CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x100016d8                __wrap_puts
+                0x100016d8                stdio_puts
  .text.startup._retrieve_unique_id_on_boot
-                0x100016d0       0x10 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+                0x10001714       0x10 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
  .text.flash_get_unique_id
-                0x100016e0       0x3c CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
-                0x100016e0                flash_get_unique_id
- .text          0x1000171c       0x68 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
-                0x1000171c                strlen
+                0x10001724       0x3c CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+                0x10001724                flash_get_unique_id
+ .text          0x10001760       0x68 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
+                0x10001760                strlen
  *(.fini)
- .fini          0x10001784        0x4 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crti.o
-                0x10001784                _fini
- .fini.__stub   0x10001788       0x40 linker stubs
+ .fini          0x100017c8        0x4 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crti.o
+                0x100017c8                _fini
+ *fill*         0x100017cc        0x4 
+ .fini.__stub   0x100017d0       0x40 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -3600,146 +3601,146 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
-                0x100017c8                . = ALIGN (0x4)
-                0x100017c8                PROVIDE (__preinit_array_start = .)
+                0x10001810                . = ALIGN (0x4)
+                0x10001810                PROVIDE (__preinit_array_start = .)
  *(SORT_BY_NAME(.preinit_array.*))
  .preinit_array.00100
-                0x100017c8        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100017c8                __pre_init_runtime_init_early_resets
+                0x10001810        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001810                __pre_init_runtime_init_early_resets
  .preinit_array.00101
-                0x100017cc        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100017cc                __pre_init_runtime_init_usb_power_down
+                0x10001814        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001814                __pre_init_runtime_init_usb_power_down
  .preinit_array.00275
-                0x100017d0        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+                0x10001818        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
  .preinit_array.00300
-                0x100017d4        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x1000181c        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
  .preinit_array.00350
-                0x100017d8        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x10001820        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
  .preinit_array.00350
-                0x100017dc        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+                0x10001824        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
  .preinit_array.00500
-                0x100017e0        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100017e0                __pre_init_runtime_init_clocks
+                0x10001828        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001828                __pre_init_runtime_init_clocks
  .preinit_array.00600
-                0x100017e4        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100017e4                __pre_init_runtime_init_post_clock_resets
+                0x1000182c        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x1000182c                __pre_init_runtime_init_post_clock_resets
  .preinit_array.00700
-                0x100017e8        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100017e8                __pre_init_runtime_init_rp2040_gpio_ie_disable
+                0x10001830        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001830                __pre_init_runtime_init_rp2040_gpio_ie_disable
  .preinit_array.01000
-                0x100017ec        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100017ec                __pre_init_runtime_init_spin_locks_reset
+                0x10001834        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001834                __pre_init_runtime_init_spin_locks_reset
  .preinit_array.01100
-                0x100017f0        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o
-                0x100017f0                __pre_init_runtime_init_mutex
+                0x10001838        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x10001838                __pre_init_runtime_init_mutex
  .preinit_array.10080
-                0x100017f4        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100017f4                __pre_init_runtime_init_install_ram_vector_table
+                0x1000183c        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x1000183c                __pre_init_runtime_init_install_ram_vector_table
  .preinit_array.11000
-                0x100017f8        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x100017f8                __pre_init_runtime_init_default_alarm_pool
+                0x10001840        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10001840                __pre_init_runtime_init_default_alarm_pool
  .preinit_array.YYYYY
-                0x100017fc        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-                0x100017fc                __pre_init_first_per_core_initializer
+                0x10001844        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x10001844                __pre_init_first_per_core_initializer
  .preinit_array.ZZZZZ.01200
-                0x10001800        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x10001800                __pre_init_runtime_init_per_core_irq_priorities
+                0x10001848        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x10001848                __pre_init_runtime_init_per_core_irq_priorities
  *(.preinit_array)
-                0x10001804                PROVIDE (__preinit_array_end = .)
-                0x10001804                . = ALIGN (0x4)
-                0x10001804                PROVIDE (__init_array_start = .)
+                0x1000184c                PROVIDE (__preinit_array_end = .)
+                0x1000184c                . = ALIGN (0x4)
+                0x1000184c                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.01000
-                0x10001804        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+                0x1000184c        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
  *(.init_array)
- .init_array    0x10001808        0x4 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x1000180c                PROVIDE (__init_array_end = .)
-                0x1000180c                . = ALIGN (0x4)
-                0x1000180c                PROVIDE (__fini_array_start = .)
+ .init_array    0x10001850        0x4 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x10001854                PROVIDE (__init_array_end = .)
+                0x10001854                . = ALIGN (0x4)
+                0x10001854                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array)
-                0x1000180c                PROVIDE (__fini_array_end = .)
+                0x10001854                PROVIDE (__fini_array_end = .)
  *(.eh_frame*)
- .eh_frame      0x1000180c        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x1000180c                . = ALIGN (0x4)
+ .eh_frame      0x10001854        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x10001854                . = ALIGN (0x4)
 
-.glue_7         0x1000180c        0x0
- .glue_7        0x1000180c        0x0 linker stubs
+.glue_7         0x10001854        0x0
+ .glue_7        0x10001854        0x0 linker stubs
 
-.glue_7t        0x1000180c        0x0
- .glue_7t       0x1000180c        0x0 linker stubs
+.glue_7t        0x10001854        0x0
+ .glue_7t       0x10001854        0x0 linker stubs
 
-.vfp11_veneer   0x1000180c        0x0
- .vfp11_veneer  0x1000180c        0x0 linker stubs
+.vfp11_veneer   0x10001854        0x0
+ .vfp11_veneer  0x10001854        0x0 linker stubs
 
-.v4_bx          0x1000180c        0x0
- .v4_bx         0x1000180c        0x0 linker stubs
+.v4_bx          0x10001854        0x0
+ .v4_bx         0x10001854        0x0 linker stubs
 
-.iplt           0x1000180c        0x0
- .iplt          0x1000180c        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x10001854        0x0
+ .iplt          0x10001854        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x1000180c       0xe4
+.rodata         0x10001854       0xe4
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.panic.str1.4
-                0x1000180c       0x12 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
- *fill*         0x1000181e        0x2 
+                0x10001854       0x12 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+ *fill*         0x10001866        0x2 
  .rodata.timer_hardware_alarm_claim.str1.4
-                0x10001820       0x22 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
- *fill*         0x10001842        0x2 
+                0x10001868       0x22 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+ *fill*         0x1000188a        0x2 
  .rodata.hard_assertion_failure.str1.4
-                0x10001844        0xc CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x1000188c        0xc CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
  .rodata.__bi_26
-                0x10001850        0xc CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .rodata.__bi_34
-                0x1000185c        0xc CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .rodata.__bi_42
-                0x10001868        0xc CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .rodata.__bi_48
-                0x10001874        0xc CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .rodata.__bi_54
-                0x10001880        0xc CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .rodata.__bi_78
-                0x1000188c        0xc CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .rodata.__bi_84
                 0x10001898        0xc CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .rodata.__bi_34
+                0x100018a4        0xc CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .rodata.__bi_42
+                0x100018b0        0xc CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .rodata.__bi_48
+                0x100018bc        0xc CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .rodata.__bi_54
+                0x100018c8        0xc CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .rodata.__bi_78
+                0x100018d4        0xc CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .rodata.__bi_84
+                0x100018e0        0xc CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.str1.4
-                0x100018a4       0x48 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x100018ec       0x48 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.crlf_str.6195
-                0x100018ec        0x2 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x100018f0                . = ALIGN (0x4)
- *fill*         0x100018ee        0x2 
+                0x10001934        0x2 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10001938                . = ALIGN (0x4)
+ *fill*         0x10001936        0x2 
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x100018f0                . = ALIGN (0x4)
+                0x10001938                . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x100018f0                __exidx_start = .
+                0x10001938                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x100018f0                __exidx_end = .
-                0x100018f0                . = ALIGN (0x4)
-                0x100018f0                __binary_info_start = .
+                0x10001938                __exidx_end = .
+                0x10001938                . = ALIGN (0x4)
+                0x10001938                __binary_info_start = .
 
-.binary_info    0x100018f0       0x1c
+.binary_info    0x10001938       0x1c
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr26
-                0x100018f0        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10001938        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr34
-                0x100018f4        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1000193c        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr42
-                0x100018f8        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10001940        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr48
-                0x100018fc        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10001944        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr54
-                0x10001900        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10001948        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr78
-                0x10001904        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1000194c        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr84
-                0x10001908        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10001950        0x4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  *(.binary_info.*)
-                0x1000190c                __binary_info_end = .
-                0x1000190c                . = ALIGN (0x4)
+                0x10001954                __binary_info_end = .
+                0x10001954                . = ALIGN (0x4)
 
 .ram_vector_table
                 0x20000000       0xc0
@@ -3753,7 +3754,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x200000c0                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.data           0x200000c0      0x2c8 load address 0x1000190c
+.data           0x200000c0      0x2c8 load address 0x10001954
                 0x200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -3812,23 +3813,23 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x20000388                . = ALIGN (0x4)
 
 .tm_clone_table
-                0x20000388        0x0 load address 0x10001bd4
+                0x20000388        0x0 load address 0x10001c1c
  .tm_clone_table
                 0x20000388        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x20000388        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x20000388        0x0 load address 0x10001bd4
+.igot.plt       0x20000388        0x0 load address 0x10001c1c
  .igot.plt      0x20000388        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.tdata          0x20000388        0x0 load address 0x10001bd4
+.tdata          0x20000388        0x0 load address 0x10001c1c
                 0x20000388                . = ALIGN (0x4)
  *(.tdata .tdata.* .gnu.linkonce.td.*)
                 0x20000388                __tdata_end = .
                 0x20000388                PROVIDE (__data_end__ = .)
-                0x1000190c                __etext = LOADADDR (.data)
+                0x10001954                __etext = LOADADDR (.data)
 
-.tbss           0x20000388        0x0 load address 0x10001bd4
+.tbss           0x20000388        0x0 load address 0x10001c1c
                 0x20000388                . = ALIGN (0x4)
                 0x20000388                __bss_start__ = .
                 0x20000388                __tls_base = .
@@ -3836,7 +3837,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  *(.tcommon)
                 0x20000388                __tls_end = .
 
-.bss            0x20000388      0x4f8 load address 0x10001bd4
+.bss            0x20000388      0x4f8 load address 0x10001c1c
                 0x20000388                . = ALIGN (0x4)
                 0x20000388                __tbss_end = .
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.bss*)))
@@ -3872,26 +3873,26 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x20000880                . = ALIGN (0x4)
                 0x20000880                __bss_end__ = .
 
-.heap           0x20000880      0x800 load address 0x10001bd4
+.heap           0x20000880      0x800 load address 0x10001c1c
                 0x20000880                __end__ = .
                 0x20000880                end = __end__
  *(.heap*)
  .heap          0x20000880      0x800 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
                 0x20040000                __HeapLimit = (ORIGIN (RAM) + LENGTH (RAM))
 
-.scratch_x      0x20040000        0x0 load address 0x10001bd4
+.scratch_x      0x20040000        0x0 load address 0x10001c1c
                 0x20040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20040000                . = ALIGN (0x4)
                 0x20040000                __scratch_x_end__ = .
-                0x10001bd4                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x10001c1c                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20041000        0x0 load address 0x10001bd4
+.scratch_y      0x20041000        0x0 load address 0x10001c1c
                 0x20041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20041000                . = ALIGN (0x4)
                 0x20041000                __scratch_y_end__ = .
-                0x10001bd4                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x10001c1c                __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .stack1_dummy   0x20040000        0x0
  *(.stack1*)
@@ -3903,9 +3904,9 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
 .rel.dyn        0x20041800        0x0
  .rel.iplt      0x20041800        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.flash_end      0x10001bd4        0x0
+.flash_end      0x10001c1c        0x0
  *(.embedded_end_block*)
-                0x10001bd4                PROVIDE (__flash_binary_end = .)
+                0x10001c1c                PROVIDE (__flash_binary_end = .)
                 0x20040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -4137,43 +4138,43 @@ LOAD linker stubs
                                  0x4f (size before relaxing)
  .comment       0x0000009f       0x52 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtend.o
 
-.debug_line     0x00000000    0x126fe
- .debug_line    0x00000000       0x9a CMakeFiles/DisapointmentSDK.dir/DisapointmentSDK.S.o
- .debug_line    0x0000009a      0x21e CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
- .debug_line    0x000002b8      0x872 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.o
- .debug_line    0x00000b2a      0x406 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
- .debug_line    0x00000f30      0x2ee CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
- .debug_line    0x0000121e     0x16a5 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
- .debug_line    0x000028c3      0x286 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
- .debug_line    0x00002b49     0x1a52 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o
- .debug_line    0x0000459b     0x2e95 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
- .debug_line    0x00007430     0x1d39 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
- .debug_line    0x00009169     0x1c04 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
- .debug_line    0x0000ad6d      0x484 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
- .debug_line    0x0000b1f1      0x27e CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
- .debug_line    0x0000b46f      0x34a CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
- .debug_line    0x0000b7b9      0x2b4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
- .debug_line    0x0000ba6d      0x251 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
- .debug_line    0x0000bcbe      0x57b CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
- .debug_line    0x0000c239      0x48e CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
- .debug_line    0x0000c6c7      0x137 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
- .debug_line    0x0000c7fe      0x2db CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
- .debug_line    0x0000cad9      0x486 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
- .debug_line    0x0000cf5f      0x359 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
- .debug_line    0x0000d2b8      0x6a7 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
- .debug_line    0x0000d95f      0x404 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
- .debug_line    0x0000dd63      0x2d6 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
- .debug_line    0x0000e039      0x1cd CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
- .debug_line    0x0000e206       0xc3 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
- .debug_line    0x0000e2c9      0x165 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .debug_line    0x0000e42e     0x1683 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- .debug_line    0x0000fab1       0xc5 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
- .debug_line    0x0000fb76      0x7ef CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
- .debug_line    0x00010365     0x1324 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
- .debug_line    0x00011689      0x3e6 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
- .debug_line    0x00011a6f      0xa6d CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
- .debug_line    0x000124dc       0x60 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_line    0x0001253c      0x1c2 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
+.debug_line     0x00000000    0x12724
+ .debug_line    0x00000000       0xc0 CMakeFiles/DisapointmentSDK.dir/DisapointmentSDK.S.o
+ .debug_line    0x000000c0      0x21e CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+ .debug_line    0x000002de      0x872 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+ .debug_line    0x00000b50      0x406 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+ .debug_line    0x00000f56      0x2ee CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+ .debug_line    0x00001244     0x16a5 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+ .debug_line    0x000028e9      0x286 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
+ .debug_line    0x00002b6f     0x1a52 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+ .debug_line    0x000045c1     0x2e95 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
+ .debug_line    0x00007456     0x1d39 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+ .debug_line    0x0000918f     0x1c04 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+ .debug_line    0x0000ad93      0x484 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+ .debug_line    0x0000b217      0x27e CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+ .debug_line    0x0000b495      0x34a CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+ .debug_line    0x0000b7df      0x2b4 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+ .debug_line    0x0000ba93      0x251 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+ .debug_line    0x0000bce4      0x57b CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+ .debug_line    0x0000c25f      0x48e CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+ .debug_line    0x0000c6ed      0x137 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+ .debug_line    0x0000c824      0x2db CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+ .debug_line    0x0000caff      0x486 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+ .debug_line    0x0000cf85      0x359 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+ .debug_line    0x0000d2de      0x6a7 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+ .debug_line    0x0000d985      0x404 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+ .debug_line    0x0000dd89      0x2d6 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+ .debug_line    0x0000e05f      0x1cd CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+ .debug_line    0x0000e22c       0xc3 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+ .debug_line    0x0000e2ef      0x165 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .debug_line    0x0000e454     0x1683 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ .debug_line    0x0000fad7       0xc5 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+ .debug_line    0x0000fb9c      0x7ef CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+ .debug_line    0x0001038b     0x1324 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+ .debug_line    0x000116af      0x3e6 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+ .debug_line    0x00011a95      0xa6d CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+ .debug_line    0x00012502       0x60 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x00012562      0x1c2 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
 
 .debug_info     0x00000000    0x1dd62
  .debug_info    0x00000000       0x26 CMakeFiles/DisapointmentSDK.dir/DisapointmentSDK.S.o

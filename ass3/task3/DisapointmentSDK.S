@@ -63,16 +63,19 @@ gpioinit_in:
   LDR R2, padsbank0
   LSL R3, R0, #2                      @ pin * 4 for register address
   ADD R2, R3                          @ Actual set of registers for pin
+  
   LDR R1, [R2]                        @ read current register (current PAD config)
-  ORR R1, R1, #PADS_BANK0_GPIO0_IE_BITS     @ set bit 6 (IE) Input Enable
-  ORR R1, R1, #PADS_BANK0_GPIO0_PUE_BITS    @ set bit 8 (PUE) Pull Up Enable
+  LDR R7, =PADS_BANK0_GPIO0_IE_BITS
+  LDR R6, =PADS_BANK0_GPIO0_PUE_BITS
+  ORR R1, R1, R7                      @ set bit 6 (IE) Input Enable
+  ORR R1, R1, R6                      @ set bit 8 (PUE) Pull Up Enable
   STR R1, [R2]                        @ write new value back onto R2
   
   @ Set the function number to SIO.
   LSL R0, #3                          @ each GPIO has 8 bytes of registers
   LDR R2, iobank0                     @ address we want
   ADD R2, R0                          @ add the offset for the pin number
-  MOV R1, #IO_BANK0_GPIO0_CTRL_FUNCSEL_VALUE_SIO_0 @ ??? dont know why 3 or 0
+  MOV R1, #IO_BANK0_GPIO3_CTRL_FUNCSEL_VALUE_SIO_3 @ ??? dont know why 3
   STR R1, [R2, #IO_BANK0_GPIO0_CTRL_OFFSET] @ set function in IO_BANK_CTRL to SIO
   BX LR
 
@@ -110,18 +113,34 @@ gpioget:
 
 @ Turn on a GPIO pin.
 turnOn:
+  MOV R0, #LED_PIN1
   MOV R3, #1
   LSL R3, R0                          @ shift over to pin position
   LDR R2, gpiobase                    @ address we want
   STR R3, [R2, #SIO_GPIO_OUT_SET_OFFSET]
+  
+  MOV R0, #LED_PIN2
+  MOV R3, #1
+  LSL R3, R0                          @ shift over to pin position
+  LDR R2, gpiobase                    @ address we want
+  STR R3, [R2, #SIO_GPIO_OUT_SET_OFFSET]
+  
   BX LR
   
 @ Turn off a GPIO pin.
 turnOff:
+  MOV R0, #LED_PIN1
   MOV R3, #1
   LSL R3, R0                          @ shift over to pin position
   LDR R2, gpiobase                    @ address we want
   STR R3, [R2, #SIO_GPIO_OUT_CLR_OFFSET]
+  
+  MOV R0, #LED_PIN2
+  MOV R3, #1
+  LSL R3, R0                          @ shift over to pin position
+  LDR R2, gpiobase                    @ address we want
+  STR R3, [R2, #SIO_GPIO_OUT_CLR_OFFSET]
+  
   BX LR
 
     .align 4                          @ necessary alignment
