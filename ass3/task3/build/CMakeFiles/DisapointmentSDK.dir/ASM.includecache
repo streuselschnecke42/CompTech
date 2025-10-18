@@ -7,8 +7,14 @@
 #IncludeRegexTransform: 
 
 /home/michelle/pico/comptech/ass3/task3/DisapointmentSDK.S
+hardware/regs/addressmap.h
+/home/michelle/pico/comptech/ass3/task3/hardware/regs/addressmap.h
+hardware/regs/sio.h
+/home/michelle/pico/comptech/ass3/task3/hardware/regs/sio.h
 hardware/regs/io_bank0.h
 /home/michelle/pico/comptech/ass3/task3/hardware/regs/io_bank0.h
+hardware/regs/pads_bank0.h
+/home/michelle/pico/comptech/ass3/task3/hardware/regs/pads_bank0.h
 
 /home/michelle/pico/pico-sdk/src/boards/include/boards/pico.h
 
@@ -67,6 +73,8 @@ hardware/platform_defs.h
 /home/michelle/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h
 
 /home/michelle/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h
+
+/home/michelle/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h
 
 /home/michelle/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
 

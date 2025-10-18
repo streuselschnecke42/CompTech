@@ -3,7 +3,11 @@
 
 CMakeFiles/DisapointmentSDK.dir/DisapointmentSDK.S.o
  /home/michelle/pico/comptech/ass3/task3/DisapointmentSDK.S
+ /home/michelle/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h
+ /home/michelle/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
  /home/michelle/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h
+ /home/michelle/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h
+ /home/michelle/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
 CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
  /home/michelle/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/michelle/pico/pico-sdk/src/common/pico_base_headers/include/pico.h
