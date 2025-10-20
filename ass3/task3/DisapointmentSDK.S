@@ -38,14 +38,14 @@ main:
 checkBtnOne:
 	MOV R0, #BTN1
 	BL gpioget            @ <-- prob this function's fault or button init
-	TST R0, R1            @ FIX SHIT
+	CMP R0, #0            @ FIX SHIT
 	BEQ turnOn            @ ERROR: CONSTANTLY EQUAL
 	B checkBtnTwo
   
 checkBtnTwo:
 	MOV R0, #BTN2
 	BL gpioget
-	TST R0, R1
+	CMP R0, #0
 	BEQ turnOff           @ ERROR: CONSTANTLY EQUAL
 	B checkBtnOne
 
@@ -103,10 +103,11 @@ gpioinit_out:
   BX LR
 
 gpioget:
+  LDR R2, =SIO_BASE                   @ for reading you need actual address not word
+  LDR R3, [R2, #SIO_GPIO_IN_OFFSET]
   MOV R1, #1
-  LSL R1, R0                          @ shift over to pin position
-  LDR R2, gpiobase                    @ address we want
-  LDR R0, [R2, #SIO_GPIO_IN_OFFSET]
+  LSL R1, R0                          @ shift over to pin position; get pin mask
+  AND R0, R3, R1                      @ R0 will be 0 or 1 << pin
   BX LR
 
 turnOn:
