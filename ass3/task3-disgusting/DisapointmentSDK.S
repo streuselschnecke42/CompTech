@@ -58,16 +58,16 @@ main:
 
 checkBtnOne:
   MOV R0, #BTN1
-  BL gpioget            @ <-- prob this functions fault or button init
-  CMP R1, #0            @ FIX SHIT
-  BEQ turnOn            @ ERROR: CONSTANTLY EQUAL
+  BL gpioget
+  CMP R1, #0
+  BEQ turnOn
   B checkBtnTwo
   
 checkBtnTwo:
   MOV R0, #BTN2
   BL gpioget
-  CMP R1, #0	      	@ ERROR: CONSTANTLY EQUAL if 0
-  BEQ turnOff           @ and never equal if 1
+  CMP R1, #0	      	@ ERROR: NEVER REACHES THIS EQUALITY
+  BEQ turnOff
   B checkBtnOne
 
 gpioget:
@@ -75,7 +75,7 @@ gpioget:
   LDR R3, [R2, #SIO_GPIO_IN_OFFSET]
   MOV R1, #1
   LSL R1, R0                          @ shift over to pin position; get pin mask
-  AND R1, R3, R1                      @ R0 will be 0 or 1 << pin
+  AND R1, R3, R1                      @ R1 will be 0 or 1 << pin
   BX LR
 
 turnOn:
