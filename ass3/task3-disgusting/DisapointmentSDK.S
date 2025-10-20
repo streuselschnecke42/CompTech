@@ -15,57 +15,60 @@
 .EQU BTN1, 2
 .EQU BTN2, 3
 
+.EQU GPIO_OUT, 1
+.EQU GPIO_IN, 0
+
 .thumb_func
 .global main                        @ Provide program starting address
 
     .align 4                        @ necessary alignment
 
 main:
-	@ --- configure LED1 ---
-	MOV R0, #LED1
-	BL gpio_init
-	MOV R0, #LED1
-	MOV R1, #GPIO_OUT
-	BL link_gpio_set_dir
+  @ --- configure LED1 ---
+  MOV R0, #LED1
+  BL gpio_init
+  MOV R0, #LED1
+  MOV R1, #GPIO_OUT
+  BL link_gpio_set_dir
 	
-	@ --- configure LED2 ---
-	MOV R0, #LED2
-	BL gpio_init
-	MOV R0, #LED2
-	MOV R1, #GPIO_OUT
-	BL link_gpio_set_dir
+  @ --- configure LED2 ---
+  MOV R0, #LED2
+  BL gpio_init
+  MOV R0, #LED2
+  MOV R1, #GPIO_OUT
+  BL link_gpio_set_dir
 	
-	@ --- configure BTN1 ---
-	MOV R0, #BTN1
-	BL gpio_init
-	MOV R0, #BTN1
-	MOV R1, #GPIO_IN
-	BL link_gpio_set_dir
-	MOV R0, #BTN1
+  @ --- configure BTN1 ---
+  MOV R0, #BTN1
+  BL gpio_init
+  MOV R0, #BTN1
+  MOV R1, #GPIO_IN
+  BL link_gpio_set_dir
+  MOV R0, #BTN1
   BL link_gpio_pull_up
 	
-	@ --- configure BTN2 ---
-	MOV R0, #BTN2
-	BL gpio_init
-	MOV R0, #BTN2
-	MOV R1, #GPIO_IN
-	BL link_gpio_set_dir
-	MOV R0, #BTN2
-	BL link_gpio_pull_up
+  @ --- configure BTN2 ---
+  MOV R0, #BTN2
+  BL gpio_init
+  MOV R0, #BTN2
+  MOV R1, #GPIO_IN
+  BL link_gpio_set_dir
+  MOV R0, #BTN2
+  BL link_gpio_pull_up
 
 checkBtnOne:
-	MOV R0, #BTN1
-	BL gpioget            @ <-- prob this functions fault or button init
-	CMP R1, #1            @ FIX SHIT
-	BEQ turnOn            @ ERROR: CONSTANTLY EQUAL
-	B checkBtnTwo
+  MOV R0, #BTN1
+  BL gpioget            @ <-- prob this functions fault or button init
+  CMP R1, #0            @ FIX SHIT
+  BEQ turnOn            @ ERROR: CONSTANTLY EQUAL
+  B checkBtnTwo
   
 checkBtnTwo:
-	MOV R0, #BTN2
-	BL gpioget
-	CMP R1, #0
-	BEQ turnOff           @ ERROR: CONSTANTLY EQUAL
-	B checkBtnOne
+  MOV R0, #BTN2
+  BL gpioget
+  CMP R1, #0	      	@ ERROR: CONSTANTLY EQUAL if 0
+  BEQ turnOff           @ and never equal if 1
+  B checkBtnOne
 
 gpioget:
   LDR R2, =SIO_BASE                   @ for reading you need actual address not word

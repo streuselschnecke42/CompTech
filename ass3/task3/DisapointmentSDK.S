@@ -45,8 +45,8 @@ checkBtnOne:
 checkBtnTwo:
 	MOV R0, #BTN2
 	BL gpioget
-	CMP R1, #1
-	BEQ turnOff           @ ERROR: CONSTANTLY EQUAL
+	CMP R1, #1            @ ERROR: CONSTANTLY EQUAL if 0
+	BEQ turnOff           @ and never equal if 1
 	B checkBtnOne
 
 @ Initialize the GPIO to SIO. r0 = pin to init.
