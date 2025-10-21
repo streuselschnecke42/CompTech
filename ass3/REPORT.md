@@ -45,7 +45,7 @@ To get to the whole Task 1 directory instead, click [here](../ass3/task1/).
 
 ### Electric Circuit Plan
 Note: The application didn't have Pico H, so I used the normal Pico instead. Pin connection should still be correct **where it was used**.\
-// TODO
+![0](../ass3/images/circuit_plan_task2_3.png)
 
 ## Execution
 // TODO
@@ -74,8 +74,9 @@ To get to the whole Task 2 directory instead, click [here](../ass3/task2/).
 // TODO
 
 ### Electric Circuit Plan
-Note: The application didn't have Pico H, so I used the normal Pico instead. Pin connection should still be correct **where it was used**.
-// TODO
+Note: The application didn't have Pico H, so I used the normal Pico instead. Pin connection should still be correct **where it was used**.\
+(same as task 2)\
+![0](../ass3/images/circuit_plan_task2_3.png)
 
 ## Execution
 // TODO
