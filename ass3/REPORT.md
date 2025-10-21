@@ -21,12 +21,15 @@ For this task, minicom was used to display the output.
 // TODO
 The program can be visible by using minicom. When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you load the file onto the pico with "sudo picotool load HelloWorld.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico. Use the command "minicom -b 115200 -o -D /dev/ttyACM0" to open minicom and see the program's output.\
 // TODO CHANGE IMAGE \
-![hello_world_minicom](../ass2/images/hello_world_minicom.png)\
+![average_value_minicom](../ass3/images/minicom_output_task1.png)\
 This whole program will loop forever, until you unplug the pico or press Ctrl A and then Z for help and choose X for "reset and exit".\
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
 ## Sourcecode files
-// TODO
+[AverageArrayValue.S](../ass3/task1/v1/AverageArrayValue.S)\
+[CMakeLists.txt](../ass3/task1/v1/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass3/task1/v1/pico_sdk_import.cmake)\
+[AverageValue.uf2](../ass3/task1/v1/build/AverageArrayValue.uf2)
 
 To get to the whole Task 1 directory instead, click [here](../ass3/task1/).
 
@@ -50,7 +53,10 @@ Note: The application didn't have Pico H, so I used the normal Pico instead. Pin
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
 ## Sourcecode files
-// TODO
+[SimpleButtonsOneSDK.S](../ass3/task2/SimpleButtonsOneSDK.S)\
+[CMakeLists.txt](../ass3/task2/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass3/task2/pico_sdk_import.cmake)\
+[SimpleButtonsOneSDK.uf2](../ass3/task2/build/SimpleButtonsOneSDK.uf2)
 
 To get to the whole Task 2 directory instead, click [here](../ass3/task2/).
 
@@ -78,6 +84,10 @@ Note: The application didn't have Pico H, so I used the normal Pico instead. Pin
 
 ## Sourcecode files
 // TODO
+[SimpleButtonsTwoSDK.S](../ass3/task3/SimpleButtonsTwoSDK.S)\
+[CMakeLists.txt](../ass3/task3/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass3/task3/pico_sdk_import.cmake)\
+[SimpleButtonsTwoSDK.uf2](../ass3/task3/build/SimpleButtonsTwoSDK.uf2)
 
 To get to the whole Task 3 directory instead, click [here](../ass3/task3/).
 
