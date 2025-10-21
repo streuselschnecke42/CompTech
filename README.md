@@ -15,3 +15,8 @@ Discipline: NGDNS, NGDPV
 - [Directory](./ass2/)
 - [Task Sheet](./ass2/Lab%202%20-%20Introduction%20to%20RPi%20Pico.pdf)
 - [Report](./ass2/REPORT.md)
+
+## Assignment 3 Links
+- [Directory](./ass3/)
+- [Task Sheet](./ass3/Lab%203%20-%20Subroutines%20and%20inputs.pdf)
+- [Report](./ass3/REPORT.md)
