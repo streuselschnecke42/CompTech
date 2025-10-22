@@ -27,11 +27,10 @@ This whole program will loop forever, until you unplug the pico or press Ctrl A 
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
 ## Sourcecode files
-// TODO: edit file directory
-[AverageArrayValue.S](../ass3/task1/v1/AverageArrayValue.S)\
-[CMakeLists.txt](../ass3/task1/v1/CMakeLists.txt)\
-[pico_sdk_import.cmake](../ass3/task1/v1/pico_sdk_import.cmake)\
-[AverageValue.uf2](../ass3/task1/v1/build/AverageArrayValue.uf2)
+[AverageArrayValue.S](../ass3/task1/AverageArrayValue.S)\
+[CMakeLists.txt](../ass3/task1/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass3/task1/pico_sdk_import.cmake)\
+[AverageValue.uf2](../ass3/task1/build/AverageArrayValue.uf2)
 
 To get to the whole Task 1 directory instead, click [here](../ass3/task1/).
 
