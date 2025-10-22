@@ -42,7 +42,7 @@ average:
 	   @ Loading the next 3 while reusing the same registers
 	   LDR R5, [R0, #(4*4)]		@ index [4] in the array
 	   LDR R6, [R0, #(4*5)]		@ index [5] in the array
-	   LDR R7, [R0, #(4*6)]	@ index [6] in the array
+	   LDR R7, [R0, #(4*6)]		@ index [6] in the array
 
 	   ADD R4, R4, R5
 	   ADD R4, R4, R6
