@@ -1,4 +1,4 @@
-# 1DT301 Lab Assignment 3 - C-programming and interrupts
+# 1DT301 Lab Assignment 4 - C-programming and interrupts
 *Computer Technology 1* \
 *October 22, 2025*
 

@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Ghost/OneDrive/Desktop/pain/1DT301_the_one_that_doesnt_stink/CompTech/ass2/task3",
-      "program": "c:/Users/Ghost/OneDrive/Desktop/pain/1DT301_the_one_that_doesnt_stink/CompTech/ass2/task3/build/Debug/outDebug",
+      "cwd": "c:/Users/Ghost/OneDrive/Desktop/pain/1DT301_the_one_that_doesnt_stink/CompTech/ass4/task2",
+      "program": "c:/Users/Ghost/OneDrive/Desktop/pain/1DT301_the_one_that_doesnt_stink/CompTech/ass4/task2/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
