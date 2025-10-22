@@ -11,7 +11,8 @@ Discipline: NGDNS, NGDPV
 # Tasks
 
 # Task 1
-// TODO
+Write a program to calculate the average value of 8 numbers defined in the .data section. Then, show the result in the terminal (i.e. Minicom). You can use the code as a template (see [Tasksheet](../ass3/Lab%203%20-%20Subroutines%20and%20inputs.pdf)).\
+To show the result, the easiest way is probably to write the result continuously in an infinte loop, as in the Hello World program.
 
 ## Explanation Code
 For this task, minicom was used to display the output.
@@ -20,7 +21,6 @@ For this task, minicom was used to display the output.
 ## Execution
 // TODO
 The program can be visible by using minicom. When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you load the file onto the pico with "sudo picotool load HelloWorld.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico. Use the command "minicom -b 115200 -o -D /dev/ttyACM0" to open minicom and see the program's output.\
-// TODO CHANGE IMAGE \
 ![average_value_minicom](../ass3/images/minicom_output_task1.png)\
 This whole program will loop forever, until you unplug the pico or press Ctrl A and then Z for help and choose X for "reset and exit".\
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
@@ -35,7 +35,10 @@ To get to the whole Task 1 directory instead, click [here](../ass3/task1/).
 
 
 # Task 2
-// TODO
+Connect two LEDs to GP0+GP1 and two pushbuttons: One connected to GP2 and one to GP3. First, you must find out how to connect the push button and how to set up the pin to read if it is pushed down or not!\
+Then, write a program with the following functionality:\
+If push button on GP1 is pushed down, turn on both LEDs. If push button on GP2 is pushed down, turn off both LEDs. Ignore the case when both buttons are down!\
+In this task, you must use a C function to read the pin!
 
 ## Explanation Code
 // TODO
