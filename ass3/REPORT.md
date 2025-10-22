@@ -65,7 +65,9 @@ To get to the whole Task 2 directory instead, click [here](../ass3/task2/).
 
 
 # Task 3
-// TODO
+Use the same hardware setup as in Task 2.\
+This time, you are not allowed to use C functions to read from the input pin or to turn the LEDs on/off! You must use read and write instructions to and from hardware registers. You can use the example from the book, chapter 9.\
+You are allowed to use C functions to initialize and set direction, like in the program listing 8-1 in the book. Alternatively, you can use the gpioinit function in Listing 9-5 to initialize the pins.
 
 ## Explanation Code
 // TODO
