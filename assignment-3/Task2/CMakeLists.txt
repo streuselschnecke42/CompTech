@@ -12,11 +12,12 @@ include_directories(${CMAKE_SOURCE_DIR})
 
 add_executable(LedPushbuttons
   LedPushbuttons.S
+  sdklink.c
 )
 
 pico_enable_stdio_uart(LedPushbuttons 0)
 pico_enable_stdio_usb(LedPushbuttons 1)
 
-pico_add_extra_outputs(LedPushbuttons)
-
 target_link_libraries(LedPushbuttons pico_stdlib)
+
+pico_add_extra_outputs(LedPushbuttons)
