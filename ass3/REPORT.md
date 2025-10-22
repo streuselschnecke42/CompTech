@@ -16,17 +16,18 @@ To show the result, the easiest way is probably to write the result continuously
 
 ## Explanation Code
 For this task, minicom was used to display the output.
-// TODO
+// TODO: Explanation of Code
 
 ## Execution
-// TODO
-The program can be visible by using minicom. When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you load the file onto the pico with "sudo picotool load AverageArrayValue.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico. Use the command "minicom -b 115200 -o -D /dev/ttyACM0" to open minicom and see the program's output.\
+The program can be visible by using minicom.\
+When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you load the file onto the pico with "sudo picotool load AverageArrayValue.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico. Use the command "minicom -b 115200 -o -D /dev/ttyACM0" to open minicom and see the program's output.\
 ![average_value_minicom](../ass3/images/minicom_output_task1.png)\
 This whole program will loop forever, until you unplug the pico or press Ctrl A and then Z for help and choose X for "reset and exit".
 
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
 ## Sourcecode files
+// TODO: edit file directory
 [AverageArrayValue.S](../ass3/task1/v1/AverageArrayValue.S)\
 [CMakeLists.txt](../ass3/task1/v1/CMakeLists.txt)\
 [pico_sdk_import.cmake](../ass3/task1/v1/pico_sdk_import.cmake)\
@@ -42,7 +43,7 @@ If push button on GP1 is pushed down, turn on both LEDs. If push button on GP2 i
 In this task, you must use a C function to read the pin!
 
 ## Explanation Code
-// TODO
+// TODO: explain code
 
 ## Hardware - Layout
 ![Layout](../ass3/images/task_2+3_hardware_layout.jpg)
@@ -77,7 +78,7 @@ This time, you are not allowed to use C functions to read from the input pin or 
 You are allowed to use C functions to initialize and set direction, like in the program listing 8-1 in the book. Alternatively, you can use the gpioinit function in Listing 9-5 to initialize the pins.
 
 ## Explanation Code
-// TODO
+// TODO: explain code
 
 ## Hardware Layout
 The hardware layout is the same as Task 2.\
@@ -101,7 +102,7 @@ The buttons can be pressed as many times as the user wants, since the code runs 
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
 ## Sourcecode files
-// TODO
+// TODO: edit file directory
 [SimpleButtonsTwoSDK.S](../ass3/task3/SimpleButtonsTwoSDK.S)\
 [CMakeLists.txt](../ass3/task3/CMakeLists.txt)\
 [pico_sdk_import.cmake](../ass3/task3/pico_sdk_import.cmake)\
