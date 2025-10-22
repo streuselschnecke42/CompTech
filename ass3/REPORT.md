@@ -44,14 +44,20 @@ In this task, you must use a C function to read the pin!
 // TODO
 
 ## Hardware - Layout
-// TODO
+![Layout](../ass3/images/task_2+3_hardware_layout.jpg)
 
 ### Electric Circuit Plan
 Note: The application didn't have Pico H, so I used the normal Pico instead. Pin connection should still be correct **where it was used**.\
 ![0](../ass3/images/circuit_plan_task2_3.png)
 
 ## Execution
-// TODO
+When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you hold down the BOOTSEL button while plugging the pico into your device.Then, load the file onto the pico with "sudo picotool load SimpleButtonsOneSDK.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico.\
+If you now press the first button, both LEDs should light up (see image below).\
+![button_1_pressed](../ass3/images/task_2+3_button_on.jpg)\
+If you then press the second button, both LEDs should turn off (see image below).\
+![button_2_pressed](../ass3/images/task_2+3_button_off.jpg)
+
+The buttons can be pressed as many times as the user wants, since the code runs in an endless loop. Just like the task required, the case where both buttons are pressed, will be ignored.
 
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
