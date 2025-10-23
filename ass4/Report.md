@@ -22,15 +22,19 @@ control LED, use the C function gpio_put(…) and gpio_get().
 // TODO: Explanation of Code
 
 ## Execution
-// TODO
+When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you hold down the BOOTSEL button while plugging the pico into your device. Then, load the file onto the pico with "sudo picotool load ButtonSDK.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico.\
+If you now press the first button, the LED should light up (see image below).\
+![button_1_pressed](../ass4/images/exe_task1a+b_LED_ON.jpg)\
+If you then press the second button, the LED should turn off (see image below).\
+![button_2_pressed](../ass4/images/exe_task1a+b_LED_OFF.jpg)
 
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
 ## Sourcecode files
-[foo.S](../ass4/task1/a/foo.S)\
+[ButtonSDK.c](../ass4/task1/a/ButtonSDK.c)\
 [CMakeLists.txt](../ass4/task1/a/CMakeLists.txt)\
 [pico_sdk_import.cmake](../ass4/task1/a/pico_sdk_import.cmake)\
-[foo.uf2](../ass4/task1/build/a/foo.uf2)
+[ButtonSDK.uf2](../ass4/task1/a/build/ButtonSDK.uf2)
 
 To get to the whole Task 1a directory instead, click [here](../ass4/task1/a/).
 
@@ -42,15 +46,20 @@ Re-write the C program so that is does not use the gpio functions, but instead h
 // TODO: Explanation of Code
 
 ## Execution
-// TODO
+Same execution as task 1a.\
+When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you hold down the BOOTSEL button while plugging the pico into your device. Then, load the file onto the pico with "sudo picotool load ButtonSDK.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico.\
+If you now press the first button, the LED should light up (see image below).\
+![button_1_pressed](../ass4/images/exe_task1a+b_LED_ON.jpg)\
+If you then press the second button, the LED should turn off (see image below).\
+![button_2_pressed](../ass4/images/exe_task1a+b_LED_OFF.jpg)
 
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
 ## Sourcecode files
-[foo.S](../ass4/task1/b/foo.S)\
+[ButtonSDK.c](../ass4/task1/b/ButtonSDK.c)\
 [CMakeLists.txt](../ass4/task1/b/CMakeLists.txt)\
 [pico_sdk_import.cmake](../ass4/task1/b/pico_sdk_import.cmake)\
-[foo.uf2](../ass4/task1/build/b/foo.uf2)
+[ButtonSDK.uf2](../ass4/task1/b/build/ButtonSDK.uf2)
 
 To get to the whole Task 1b directory instead, click [here](../ass4/task1/b/).
 
