@@ -163,7 +163,6 @@ To get to the whole Task 3 directory instead, click [here](../ass3/task3-michell
 
 ---
 # Sources
-## Images that weren't taken by ourselves
 
 ## Pico Pinout
 https://pico2.pinout.xyz/ \
