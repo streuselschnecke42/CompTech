@@ -42,7 +42,16 @@ If push button on GP1 is pushed down, turn on both LEDs. If push button on GP2 i
 In this task, you must use a C function to read the pin!
 
 ## Explanation Code
-// TODO: explain code
+To get both LEDs working for this task, they need to get initialized. This can be done by using C functions. To initialize the LED pins, gpio_init was used. To set the direction of those pins, that the LEDs are connected to, gpio_set_dir was used. This function takes 2 values. The first one is the LED pin number on the pico and the other is the direction value. If the value is 1, the direction will be set to output (meaning GPIO_OUT), so for the LEDs, value 1 was used.\
+Now, to get both Buttons working, they need to get not only initialized but also need extra configuration to properly read their input. This can be done by using C functions. To initialize the Button pins, gpio_init was used. To set the direction of those pins, that the Buttons are connected to, gpio_set_dir was used. The first one is the Button pin number on the pico and the other is the direction value. If the value is 0, the direction will be set to input (meaning GPIO_IN), so for the Buttons, value 0 was used. The next step is to make the input values readable. This can be done by using the C function gpio_pull_up for each button. Pull up sets internal pull-up-resistor.Without this method, value would float around and return unstable or arbitrary values.
+
+Now, the input can be proplerly red and the hardware components are initialized. So the program can now go to the main loop functions checkBtnOne and checkBtnTwo. These two functions will loop endlessly.\
+The function checkBtnOne reads the input from button 1 and compares the return value from gpio_get. gpio_get will return 0 for this pin, if the button is pressed. If the button is pressed, the function will move to the turnOn function, that turns both LEDs on, by using link_gpio_put_all. This function minimizes code length as it has 2 cases:
+- Case 1: do gpio_put_all for both of the LEDs bit positions setting both LED pins to 1
+- Case 0: go gpio_put_all for both of the LEDs bit positions setting both LED pins to 0
+
+So, case 1 is called when button 1 is pressed to turn both LEDs on. If button 1 is not pressed, the function checkBtnOne will go to checkBtnTwo instead.\
+The function checkBtnTwo checks the input of button 2 and if button 2 is pressed (return value is 0), checkBtnTwo moves to the turnOff function which calls the link_gpio_put_all function, but this time with value 0 for both LEDs. So, it turns both LEDs off.
 
 ## Hardware - Layout
 ![Layout](../ass3/images/task_2+3_hardware_layout.jpg)
