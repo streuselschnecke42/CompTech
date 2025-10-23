@@ -85,7 +85,10 @@ Use the same hardware setup as in Task 2.\
 This time, you are not allowed to use C functions to read from the input pin or to turn the LEDs on/off! You must use read and write instructions to and from hardware registers. You can use the example from the book, chapter 9.\
 You are allowed to use C functions to initialize and set direction, like in the program listing 8-1 in the book. Alternatively, you can use the gpioinit function in Listing 9-5 to initialize the pins.
 
-## Explanation Code
+## Explanation Code - Sanja's version without ANY C functions
+// TODO: explain code
+
+## Explanation Code - Michelle's version with C functions to initialize and set direction
 // TODO: explain code
 
 ## Hardware Layout
@@ -109,14 +112,21 @@ The buttons can be pressed as many times as the user wants, since the code runs 
 
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
-## Sourcecode files
-// TODO: edit file directory
-[SimpleButtonsTwoSDK.S](../ass3/task3/SimpleButtonsTwoSDK.S)\
-[CMakeLists.txt](../ass3/task3/CMakeLists.txt)\
-[pico_sdk_import.cmake](../ass3/task3/pico_sdk_import.cmake)\
-[SimpleButtonsTwoSDK.uf2](../ass3/task3/build/SimpleButtonsTwoSDK.uf2)
+## Sourcecode files - Sanja's version
+[SimpleButtonsTwoSDK.S](../ass3/task3-sanja/SimpleButtonsTwoSDK.S)\
+[CMakeLists.txt](../ass3/task3-sanja/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass3/task3-sanja/pico_sdk_import.cmake)\
+[SimpleButtonsTwoSDK.uf2](../ass3/task3-sanja/build/SimpleButtonsTwoSDK.uf2)
 
-To get to the whole Task 3 directory instead, click [here](../ass3/task3/).
+To get to the whole Task 3 directory instead, click [here](../ass3-sanja/task3/).
+
+## Sourcecode files - Michelle's version
+[SimpleButtonsTwoSDK.S](../ass3/task3-michelle/SimpleButtonsTwoSDK.S)\
+[CMakeLists.txt](../ass3/task3-michelle/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass3/task3-michelle/pico_sdk_import.cmake)\
+[SimpleButtonsTwoSDK.uf2](../ass3/task3-michelle/build/SimpleButtonsTwoSDK.uf2)
+
+To get to the whole Task 3 directory instead, click [here](../ass3/task3-michelle/).
 
 ---
 # Sources
