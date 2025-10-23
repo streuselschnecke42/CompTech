@@ -76,27 +76,22 @@ include CMakeFiles/ButtonSDK.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ButtonSDK.dir/flags.make
 
-CMakeFiles/ButtonSDK.dir/ButtonSDK.S.o: CMakeFiles/ButtonSDK.dir/flags.make
-CMakeFiles/ButtonSDK.dir/ButtonSDK.S.o: ../ButtonSDK.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building ASM object CMakeFiles/ButtonSDK.dir/ButtonSDK.S.o"
-	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/ButtonSDK.dir/ButtonSDK.S.o   -c /home/michelle/pico/comptech/ass4/task1/a/ButtonSDK.S
+CMakeFiles/ButtonSDK.dir/ButtonSDK.c.o: CMakeFiles/ButtonSDK.dir/flags.make
+CMakeFiles/ButtonSDK.dir/ButtonSDK.c.o: ../ButtonSDK.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ButtonSDK.dir/ButtonSDK.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/ButtonSDK.c.o -c /home/michelle/pico/comptech/ass4/task1/a/ButtonSDK.c
 
-CMakeFiles/ButtonSDK.dir/sdklink.c.o: CMakeFiles/ButtonSDK.dir/flags.make
-CMakeFiles/ButtonSDK.dir/sdklink.c.o: ../sdklink.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ButtonSDK.dir/sdklink.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/sdklink.c.o -c /home/michelle/pico/comptech/ass4/task1/a/sdklink.c
+CMakeFiles/ButtonSDK.dir/ButtonSDK.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ButtonSDK.dir/ButtonSDK.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/michelle/pico/comptech/ass4/task1/a/ButtonSDK.c > CMakeFiles/ButtonSDK.dir/ButtonSDK.c.i
 
-CMakeFiles/ButtonSDK.dir/sdklink.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ButtonSDK.dir/sdklink.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/michelle/pico/comptech/ass4/task1/a/sdklink.c > CMakeFiles/ButtonSDK.dir/sdklink.c.i
-
-CMakeFiles/ButtonSDK.dir/sdklink.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ButtonSDK.dir/sdklink.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/michelle/pico/comptech/ass4/task1/a/sdklink.c -o CMakeFiles/ButtonSDK.dir/sdklink.c.s
+CMakeFiles/ButtonSDK.dir/ButtonSDK.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ButtonSDK.dir/ButtonSDK.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/michelle/pico/comptech/ass4/task1/a/ButtonSDK.c -o CMakeFiles/ButtonSDK.dir/ButtonSDK.c.s
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i: cmake_force
@@ -109,7 +104,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i: cmake_force
@@ -122,7 +117,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpi
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o: /home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o -c /home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.c.i: cmake_force
@@ -135,7 +130,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2040/pico_platform/pl
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.i: cmake_force
@@ -148,7 +143,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platfor
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i: cmake_force
@@ -161,7 +156,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platfor
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.o: /home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.o -c /home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.i: cmake_force
@@ -174,7 +169,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/hardware_claim/c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i: cmake_force
@@ -187,7 +182,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_syn
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i: cmake_force
@@ -200,7 +195,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_syn
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i: cmake_force
@@ -213,12 +208,12 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o: /home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building ASM object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building ASM object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o   -c /home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/sem.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/sem.c.o: /home/michelle/pico/pico-sdk/src/common/pico_sync/sem.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/sem.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/sem.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/sem.c.o -c /home/michelle/pico/pico-sdk/src/common/pico_sync/sem.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/sem.c.i: cmake_force
@@ -231,7 +226,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/sem.c.
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.o: /home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.o -c /home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.i: cmake_force
@@ -244,7 +239,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/lock_c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o: /home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o -c /home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.i: cmake_force
@@ -257,7 +252,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/critical_section.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/critical_section.c.o: /home/michelle/pico/pico-sdk/src/common/pico_sync/critical_section.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/critical_section.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/critical_section.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/critical_section.c.o -c /home/michelle/pico/pico-sdk/src/common/pico_sync/critical_section.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/critical_section.c.i: cmake_force
@@ -270,7 +265,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/critic
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o: /home/michelle/pico/pico-sdk/src/common/pico_time/time.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o -c /home/michelle/pico/pico-sdk/src/common/pico_time/time.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.i: cmake_force
@@ -283,7 +278,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/timeout_helper.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/timeout_helper.c.o: /home/michelle/pico/pico-sdk/src/common/pico_time/timeout_helper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/timeout_helper.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/timeout_helper.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/timeout_helper.c.o -c /home/michelle/pico/pico-sdk/src/common/pico_time/timeout_helper.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i: cmake_force
@@ -296,7 +291,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/timeou
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i: cmake_force
@@ -309,7 +304,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_tim
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/datetime.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/datetime.c.o: /home/michelle/pico/pico-sdk/src/common/pico_util/datetime.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/datetime.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/datetime.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/datetime.c.o -c /home/michelle/pico/pico-sdk/src/common/pico_util/datetime.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/datetime.c.i: cmake_force
@@ -322,7 +317,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/dateti
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/pheap.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/pheap.c.o: /home/michelle/pico/pico-sdk/src/common/pico_util/pheap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/pheap.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/pheap.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/pheap.c.o -c /home/michelle/pico/pico-sdk/src/common/pico_util/pheap.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/pheap.c.i: cmake_force
@@ -335,7 +330,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/pheap.
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/queue.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/queue.c.o: /home/michelle/pico/pico-sdk/src/common/pico_util/queue.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/queue.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/queue.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/queue.c.o -c /home/michelle/pico/pico-sdk/src/common/pico_util/queue.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/queue.c.i: cmake_force
@@ -348,7 +343,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/queue.
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i: cmake_force
@@ -361,7 +356,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_uar
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i: cmake_force
@@ -374,7 +369,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clo
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i: cmake_force
@@ -387,7 +382,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i: cmake_force
@@ -400,7 +395,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_vre
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i: cmake_force
@@ -413,7 +408,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_wat
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i: cmake_force
@@ -426,7 +421,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_tic
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i: cmake_force
@@ -439,7 +434,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i: cmake_force
@@ -452,7 +447,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i: cmake_force
@@ -465,7 +460,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_boo
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/flash.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/flash.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.i: cmake_force
@@ -478,7 +473,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/f
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
@@ -491,12 +486,12 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xos
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o: /home/michelle/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building ASM object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building ASM object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o   -c /home/michelle/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i: cmake_force
@@ -509,7 +504,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i: cmake_force
@@ -522,7 +517,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i: cmake_force
@@ -535,7 +530,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i: cmake_force
@@ -548,22 +543,22 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building ASM object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building ASM object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o   -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building ASM object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building ASM object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o   -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building ASM object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building ASM object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o   -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i: cmake_force
@@ -576,7 +571,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_math.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_math.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i: cmake_force
@@ -589,22 +584,22 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building ASM object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building ASM object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o   -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building ASM object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building ASM object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o   -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building ASM object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building ASM object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o   -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i: cmake_force
@@ -617,7 +612,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/f
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_math.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_math.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i: cmake_force
@@ -630,12 +625,12 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/f
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building ASM object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building ASM object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o   -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i: cmake_force
@@ -648,12 +643,12 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building ASM object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building ASM object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o   -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i: cmake_force
@@ -666,7 +661,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o"
 	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i: cmake_force
@@ -679,7 +674,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_opt
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i: cmake_force
@@ -692,7 +687,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standar
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i: cmake_force
@@ -705,12 +700,12 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building ASM object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building ASM object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o   -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i: cmake_force
@@ -723,7 +718,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_in
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i: cmake_force
@@ -736,7 +731,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/s
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i: cmake_force
@@ -749,7 +744,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_u
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i: cmake_force
@@ -762,7 +757,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_u
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i: cmake_force
@@ -775,7 +770,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_u
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i: cmake_force
@@ -788,7 +783,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i: cmake_force
@@ -801,7 +796,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_fla
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i: cmake_force
@@ -814,7 +809,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: /home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o -c /home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i: cmake_force
@@ -827,7 +822,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/ra
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: /home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o -c /home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i: cmake_force
@@ -840,7 +835,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/ra
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o: /home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o -c /home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i: cmake_force
@@ -853,7 +848,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o: /home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o -c /home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i: cmake_force
@@ -866,7 +861,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o: /home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o -c /home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i: cmake_force
@@ -879,7 +874,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o: /home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o -c /home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i: cmake_force
@@ -892,7 +887,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o: /home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o -c /home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i: cmake_force
@@ -905,7 +900,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/d
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: /home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o -c /home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i: cmake_force
@@ -918,7 +913,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/d
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o: /home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o -c /home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i: cmake_force
@@ -931,7 +926,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/h
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o: /home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o -c /home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i: cmake_force
@@ -944,7 +939,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o: /home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o -c /home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i: cmake_force
@@ -957,7 +952,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/m
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: /home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o -c /home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i: cmake_force
@@ -970,7 +965,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/e
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o: /home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o -c /home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i: cmake_force
@@ -983,7 +978,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/n
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: /home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o -c /home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i: cmake_force
@@ -996,7 +991,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtm
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o: /home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o -c /home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i: cmake_force
@@ -1009,7 +1004,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendo
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o: /home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o -c /home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i: cmake_force
@@ -1022,7 +1017,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.c.o: /home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.c.o -c /home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.c.i: cmake_force
@@ -1035,7 +1030,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.c.s: c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o: /home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o -c /home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i: cmake_force
@@ -1048,7 +1043,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: CMakeFiles/ButtonSDK.dir/flags.make
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: /home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o -c /home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
 
 CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i: cmake_force
@@ -1061,8 +1056,7 @@ CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2
 
 # Object files for target ButtonSDK
 ButtonSDK_OBJECTS = \
-"CMakeFiles/ButtonSDK.dir/ButtonSDK.S.o" \
-"CMakeFiles/ButtonSDK.dir/sdklink.c.o" \
+"CMakeFiles/ButtonSDK.dir/ButtonSDK.c.o" \
 "CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o" \
 "CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o" \
 "CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o" \
@@ -1148,8 +1142,7 @@ ButtonSDK_OBJECTS = \
 # External object files for target ButtonSDK
 ButtonSDK_EXTERNAL_OBJECTS =
 
-ButtonSDK.elf: CMakeFiles/ButtonSDK.dir/ButtonSDK.S.o
-ButtonSDK.elf: CMakeFiles/ButtonSDK.dir/sdklink.c.o
+ButtonSDK.elf: CMakeFiles/ButtonSDK.dir/ButtonSDK.c.o
 ButtonSDK.elf: CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
 ButtonSDK.elf: CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
 ButtonSDK.elf: CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o
@@ -1235,7 +1228,7 @@ ButtonSDK.elf: CMakeFiles/ButtonSDK.dir/build.make
 ButtonSDK.elf: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o
 ButtonSDK.elf: /home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/rp2040/memmap_default.ld
 ButtonSDK.elf: CMakeFiles/ButtonSDK.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Linking CXX executable ButtonSDK.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Linking CXX executable ButtonSDK.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ButtonSDK.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/arm-none-eabi-objdump -h /home/michelle/pico/comptech/ass4/task1/a/build/ButtonSDK.elf > ButtonSDK.dis
 	/usr/bin/arm-none-eabi-objdump -d /home/michelle/pico/comptech/ass4/task1/a/build/ButtonSDK.elf >> ButtonSDK.dis

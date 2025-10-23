@@ -220,14 +220,32 @@ pico_status_led_ws2812_pio_h/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/build
 .PHONY : pico_status_led_ws2812_pio_h/fast
 
-ButtonSDK.o: ButtonSDK.S.o
+ButtonSDK.o: ButtonSDK.c.o
 
 .PHONY : ButtonSDK.o
 
 # target to build an object file
-ButtonSDK.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ButtonSDK.dir/build.make CMakeFiles/ButtonSDK.dir/ButtonSDK.S.o
-.PHONY : ButtonSDK.S.o
+ButtonSDK.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ButtonSDK.dir/build.make CMakeFiles/ButtonSDK.dir/ButtonSDK.c.o
+.PHONY : ButtonSDK.c.o
+
+ButtonSDK.i: ButtonSDK.c.i
+
+.PHONY : ButtonSDK.i
+
+# target to preprocess a source file
+ButtonSDK.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ButtonSDK.dir/build.make CMakeFiles/ButtonSDK.dir/ButtonSDK.c.i
+.PHONY : ButtonSDK.c.i
+
+ButtonSDK.s: ButtonSDK.c.s
+
+.PHONY : ButtonSDK.s
+
+# target to generate assembly for a file
+ButtonSDK.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ButtonSDK.dir/build.make CMakeFiles/ButtonSDK.dir/ButtonSDK.c.s
+.PHONY : ButtonSDK.c.s
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.o: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
 
@@ -2218,33 +2236,6 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ButtonSDK.dir/build.make CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
-sdklink.o: sdklink.c.o
-
-.PHONY : sdklink.o
-
-# target to build an object file
-sdklink.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ButtonSDK.dir/build.make CMakeFiles/ButtonSDK.dir/sdklink.c.o
-.PHONY : sdklink.c.o
-
-sdklink.i: sdklink.c.i
-
-.PHONY : sdklink.i
-
-# target to preprocess a source file
-sdklink.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ButtonSDK.dir/build.make CMakeFiles/ButtonSDK.dir/sdklink.c.i
-.PHONY : sdklink.c.i
-
-sdklink.s: sdklink.c.s
-
-.PHONY : sdklink.s
-
-# target to generate assembly for a file
-sdklink.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ButtonSDK.dir/build.make CMakeFiles/ButtonSDK.dir/sdklink.c.s
-.PHONY : sdklink.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2261,6 +2252,8 @@ help:
 	@echo "... bs2_default"
 	@echo "... bs2_default_library"
 	@echo "... ButtonSDK.o"
+	@echo "... ButtonSDK.i"
+	@echo "... ButtonSDK.s"
 	@echo "... home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.o"
 	@echo "... home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
 	@echo "... home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"
@@ -2482,9 +2475,6 @@ help:
 	@echo "... home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.o"
 	@echo "... home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i"
 	@echo "... home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s"
-	@echo "... sdklink.o"
-	@echo "... sdklink.i"
-	@echo "... sdklink.s"
 .PHONY : help
 
 

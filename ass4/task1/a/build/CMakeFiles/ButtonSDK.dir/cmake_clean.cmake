@@ -5,7 +5,7 @@ file(REMOVE_RECURSE
   "ButtonSDK.hex"
   "ButtonSDK.pdb"
   "ButtonSDK.uf2"
-  "CMakeFiles/ButtonSDK.dir/ButtonSDK.S.o"
+  "CMakeFiles/ButtonSDK.dir/ButtonSDK.c.o"
   "CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o"
   "CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o"
   "CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o"
@@ -87,7 +87,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o"
   "CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o"
   "CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o"
-  "CMakeFiles/ButtonSDK.dir/sdklink.c.o"
 )
 
 # Per-language clean rules from dependency scanning.

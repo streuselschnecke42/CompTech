@@ -6,8 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/michelle/pico/comptech/ass4/task1/a/ButtonSDK.S
-
 /home/michelle/pico/pico-sdk/src/boards/include/boards/pico.h
 
 /home/michelle/pico/pico-sdk/src/common/boot_picobin_headers/include/boot/picobin.h

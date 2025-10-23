@@ -6,7 +6,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM
-  "/home/michelle/pico/comptech/ass4/task1/a/ButtonSDK.S" "/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles/ButtonSDK.dir/ButtonSDK.S.o"
   "/home/michelle/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S" "/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o"
   "/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S" "/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
   "/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S" "/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o"
@@ -148,6 +147,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
   )
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/michelle/pico/comptech/ass4/task1/a/ButtonSDK.c" "/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles/ButtonSDK.dir/ButtonSDK.c.o"
   "/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c" "/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o"
   "/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c" "/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o"
   "/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c" "/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o"
@@ -217,7 +217,6 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c" "/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o"
   "/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c" "/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o"
   "/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c" "/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles/ButtonSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o"
-  "/home/michelle/pico/comptech/ass4/task1/a/sdklink.c" "/home/michelle/pico/comptech/ass4/task1/a/build/CMakeFiles/ButtonSDK.dir/sdklink.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
