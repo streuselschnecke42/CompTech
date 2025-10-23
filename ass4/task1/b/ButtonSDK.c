@@ -1,6 +1,6 @@
 
-/* C wrapper functions for the RP2040 SDK
- * Incline functions gpio_set_dir and gpio_put.
+/* TASK 1C: PROGRAMMING BUTTON1 TO TURN ON AND BUTTON2 TO 
+ * TURN OFF 1 LED USING C AND HARDWARE VALUES
  */
  
 #include "hardware/gpio.h"
