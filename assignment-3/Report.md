@@ -14,8 +14,14 @@ Discipline: NGDNS, NGDPV
 // TODO
 
 ## Explanation Code
-For this task, minicom was used to display the output.
-// TODO
+For this task, minicom was used to display the output. In this task we needed to write a program that calculates the average value of 8 numbers already defined in the .data section. 
+So we have two similar but slightly different solutions and we explain both of them next.
+In the first solution (Michelle's), the program continuously reads two buttons and sets two LEDs accordingly. It first initialized the GPIO pins for the LEDs and the buttons setting the LEDs as outputs and the buttons as inputs with internal pull-up resistors. It then in an infinite loop checks the state of BUTTON1 and BUTTON2 using link_gpio_get.
+If BUTTON1 is pressed it turns on both LEDs by calling link_gpio_put_all with a value of 1, and if BUTTON2 is pressed it turns the LEDs off by calling the same function with 0. The program then cycles between checking each button and updating the LEDs.
+
+In the second solution (Sanja's), our program begins by initializing the standard stdio_init_all to enable the printing and then enters a loop where it loads the array address into R0 and the number of elements into R1 before calling the average subroutine.
+In the average subroutine registers R4-R7 were used to temporarily hold and sum the array elements, adding four elements at a time and then one more time just one element (re-using the registers) and then it stored the total sum in R0 and divided by 8 by using logical shift right (LSR). 
+After that the program moves the average value into R1, loads the address of the format string into R0 and calls printf to display the message. The program then loops forever.
 
 ## Execution
 // TODO
