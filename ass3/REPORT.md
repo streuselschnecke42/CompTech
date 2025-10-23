@@ -151,7 +151,7 @@ The buttons can be pressed as many times as the user wants, since the code runs 
 [pico_sdk_import.cmake](../ass3/task3-sanja/pico_sdk_import.cmake)\
 [SimpleButtonsTwoSDK.uf2](../ass3/task3-sanja/build/SecondLedPushbuttons.uf2)
 
-To get to the whole Task 3 directory instead, click [here](../ass3-sanja/task3/).
+To get to the whole Task 3 directory instead, click [here](../ass3/task3-sanja/).
 
 ## Sourcecode files - Michelle's version
 [SimpleButtonsTwoSDK.S](../ass3/task3-michelle/SimpleButtonsTwoSDK.S)\
