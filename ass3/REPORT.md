@@ -1,6 +1,6 @@
 # 1DT301 Lab Assignment 3
 *Computer Technology 1* \
-*October 21, 2025*
+*October 23, 2025*
 
 Author: Michelle Weber, Sanja Janevska\
 Examiner: Mehdi Saman Azari\
