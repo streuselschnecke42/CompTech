@@ -16,11 +16,11 @@ To show the result, the easiest way is probably to write the result continuously
 
 ## Explanation(s) Code
 For this task, minicom was used to display the output.\
-In this task we needed to write a program that calculates the average value of 8 numbers already defined in the .data section.\
-So, we have two similar but slightly different solutions and we explain both of them next.
-
-In the first solution (Michelle's), the program continuously reads two buttons and sets two LEDs accordingly. It first initialized the GPIO pins for the LEDs and the buttons setting the LEDs as outputs and the buttons as inputs with internal pull-up resistors. It then in an infinite loop checks the state of BUTTON1 and BUTTON2 using link_gpio_get.\
-If BUTTON1 is pressed it turns on both LEDs by calling link_gpio_put_all with a value of 1, and if BUTTON2 is pressed it turns the LEDs off by calling the same function with 0. The program then cycles between checking each button and updating the LEDs.
+In this program, the Pico continuously calculates the average of an array of eight integers and prints the result over the serial connection. It first initializes the standard I/O system for UART or USB communication using the stdio_init_all function provided by the Pico SDK.\
+Inside the main loop, the program loads the address of the integer array my_array into register R0 and stores the number of elements (8) in register R1. It then calls the subroutine average, which computes the average value of the numbers in the array.\
+The average subroutine loads each integer from memory, adds them together using register R7 as an accumulator, and finally divides the total by 8 using a logical shift right instruction (LSR R7, R7, #3). The result (the average value) is returned in register R0.\
+After returning from the subroutine, the main loop moves the computed average into R1 (the second parameter for printf) and loads the address of the format string "Average value %d\n" into R0. It then calls printf to display the result over the serial output.\
+The program runs continuously in an infinite loop, repeatedly calculating and printing the same average value of the array.
 
 In the second solution (Sanja's), our program begins by initializing the standard stdio_init_all to enable the printing and then enters a loop where it loads the array address into R0 and the number of elements into R1 before calling the average subroutine.\
 In the average subroutine registers R4-R7 were used to temporarily hold and sum the array elements, adding four elements at a time and then one more time just one element (re-using the registers) and then it stored the total sum in R0 and divided by 8 by using logical shift right (LSR).\
