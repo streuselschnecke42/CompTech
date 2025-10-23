@@ -40,7 +40,7 @@ This whole program will loop forever, until you unplug the pico or press Ctrl A 
 [pico_sdk_import.cmake](../ass3/task1-michelle/pico_sdk_import.cmake)\
 [AverageValue.uf2](../ass3/task1-michelle/build/AverageArrayValue.uf2)
 
-To get to the whole Task 1 directory instead, click [here](../ass3/task1/).
+To get to the whole Task 1 directory instead, click [here](../ass3/task1-michelle/).
 
 ## Sourcecode files - Sanja
 [AverageArrayValue.S](../ass3/task1-sanja/AverageValue.S)\
@@ -48,7 +48,7 @@ To get to the whole Task 1 directory instead, click [here](../ass3/task1/).
 [pico_sdk_import.cmake](../ass3/task1-sanja/pico_sdk_import.cmake)\
 [AverageValue.uf2](../ass3/task1-sanja/build/AverageValue.uf2)
 
-To get to the whole Task 1 directory instead, click [here](../ass3/task1/).
+To get to the whole Task 1 directory instead, click [here](../ass3/task1-sanja/).
 
 
 # Task 2
