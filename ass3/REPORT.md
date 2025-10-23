@@ -89,7 +89,20 @@ You are allowed to use C functions to initialize and set direction, like in the 
 // TODO: explain code
 
 ## Explanation Code - Michelle's version with C functions to initialize and set direction
-// TODO: explain code
+The code for initializing pins for LEDs and Buttons and setting the direction is the same as task 2.\
+This time, there will be no C function for reading or writing instructions. Instead, the program uses the hardware registers.\
+The loop for checking button 1 and 2 and the conditions for button 1 or 2 being pressed, are the same as task 2.\
+To read input from the buttons, the progam has a gpioget function that manually reads the hardware registers for specific pins. The function takes the pin value as input and shifts value 1 to this pin position. It then loads the gpiobase address onto register R2. 'gpiobase' is the Single Input-Output base address. The program then adds the input offset (SIO_GPIO_IN_OFFSET) onto the gpiobase. This is to read the input of the pico pin. The next line uses the AND command to compare the bit addresses and find the ones that match. Then, it shifts to the address it needs, which is the pin position. Everything else will be discarded ('shifted off'). The result will be moved to R0 as return value. That value will then be used in the functions checkBtnOne and checkBtnTwo.\
+Those functions compare the return value and if it matches 0, that means the button that was put into the gpioget function, was pressed.
+
+If button 1 is pressed, the program moves to the turnOn function, to turn on the LEDs.\
+This function turns on both LEDs one by one. First by moving the pin value of LED1 to register R0, moving 1 onto another Register R3 and then shifting that value 1 to the LED pin value to get the LEDs bitmask. Next, the address of gpiobase from memory is loaded onto a register. The address will be loaded onto register R2 this time. This gpiobase address will be combined with the offset for setting gpio outputs (SIO_GPIO_OUT_SET_OFFSET). This way, we get the complete address for setting output of gpios. The bitmask that is stored in register R3 will now be stored/written onto the gpio output set register. This turns the LED in this bitmask on.\
+This process will be repeated for LED2.\
+After all LEDs are turned on, the program will resume to the main loops.
+
+If button 2 is pressed, the program moves to the turnOff function, to turn the LEDs off.\
+The function is almost like the turnOn function, but this time, the LEDs will be turned off instead of on. They will be turned off one by one, and the process is the same as in the function turnOn, only that this time, the gpiobase address will be combined with the offset for clearing gpio outputs (SIO_GPIO_OUT_CLR_OFFSET). This way, we get the complete address for clearing output of gpios. The bitmask that is stored in register R3 will now be stored/written onto the gpio output clear register. This turns the LED in this bitmask off.\
+After all LEDs are turned off, the program will resume to the main loops.
 
 ## Hardware Layout
 The hardware layout is the same as Task 2.\
