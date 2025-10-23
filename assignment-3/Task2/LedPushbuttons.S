@@ -3,7 +3,7 @@
 @ connected to the Raspberry Pi Pico GPIO port using the Pico SDK.
 @
 
-	.EQU	LED_PIN1, 0 @defining LED_PIN1 will be connected to pin GPIO 0
+	.EQU	LED_PIN1, 0 @defining LED_PIN1 is connected to pin GPIO 0
 	.EQU	LED_PIN2, 1 @LED_PIN2 is connected to GPIO 1
 	.EQU	BTN1, 2		@BTN1 is connected to GPIO 2
 	.EQU	BTN2, 3		@BTN2 is connected to GPIO 3
@@ -57,7 +57,7 @@ loop:
 	@Turn both LEDs off
 	MOV R0, #BTN2
 	BL link_gpio_get
-	CMP R0, #0
+	CMP R0, #0		@ pressed = 0
 	BEQ both_off
 	
 	B 		loop 	@ loop forever
