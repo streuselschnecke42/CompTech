@@ -14,9 +14,17 @@ Discipline: NGDNS, NGDPV
 Write a program to calculate the average value of 8 numbers defined in the .data section. Then, show the result in the terminal (i.e. Minicom). You can use the code as a template (see [Tasksheet](../ass3/Lab%203%20-%20Subroutines%20and%20inputs.pdf)).\
 To show the result, the easiest way is probably to write the result continuously in an infinte loop, as in the Hello World program.
 
-## Explanation Code
-For this task, minicom was used to display the output.
-// TODO: Explanation of Code
+## Explanation(s) Code
+For this task, minicom was used to display the output.\
+In this task we needed to write a program that calculates the average value of 8 numbers already defined in the .data section.
+So we have two similar but slightly different solutions and we explain both of them next.
+
+In the first solution (Michelle's), the program continuously reads two buttons and sets two LEDs accordingly. It first initialized the GPIO pins for the LEDs and the buttons setting the LEDs as outputs and the buttons as inputs with internal pull-up resistors. It then in an infinite loop checks the state of BUTTON1 and BUTTON2 using link_gpio_get.
+If BUTTON1 is pressed it turns on both LEDs by calling link_gpio_put_all with a value of 1, and if BUTTON2 is pressed it turns the LEDs off by calling the same function with 0. The program then cycles between checking each button and updating the LEDs.
+
+In the second solution (Sanja's), our program begins by initializing the standard stdio_init_all to enable the printing and then enters a loop where it loads the array address into R0 and the number of elements into R1 before calling the average subroutine.
+In the average subroutine registers R4-R7 were used to temporarily hold and sum the array elements, adding four elements at a time and then one more time just one element (re-using the registers) and then it stored the total sum in R0 and divided by 8 by using logical shift right (LSR).
+After that the program moves the average value into R1, loads the address of the format string into R0 and calls printf to display the message. The program then loops forever.
 
 ## Execution
 The program can be visible by using minicom.\
@@ -26,11 +34,19 @@ This whole program will loop forever, until you unplug the pico or press Ctrl A 
 
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
-## Sourcecode files
-[AverageArrayValue.S](../ass3/task1/AverageArrayValue.S)\
-[CMakeLists.txt](../ass3/task1/CMakeLists.txt)\
-[pico_sdk_import.cmake](../ass3/task1/pico_sdk_import.cmake)\
-[AverageValue.uf2](../ass3/task1/build/AverageArrayValue.uf2)
+## Sourcecode files - Michelle
+[AverageArrayValue.S](../ass3/task1-michelle/AverageArrayValue.S)\
+[CMakeLists.txt](../ass3/task1-michelle/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass3/task1-michelle/pico_sdk_import.cmake)\
+[AverageValue.uf2](../ass3/task1-michelle/build/AverageArrayValue.uf2)
+
+To get to the whole Task 1 directory instead, click [here](../ass3/task1/).
+
+## Sourcecode files - Sanja
+[AverageArrayValue.S](../ass3/task1-sanja/AverageValue.S)\
+[CMakeLists.txt](../ass3/task1-sanja/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass3/task1-sanja/pico_sdk_import.cmake)\
+[AverageValue.uf2](../ass3/task1-sanja/build/AverageValue.uf2)
 
 To get to the whole Task 1 directory instead, click [here](../ass3/task1/).
 
@@ -86,7 +102,11 @@ This time, you are not allowed to use C functions to read from the input pin or 
 You are allowed to use C functions to initialize and set direction, like in the program listing 8-1 in the book. Alternatively, you can use the gpioinit function in Listing 9-5 to initialize the pins.
 
 ## Explanation Code - Sanja's version without ANY C functions
-// TODO: explain code
+Sanja's solution starts by initializing the system using sdtio_init_all and configuring the GPIO pins. The LED pins are set as outputs while the buttons are set as inputs.
+Then to ensure stable reading of the pushbuttons, the internal pull-up resistors are enabled by writing to the PAD control registers. The program then goes through an infinite loop where it continuously reads the state of each pushbutton by using the gpio_get subroutine.
+This function shifts a mask over the relevant GPIO input bit, ANDs it with the GPIO input register and returns a 0 or a 1, depending on whether the button is being pressed.
+If BUTTON1 (BTN1) is pressed the gpio_on subroutine is being called which sets the output bits to the corresponding LEDs by writing to the SIP_GPIO_OUT_SET_OFFSET register. If BUTTON2 (BTN2) is pressed, the gpio_off subroutine calls the output bits using SIO_GPIO_OUT_CLR_OFFSET register.
+The gpio_on and gpio_off subroutines work by constructing a bitmask for the target pin shifting the 1 into the correct position and writing it to the appropriate SIO register, and by that it directly controls the voltage on the GPIO pins. 
 
 ## Explanation Code - Michelle's version with C functions to initialize and set direction
 The code for initializing pins for LEDs and Buttons and setting the direction is the same as task 2.\
