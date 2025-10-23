@@ -10,9 +10,8 @@
 @
 
 .EQU LED1, 0
-.EQU LED2, 1
-.EQU BTN1, 2
-.EQU BTN2, 3
+.EQU BTN1, 1
+.EQU BTN2, 2
 .EQU GPIO_IN, 0          @ gpio_set_dir(second value)
 						 @ second value == 0 means input (output = false)
 .EQU GPIO_OUT, 1         @ second value == 1 means output (output = true)
@@ -25,13 +24,6 @@ main:
 	MOV R0, #LED1
 	BL gpio_init
 	MOV R0, #LED1
-	MOV R1, #GPIO_OUT
-	BL link_gpio_set_dir
-	
-	@ --- configure LED2 ---
-	MOV R0, #LED2
-	BL gpio_init
-	MOV R0, #LED2
 	MOV R1, #GPIO_OUT
 	BL link_gpio_set_dir
 	
@@ -71,11 +63,13 @@ checkBtnTwo:
 	B checkBtnOne
 	
 turnOn:
-	MOV R0, #1
-	BL link_gpio_put_all
+	MOV R0, #LED1
+	MOV R1, #1
+	BL link_gpio_put
 	B checkBtnTwo
 	
 turnOff:
-	MOV R0, #0
-	BL link_gpio_put_all
+	MOV R0, #LED1
+	MOV R1, #0
+	BL link_gpio_put
 	B checkBtnOne

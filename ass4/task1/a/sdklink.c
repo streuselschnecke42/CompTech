@@ -20,18 +20,6 @@ int link_gpio_get(int pin)
 	return gpio_get(pin);
 }
 
-void link_gpio_put_all(int value)
-{
-  switch (value) {
-    case 0:
-      gpio_put_all(0b0000000);
-      break;
-    case 1:
-      gpio_put_all(0b0000011);
-      break;
-  }
-}
-
 void link_gpio_pull_up(int pin)
 {
 	gpio_pull_up(pin);
