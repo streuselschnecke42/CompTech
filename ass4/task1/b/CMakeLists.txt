@@ -11,8 +11,7 @@ pico_sdk_init()
 include_directories(${CMAKE_SOURCE_DIR})
 
 add_executable(ButtonSDK
-  ButtonSDK.S
-  sdklink.c
+  ButtonSDK.c
 )
 
 pico_enable_stdio_uart(ButtonSDK 0)
