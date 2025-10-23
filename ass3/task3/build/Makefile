@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/michelle/pico/comptech/ass3/task3
+CMAKE_SOURCE_DIR = /home/michelle/pico/comptech/ass3/task3-disgusting
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/michelle/pico/comptech/ass3/task3/build
+CMAKE_BINARY_DIR = /home/michelle/pico/comptech/ass3/task3-disgusting/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/michelle/pico/comptech/ass3/task3/build/CMakeFiles /home/michelle/pico/comptech/ass3/task3/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/michelle/pico/comptech/ass3/task3-disgusting/build/CMakeFiles /home/michelle/pico/comptech/ass3/task3-disgusting/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/michelle/pico/comptech/ass3/task3/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/michelle/pico/comptech/ass3/task3-disgusting/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -130,17 +130,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named DisapointmentSDK
+# Target rules for targets named SimpleButtonsTwoSDK
 
 # Build rule for target.
-DisapointmentSDK: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DisapointmentSDK
-.PHONY : DisapointmentSDK
+SimpleButtonsTwoSDK: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SimpleButtonsTwoSDK
+.PHONY : SimpleButtonsTwoSDK
 
 # fast build rule for target.
-DisapointmentSDK/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/build
-.PHONY : DisapointmentSDK/fast
+SimpleButtonsTwoSDK/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/build
+.PHONY : SimpleButtonsTwoSDK/fast
 
 #=============================================================================
 # Target rules for targets named bs2_default_bin
@@ -220,14 +220,14 @@ pico_status_led_ws2812_pio_h/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/build
 .PHONY : pico_status_led_ws2812_pio_h/fast
 
-DisapointmentSDK.o: DisapointmentSDK.S.o
+SimpleButtonsTwoSDK.o: SimpleButtonsTwoSDK.S.o
 
-.PHONY : DisapointmentSDK.o
+.PHONY : SimpleButtonsTwoSDK.o
 
 # target to build an object file
-DisapointmentSDK.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/DisapointmentSDK.S.o
-.PHONY : DisapointmentSDK.S.o
+SimpleButtonsTwoSDK.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/SimpleButtonsTwoSDK.S.o
+.PHONY : SimpleButtonsTwoSDK.S.o
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.o: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
 
@@ -235,7 +235,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.o: home/mic
 
 # target to build an object file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
@@ -244,7 +244,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: home/mic
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
@@ -253,7 +253,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: home/mic
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.o: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
@@ -262,7 +262,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.o: home/michell
 
 # target to build an object file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
@@ -271,7 +271,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: home/michell
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
@@ -280,7 +280,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: home/michell
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.o: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
@@ -289,7 +289,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.o: home/michell
 
 # target to build an object file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
@@ -298,7 +298,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: home/michell
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
@@ -307,7 +307,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: home/michell
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.o: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
@@ -316,7 +316,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.o: home/mich
 
 # target to build an object file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
@@ -325,7 +325,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: home/mich
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
@@ -334,7 +334,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: home/mich
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.o: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
@@ -343,7 +343,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.o: home/michell
 
 # target to build an object file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
@@ -352,7 +352,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: home/michell
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
@@ -361,7 +361,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: home/michell
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.o: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o
@@ -370,7 +370,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.o: home/miche
 
 # target to build an object file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
@@ -379,7 +379,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: home/miche
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
@@ -388,7 +388,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: home/miche
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.o: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
@@ -397,7 +397,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.o: home/michell
 
 # target to build an object file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
@@ -406,7 +406,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: home/michell
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
@@ -415,7 +415,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: home/michell
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.o: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
@@ -424,7 +424,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.o: home/m
 
 # target to build an object file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
@@ -433,7 +433,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: home/m
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
@@ -442,7 +442,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: home/m
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.o: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o
@@ -451,7 +451,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.o: home/michell
 
 # target to build an object file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
@@ -460,7 +460,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: home/michell
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
@@ -469,7 +469,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: home/michell
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.o: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
@@ -478,7 +478,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.o: home/m
 
 # target to build an object file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
@@ -487,7 +487,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: home/m
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
@@ -496,7 +496,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: home/m
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.o: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
@@ -505,7 +505,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.o: home/m
 
 # target to build an object file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
@@ -514,7 +514,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: home/m
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
@@ -523,7 +523,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: home/m
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.o: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o
@@ -532,7 +532,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.o: home/mic
 
 # target to build an object file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.i: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
@@ -541,7 +541,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.i: home/mic
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.s: home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
@@ -550,7 +550,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.s: home/mic
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.o: home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
@@ -559,7 +559,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.o: home/michelle/pi
 
 # target to build an object file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
@@ -568,7 +568,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: home/michelle/pi
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
@@ -577,7 +577,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: home/michelle/pi
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd.o: home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
@@ -586,7 +586,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd.o: home/michelle/pico/pi
 
 # target to build an object file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd.i: home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
@@ -595,7 +595,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd.i: home/michelle/pico/pi
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd.s: home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
@@ -604,7 +604,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd.s: home/michelle/pico/pi
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.o: home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
@@ -613,7 +613,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.o: home/michelle
 
 # target to build an object file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i: home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
@@ -622,7 +622,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i: home/michelle
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s: home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
@@ -631,7 +631,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s: home/michelle
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.o: home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
@@ -640,7 +640,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp20
 
 # target to build an object file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
@@ -649,7 +649,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp20
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
@@ -658,7 +658,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp20
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.o: home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
@@ -667,7 +667,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_u
 
 # target to build an object file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
@@ -676,7 +676,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_u
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
@@ -685,7 +685,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_u
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.o: home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
@@ -694,7 +694,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.o: home/michelle/pico/pico-sdk/
 
 # target to build an object file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.i: home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
@@ -703,7 +703,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.i: home/michelle/pico/pico-sdk/
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
 
 home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.s: home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
@@ -712,7 +712,7 @@ home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.s: home/michelle/pico/pico-sdk/
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
 .PHONY : home/michelle/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
 
 home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.o: home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.o
@@ -721,7 +721,7 @@ home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.o: home/michelle/pic
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.o
 
 home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.i: home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.i
@@ -730,7 +730,7 @@ home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.i: home/michelle/pic
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.i
 
 home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.s: home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.s
@@ -739,7 +739,7 @@ home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.s: home/michelle/pic
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/common/hardware_claim/claim.c.s
 
 home/michelle/pico/pico-sdk/src/common/pico_sync/critical_section.o: home/michelle/pico/pico-sdk/src/common/pico_sync/critical_section.c.o
@@ -748,7 +748,7 @@ home/michelle/pico/pico-sdk/src/common/pico_sync/critical_section.o: home/michel
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/common/pico_sync/critical_section.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/critical_section.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/critical_section.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/common/pico_sync/critical_section.c.o
 
 home/michelle/pico/pico-sdk/src/common/pico_sync/critical_section.i: home/michelle/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
@@ -757,7 +757,7 @@ home/michelle/pico/pico-sdk/src/common/pico_sync/critical_section.i: home/michel
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/common/pico_sync/critical_section.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 
 home/michelle/pico/pico-sdk/src/common/pico_sync/critical_section.s: home/michelle/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
@@ -766,7 +766,7 @@ home/michelle/pico/pico-sdk/src/common/pico_sync/critical_section.s: home/michel
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/common/pico_sync/critical_section.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 
 home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.o: home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
@@ -775,7 +775,7 @@ home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.o: home/michelle/pico
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
 
 home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.i: home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
@@ -784,7 +784,7 @@ home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.i: home/michelle/pico
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 
 home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.s: home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
@@ -793,7 +793,7 @@ home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.s: home/michelle/pico
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 
 home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.o: home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o
@@ -802,7 +802,7 @@ home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.o: home/michelle/pico/pic
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.o
 
 home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.i: home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.i
@@ -811,7 +811,7 @@ home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.i: home/michelle/pico/pic
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 
 home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.s: home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.s
@@ -820,7 +820,7 @@ home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.s: home/michelle/pico/pic
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 
 home/michelle/pico/pico-sdk/src/common/pico_sync/sem.o: home/michelle/pico/pico-sdk/src/common/pico_sync/sem.c.o
@@ -829,7 +829,7 @@ home/michelle/pico/pico-sdk/src/common/pico_sync/sem.o: home/michelle/pico/pico-
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/common/pico_sync/sem.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/sem.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/sem.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/common/pico_sync/sem.c.o
 
 home/michelle/pico/pico-sdk/src/common/pico_sync/sem.i: home/michelle/pico/pico-sdk/src/common/pico_sync/sem.c.i
@@ -838,7 +838,7 @@ home/michelle/pico/pico-sdk/src/common/pico_sync/sem.i: home/michelle/pico/pico-
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/common/pico_sync/sem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/sem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/common/pico_sync/sem.c.i
 
 home/michelle/pico/pico-sdk/src/common/pico_sync/sem.s: home/michelle/pico/pico-sdk/src/common/pico_sync/sem.c.s
@@ -847,7 +847,7 @@ home/michelle/pico/pico-sdk/src/common/pico_sync/sem.s: home/michelle/pico/pico-
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/common/pico_sync/sem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/sem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/common/pico_sync/sem.c.s
 
 home/michelle/pico/pico-sdk/src/common/pico_time/time.o: home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
@@ -856,7 +856,7 @@ home/michelle/pico/pico-sdk/src/common/pico_time/time.o: home/michelle/pico/pico
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/common/pico_time/time.c.o
 
 home/michelle/pico/pico-sdk/src/common/pico_time/time.i: home/michelle/pico/pico-sdk/src/common/pico_time/time.c.i
@@ -865,7 +865,7 @@ home/michelle/pico/pico-sdk/src/common/pico_time/time.i: home/michelle/pico/pico
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/common/pico_time/time.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/common/pico_time/time.c.i
 
 home/michelle/pico/pico-sdk/src/common/pico_time/time.s: home/michelle/pico/pico-sdk/src/common/pico_time/time.c.s
@@ -874,7 +874,7 @@ home/michelle/pico/pico-sdk/src/common/pico_time/time.s: home/michelle/pico/pico
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/common/pico_time/time.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/common/pico_time/time.c.s
 
 home/michelle/pico/pico-sdk/src/common/pico_time/timeout_helper.o: home/michelle/pico/pico-sdk/src/common/pico_time/timeout_helper.c.o
@@ -883,7 +883,7 @@ home/michelle/pico/pico-sdk/src/common/pico_time/timeout_helper.o: home/michelle
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/common/pico_time/timeout_helper.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/timeout_helper.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/timeout_helper.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/common/pico_time/timeout_helper.c.o
 
 home/michelle/pico/pico-sdk/src/common/pico_time/timeout_helper.i: home/michelle/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
@@ -892,7 +892,7 @@ home/michelle/pico/pico-sdk/src/common/pico_time/timeout_helper.i: home/michelle
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
 home/michelle/pico/pico-sdk/src/common/pico_time/timeout_helper.s: home/michelle/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
@@ -901,7 +901,7 @@ home/michelle/pico/pico-sdk/src/common/pico_time/timeout_helper.s: home/michelle
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
 home/michelle/pico/pico-sdk/src/common/pico_util/datetime.o: home/michelle/pico/pico-sdk/src/common/pico_util/datetime.c.o
@@ -910,7 +910,7 @@ home/michelle/pico/pico-sdk/src/common/pico_util/datetime.o: home/michelle/pico/
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/common/pico_util/datetime.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/datetime.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/datetime.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/common/pico_util/datetime.c.o
 
 home/michelle/pico/pico-sdk/src/common/pico_util/datetime.i: home/michelle/pico/pico-sdk/src/common/pico_util/datetime.c.i
@@ -919,7 +919,7 @@ home/michelle/pico/pico-sdk/src/common/pico_util/datetime.i: home/michelle/pico/
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/common/pico_util/datetime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/datetime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/common/pico_util/datetime.c.i
 
 home/michelle/pico/pico-sdk/src/common/pico_util/datetime.s: home/michelle/pico/pico-sdk/src/common/pico_util/datetime.c.s
@@ -928,7 +928,7 @@ home/michelle/pico/pico-sdk/src/common/pico_util/datetime.s: home/michelle/pico/
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/common/pico_util/datetime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/datetime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/common/pico_util/datetime.c.s
 
 home/michelle/pico/pico-sdk/src/common/pico_util/pheap.o: home/michelle/pico/pico-sdk/src/common/pico_util/pheap.c.o
@@ -937,7 +937,7 @@ home/michelle/pico/pico-sdk/src/common/pico_util/pheap.o: home/michelle/pico/pic
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/common/pico_util/pheap.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/pheap.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/pheap.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/common/pico_util/pheap.c.o
 
 home/michelle/pico/pico-sdk/src/common/pico_util/pheap.i: home/michelle/pico/pico-sdk/src/common/pico_util/pheap.c.i
@@ -946,7 +946,7 @@ home/michelle/pico/pico-sdk/src/common/pico_util/pheap.i: home/michelle/pico/pic
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/common/pico_util/pheap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/pheap.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/common/pico_util/pheap.c.i
 
 home/michelle/pico/pico-sdk/src/common/pico_util/pheap.s: home/michelle/pico/pico-sdk/src/common/pico_util/pheap.c.s
@@ -955,7 +955,7 @@ home/michelle/pico/pico-sdk/src/common/pico_util/pheap.s: home/michelle/pico/pic
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/common/pico_util/pheap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/pheap.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/common/pico_util/pheap.c.s
 
 home/michelle/pico/pico-sdk/src/common/pico_util/queue.o: home/michelle/pico/pico-sdk/src/common/pico_util/queue.c.o
@@ -964,7 +964,7 @@ home/michelle/pico/pico-sdk/src/common/pico_util/queue.o: home/michelle/pico/pic
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/common/pico_util/queue.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/queue.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/queue.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/common/pico_util/queue.c.o
 
 home/michelle/pico/pico-sdk/src/common/pico_util/queue.i: home/michelle/pico/pico-sdk/src/common/pico_util/queue.c.i
@@ -973,7 +973,7 @@ home/michelle/pico/pico-sdk/src/common/pico_util/queue.i: home/michelle/pico/pic
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/common/pico_util/queue.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/queue.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/common/pico_util/queue.c.i
 
 home/michelle/pico/pico-sdk/src/common/pico_util/queue.s: home/michelle/pico/pico-sdk/src/common/pico_util/queue.c.s
@@ -982,7 +982,7 @@ home/michelle/pico/pico-sdk/src/common/pico_util/queue.s: home/michelle/pico/pic
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/common/pico_util/queue.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/queue.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/common/pico_util/queue.c.s
 
 home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.o: home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o
@@ -991,7 +991,7 @@ home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.o: home/michelle/p
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o
 
 home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.i: home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.c.i
@@ -1000,7 +1000,7 @@ home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.i: home/michelle/p
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.c.i
 
 home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.s: home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.c.s
@@ -1009,7 +1009,7 @@ home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.s: home/michelle/p
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2040/pico_platform/platform.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o: home/michelle/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
@@ -1018,7 +1018,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o: home/
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i: home/michelle/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
@@ -1027,7 +1027,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i: home/
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s: home/michelle/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
@@ -1036,7 +1036,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s: home/
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.o: home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
@@ -1045,7 +1045,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.o: home/michel
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
@@ -1054,7 +1054,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/michel
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
@@ -1063,7 +1063,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/michel
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_divider/divider.o: home/michelle/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
@@ -1072,7 +1072,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_divider/divider.o: home/mich
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.o: home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
@@ -1081,7 +1081,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.o: home/michelle
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i: home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
@@ -1090,7 +1090,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i: home/michelle
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s: home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
@@ -1099,7 +1099,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s: home/michelle
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.o: home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
@@ -1108,7 +1108,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.o: home/michelle/p
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
@@ -1117,7 +1117,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/michelle/p
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
@@ -1126,7 +1126,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/michelle/p
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.o: home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
@@ -1135,7 +1135,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.o: home/michelle/pic
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
@@ -1144,7 +1144,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/michelle/pic
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
@@ -1153,7 +1153,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/michelle/pic
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o: home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
@@ -1162,7 +1162,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o: hom
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.o: home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
@@ -1171,7 +1171,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.o: home/michelle/pic
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
@@ -1180,7 +1180,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/michelle/pic
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
@@ -1189,7 +1189,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/michelle/pic
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.o: home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
@@ -1198,7 +1198,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.o: home/michelle/p
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
@@ -1207,7 +1207,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/michelle/p
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
@@ -1216,7 +1216,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/michelle/p
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o: home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
@@ -1225,7 +1225,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_loc
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i: home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
@@ -1234,7 +1234,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_loc
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s: home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
@@ -1243,7 +1243,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_loc
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.o: home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
@@ -1252,7 +1252,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.o: home/michelle
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.i: home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
@@ -1261,7 +1261,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.i: home/michelle
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.s: home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
@@ -1270,7 +1270,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.s: home/michelle
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.o: home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
@@ -1279,7 +1279,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.o: home/michelle
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
@@ -1288,7 +1288,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/michelle
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
@@ -1297,7 +1297,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/michelle
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_uart/uart.o: home/michelle/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
@@ -1306,7 +1306,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_uart/uart.o: home/michelle/p
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/michelle/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
@@ -1315,7 +1315,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/michelle/p
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/michelle/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
@@ -1324,7 +1324,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/michelle/p
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.o: home/michelle/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
@@ -1333,7 +1333,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.o: home/michelle/p
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/michelle/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
@@ -1342,7 +1342,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/michelle/p
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/michelle/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
@@ -1351,7 +1351,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/michelle/p
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o: home/michelle/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
@@ -1360,7 +1360,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o: home/mi
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/michelle/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -1369,7 +1369,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/mi
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/michelle/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -1378,7 +1378,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/mi
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.o: home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
@@ -1387,7 +1387,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.o: home/
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.i: home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
@@ -1396,7 +1396,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.i: home/
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.s: home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
@@ -1405,7 +1405,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.s: home/
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.o: home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
@@ -1414,7 +1414,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.o: home/michelle/p
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
@@ -1423,7 +1423,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/michelle/p
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
@@ -1432,7 +1432,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/michelle/p
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
@@ -1441,7 +1441,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.o: home/michelle/p
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.i: home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
@@ -1450,7 +1450,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.i: home/michelle/p
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.s: home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
@@ -1459,7 +1459,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.s: home/michelle/p
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
@@ -1468,7 +1468,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o: home/mi
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
@@ -1477,7 +1477,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o: home/michelle
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -1486,7 +1486,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/michelle
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -1495,7 +1495,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/michelle
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
@@ -1504,7 +1504,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.o: home/mic
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.i: home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
@@ -1513,7 +1513,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.i: home/mic
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.s: home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
@@ -1522,7 +1522,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.s: home/mic
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
@@ -1531,7 +1531,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.i: home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
@@ -1540,7 +1540,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.s: home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
@@ -1549,7 +1549,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
@@ -1558,7 +1558,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.o: home/michelle/pico/
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
@@ -1567,7 +1567,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o: home/m
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i: home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
@@ -1576,7 +1576,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i: home/m
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.s: home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
@@ -1585,7 +1585,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.s: home/m
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
@@ -1594,7 +1594,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.o: home
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
@@ -1603,7 +1603,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.o: ho
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
@@ -1612,7 +1612,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.o:
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.i: home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
@@ -1621,7 +1621,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.i:
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.s: home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
@@ -1630,7 +1630,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.s:
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_math.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o
@@ -1639,7 +1639,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_math.o: home/miche
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_math.i: home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
@@ -1648,7 +1648,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_math.i: home/miche
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_math.s: home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
@@ -1657,7 +1657,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_math.s: home/miche
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
@@ -1666,7 +1666,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
@@ -1675,7 +1675,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeratio
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i: home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
@@ -1684,7 +1684,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeratio
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s: home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
@@ -1693,7 +1693,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeratio
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/flash.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o
@@ -1702,7 +1702,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/flash.o: home/michelle/pic
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/flash.i: home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.i
@@ -1711,7 +1711,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/flash.i: home/michelle/pic
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/flash.s: home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.s
@@ -1720,7 +1720,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/flash.s: home/michelle/pic
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
@@ -1729,7 +1729,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.o: home
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
@@ -1738,7 +1738,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.o: h
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.i: home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
@@ -1747,7 +1747,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.i: h
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.s: home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
@@ -1756,7 +1756,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.s: h
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_math.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o
@@ -1765,7 +1765,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_math.o: home/michell
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_math.i: home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
@@ -1774,7 +1774,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_math.i: home/michell
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_math.s: home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
@@ -1783,7 +1783,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_math.s: home/michell
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
@@ -1792,7 +1792,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
@@ -1801,7 +1801,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
@@ -1810,7 +1810,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.o: home/michelle/p
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.i: home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
@@ -1819,7 +1819,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.i: home/michelle/p
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.s: home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
@@ -1828,7 +1828,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.s: home/michelle/p
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
@@ -1837,7 +1837,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o: home/mi
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_common/common.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o
@@ -1846,7 +1846,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_common/common.o: home/m
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_common/common.i: home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.i
@@ -1855,7 +1855,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_common/common.i: home/m
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_common/common.s: home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.s
@@ -1864,7 +1864,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_common/common.s: home/m
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
@@ -1873,7 +1873,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.o: home/mic
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.i: home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
@@ -1882,7 +1882,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.i: home/mic
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.s: home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
@@ -1891,7 +1891,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.s: home/mic
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
@@ -1900,7 +1900,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.o: home/michelle/p
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.i: home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
@@ -1909,7 +1909,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.i: home/michelle/p
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
@@ -1918,7 +1918,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: home/michelle/p
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
@@ -1927,7 +1927,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.o: home/michelle
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
@@ -1936,7 +1936,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/michelle
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
@@ -1945,7 +1945,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/michelle
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
@@ -1954,7 +1954,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.o: hom
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.i: home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
@@ -1963,7 +1963,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.i: hom
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.s: home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
@@ -1972,7 +1972,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.s: hom
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
@@ -1981,7 +1981,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i: home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
@@ -1990,7 +1990,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.s: home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
@@ -1999,7 +1999,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
@@ -2008,7 +2008,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i: home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
@@ -2017,7 +2017,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s: home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
@@ -2026,7 +2026,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
@@ -2035,7 +2035,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_bi
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.i: home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
@@ -2044,7 +2044,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_bi
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.s: home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
@@ -2053,7 +2053,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_bi
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
@@ -2062,7 +2062,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.o: home/michelle/pic
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
@@ -2071,7 +2071,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/michelle/pic
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
@@ -2080,7 +2080,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/michelle/pic
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
@@ -2089,7 +2089,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.o: hom
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
@@ -2098,7 +2098,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: hom
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
@@ -2107,7 +2107,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: hom
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
@@ -2116,7 +2116,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.o: home/mich
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
@@ -2125,7 +2125,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: home/mich
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
@@ -2134,7 +2134,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: home/mich
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
@@ -2143,7 +2143,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
@@ -2152,7 +2152,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
@@ -2161,7 +2161,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
@@ -2170,7 +2170,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o: home/michelle/p
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -2179,7 +2179,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/michelle/p
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -2188,7 +2188,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/michelle/p
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.o: home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
@@ -2197,7 +2197,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.o: home/mich
 
 # target to build an object file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
@@ -2206,7 +2206,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: home/mich
 
 # target to preprocess a source file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 
 home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
@@ -2215,7 +2215,7 @@ home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: home/mich
 
 # target to generate assembly for a file
 home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : home/michelle/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
 sdklink.o: sdklink.c.o
@@ -2224,7 +2224,7 @@ sdklink.o: sdklink.c.o
 
 # target to build an object file
 sdklink.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/sdklink.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/sdklink.c.o
 .PHONY : sdklink.c.o
 
 sdklink.i: sdklink.c.i
@@ -2233,7 +2233,7 @@ sdklink.i: sdklink.c.i
 
 # target to preprocess a source file
 sdklink.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/sdklink.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/sdklink.c.i
 .PHONY : sdklink.c.i
 
 sdklink.s: sdklink.c.s
@@ -2242,7 +2242,7 @@ sdklink.s: sdklink.c.s
 
 # target to generate assembly for a file
 sdklink.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DisapointmentSDK.dir/build.make CMakeFiles/DisapointmentSDK.dir/sdklink.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleButtonsTwoSDK.dir/build.make CMakeFiles/SimpleButtonsTwoSDK.dir/sdklink.c.s
 .PHONY : sdklink.c.s
 
 # Help Target
@@ -2257,10 +2257,10 @@ help:
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
 	@echo "... pico_status_led_ws2812_pio_h"
 	@echo "... pioasmBuild"
-	@echo "... DisapointmentSDK"
+	@echo "... SimpleButtonsTwoSDK"
 	@echo "... bs2_default"
 	@echo "... bs2_default_library"
-	@echo "... DisapointmentSDK.o"
+	@echo "... SimpleButtonsTwoSDK.o"
 	@echo "... home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.o"
 	@echo "... home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
 	@echo "... home/michelle/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"

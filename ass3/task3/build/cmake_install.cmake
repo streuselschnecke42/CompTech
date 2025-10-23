@@ -1,4 +1,4 @@
-# Install script for directory: /home/michelle/pico/comptech/ass3/task3
+# Install script for directory: /home/michelle/pico/comptech/ass3/task3-disgusting
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/michelle/pico/comptech/ass3/task3/build/pico-sdk/cmake_install.cmake")
+  include("/home/michelle/pico/comptech/ass3/task3-disgusting/build/pico-sdk/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/michelle/pico/comptech/ass3/task3/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/michelle/pico/comptech/ass3/task3-disgusting/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
