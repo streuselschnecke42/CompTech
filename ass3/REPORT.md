@@ -16,7 +16,9 @@ To show the result, the easiest way is probably to write the result continuously
 
 ## Explanation(s) Code
 For this task, minicom was used to display the output.\
-In this program, the Pico continuously calculates the average of an array of eight integers and prints the result over the serial connection. It first initializes the standard I/O system for UART or USB communication using the stdio_init_all function provided by the Pico SDK.\
+There are two solutions which will be explained below.
+
+In this program (Michelle's), the Pico continuously calculates the average of an array of eight integers and prints the result over the serial connection. It first initializes the standard I/O system for UART or USB communication using the stdio_init_all function provided by the Pico SDK.\
 Inside the main loop, the program loads the address of the integer array my_array into register R0 and stores the number of elements (8) in register R1. It then calls the subroutine average, which computes the average value of the numbers in the array.\
 The average subroutine loads each integer from memory, adds them together using register R7 as an accumulator, and finally divides the total by 8 using a logical shift right instruction (LSR R7, R7, #3). The result (the average value) is returned in register R0.\
 After returning from the subroutine, the main loop moves the computed average into R1 (the second parameter for printf) and loads the address of the format string "Average value %d\n" into R0. It then calls printf to display the result over the serial output.\
