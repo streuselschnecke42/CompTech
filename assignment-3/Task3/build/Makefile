@@ -1880,6 +1880,33 @@ home/student/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SecondLedPushbuttons.dir/build.make CMakeFiles/SecondLedPushbuttons.dir/home/student/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : home/student/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
+sdklink.obj: sdklink.c.obj
+
+.PHONY : sdklink.obj
+
+# target to build an object file
+sdklink.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SecondLedPushbuttons.dir/build.make CMakeFiles/SecondLedPushbuttons.dir/sdklink.c.obj
+.PHONY : sdklink.c.obj
+
+sdklink.i: sdklink.c.i
+
+.PHONY : sdklink.i
+
+# target to preprocess a source file
+sdklink.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SecondLedPushbuttons.dir/build.make CMakeFiles/SecondLedPushbuttons.dir/sdklink.c.i
+.PHONY : sdklink.c.i
+
+sdklink.s: sdklink.c.s
+
+.PHONY : sdklink.s
+
+# target to generate assembly for a file
+sdklink.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SecondLedPushbuttons.dir/build.make CMakeFiles/SecondLedPushbuttons.dir/sdklink.c.s
+.PHONY : sdklink.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2079,6 +2106,9 @@ help:
 	@echo "... home/student/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj"
 	@echo "... home/student/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i"
 	@echo "... home/student/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s"
+	@echo "... sdklink.obj"
+	@echo "... sdklink.i"
+	@echo "... sdklink.s"
 .PHONY : help
 
 

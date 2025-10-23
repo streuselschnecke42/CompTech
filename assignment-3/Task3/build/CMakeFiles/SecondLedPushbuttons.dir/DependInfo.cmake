@@ -173,6 +173,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/student/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c" "/home/student/CompTech/assignment-3/Task3/build/CMakeFiles/SecondLedPushbuttons.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj"
   "/home/student/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c" "/home/student/CompTech/assignment-3/Task3/build/CMakeFiles/SecondLedPushbuttons.dir/home/student/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
   "/home/student/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c" "/home/student/CompTech/assignment-3/Task3/build/CMakeFiles/SecondLedPushbuttons.dir/home/student/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj"
+  "/home/student/CompTech/assignment-3/Task3/sdklink.c" "/home/student/CompTech/assignment-3/Task3/build/CMakeFiles/SecondLedPushbuttons.dir/sdklink.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

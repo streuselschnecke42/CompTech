@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/student/CompTech/assignment-3/Task3/sdklink.c
+hardware/gpio.h
+/home/student/CompTech/assignment-3/Task3/hardware/gpio.h
+
 /home/student/pico/pico-sdk/lib/tinyusb/src/class/audio/audio.h
 common/tusb_common.h
 /home/student/pico/pico-sdk/lib/tinyusb/src/class/audio/common/tusb_common.h

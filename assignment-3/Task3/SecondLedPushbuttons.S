@@ -14,30 +14,33 @@
 	.EQU LED_PIN2, 1	@LED_PIN2 is connected to GPIO 1
 	.EQU BTN1, 2		@BTN1 is connected to GPIO 2
 	.EQU BTN2, 3		@BTN2 is connected to GPIO 3
+	.EQU GPIO_OUT, 1
+	.EQU GPIO_IN, 0
 
 .thumb_func
 .global main	        @ Provide program starting address
-
-	.align  4	@ necessary alignment
+.align  4				@ necessary alignment
+	
 main:
-@ Init each of the two pins and set them to output
+	BL stdio_init_all
 	MOV	R0, #LED_PIN1		
-	BL	gpioinit
-	MOV	R0, #LED_PIN2
-	BL	gpioinit
+	BL	gpio_init
+	MOV R0, #LED_PIN1
+	MOV R1, #GPIO_OUT
+	BL	link_gpio_set_dir
 	
 @Initialize pushbutton 1 BTN1
 	MOV	R0, #BTN1
 	BL	gpio_init 		@ configures the pin for GPIO function
 	MOV	R0, #BTN1
-	MOV	R1, #0
+	MOV	R1, #GPIO_IN
 	BL	link_gpio_set_dir @ sets 0 as input
 
 @Initialize pushbutton 2 BTN2
 	MOV	R0, #BTN2
 	BL	gpio_init 		@ configures the pin for GPIO function
 	MOV	R0, #BTN2
-	MOV	R1, #0
+	MOV	R1, #GPIO_IN
 	BL	link_gpio_set_dir @ sets 0 as input
 	
 loop:
@@ -53,33 +56,21 @@ loop:
 	BEQ gpio_off
        
     B       loop	@ loop forever
-
-@ Initialize the GPIO to SIO. r0 = pin to init.
-
-gpioinit:
-@ Initialize the GPIO	
-	MOV	R3, #1
-	LSL	R3, R0	@ shift over to pin position
-	LDR	R2, gpiobase	@ address we want	
-	STR	R3, [R2, #SIO_GPIO_OE_SET_OFFSET]
-	STR	R3, [R2, #SIO_GPIO_OUT_CLR_OFFSET]
-
-@ Enable input and output for the pin
-	LDR	R2, padsbank0
-	LSL	R3, R0, #2	@ pin * 4 for register address
-	ADD	R2, R3		@ Actual set of registers for pin
-	MOV	R1, #PADS_BANK0_GPIO0_IE_BITS
-	LDR	R4, setoffset
-	ORR	R2, R4
-	STR	R1, [R2, #PADS_BANK0_GPIO0_OFFSET]
-
-@ Set the function number to SIO.
-	LSL	R0, #3		@ each GPIO has 8 bytes of registers
-	LDR	R2, iobank0	@ address we want
-	ADD	R2, R0		@ add the offset for the pin number
-	MOV	R1, #IO_BANK0_GPIO3_CTRL_FUNCSEL_VALUE_SIO_3
-	STR	R1, [R2, #IO_BANK0_GPIO0_CTRL_OFFSET]
-	BX	LR
+    
+@ Enable input and output for the buttons using pads
+    LDR R2, padsbank0       @ load base of pads bank0
+    MOV R3, #BTN1           @ button pin
+    LSL R3, #2              @ each PAD register is 4 bytes
+    ADD R2, R2, R3
+    LDR R3, =0x100          @ enable pull-up (PUE bit)
+    STR R3, [R2]
+    
+    LDR R2, padsbank0       @ load base of pads bank0
+    MOV R3, #BTN2           @ button pin
+    LSL R3, #2              @ each PAD register is 4 bytes
+    ADD R2, R2, R3
+    LDR R3, =0x100          @ enable pull-up (PUE bit)
+    STR R3, [R2]
 
 @ Turn on a GPIO pin.
 gpio_on:
@@ -88,7 +79,6 @@ gpio_on:
 	LSL	R3, R0	@ shift over to pin position
 	LDR	R2, gpiobase	@ address we want
 	STR	R3, [R2, #SIO_GPIO_OUT_SET_OFFSET]
-	BX	LR
 
 	MOV R0, #LED_PIN2
 	MOV	R3, #1
@@ -104,7 +94,6 @@ gpio_off:
 	LSL	R3, R0	@ shift over to pin position
 	LDR	R2, gpiobase	@ address we want
 	STR	R3, [R2, #SIO_GPIO_OUT_CLR_OFFSET]
-	BX	LR
 	
 	MOV R0, #LED_PIN2
 	MOV	R3, #1
@@ -116,7 +105,7 @@ gpio_off:
 @ Get function:
 gpio_get:
 	MOV R3, #1
-	LSR R3, R0	@ shift over to pin position
+	LSL R3, R0	@ shift over to pin position
 	LDR R2, gpiobase	@ address we want
 	LDR R1, [R2, #SIO_GPIO_IN_OFFSET]
 	AND R3, R3, R1	@ Do a bitwise AND to mask out the desired bitwise

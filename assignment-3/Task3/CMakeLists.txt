@@ -12,6 +12,7 @@ include_directories(${CMAKE_SOURCE_DIR})
 
 add_executable(SecondLedPushbuttons
   SecondLedPushbuttons.S
+  sdklink.c
 )
 
 pico_enable_stdio_uart(SecondLedPushbuttons 0)
