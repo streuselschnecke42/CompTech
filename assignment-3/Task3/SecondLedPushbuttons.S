@@ -1,5 +1,6 @@
 @
-@ Assembler program to flash three LEDs connected to the
+@ Assembler program to flash two LEDs by using push buttons
+@ without using c funtions, connected to the
 @ Raspberry Pi GPIO writing to the registers directly.
 @
 @
@@ -9,49 +10,52 @@
 #include "hardware/regs/io_bank0.h"
 #include "hardware/regs/pads_bank0.h"
 
-	.EQU LED_PIN1, 18
-	.EQU LED_PIN2, 19
-	.EQU LED_PIN3, 20
-
-	.EQU sleep_time,	200
+	.EQU LED_PIN1, 0	@defining LED_PIN1 is connected to pin GPIO 0
+	.EQU LED_PIN2, 1	@LED_PIN2 is connected to GPIO 1
+	.EQU BTN1, 2		@BTN1 is connected to GPIO 2
+	.EQU BTN2, 3		@BTN2 is connected to GPIO 3
 
 .thumb_func
 .global main	        @ Provide program starting address
 
 	.align  4	@ necessary alignment
 main:
-@ Init each of the three pins and set them to output
+@ Init each of the two pins and set them to output
 	MOV	R0, #LED_PIN1		
 	BL	gpioinit
 	MOV	R0, #LED_PIN2
 	BL	gpioinit
-	MOV	R0, #LED_PIN3
-	BL	gpioinit
+	
+@Initialize pushbutton 1 BTN1
+	MOV	R0, #BTN1
+	BL	gpio_init 		@ configures the pin for GPIO function
+	MOV	R0, #BTN1
+	MOV	R1, #0
+	BL	link_gpio_set_dir @ sets 0 as input
 
+@Initialize pushbutton 2 BTN2
+	MOV	R0, #BTN2
+	BL	gpio_init 		@ configures the pin for GPIO function
+	MOV	R0, #BTN2
+	MOV	R1, #0
+	BL	link_gpio_set_dir @ sets 0 as input
+	
 loop:
-@ Turn each pin on, sleep and then turn the pin off
-	MOV	R0, #LED_PIN1	
-	BL	gpio_on
-	LDR	R0, =sleep_time
-	BL	sleep_ms
-	MOV	R0, #LED_PIN1	
-	BL	gpio_off
-	MOV	R0, #LED_PIN2
-	BL	gpio_on
-        LDR	R0, =sleep_time
-	BL	sleep_ms
-	MOV	R0, #LED_PIN2
-	BL	gpio_off
-	MOV	R0, #LED_PIN3
-	BL	gpio_on
-        LDR	R0, =sleep_time
-	BL	sleep_ms
-	MOV	R0, #LED_PIN3
-	BL	gpio_off
+@ Turn each pin on and off by the use of push buttons
+	MOV	R0, #BTN1	
+	BL	gpio_get
+	CMP R0, #0		@ pressed = 0
+	BEQ gpio_on
+	
+	MOV R0, #BTN2
+	BL gpio_get
+	CMP R0, #0		@ pressed = 0
+	BEQ gpio_off
        
-        B       loop	@ loop forever
+    B       loop	@ loop forever
 
 @ Initialize the GPIO to SIO. r0 = pin to init.
+
 gpioinit:
 @ Initialize the GPIO	
 	MOV	R3, #1
@@ -79,19 +83,46 @@ gpioinit:
 
 @ Turn on a GPIO pin.
 gpio_on:
+	MOV R0, #LED_PIN1
 	MOV	R3, #1
 	LSL	R3, R0	@ shift over to pin position
 	LDR	R2, gpiobase	@ address we want
 	STR	R3, [R2, #SIO_GPIO_OUT_SET_OFFSET]
 	BX	LR
 
+	MOV R0, #LED_PIN2
+	MOV	R3, #1
+	LSL	R3, R0	@ shift over to pin position
+	LDR	R2, gpiobase	@ address we want
+	STR	R3, [R2, #SIO_GPIO_OUT_SET_OFFSET]
+	BX	LR
+	
 @ Turn off a GPIO pin.
 gpio_off:
+	MOV R0, #LED_PIN1
 	MOV	R3, #1
 	LSL	R3, R0	@ shift over to pin position
 	LDR	R2, gpiobase	@ address we want
 	STR	R3, [R2, #SIO_GPIO_OUT_CLR_OFFSET]
 	BX	LR
+	
+	MOV R0, #LED_PIN2
+	MOV	R3, #1
+	LSL	R3, R0	@ shift over to pin position
+	LDR	R2, gpiobase	@ address we want
+	STR	R3, [R2, #SIO_GPIO_OUT_CLR_OFFSET]
+	BX	LR
+	
+@ Get function:
+gpio_get:
+	MOV R3, #1
+	LSR R3, R0	@ shift over to pin position
+	LDR R2, gpiobase	@ address we want
+	LDR R1, [R2, #SIO_GPIO_IN_OFFSET]
+	AND R3, R3, R1	@ Do a bitwise AND to mask out the desired bitwise
+	LSR R3, R3, R0	@ Shift the bit to the rightmost position
+	MOV R0, R3		@ Move the result to register R0
+	BX LR
 
 	      	.align  4	@ necessary alignment
 gpiobase:	.word	SIO_BASE     @ base of the GPIO registers

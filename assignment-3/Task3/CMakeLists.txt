@@ -19,4 +19,4 @@ pico_enable_stdio_usb(SecondLedPushbuttons 1)
 
 pico_add_extra_outputs(SecondLedPushbuttons)
 
-target_link_libraries(HSecondLedPushbuttons pico_stdlib)
+target_link_libraries(SecondLedPushbuttons pico_stdlib)

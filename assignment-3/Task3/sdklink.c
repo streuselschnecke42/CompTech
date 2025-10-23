@@ -14,3 +14,8 @@ void link_gpio_put(int pin, int value)
 {
 		gpio_put(pin, value);
 }
+
+int link_gpio_get(uint gpio)
+{
+	return gpio_get(gpio);
+}
