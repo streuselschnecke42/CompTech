@@ -113,10 +113,10 @@ The buttons can be pressed as many times as the user wants, since the code runs 
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
 ## Sourcecode files - Sanja's version
-[SimpleButtonsTwoSDK.S](../ass3/task3-sanja/SimpleButtonsTwoSDK.S)\
+[SimpleButtonsTwoSDK.S](../ass3/task3-sanja/SecondLedPushbuttons.S)\
 [CMakeLists.txt](../ass3/task3-sanja/CMakeLists.txt)\
 [pico_sdk_import.cmake](../ass3/task3-sanja/pico_sdk_import.cmake)\
-[SimpleButtonsTwoSDK.uf2](../ass3/task3-sanja/build/SimpleButtonsTwoSDK.uf2)
+[SimpleButtonsTwoSDK.uf2](../ass3/task3-sanja/build/SecondLedPushbuttons.uf2)
 
 To get to the whole Task 3 directory instead, click [here](../ass3-sanja/task3/).
 
