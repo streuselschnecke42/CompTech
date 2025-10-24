@@ -118,10 +118,10 @@ If you then press the second button, the LEDs should turn off (see image below).
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
 ## Sourcecode files
-[foo.S](../ass4/task1/c/foo.S)\
+[ButtonSDK.c](../ass4/task1/c/ButtonSDK.c)\
 [CMakeLists.txt](../ass4/task1/c/CMakeLists.txt)\
 [pico_sdk_import.cmake](../ass4/task1/c/pico_sdk_import.cmake)\
-[foo.uf2](../ass4/task1/build/c/foo.uf2)
+[ButtonSDK.uf2](../ass4/task1/c/build/ButtonSDK.uf2)
 
 To get to the whole Task 1c directory instead, click [here](../ass4/task1/c/).
 
