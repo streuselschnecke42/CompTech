@@ -89,7 +89,12 @@ Connect one more LED to GP6. Extend the program from b) so that it turns on or o
 // TODO: Explanation of Code
 
 ## Execution
-// TODO
+Same execution as task 1a and 1b but this time with 2 LEDs.\
+When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you hold down the BOOTSEL button while plugging the pico into your device. Then, load the file onto the pico with "sudo picotool load ButtonSDK.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico.\
+If you now press the first button, the LEDs should light up (see image below).\
+![button_1_pressed](../ass4/images/exe_task1c_LEDs_ON.jpg)\
+If you then press the second button, the LEDs should turn off (see image below).\
+![button_2_pressed](../ass4/images/exe_task1c_LEDs_OFF.jpg)
 
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
