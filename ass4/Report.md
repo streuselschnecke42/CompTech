@@ -32,6 +32,9 @@ If button 1 is pressed, the first if condition is met and it will then execute g
 If button 2 is pressed, the second if condition is me and it will then execute the gpio_put with value 0 for the LED. That means the LED is now turned off.\
 As already mentioned, the while-loop will go infinite amounts of times.
 
+## Hardware - Layout
+![Layout](../ass4/images/hardware_task1a+b.jpg)
+
 ## Execution
 When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you hold down the BOOTSEL button while plugging the pico into your device. Then, load the file onto the pico with "sudo picotool load ButtonSDK.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico.\
 If you now press the first button, the LED should light up (see image below).\
@@ -64,6 +67,10 @@ The helper function gpioget takes an input pin as input. It then loads the SIO a
 The helper function turnOn takes an output pin as input. It then shifts value 1 to the output pin value position. This is the bitmask of the pin. The bitmask gets then written onto the 'set output' register using the SIO_BASE address combined with the SIO_GPIO_OUT_SET_OFFSET. This basically turns the output pin to HIGH, or in this case: the LED on.\
 The helper function turnOff takes an output pin as input. It then shifts value 1 to the output pin value position. This is the bitmask of the pin. The bitmask gets then written onto the 'clear output' register using the SIO_BASE address combined with the SIO_GPIO_OUT_CLR_OFFSET. This basically turns the output pin to LOW, or in this case: the LED off.
 
+## Hardware - Layout
+(Same as task 1a)\
+![Layout](../ass4/images/hardware_task1a+b.jpg)
+
 ## Execution
 Same execution as task 1a.\
 When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you hold down the BOOTSEL button while plugging the pico into your device. Then, load the file onto the pico with "sudo picotool load ButtonSDK.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico.\
@@ -87,6 +94,9 @@ Connect one more LED to GP6. Extend the program from b) so that it turns on or o
 
 ## Explanation Code
 // TODO: Explanation of Code
+
+## Hardware - Layout
+![Layout](../ass4/images/hardware_task1c.jpg)
 
 ## Execution
 Same execution as task 1a and 1b but this time with 2 LEDs.\
