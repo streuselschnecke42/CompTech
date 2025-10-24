@@ -19,7 +19,18 @@ Write a C program to implement the functions. To read buttons and
 control LED, use the C function gpio_put(…) and gpio_get().
 
 ## Explanation Code
-// TODO: Explanation of Code
+The code is one function. First, we declare the 3 constants needed for the program. Just like in assembly.\
+The constants will be LED1, which is 0 for GPIO0, BTN1, which is 1 for GPIO1 and BTN2, which is 2 for GPIO2.
+
+After the constants are declared, we move to the main function.\
+The function first initializes all GPIO pins that are used. The LED is initialized with gpio_init to initialize it and then gpio_set_dir to set the direction, which in this case, is GPIO_OUT. This is a variable that will be imported in the #include section.\
+The 2 buttons are declared using gpio_init and gpio_set_dir just like the LED, only that the second value for the gpio_set_dir function is this time GPIO_IN, since the buttons are input, so we need to set the pins that the buttons are connected to, to input. We also need to activate the pull up resistors. This will be done by using gpio_pull_up. This process will be done for both buttons respectively.\
+These functions are all imported using #include at the top of the program.
+
+Next, there is an endless loop (while(true)..). This loop will continuosly check both input pins for a signal comming from the buttons, by using gpio_get with a button as input. We check both buttons like this and compare them with 0. Because 0 means that a button is pressed.\
+If button 1 is pressed, the first if condition is met and it will then execute gpio_put with value 1 for the LED. That means the LED is now on.\
+If button 2 is pressed, the second if condition is me and it will then execute the gpio_put with value 0 for the LED. That means the LED is now turned off.\
+As already mentioned, the while-loop will go infinite amounts of times.
 
 ## Execution
 When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you hold down the BOOTSEL button while plugging the pico into your device. Then, load the file onto the pico with "sudo picotool load ButtonSDK.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico.\
