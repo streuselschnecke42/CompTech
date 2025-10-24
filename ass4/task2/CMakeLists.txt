@@ -11,8 +11,7 @@ pico_sdk_init()
 include_directories(${CMAKE_SOURCE_DIR})
 
 add_executable(BinaryCounterSDK
-  BinaryCounterSDK.S
-  sdklink.c
+  BinaryCounterSDK.c
 )
 
 pico_enable_stdio_uart(BinaryCounterSDK 0)
