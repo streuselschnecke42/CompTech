@@ -93,7 +93,16 @@ To get to the whole Task 1b directory instead, click [here](../ass4/task1/b/).
 Connect one more LED to GP6. Extend the program from b) so that it turns on or off both LEDs simultaneously.
 
 ## Explanation Code
-// TODO: Explanation of Code
+This is code is an expantion of task 1b.\
+The code still uses none of the gpio functions to turn the LED on or off or to read button inputs. Instead the program uses the hardware addresses of the SIO. However, the task allowes us to use the C functions to initialize the GPIO pins and set their directions. So, this part is identical to the task 1a and 1b.
+
+On top we again declare a volatile 32-bit unassigned integer, that is the SIO_BASE (gpiobase from assignment 3). This address is volatile because it's changing over the time of the program running, but it will be used for the whole program, so assigning it globally is much more efficient.
+
+Instead of the gpio_put and gpio_get functions, the program uses helper functions that will be used in the main function's loop to read input and turn the LEDs on or off. This time, there will be 2 LEDs instead of 1. The main loop's logic from task 1b still remains and the while-loop still will loop endlessly.\
+The helper function gpioget takes an input pin as input. It then loads the SIO address combined with the SIO_GPIO_IN_OFFSET onto the gpioin variable. Next, the gpioin gets shifted to the input pin value. This result gets stored in the variable shifted_to_pin. Lastly, the program zero's out all non relevant values (pins), so we only have the bit value for the input pin. This result gets then returned.\
+The helper function turnOn takes 2 output pins as input. It then shifts value 1 to the first output pin value position and repeats this shifting for the second output pin aswell. It then uses the 'bitwise OR'. This combines both bitmasks into one 32-bit value. This is the bitmask of both of the pins combined. The bitmask gets then written onto the 'set output' register using the SIO_BASE address combined with the SIO_GPIO_OUT_SET_OFFSET. This basically turns the output pins to HIGH, or in this case: the LEDs on.\
+The helper function turnOff takes 2 output pins as input. It then shifts value 1 to the first output pin value position and repeats this shifting for the second output pin aswell. It then uses the 'bitwise OR'. This combines both bitmasks into one 32-bit value. This is the bitmask of both of the pins combined. The bitmask gets then written onto the 'clear output' register using the SIO_BASE address combined with the SIO_GPIO_OUT_CLR_OFFSET. This basically turns the output pins to LOW, or in this case: the LEDs off.\
+Since both LED pin values get combined into one bitmask and written onto the registers as one, the turn on (or off) task gets executed simultaneously for both LEDs, just like the task demanded.
 
 ## Hardware - Layout
 ![Layout](../ass4/images/hardware_task1c.jpg)
