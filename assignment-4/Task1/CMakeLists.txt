@@ -11,7 +11,7 @@ pico_sdk_init()
 include_directories(${CMAKE_SOURCE_DIR})
 
 add_executable(InputOutput
-  InputOutput.S
+  InputOutput.c
 )
 
 pico_enable_stdio_uart(InputOutput 0)
