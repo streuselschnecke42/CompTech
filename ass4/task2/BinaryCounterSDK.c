@@ -21,17 +21,6 @@
 
 volatile int counter = 0;
 
-// CHECKER TO SEE IF COUNTER AT LIMIT
-bool counter_at_limit(int current_value) {
-  // IF COUNTER 0, DECREMENTING IMPOSSIBLE -> BUTTON 1 UR FUNKTION
-  // IF COUNTER 15, INCREMENTING IMPOSSIBLE -> BUTTON 2 UR FUNKTION
-  if (current_value >= 15 || current_value <= 0) {
-    return true;
-  }
-
-  // OTHERWISE EVERYTHING FINE
-  return false;
-}
 
 // INTERRUPT FUNCTION FOR GPIO BUTTONS
 void button_isr(uint gpio, uint32_t events) {
@@ -39,16 +28,16 @@ void button_isr(uint gpio, uint32_t events) {
   // CHECKING NOT ONLY BUTTON BUT ALSO COUNTER
 
   // BUTTON FOR INCREMENTING COUNTER
-  if (gpio == BTN1 && !counter_at_limit(counter)) {
-    counter += 1;
+  if (gpio == BTN1 && counter < 15) {
+    counter ++;
     // LIKE GPIO_PUT_ALL BUT BETTER
     // ONLY WRITES ON AFFECTED BITS, SO GPIO 1 TO 4
     // PREVENTS BUTTONS TO BE ACCIDENTALLY TURNED INTO OUTPUTS
     gpio_put_masked(15 << LED1, counter << LED1);
 
   // BUTTON FOR DECREMENTING COUNTER
-  } else if (gpio == BTN2 && !counter_at_limit(counter)) {
-    counter -= 1;
+  } else if (gpio == BTN2 && counter > 0) {
+    counter --;
     gpio_put_masked(15 << LED1, counter << LED1);
   }
 }
@@ -56,31 +45,31 @@ void button_isr(uint gpio, uint32_t events) {
 int main() {
   stdio_init_all();
 	
-	// INITIALIZE LED1
-	gpio_init(LED1);
-	gpio_set_dir(LED1, GPIO_OUT);
+  // INITIALIZE LED1
+  gpio_init(LED1);
+  gpio_set_dir(LED1, GPIO_OUT);
 
-	// INITIALIZE LED2
-	gpio_init(LED2);
-	gpio_set_dir(LED2, GPIO_OUT);
+  // INITIALIZE LED2
+  gpio_init(LED2);
+  gpio_set_dir(LED2, GPIO_OUT);
 
   // INITIALIZE LED3
-	gpio_init(LED3);
-	gpio_set_dir(LED3, GPIO_OUT);
+  gpio_init(LED3);
+  gpio_set_dir(LED3, GPIO_OUT);
 
   // INITIALIZE LED4
-	gpio_init(LED4);
-	gpio_set_dir(LED4, GPIO_OUT);
+  gpio_init(LED4);
+  gpio_set_dir(LED4, GPIO_OUT);
 	
-	// INITIALIZE BUTTON 1
-	gpio_init(BTN1);
-	gpio_set_dir(BTN1, GPIO_IN);
-	gpio_pull_up(BTN1);
+  // INITIALIZE BUTTON 1
+  gpio_init(BTN1);
+  gpio_set_dir(BTN1, GPIO_IN);
+  gpio_pull_up(BTN1);
 	
-	// INITIALIZE BUTTON 2
-	gpio_init(BTN2);
-	gpio_set_dir(BTN2, GPIO_IN);
-	gpio_pull_up(BTN2);
+  // INITIALIZE BUTTON 2
+  gpio_init(BTN2);
+  gpio_set_dir(BTN2, GPIO_IN);
+  gpio_pull_up(BTN2);
 	
   // CONFIGURE TIMER INTERRUPT FOR BUTTONS
   gpio_set_irq_enabled_with_callback(BTN1, GPIO_IRQ_EDGE_FALL, true, &button_isr);
@@ -90,10 +79,10 @@ int main() {
   // MOST LIKELY UNNECESSARY BUT JUST TO BE SURE
   gpio_put_masked(15 << LED1, counter << LED1);
 
-	while (true) {
+  while (true) {
     // MAIN LOOP; THIS WILL REPEAT AND INTERRUPTS CAN HAPPEN AT ANY TIME
-		tight_loop_contents();
-	}
+    tight_loop_contents();
+  }
 
   return 0;
 }
