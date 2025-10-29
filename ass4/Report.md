@@ -213,7 +213,9 @@ https://www.geeksforgeeks.org/c/c-switch-statement/ \
 https://www.youtube.com/watch?v=ciio80nkjB8&list=WL&index=12&t=240s \
 https://stackoverflow.com/questions/16037146/timer-interrupt-in-c \
 http://www.signal.uu.se/Staff/pd/DSP/Doc/ctools/apxc.pdf \
-https://forum.arduino.cc/t/interrupt-latency-in-c/665635/9
+https://forum.arduino.cc/t/interrupt-latency-in-c/665635/9 \
+https://www.raspberrypi.com/documentation/pico-sdk/high_level.html \
+https://github.com/raspberrypi/pico-examples/blob/master/timer/hello_timer/hello_timer.c
 
 ## For general studying / Other
 https://www.raspberrypi.com/documentation/computers/getting-started.html \

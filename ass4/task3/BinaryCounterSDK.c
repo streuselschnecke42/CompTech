@@ -2,6 +2,10 @@
 /* PROGRAM THAT COUNTS IN BINARY FROM 0 TO 15 AND
  * DISPLAYS IT USING 4 LEDs AND 2 BUTTONS TO 
  * INCREMENT OR DECREMENT THE COUNTER.
+ * 
+ * DOCUMENTATION AND GITHUB LINK TO TIMER INTERRUPT IN LINE 77-78
+ * https://www.raspberrypi.com/documentation/pico-sdk/high_level.html
+ * https://github.com/raspberrypi/pico-examples/blob/master/timer/hello_timer/hello_timer.c#L42
  */
  
 #include "pico/stdlib.h"
@@ -21,21 +25,21 @@
 volatile int counter = 0;
 
 
-// RESET COUNTER
+// RESET BUTTON HELPER FUNCTION
 void button_isr(uint gpio, uint32_t events) {
-
-  // RESET COUNTER
+  // RESET COUNTER AND UPDATE LEDS ACCORDINGLY
   counter = 0;
-  // UPDATE LEDS
   gpio_put_masked(15 << LED1, counter << LED1);
 }
 
-int64_t timer_isr() {
-  static bool led_state = false;
-  led_state = !led_state;
-  // gpio_put(15 << LED1, led_state);
-  gpio_put_masked(15 << LED1, counter << LED1);
-  return 100 * 1000;
+int64_t timer_callback() {
+  // MAX COUNTER VALUE IS 15 => COUNTER HAS TO BE BELOW THAT
+  if (counter < 15) {
+    // INCREASE COUNTER BY 1
+    counter ++;
+    // UPDATE LEDS ACCORDINGLY
+    gpio_put_masked(15 << LED1, counter << LED1);
+  }
 }
 
 int main() {
@@ -65,8 +69,14 @@ int main() {
   // CONFIGURE TIMER INTERRUPT FOR BUTTONS
   gpio_set_irq_enabled_with_callback(BTN1, GPIO_IRQ_EDGE_FALL, true, &button_isr);
 
-  // TODO: INIITALIZE TIMER INTERRUPTS??
+  // FROM RASPBERRYPI DOCUMENTATION AND GITHUB (SEE LINKS IN HEAD)
 
+  // MAKE A VARIABLE NAMED TIMER AND LET IT BE OF TYPE repeating_timer
+  // repeating_timer = A STRUCTURE DEFINED INSIDE PICO SDK THAT STORES
+  //                   INFORMATION ABOUT A REPEATING TIMER
+  struct repeating_timer timer;
+  add_repeating_timer_ms (1000, timer_callback, NULL, &timer);
+  
   // MAKE SURE TO RESET ALL LEDS BEFORE IT STARTS
   // MOST LIKELY UNNECESSARY BUT JUST TO BE SURE
   gpio_put_masked(15 << LED1, counter << LED1);
