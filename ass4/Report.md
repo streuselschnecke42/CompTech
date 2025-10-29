@@ -210,7 +210,10 @@ https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf
 ## C coding
 https://stackoverflow.com/questions/55330597/how-do-i-execute-a-c-file \
 https://www.geeksforgeeks.org/c/c-switch-statement/ \
-https://www.youtube.com/watch?v=ciio80nkjB8&list=WL&index=12&t=240s
+https://www.youtube.com/watch?v=ciio80nkjB8&list=WL&index=12&t=240s \
+https://stackoverflow.com/questions/16037146/timer-interrupt-in-c \
+http://www.signal.uu.se/Staff/pd/DSP/Doc/ctools/apxc.pdf \
+https://forum.arduino.cc/t/interrupt-latency-in-c/665635/9
 
 ## For general studying / Other
 https://www.raspberrypi.com/documentation/computers/getting-started.html \
