@@ -1161,9 +1161,9 @@ Discarded input sections
                 0x00000000       0x80 CMakeFiles/BinaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
  .time_critical.flash_range_program
                 0x00000000       0x80 CMakeFiles/BinaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .text          0x00000000        0x0 /tmp/cckC818o.o
- .data          0x00000000        0x0 /tmp/cckC818o.o
- .bss           0x00000000        0x0 /tmp/cckC818o.o
+ .text          0x00000000        0x0 /tmp/ccgQyLUS.o
+ .data          0x00000000        0x0 /tmp/ccgQyLUS.o
+ .bss           0x00000000        0x0 /tmp/ccgQyLUS.o
  .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x00000000       0x10 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-atexit.o)
@@ -1427,7 +1427,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
 .boot2          0x10000000      0x100
                 0x10000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x10000000      0x100 /tmp/cckC818o.o
+ .boot2         0x10000000      0x100 /tmp/ccgQyLUS.o
                 0x10000100                __boot2_end__ = .
                 0x00000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -2412,7 +2412,7 @@ LOAD CMakeFiles/BinaryCounter.dir/home/student/pico/pico-sdk/lib/tinyusb/src/com
 LOAD CMakeFiles/BinaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 LOAD CMakeFiles/BinaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 LOAD CMakeFiles/BinaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-LOAD /tmp/cckC818o.o
+LOAD /tmp/ccgQyLUS.o
 LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -2526,7 +2526,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000077c       0x2c CMakeFiles/BinaryCounter.dir/home/student/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
  .ARM.attributes
-                0x000007a8       0x22 /tmp/cckC818o.o
+                0x000007a8       0x22 /tmp/ccgQyLUS.o
  .ARM.attributes
                 0x000007ca       0x1e /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes

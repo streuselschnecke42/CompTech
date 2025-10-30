@@ -13,10 +13,10 @@
 
 // The counter value (0–15) displayed on LEDs
 // 'volatile' because it's changed inside an interrupt handler
-volatile uint8_t counter = 0;
+volatile uint8_t counter = 0; // a global variable counter 
 
 // Function: update_leds
-// Purpose : Output the current counter value to the 4 LEDs
+// Purpose: Output the current counter value to the 4 LEDs
 
 void update_leds(void) {
     gpio_put(LED0, (counter >> 0) & 1);  // Write bit 0 to LED0
@@ -67,6 +67,6 @@ int main(void) {
 
     // Main loop
     while (1) {
-        tight_loop_contents();  // Low-power idle loop
+        tight_loop_contents();  // loop
     }
 }
