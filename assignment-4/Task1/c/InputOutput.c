@@ -1,4 +1,4 @@
-// Assembler program using C language to turn on/off an LED light 
+// Assembler program using C language to turn on/off two LED lights 
 // using two buttons.
 
 #include "pico/stdlib.h"
