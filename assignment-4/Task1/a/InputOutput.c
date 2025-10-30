@@ -11,11 +11,11 @@ int main() {
     stdio_init_all();
 
     // Initialize GPIO pins
-    gpio_init(LED_PIN);
-    gpio_set_dir(LED_PIN, GPIO_OUT);
+    gpio_init(LED_PIN); // initialize gpio pin 0 
+    gpio_set_dir(LED_PIN, GPIO_OUT); // set it as output
 
-    gpio_init(BUTTON_ON);
-    gpio_set_dir(BUTTON_ON, GPIO_IN);
+    gpio_init(BUTTON_ON); // prepare gpio pin 1
+    gpio_set_dir(BUTTON_ON, GPIO_IN); // set it as input
     gpio_pull_up(BUTTON_ON); // enable internal pull-up
 
     gpio_init(BUTTON_OFF);

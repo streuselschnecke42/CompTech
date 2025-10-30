@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/student/CompTech/assignment-4/Task1/build/pico-sdk/tools/cmake_install.cmake")
-  include("/home/student/CompTech/assignment-4/Task1/build/pico-sdk/src/cmake_install.cmake")
-  include("/home/student/CompTech/assignment-4/Task1/build/pico-sdk/docs/cmake_install.cmake")
+  include("/home/student/CompTech/assignment-4/Task1/a/build/pico-sdk/tools/cmake_install.cmake")
+  include("/home/student/CompTech/assignment-4/Task1/a/build/pico-sdk/src/cmake_install.cmake")
+  include("/home/student/CompTech/assignment-4/Task1/a/build/pico-sdk/docs/cmake_install.cmake")
 
 endif()
 

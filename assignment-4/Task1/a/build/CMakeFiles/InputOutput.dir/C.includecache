@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/student/CompTech/assignment-4/Task1/InputOutput.c
+/home/student/CompTech/assignment-4/Task1/a/InputOutput.c
 pico/stdlib.h
-/home/student/CompTech/assignment-4/Task1/pico/stdlib.h
+/home/student/CompTech/assignment-4/Task1/a/pico/stdlib.h
 
 /home/student/pico/pico-sdk/lib/tinyusb/src/class/audio/audio.h
 common/tusb_common.h

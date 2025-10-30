@@ -189,7 +189,7 @@ CMakeFiles/InputOutput.dir/home/student/pico/pico-sdk/src/rp2_common/pico_standa
  generated/pico_base/pico/config_autogen.h
  generated/pico_base/pico/version.h
 CMakeFiles/InputOutput.dir/InputOutput.c.obj
- /home/student/CompTech/assignment-4/Task1/InputOutput.c
+ /home/student/CompTech/assignment-4/Task1/a/InputOutput.c
  /home/student/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/student/pico/pico-sdk/src/common/pico_base/include/pico.h
  /home/student/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
