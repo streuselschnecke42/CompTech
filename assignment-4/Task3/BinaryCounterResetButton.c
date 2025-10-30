@@ -2,8 +2,8 @@
 // with a reset button
 
 #include "pico/stdlib.h"
-#include "hardware/irq.h"
-#include "hardware/timer.h"
+#include "hardware/irq.h" // for handling interrupts
+#include "hardware/timer.h" // for hardware timers and repeating timer interrupts
 
 // Pin definitions
 #define LED0 1
@@ -16,16 +16,16 @@ volatile uint8_t counter = 0; // shared between main, timer, and ISR
 
 // Update LEDs according to counter value 
 void update_leds(void) {
-    gpio_put(LED0, (counter >> 0) & 1);
+    gpio_put(LED0, (counter >> 0) & 1); // shifts the counter by 0 bits, isolates a single bit 1, sets the LED on (high)
     gpio_put(LED1, (counter >> 1) & 1);
     gpio_put(LED2, (counter >> 2) & 1);
     gpio_put(LED3, (counter >> 3) & 1);
 }
 
-// Reset button ISR 
+// Reset button ISR, automatically called when the button on gpio 0 is pressed
 void reset_button_handler(uint gpio, uint32_t events) {
-    counter = 0;
-    update_leds();
+    counter = 0; // automatically sets the counter back to zero
+    update_leds(); // updates the LEDs with the new value
 }
 
 // Timer interrupt callback 
