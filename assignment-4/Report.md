@@ -19,18 +19,36 @@ Write a C program to implement the functions. To read buttons and
 control LED, use the C function gpio_put(…) and gpio_get().
 
 ## Explanation Code
-// TODO: Explanation of Code
+The code is one function. First, we declare the 3 constants needed for the program. Just like in assembly.\
+The constants will be LED1, which is 0 for GPIO0, BTN1, which is 1 for GPIO1 and BTN2, which is 2 for GPIO2.
+
+After the constants are declared, we move to the main function.\
+The function first initializes all GPIO pins that are used. The LED is initialized with gpio_init to initialize it and then gpio_set_dir to set the direction, which in this case, is GPIO_OUT. This is a variable that will be imported in the #include section.\
+The 2 buttons are declared using gpio_init and gpio_set_dir just like the LED, only that the second value for the gpio_set_dir function is this time GPIO_IN, since the buttons are input, so we need to set the pins that the buttons are connected to, to input. We also need to activate the pull up resistors. This will be done by using gpio_pull_up. This process will be done for both buttons respectively.\
+These functions are all imported using #include at the top of the program.
+
+Next, there is an endless loop (while(true)..). This loop will continuosly check both input pins for a signal comming from the buttons, by using gpio_get with a button as input. We check both buttons like this and compare them with 0. Because 0 means that a button is pressed.\
+If button 1 is pressed, the first if condition is met and it will then execute gpio_put with value 1 for the LED. That means the LED is now on.\
+If button 2 is pressed, the second if condition is me and it will then execute the gpio_put with value 0 for the LED. That means the LED is now turned off.\
+As already mentioned, the while-loop will go infinite amounts of times.
+
+## Hardware - Layout
+![Layout](../ass4/images/hardware_task1a+b.jpg)
 
 ## Execution
-// TODO
+When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you hold down the BOOTSEL button while plugging the pico into your device. Then, load the file onto the pico with "sudo picotool load ButtonSDK.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico.\
+If you now press the first button, the LED should light up (see image below).\
+![button_1_pressed](../ass4/images/exe_task1a+b_LED_ON.jpg)\
+If you then press the second button, the LED should turn off (see image below).\
+![button_2_pressed](../ass4/images/exe_task1a+b_LED_OFF.jpg)
 
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
 ## Sourcecode files
-[foo.S](../ass4/task1/a/foo.S)\
+[ButtonSDK.c](../ass4/task1/a/ButtonSDK.c)\
 [CMakeLists.txt](../ass4/task1/a/CMakeLists.txt)\
 [pico_sdk_import.cmake](../ass4/task1/a/pico_sdk_import.cmake)\
-[foo.uf2](../ass4/task1/build/a/foo.uf2)
+[ButtonSDK.uf2](../ass4/task1/a/build/ButtonSDK.uf2)
 
 To get to the whole Task 1a directory instead, click [here](../ass4/task1/a/).
 
@@ -39,18 +57,35 @@ To get to the whole Task 1a directory instead, click [here](../ass4/task1/a/).
 Re-write the C program so that is does not use the gpio functions, but instead hardware addresses of the SIO. However, you ARE allowed to use C functions to initialize the GPIO pins and set their directions!
 
 ## Explanation Code
-// TODO: Explanation of Code
+This is code is an expantion of task 1a.\
+This time, the code uses none of the gpio functions to turn the LED on or off or to read button inputs. Instead the program uses the hardware addresses of the SIO. However, the task allowes us to use the C functions to initialize the GPIO pins and set their directions. So, this part is identical to the task 1a.
+
+On top we declare a volatile 32-bit unassigned integer, that is the SIO_BASE (gpiobase from assignment 3). This address is volatile because it's changing over the time of the program running, but it will be used for the whole program, so assigning it globally is much more efficient.
+
+Instead of the gpio_put and gpio_get functions, the program uses helper functions that will be used in the main function's loop to read input and turn the LED on or off. The main loop's logic from task 1a still remains and the while-loop still will loop endlessly.\
+The helper function gpioget takes an input pin as input. It then loads the SIO address combined with the SIO_GPIO_IN_OFFSET onto the gpioin variable. Next, the gpioin gets shifted to the input pin value. This result gets stored in the variable shifted_to_pin. Lastly, the program zero's out all non relevant values (pins), so we only have the bit value for the input pin. This result gets then returned.\
+The helper function turnOn takes an output pin as input. It then shifts value 1 to the output pin value position. This is the bitmask of the pin. The bitmask gets then written onto the 'set output' register using the SIO_BASE address combined with the SIO_GPIO_OUT_SET_OFFSET. This basically turns the output pin to HIGH, or in this case: the LED on.\
+The helper function turnOff takes an output pin as input. It then shifts value 1 to the output pin value position. This is the bitmask of the pin. The bitmask gets then written onto the 'clear output' register using the SIO_BASE address combined with the SIO_GPIO_OUT_CLR_OFFSET. This basically turns the output pin to LOW, or in this case: the LED off.
+
+## Hardware - Layout
+(Same as task 1a)\
+![Layout](../ass4/images/hardware_task1a+b.jpg)
 
 ## Execution
-// TODO
+Same execution as task 1a.\
+When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you hold down the BOOTSEL button while plugging the pico into your device. Then, load the file onto the pico with "sudo picotool load ButtonSDK.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico.\
+If you now press the first button, the LED should light up (see image below).\
+![button_1_pressed](../ass4/images/exe_task1a+b_LED_ON.jpg)\
+If you then press the second button, the LED should turn off (see image below).\
+![button_2_pressed](../ass4/images/exe_task1a+b_LED_OFF.jpg)
 
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
 ## Sourcecode files
-[foo.S](../ass4/task1/b/foo.S)\
+[ButtonSDK.c](../ass4/task1/b/ButtonSDK.c)\
 [CMakeLists.txt](../ass4/task1/b/CMakeLists.txt)\
 [pico_sdk_import.cmake](../ass4/task1/b/pico_sdk_import.cmake)\
-[foo.uf2](../ass4/task1/build/b/foo.uf2)
+[ButtonSDK.uf2](../ass4/task1/b/build/ButtonSDK.uf2)
 
 To get to the whole Task 1b directory instead, click [here](../ass4/task1/b/).
 
@@ -58,18 +93,35 @@ To get to the whole Task 1b directory instead, click [here](../ass4/task1/b/).
 Connect one more LED to GP6. Extend the program from b) so that it turns on or off both LEDs simultaneously.
 
 ## Explanation Code
-// TODO: Explanation of Code
+This is code is an expantion of task 1b.\
+The code still uses none of the gpio functions to turn the LED on or off or to read button inputs. Instead the program uses the hardware addresses of the SIO. However, the task allowes us to use the C functions to initialize the GPIO pins and set their directions. So, this part is identical to the task 1a and 1b.
+
+On top we again declare a volatile 32-bit unassigned integer, that is the SIO_BASE (gpiobase from assignment 3). This address is volatile because it's changing over the time of the program running, but it will be used for the whole program, so assigning it globally is much more efficient.
+
+Instead of the gpio_put and gpio_get functions, the program uses helper functions that will be used in the main function's loop to read input and turn the LEDs on or off. This time, there will be 2 LEDs instead of 1. The main loop's logic from task 1b still remains and the while-loop still will loop endlessly.\
+The helper function gpioget takes an input pin as input. It then loads the SIO address combined with the SIO_GPIO_IN_OFFSET onto the gpioin variable. Next, the gpioin gets shifted to the input pin value. This result gets stored in the variable shifted_to_pin. Lastly, the program zero's out all non relevant values (pins), so we only have the bit value for the input pin. This result gets then returned.\
+The helper function turnOn takes 2 output pins as input. It then shifts value 1 to the first output pin value position and repeats this shifting for the second output pin aswell. It then uses the 'bitwise OR'. This combines both bitmasks into one 32-bit value. This is the bitmask of both of the pins combined. The bitmask gets then written onto the 'set output' register using the SIO_BASE address combined with the SIO_GPIO_OUT_SET_OFFSET. This basically turns the output pins to HIGH, or in this case: the LEDs on.\
+The helper function turnOff takes 2 output pins as input. It then shifts value 1 to the first output pin value position and repeats this shifting for the second output pin aswell. It then uses the 'bitwise OR'. This combines both bitmasks into one 32-bit value. This is the bitmask of both of the pins combined. The bitmask gets then written onto the 'clear output' register using the SIO_BASE address combined with the SIO_GPIO_OUT_CLR_OFFSET. This basically turns the output pins to LOW, or in this case: the LEDs off.\
+Since both LED pin values get combined into one bitmask and written onto the registers as one, the turn on (or off) task gets executed simultaneously for both LEDs, just like the task demanded.
+
+## Hardware - Layout
+![Layout](../ass4/images/hardware_task1c.jpg)
 
 ## Execution
-// TODO
+Same execution as task 1a and 1b but this time with 2 LEDs.\
+When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you hold down the BOOTSEL button while plugging the pico into your device. Then, load the file onto the pico with "sudo picotool load ButtonSDK.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico.\
+If you now press the first button, the LEDs should light up (see image below).\
+![button_1_pressed](../ass4/images/exe_task1c_LEDs_ON.jpg)\
+If you then press the second button, the LEDs should turn off (see image below).\
+![button_2_pressed](../ass4/images/exe_task1c_LEDs_OFF.jpg)
 
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
 ## Sourcecode files
-[foo.S](../ass4/task1/c/foo.S)\
+[ButtonSDK.c](../ass4/task1/c/ButtonSDK.c)\
 [CMakeLists.txt](../ass4/task1/c/CMakeLists.txt)\
 [pico_sdk_import.cmake](../ass4/task1/c/pico_sdk_import.cmake)\
-[foo.uf2](../ass4/task1/build/c/foo.uf2)
+[ButtonSDK.uf2](../ass4/task1/c/build/ButtonSDK.uf2)
 
 To get to the whole Task 1c directory instead, click [here](../ass4/task1/c/).
 
@@ -84,7 +136,6 @@ Connect one button to GP5 and one button to GP6 with the following functions:
 Let the counter start at value 0. You must use interrupts to handle the inputs from the buttons! There will probably be problems with bouncing buttons (one button press counts as many) but you can ignore this problem.
 
 ## Explanation Code
-
 The program implements a 4-bit binary counter on the Raspberry Pi Pico using interrupts to detect button presses for incrementing and decrementing the counter value. Four LEDs (connected to GP1–GP4) represent the binary output of the counter (values 0–15).
 
 Each LED pin is configured as an output using gpio_init() and gpio_set_dir(), while the two buttons on GP5 and GP6 are configured as inputs with internal pull-up resistors enabled (gpio_pull_up()). This ensures the buttons are normally at a logic HIGH state and generate a falling edge when pressed.
@@ -109,16 +160,14 @@ Note: The application didn't have Pico H, so I used the normal Pico instead. Pin
 ![0](../ass4/images)
 
 ## Execution
-
 When the program starts, all four LEDs represent 0000.
 
-Pressing the GP5 button increases the binary count (e.g., 0001 → 0010 → 0011 … up to 1111).
+Pressing the GP5 button increases the binary count (0001- 0010- 0011 … up to 1111).
 
-Pressing the GP6 button decreases the binary count (e.g., 1111 → 1110 → 1101 … down to 0000).
+Pressing the GP6 button decreases the binary count (1111 - 1110 - 1101 … down to 0000).
 If the counter reaches 0 or 15, additional presses in the same direction have no effect.
 
-Because no debouncing is implemented, rapid toggling or bouncing may cause multiple increments per press. However, this behavior is acceptable as noted in the task instructions.
-
+Because no debouncing is implemented, rapid toggling or bouncing may cause multiple increments per press. However, this behavior is acceptable as noted in the task instruction.
 
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
@@ -140,7 +189,6 @@ Requirements:
 - The counting must be implemented with a timer interrupt and you must use GPIO interrupts to handle the signals from the buttons!
 
 ## Explanation Code
-
 This task extends the binary counter from Task 2 by replacing manual button increments/decrements with automatic counting using a timer interrupt. The program still uses four LEDs (GP1–GP4) but adds a reset button on GP0 to restart the count.
 
 The key feature here is the repeating hardware timer, initialized with:
@@ -153,7 +201,6 @@ All LED updates are handled by the update_leds() function, which shifts the coun
 
 The overall structure and logic are similar to Task 2, but instead of user-driven button interrupts for counting, the timer interrupt drives the counting.
 
-
 ## Hardware Layout
 The hardware layout is the same as Task 2.\
 ![Layout](../ass4/images)
@@ -164,10 +211,9 @@ Note: The application didn't have Pico H, so I used the normal Pico instead. Pin
 ![0](../ass4/images)
 
 ## Execution
-
 After uploading and running the program:
 
-The counter begins at 0000 and increases by one every second (1 Hz rate).
+The counter begins at 0000 and increases by one every second.
 
 Once the value 1111 is reached, the counter stops increasing automatically.
 
@@ -200,18 +246,23 @@ https://developer.arm.com/documentation/dui0473/m/arm-and-thumb-instructions/arm
 https://github.com/Apress/RP2040-Assembly-Language-Programming/tree/main \
 https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf
 
+## Pico GPIO and interrupts
+https://www.raspberrypi.com/documentation/microcontrollers/c_sdk.html
+https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf
+https://raspberrypi.github.io/pico-sdk-doxygen/group__hardware__gpio.html
+https://raspberrypi.github.io/pico-sdk-doxygen/group__hardware__irq.html
+
 ## C coding
 https://stackoverflow.com/questions/55330597/how-do-i-execute-a-c-file \
 https://www.geeksforgeeks.org/c/c-switch-statement/ \
-https://www.youtube.com/watch?v=ciio80nkjB8&list=WL&index=12&t=240s
+https://www.youtube.com/watch?v=ciio80nkjB8&list=WL&index=12&t=240s \
+https://stackoverflow.com/questions/16037146/timer-interrupt-in-c \
+http://www.signal.uu.se/Staff/pd/DSP/Doc/ctools/apxc.pdf \
+https://forum.arduino.cc/t/interrupt-latency-in-c/665635/9 \
+https://www.raspberrypi.com/documentation/pico-sdk/high_level.html \
+https://github.com/raspberrypi/pico-examples/blob/master/timer/hello_timer/hello_timer.c
 https://www.geeksforgeeks.org/c-programming-language/
 https://stackoverflow.com/questions/55330597/how-do-i-execute-a-c-file
-
-## Interrupts examples:
-https://github.com/raspberrypi/pico-examples/tree/master/gpio/interrupts
-https://forums.raspberrypi.com/viewtopic.php?t=319091
-https://github.com/raspberrypi/pico-examples/tree/master/timer
-https://raspberrypi.github.io/pico-sdk-doxygen/group__hardware__timer.html
 
 ## For general studying / Other
 https://www.raspberrypi.com/documentation/computers/getting-started.html \
@@ -220,8 +271,8 @@ https://studio2.org.uk/jack/RP2040%20Assembly%20Language%20Programming%20%28Smit
 https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico \
 https://www.circuit-diagram.org/editor/
 
-https://www.raspberrypi.com/documentation/microcontrollers/c_sdk.html
-https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf
-https://raspberrypi.github.io/pico-sdk-doxygen/group__hardware__gpio.html
-https://raspberrypi.github.io/pico-sdk-doxygen/group__hardware__irq.html
-
+## Interrupts:
+https://github.com/raspberrypi/pico-examples/tree/master/gpio/interrupts
+https://forums.raspberrypi.com/viewtopic.php?t=319091
+https://github.com/raspberrypi/pico-examples/tree/master/timer
+https://raspberrypi.github.io/pico-sdk-doxygen/group__hardware__timer.html
