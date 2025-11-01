@@ -91,12 +91,21 @@ If you then press the second button, the LED should turn off (see image below).\
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
 ## Sourcecode files
-[ButtonSDK.c](../ass4/task1/b/ButtonSDK.c)\
-[CMakeLists.txt](../ass4/task1/b/CMakeLists.txt)\
-[pico_sdk_import.cmake](../ass4/task1/b/pico_sdk_import.cmake)\
-[ButtonSDK.uf2](../ass4/task1/b/build/ButtonSDK.uf2)
+### Sanja
+[InputOutput.c](../ass4/task1-sanja/b/InputOutput.c)\
+[CMakeLists.txt](../ass4/task1-sanja/b/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass4/task1-sanja/b/pico_sdk_import.cmake)\
+[InputOutput.uf2](../ass4/task1-sanja/b/build/InputOutput.uf2)
 
-To get to the whole Task 1b directory instead, click [here](../ass4/task1/b/).
+To get to the whole Task 1b directory instead, click [here](../ass4/task1-sanja/b/).
+
+### Michelle
+[ButtonSDK.c](../ass4/task1-michelle/b/ButtonSDK.c)\
+[CMakeLists.txt](../ass4/task1-michelle/b/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass4/task1-michelle/b/pico_sdk_import.cmake)\
+[ButtonSDK.uf2](../ass4/task1-michelle/b/build/ButtonSDK.uf2)
+
+To get to the whole Task 1b directory instead, click [here](../ass4/task1-michelle/b/).
 
 # Task 1c
 Connect one more LED to GP6. Extend the program from b) so that it turns on or off both LEDs simultaneously.
@@ -127,12 +136,21 @@ If you then press the second button, the LEDs should turn off (see image below).
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
 ## Sourcecode files
-[ButtonSDK.c](../ass4/task1/c/ButtonSDK.c)\
-[CMakeLists.txt](../ass4/task1/c/CMakeLists.txt)\
-[pico_sdk_import.cmake](../ass4/task1/c/pico_sdk_import.cmake)\
-[ButtonSDK.uf2](../ass4/task1/c/build/ButtonSDK.uf2)
+### Sanja
+[InputOutput.c](../ass4/task1-sanja/c/InputOutput.c)\
+[CMakeLists.txt](../ass4/task1-sanja/c/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass4/task1-sanja/c/pico_sdk_import.cmake)\
+[InputOutput.uf2](../ass4/task1-sanja/c/build/InputOutput.uf2)
 
-To get to the whole Task 1c directory instead, click [here](../ass4/task1/c/).
+To get to the whole Task 1b directory instead, click [here](../ass4/task1-sanja/c/).
+
+### Michelle
+[ButtonSDK.c](../ass4/task1-michelle/c/ButtonSDK.c)\
+[CMakeLists.txt](../ass4/task1-michelle/c/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass4/task1-michelle/c/pico_sdk_import.cmake)\
+[ButtonSDK.uf2](../ass4/task1-michelle/c/build/ButtonSDK.uf2)
+
+To get to the whole Task 1b directory instead, click [here](../ass4/task1-michelle/c/).
 
 
 # Task 2
