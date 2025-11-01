@@ -166,14 +166,17 @@ Let the counter start at value 0. You must use interrupts to handle the inputs f
 // TODO: explain code
 
 ## Hardware - Layout
-![Layout](../ass4/images)
+![Layout](../ass4/images/hardware_task2.jpg)
 
 ### Electric Circuit Plan
 Note: The application didn't have Pico H, so I used the normal Pico instead. Pin connection should still be correct **where it was used**.\
 ![0](../ass4/images)
 
 ## Execution
-// TODO
+![exe_task2_countup_2](../ass4/images/exe_task2_countup_2.jpg)
+![exe_task2_countdown_1](../ass4/images/exe_task2_countdown_1.jpg)
+![exe_task2_countup_LIMIT](../ass4/images/exe_task2_countup_LIMIT.jpg)
+![exe_task2_countup_LIMIT](../ass4/images/exe_task2_countdown_LIMIT.jpg)
 
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
