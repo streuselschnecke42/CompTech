@@ -1,6 +1,6 @@
 # 1DT301 Lab Assignment 4 - C-programming and interrupts
 *Computer Technology 1* \
-*October 22, 2025*
+*November 1st, 2025*
 
 Author: Michelle Weber, Sanja Janevska\
 Examiner: Mehdi Saman Azari\
@@ -45,12 +45,21 @@ If you then press the second button, the LED should turn off (see image below).\
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
 ## Sourcecode files
-[ButtonSDK.c](../ass4/task1/a/ButtonSDK.c)\
-[CMakeLists.txt](../ass4/task1/a/CMakeLists.txt)\
-[pico_sdk_import.cmake](../ass4/task1/a/pico_sdk_import.cmake)\
-[ButtonSDK.uf2](../ass4/task1/a/build/ButtonSDK.uf2)
+### Sanja
+[InputOutput.c](../ass4/task1-sanja/a/InputOutput.c)\
+[CMakeLists.txt](../ass4/task1-sanja/a/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass4/task1-sanja/a/pico_sdk_import.cmake)\
+[InputOutput.uf2](../ass4/task1-sanja/a/build/InputOutput.uf2)
 
-To get to the whole Task 1a directory instead, click [here](../ass4/task1/a/).
+To get to the whole Task 1a directory instead, click [here](../ass4/task1-sanja/a/).
+
+### Michelle
+[ButtonSDK.c](../ass4/task1-michelle/a/ButtonSDK.c)\
+[CMakeLists.txt](../ass4/task1-michelle/a/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass4/task1-michelle/a/pico_sdk_import.cmake)\
+[ButtonSDK.uf2](../ass4/task1-michelle/a/build/ButtonSDK.uf2)
+
+To get to the whole Task 1a directory instead, click [here](../ass4/task1-michelle/a/).
 
 
 # Task 1b
