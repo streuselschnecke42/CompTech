@@ -179,18 +179,18 @@ Note: The application didn't have Pico H, so I used the normal Pico instead. Pin
 
 ## Sourcecode files
 ### Sanja
-[InputOutput.c](../ass4/task2-sanja/BinaryCounter.c)\
+[BinaryCounter.c](../ass4/task2-sanja/BinaryCounter.c)\
 [CMakeLists.txt](../ass4/task2-sanja/CMakeLists.txt)\
 [pico_sdk_import.cmake](../ass4/task2-sanja/pico_sdk_import.cmake)\
-[InputOutput.uf2](../ass4/task2-sanja/build/BinaryCounter.uf2)
+[BinaryCounter.uf2](../ass4/task2-sanja/build/BinaryCounter.uf2)
 
 To get to the whole Task 2 directory instead, click [here](../ass4/task2-sanja/).
 
 ### Michelle
-[ButtonSDK.c](../ass4/task2-michelle/BinaryCounterSDK.c)\
+[BinaryCounterSDK.c](../ass4/task2-michelle/BinaryCounterSDK.c)\
 [CMakeLists.txt](../ass4/task2-michelle/CMakeLists.txt)\
 [pico_sdk_import.cmake](../ass4/task2-michelle/pico_sdk_import.cmake)\
-[ButtonSDK.uf2](../ass4/task2-michelle/build/BinaryCounterSDK.uf2)
+[BinaryCounterSDK.uf2](../ass4/task2-michelle/build/BinaryCounterSDK.uf2)
 
 To get to the whole Task 2 directory instead, click [here](../ass4/task2-michelle/).
 
@@ -221,13 +221,21 @@ Note: The application didn't have Pico H, so I used the normal Pico instead. Pin
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
 ## Sourcecode files
-// TODO: edit file directory
-[foo.S](../ass4/task3/foo.S)\
-[CMakeLists.txt](../ass4/task3/CMakeLists.txt)\
-[pico_sdk_import.cmake](../ass4/task3/pico_sdk_import.cmake)\
-[foo.uf2](../ass4/task3/build/foo.uf2)
+### Sanja
+[BinaryCounterResetButton.c](../ass4/task3-sanja/BinaryCounterResetButton.c)\
+[CMakeLists.txt](../ass4/task3-sanja/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass4/task3-sanja/pico_sdk_import.cmake)\
+[BinaryCounterResetButton.uf2](../ass4/task3-sanja/build/BinaryCounterResetButton.uf2)
 
-To get to the whole Task 3 directory instead, click [here](../ass4/task3/).
+To get to the whole Task 3 directory instead, click [here](../ass4/task3-sanja/).
+
+### Michelle
+[BinaryCounterSDK.c](../ass4/task3-michelle/BinaryCounterSDK.c)\
+[CMakeLists.txt](../ass4/task3-michelle/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass4/task3-michelle/pico_sdk_import.cmake)\
+[BinaryCounterSDK.uf2](../ass4/task3-michelle/build/BinaryCounterSDK.uf2)
+
+To get to the whole Task 3 directory instead, click [here](../ass4/task3-michelle/).
 
 ---
 # Sources
