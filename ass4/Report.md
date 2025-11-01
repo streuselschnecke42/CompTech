@@ -142,7 +142,7 @@ If you then press the second button, the LEDs should turn off (see image below).
 [pico_sdk_import.cmake](../ass4/task1-sanja/c/pico_sdk_import.cmake)\
 [InputOutput.uf2](../ass4/task1-sanja/c/build/InputOutput.uf2)
 
-To get to the whole Task 1b directory instead, click [here](../ass4/task1-sanja/c/).
+To get to the whole Task 1c directory instead, click [here](../ass4/task1-sanja/c/).
 
 ### Michelle
 [ButtonSDK.c](../ass4/task1-michelle/c/ButtonSDK.c)\
@@ -150,7 +150,7 @@ To get to the whole Task 1b directory instead, click [here](../ass4/task1-sanja/
 [pico_sdk_import.cmake](../ass4/task1-michelle/c/pico_sdk_import.cmake)\
 [ButtonSDK.uf2](../ass4/task1-michelle/c/build/ButtonSDK.uf2)
 
-To get to the whole Task 1b directory instead, click [here](../ass4/task1-michelle/c/).
+To get to the whole Task 1c directory instead, click [here](../ass4/task1-michelle/c/).
 
 
 # Task 2
@@ -178,12 +178,21 @@ Note: The application didn't have Pico H, so I used the normal Pico instead. Pin
 **Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
 
 ## Sourcecode files
-[foo.S](../ass4/task2/foo.S)\
-[CMakeLists.txt](../ass4/task2/CMakeLists.txt)\
-[pico_sdk_import.cmake](../ass4/task2/pico_sdk_import.cmake)\
-[foo.uf2](../ass4/task2/build/foo.uf2)
+### Sanja
+[InputOutput.c](../ass4/task2-sanja/BinaryCounter.c)\
+[CMakeLists.txt](../ass4/task2-sanja/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass4/task2-sanja/pico_sdk_import.cmake)\
+[InputOutput.uf2](../ass4/task2-sanja/build/BinaryCounter.uf2)
 
-To get to the whole Task 2 directory instead, click [here](../ass4/task2/).
+To get to the whole Task 2 directory instead, click [here](../ass4/task2-sanja/).
+
+### Michelle
+[ButtonSDK.c](../ass4/task2-michelle/BinaryCounterSDK.c)\
+[CMakeLists.txt](../ass4/task2-michelle/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass4/task2-michelle/pico_sdk_import.cmake)\
+[ButtonSDK.uf2](../ass4/task2-michelle/build/BinaryCounterSDK.uf2)
+
+To get to the whole Task 2 directory instead, click [here](../ass4/task2-michelle/).
 
 
 # Task 3
