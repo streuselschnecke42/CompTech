@@ -168,10 +168,6 @@ Let the counter start at value 0. You must use interrupts to handle the inputs f
 ## Hardware - Layout
 ![Layout](../ass4/images/hardware_task2.jpg)
 
-### Electric Circuit Plan
-Note: The application didn't have Pico H, so I used the normal Pico instead. Pin connection should still be correct **where it was used**.\
-![0](../ass4/images)
-
 ## Execution
 // TODO
 ![exe_task2_countup_2](../ass4/images/exe_task2_countup_2.jpg)\
@@ -213,10 +209,6 @@ Requirements:
 ## Hardware Layout
 ![Layout](../ass4/images/hardware_task3.jpg)
 
-### Electric Circuit Plan
-Note: The application didn't have Pico H, so I used the normal Pico instead. Pin connection should still be correct **where it was used**.\
-![0](../ass4/images)
-
 ## Execution
 // TODO
 ![exe_task3_countup](../ass4/images/exe_task3_countup.jpg)\
@@ -244,8 +236,6 @@ To get to the whole Task 3 directory instead, click [here](../ass4/task3-michell
 
 ---
 # Sources
-## Images that weren't taken by ourselves
-foo
 
 ## Pico Pinout
 https://pico2.pinout.xyz/ \
@@ -270,5 +260,4 @@ https://github.com/raspberrypi/pico-examples/blob/master/timer/hello_timer/hello
 https://www.raspberrypi.com/documentation/computers/getting-started.html \
 https://www.raspberrypi.com/documentation/microcontrollers/c_sdk.html \
 https://studio2.org.uk/jack/RP2040%20Assembly%20Language%20Programming%20%28Smith%29.pdf \
-https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico \
-https://www.circuit-diagram.org/editor/
+https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico
