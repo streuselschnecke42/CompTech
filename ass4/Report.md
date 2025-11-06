@@ -1,6 +1,6 @@
 # 1DT301 Lab Assignment 4 - C-programming and interrupts
 *Computer Technology 1* \
-*November 1st, 2025*
+*November 6th, 2025*
 
 Author: Michelle Weber, Sanja Janevska\
 Examiner: Mehdi Saman Azari\
@@ -163,13 +163,35 @@ Connect one button to GP5 and one button to GP6 with the following functions:
 Let the counter start at value 0. You must use interrupts to handle the inputs from the buttons! There will probably be problems with bouncing buttons (one button press counts as many) but you can ignore this problem.
 
 ## Explanation Code
-// TODO: explain code
+The goal of this program is to connect and implement 4-bit binary counter
+on the Raspberry Pi Pico by connecting 4 LEDs in a row. The increment/decrement of the counter
+will be done by using two buttons and interrupts.
+
+We start off by assigning the pins - We connect the four LEDs to ports GP1, GP2, GP3 and GP4.
+We also define the two buttons to be connected to ports GP5 and GP6.
+Next, we set the counter to start counting from zero and store it as a global volatile variable because the counter changes inside the interrupt handler - "button_irq_handler" in our case.
+Then we define a function called "update_leds" which basically matches the given number in our counter (0-15) to match the binary number to turn on/off the four LEDS.
+By using "counter >>0/1/2/3" we get that specific bit of the counter, shift the number right by 0/1/2/3 places and make it only to keep the least-significant bit which is a 0 or a 1. 
+Then with the gpio_put function we set it on (1) or off (0).
+
+Following this we define the interrupt handler "button_irq_handler" which runs automatically whenever a button is being pressed. By using if/else-if statements and the gpio == BTN_INC or gpio == BTN_DEC, it checks
+whether it was the increment or decrement button that caused the interrupt. If it finds out that it was the increment button, then it increments that counter by 1 ("counter ++") until the value is 15. 
+Otherwise if it finds out it was the decrement button that triggered the interrupt it will decrease the counter by 1 ("counter--") doing so only until the value of 0 is reached. After this check, it updates the LEDs by calling the update_leds() function defined above.
+
+Then we have our main() function where we configure our LEDs as outputs in the for loop, and configure the buttons as inputs by using the internal "pull-ups". Then we update the leds, start the counter at zero.
+We enable the interrups by calling our interrupt handler when the button is pressed which is the same as seeing the falling edge due to using the internal pull-ups. The very first call to the handler registers it as a callback "BTN_INC, GPIO_IRQ_EDGE_FALL, true, &button_irq_handler", while the second line enables the handler to be used by the next pin "gpio_set_irq_enabled(BTN_DEC, GPIO_IRQ_EDGE_FALL, true".
+Lastly we let it loop forever.
+
+Michelle's explanation implements the same logic but instead of automatically, she manually controlls the extraction of the bits and LED outputs by using the registers R0-R7. The direction is determined by using a flag register - R6 which counts forward/backward until reaching the limits of the counter (0/15).
 
 ## Hardware - Layout
 ![Layout](../ass4/images/hardware_task2.jpg)
 
 ## Execution
-// TODO
+When the program starts we start from zero that is 0000 in binary - hence all of the LEDs are turned off. By pressing the button connected to GPIO 5 we increase the binary count going from the starting zero to 0001-0010-0011 reaching the last 1111 = equivalent to the number 15. Once number 15 or 1111 is reached, pressing the increment button doesn't change anything.
+Pressing the decrement button connected to GPIO6 decrements the count, so counts backwards from 1111 to 0000. Once the limit has been reached (0 or 0000) clicking the button has no additional efffect whatsoever.
+We have experienced bouncing when clicking one button makes jumps a few steps, but since this was allowed for the task, we just let it be.
+
 ![exe_task2_countup_2](../ass4/images/exe_task2_countup_2.jpg)\
 ![exe_task2_countdown_1](../ass4/images/exe_task2_countdown_1.jpg)\
 ![exe_task2_countup_LIMIT](../ass4/images/exe_task2_countup_LIMIT.jpg)\
@@ -204,13 +226,22 @@ Requirements:
 - The counting must be implemented with a timer interrupt and you must use GPIO interrupts to handle the signals from the buttons!
 
 ## Explanation Code
-// TODO: explain code
+In this last task we use the same setup as Task2 but instead of using and pressing buttons at GP5 and GP6, here we use timer interrupts to increase/descrease the count. Thus, we use a reset button connected to GP0.
+So the setup and pin definition/assignment of the four LEDs stays the same as in the previous task - the only change is the reset button on GP0. We also make sure to include the hardware/irq.h and the hardware/timer.h on the top to be able to use the interrupts and timer function that Pico already provides.
+We use the counter as before, setting it to zero, the same update_leds function. However, we add a new function called reset_button_handler which is being called automatically whenever the reset button on port GPI0 is being pressed. It sets the counter back to zero and updates the LEDs so that the LEDs show 0000 (no LEDs lit up).
+Then we implement a "repeating_timer_callback", which is our timer that increments the counter by 1, until it reaches the value of 15 (1111) and updates the LEDs accordingly.
+In our main(), we have a similar setup as Task2, the difference is that we don't use two buttons anymore, but just a reset button, so we have added the interrupt for the reset button by using this "    gpio_set_irq_enabled_with_callback(RESET_BTN, GPIO_IRQ_EDGE_FALL, true, &reset_button_handler);".
+Then we initialize a timer using the struct container, typically used in C language programming which basically holds related variables together. It is something that the Pico library uses for the timer. So we use that, add a repeating timer every 1000ms = 1 s and automatically incrementing it every second.
+Then we update_leds() to start the counter from zero and we loop forever. 
 
 ## Hardware Layout
 ![Layout](../ass4/images/hardware_task3.jpg)
 
 ## Execution
-// TODO
+The execution is pretty much the same as Task2, so we have the same output but without pushing any buttons, just automatically increments.
+We start at 0000 and increment every second until reaching the final value of 1111 (15 on the counter). Pressing the reset button on GP0 resets the LEDs to 0000 only to start counting up again. 
+As explained above, the counting and reset are driven by timer interrups.
+
 ![exe_task3_countup](../ass4/images/exe_task3_countup.jpg)\
 ![exe_task3_LIMIT](../ass4/images/exe_task3_LIMIT.jpg)\
 ![exe_task3_RESET](../ass4/images/exe_task3_RESET.jpg)
