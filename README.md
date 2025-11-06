@@ -20,3 +20,8 @@ Discipline: NGDNS, NGDPV
 - [Directory](./ass3/)
 - [Task Sheet](./ass3/Lab%203%20-%20Subroutines%20and%20inputs.pdf)
 - [Report](./ass3/REPORT.md)
+
+## Assignment 4 Links
+- [Directory](./ass4/)
+- [Task Sheet](./ass4/Lab%4%-%C%programming%with%interrupts.pdf)
+- [Report](./ass4/REPORT.md)
