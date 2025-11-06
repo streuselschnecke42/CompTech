@@ -1,0 +1,296 @@
+# 1DT301 Lab Assignment 4 - C-programming and interrupts
+*Computer Technology 1* \
+*November 6th, 2025*
+
+Author: Michelle Weber, Sanja Janevska\
+Examiner: Mehdi Saman Azari\
+Semester: HT25\
+Discipline: NGDNS, NGDPV
+
+
+# Tasks
+
+# Task 1
+Use the same setup as in Lab3 Tasks 4 and 5, that is, an LED connected to GP0 and buttons connected to GP1 and GP2. Use button on GP1 to turn on LED, button on GP2 to turn it off.
+
+
+# Task 1a
+Write a C program to implement the functions. To read buttons and
+control LED, use the C function gpio_put(…) and gpio_get().
+
+## Explanation Code
+The code is one function. First, we declare the 3 constants needed for the program. Just like in assembly.\
+The constants will be LED1, which is 0 for GPIO0, BTN1, which is 1 for GPIO1 and BTN2, which is 2 for GPIO2.
+
+After the constants are declared, we move to the main function.\
+The function first initializes all GPIO pins that are used. The LED is initialized with gpio_init to initialize it and then gpio_set_dir to set the direction, which in this case, is GPIO_OUT. This is a variable that will be imported in the #include section.\
+The 2 buttons are declared using gpio_init and gpio_set_dir just like the LED, only that the second value for the gpio_set_dir function is this time GPIO_IN, since the buttons are input, so we need to set the pins that the buttons are connected to, to input. We also need to activate the pull up resistors. This will be done by using gpio_pull_up. This process will be done for both buttons respectively.\
+These functions are all imported using #include at the top of the program.
+
+Next, there is an endless loop (while(true)..). This loop will continuosly check both input pins for a signal comming from the buttons, by using gpio_get with a button as input. We check both buttons like this and compare them with 0. Because 0 means that a button is pressed.\
+If button 1 is pressed, the first if condition is met and it will then execute gpio_put with value 1 for the LED. That means the LED is now on.\
+If button 2 is pressed, the second if condition is me and it will then execute the gpio_put with value 0 for the LED. That means the LED is now turned off.\
+As already mentioned, the while-loop will go infinite amounts of times.
+
+## Hardware - Layout
+![Layout](../ass4/images/hardware_task1a+b.jpg)
+
+## Execution
+When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you hold down the BOOTSEL button while plugging the pico into your device. Then, load the file onto the pico with "sudo picotool load ButtonSDK.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico.\
+If you now press the first button, the LED should light up (see image below).\
+![button_1_pressed](../ass4/images/exe_task1a+b_LED_ON.jpg)\
+If you then press the second button, the LED should turn off (see image below).\
+![button_2_pressed](../ass4/images/exe_task1a+b_LED_OFF.jpg)
+
+**Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
+
+## Sourcecode files
+### Sanja
+[InputOutput.c](../ass4/task1-sanja/a/InputOutput.c)\
+[CMakeLists.txt](../ass4/task1-sanja/a/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass4/task1-sanja/a/pico_sdk_import.cmake)\
+[InputOutput.uf2](../ass4/task1-sanja/a/build/InputOutput.uf2)
+
+To get to the whole Task 1a directory instead, click [here](../ass4/task1-sanja/a/).
+
+### Michelle
+[ButtonSDK.c](../ass4/task1-michelle/a/ButtonSDK.c)\
+[CMakeLists.txt](../ass4/task1-michelle/a/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass4/task1-michelle/a/pico_sdk_import.cmake)\
+[ButtonSDK.uf2](../ass4/task1-michelle/a/build/ButtonSDK.uf2)
+
+To get to the whole Task 1a directory instead, click [here](../ass4/task1-michelle/a/).
+
+
+# Task 1b
+Re-write the C program so that is does not use the gpio functions, but instead hardware addresses of the SIO. However, you ARE allowed to use C functions to initialize the GPIO pins and set their directions!
+
+## Explanation Code
+This is code is an expantion of task 1a.\
+This time, the code uses none of the gpio functions to turn the LED on or off or to read button inputs. Instead the program uses the hardware addresses of the SIO. However, the task allowes us to use the C functions to initialize the GPIO pins and set their directions. So, this part is identical to the task 1a.
+
+On top we declare a volatile 32-bit unassigned integer, that is the SIO_BASE (gpiobase from assignment 3). This address is volatile because it's changing over the time of the program running, but it will be used for the whole program, so assigning it globally is much more efficient.
+
+Instead of the gpio_put and gpio_get functions, the program uses helper functions that will be used in the main function's loop to read input and turn the LED on or off. The main loop's logic from task 1a still remains and the while-loop still will loop endlessly.\
+The helper function gpioget takes an input pin as input. It then loads the SIO address combined with the SIO_GPIO_IN_OFFSET onto the gpioin variable. Next, the gpioin gets shifted to the input pin value. This result gets stored in the variable shifted_to_pin. Lastly, the program zero's out all non relevant values (pins), so we only have the bit value for the input pin. This result gets then returned.\
+The helper function turnOn takes an output pin as input. It then shifts value 1 to the output pin value position. This is the bitmask of the pin. The bitmask gets then written onto the 'set output' register using the SIO_BASE address combined with the SIO_GPIO_OUT_SET_OFFSET. This basically turns the output pin to HIGH, or in this case: the LED on.\
+The helper function turnOff takes an output pin as input. It then shifts value 1 to the output pin value position. This is the bitmask of the pin. The bitmask gets then written onto the 'clear output' register using the SIO_BASE address combined with the SIO_GPIO_OUT_CLR_OFFSET. This basically turns the output pin to LOW, or in this case: the LED off.
+
+## Hardware - Layout
+(Same as task 1a)\
+![Layout](../ass4/images/hardware_task1a+b.jpg)
+
+## Execution
+Same execution as task 1a.\
+When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you hold down the BOOTSEL button while plugging the pico into your device. Then, load the file onto the pico with "sudo picotool load ButtonSDK.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico.\
+If you now press the first button, the LED should light up (see image below).\
+![button_1_pressed](../ass4/images/exe_task1a+b_LED_ON.jpg)\
+If you then press the second button, the LED should turn off (see image below).\
+![button_2_pressed](../ass4/images/exe_task1a+b_LED_OFF.jpg)
+
+**Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
+
+## Sourcecode files
+### Sanja
+[InputOutput.c](../ass4/task1-sanja/b/InputOutput.c)\
+[CMakeLists.txt](../ass4/task1-sanja/b/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass4/task1-sanja/b/pico_sdk_import.cmake)\
+[InputOutput.uf2](../ass4/task1-sanja/b/build/InputOutput.uf2)
+
+To get to the whole Task 1b directory instead, click [here](../ass4/task1-sanja/b/).
+
+### Michelle
+[ButtonSDK.c](../ass4/task1-michelle/b/ButtonSDK.c)\
+[CMakeLists.txt](../ass4/task1-michelle/b/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass4/task1-michelle/b/pico_sdk_import.cmake)\
+[ButtonSDK.uf2](../ass4/task1-michelle/b/build/ButtonSDK.uf2)
+
+To get to the whole Task 1b directory instead, click [here](../ass4/task1-michelle/b/).
+
+# Task 1c
+Connect one more LED to GP6. Extend the program from b) so that it turns on or off both LEDs simultaneously.
+
+## Explanation Code
+This is code is an expantion of task 1b.\
+The code still uses none of the gpio functions to turn the LED on or off or to read button inputs. Instead the program uses the hardware addresses of the SIO. However, the task allowes us to use the C functions to initialize the GPIO pins and set their directions. So, this part is identical to the task 1a and 1b.
+
+On top we again declare a volatile 32-bit unassigned integer, that is the SIO_BASE (gpiobase from assignment 3). This address is volatile because it's changing over the time of the program running, but it will be used for the whole program, so assigning it globally is much more efficient.
+
+Instead of the gpio_put and gpio_get functions, the program uses helper functions that will be used in the main function's loop to read input and turn the LEDs on or off. This time, there will be 2 LEDs instead of 1. The main loop's logic from task 1b still remains and the while-loop still will loop endlessly.\
+The helper function gpioget takes an input pin as input. It then loads the SIO address combined with the SIO_GPIO_IN_OFFSET onto the gpioin variable. Next, the gpioin gets shifted to the input pin value. This result gets stored in the variable shifted_to_pin. Lastly, the program zero's out all non relevant values (pins), so we only have the bit value for the input pin. This result gets then returned.\
+The helper function turnOn takes 2 output pins as input. It then shifts value 1 to the first output pin value position and repeats this shifting for the second output pin aswell. It then uses the 'bitwise OR'. This combines both bitmasks into one 32-bit value. This is the bitmask of both of the pins combined. The bitmask gets then written onto the 'set output' register using the SIO_BASE address combined with the SIO_GPIO_OUT_SET_OFFSET. This basically turns the output pins to HIGH, or in this case: the LEDs on.\
+The helper function turnOff takes 2 output pins as input. It then shifts value 1 to the first output pin value position and repeats this shifting for the second output pin aswell. It then uses the 'bitwise OR'. This combines both bitmasks into one 32-bit value. This is the bitmask of both of the pins combined. The bitmask gets then written onto the 'clear output' register using the SIO_BASE address combined with the SIO_GPIO_OUT_CLR_OFFSET. This basically turns the output pins to LOW, or in this case: the LEDs off.\
+Since both LED pin values get combined into one bitmask and written onto the registers as one, the turn on (or off) task gets executed simultaneously for both LEDs, just like the task demanded.
+
+## Hardware - Layout
+![Layout](../ass4/images/hardware_task1c.jpg)
+
+## Execution
+Same execution as task 1a and 1b but this time with 2 LEDs.\
+When the build file has been made and "cmake .." and "make" has been successfully executed inside the build file, you hold down the BOOTSEL button while plugging the pico into your device. Then, load the file onto the pico with "sudo picotool load ButtonSDK.uf2" and then force-restart the pico with "sudo picotool reboot -f". It will then remove the pico as a data drive in your device and execute the program on the pico.\
+If you now press the first button, the LEDs should light up (see image below).\
+![button_1_pressed](../ass4/images/exe_task1c_LEDs_ON.jpg)\
+If you then press the second button, the LEDs should turn off (see image below).\
+![button_2_pressed](../ass4/images/exe_task1c_LEDs_OFF.jpg)
+
+**Note:** This explanation of the commands was based on the Raspberry Pi 3 Model B V1.2 and *NOT* the virtual machine. However, the Raspberry had a similar OS than the VM. The Raspberry uses Bullseye 32-bit, so the commands *should* be the same (not tested).
+
+## Sourcecode files
+### Sanja
+[InputOutput.c](../ass4/task1-sanja/c/InputOutput.c)\
+[CMakeLists.txt](../ass4/task1-sanja/c/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass4/task1-sanja/c/pico_sdk_import.cmake)\
+[InputOutput.uf2](../ass4/task1-sanja/c/build/InputOutput.uf2)
+
+To get to the whole Task 1c directory instead, click [here](../ass4/task1-sanja/c/).
+
+### Michelle
+[ButtonSDK.c](../ass4/task1-michelle/c/ButtonSDK.c)\
+[CMakeLists.txt](../ass4/task1-michelle/c/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass4/task1-michelle/c/pico_sdk_import.cmake)\
+[ButtonSDK.uf2](../ass4/task1-michelle/c/build/ButtonSDK.uf2)
+
+To get to the whole Task 1c directory instead, click [here](../ass4/task1-michelle/c/).
+
+
+# Task 2
+Connect four LEDs in a row to make a binary counter. The counter should count from 0000 to 1111.\
+The LEDs should be connected to ports GP1, GP2, GP3 and GP4.\
+Connect one button to GP5 and one button to GP6 with the following functions:
+- Let the button on GP5 increment the counter (increase one step). If increase button is pressed when counter value is 15, nothing should happen!
+- Let the button on GP6 decrement the counter (decrease one step). If decrease button is pressed when counter value is 0, nothing should happen!
+
+Let the counter start at value 0. You must use interrupts to handle the inputs from the buttons! There will probably be problems with bouncing buttons (one button press counts as many) but you can ignore this problem.
+
+## Explanation Code
+The program connects and implements 4-bit binary counter on the Raspberry Pi Pico by connecting 4 LEDs in a row. The increment or decrement of the counter will be done by using two buttons and interrupts.
+
+First, we assignin the pins. There are 4 LEDs connected to GP1, GP2, GP3 and GP4. We also define two buttons that will be connected to GP5 and GP6.\
+Next, we set the counter to start counting from zero. The value will be stored as a volatile variable, because the counter changes inside the interrupt handler ("button_irq_handler").
+
+The function called "update_leds", turns LEDs on or off, depending on the counter. It basically shifts the binary value of the counter to the correct bit of the LED, which then turns an LED on or off. The counter can be a value from 0 to 15.\
+By using "counter >> 0" (or 1, 2 or 3 depending on LED) we get that specific bit of the counter. We right-shift the number by the value of the LED (so 0, 1, 2, or 3) and make it only keep the least significant bit which is either 0 or 1. This is all inside the gpio_put function, which then turns it on (1) or off (0).
+
+Next, we define the interrupt handler "button_irq_handler". It runs automatically when a button is being pressed.\
+The program checks if the increment or decrement button caused the interrupt. If the signal is comming from the increment button, it increments the counter by 1 ("counter ++"). However, if the value is already 15, it won't incement anymore.\
+If the decrement button triggered the interrupt, the program will decrease the counter by 1 ("counter--"). It will only decrease until the value reaches 0.\
+After this check, it updates the LEDs by calling the function update_leds().
+
+The main() function sets and initializes the LEDs as outputs. It also initializes and sets the buttons as inputs by using the internal "pull-ups". After that, it updates the leds and start the counter at zero.\
+Next, the interrupts get inabled by calling the interrupt handler.\
+The first call to the handler registers is to enable interrupt requests with callback. The button that should be red, is "BTN_INC", so the button that increases the counter. When a button is pressed, the signal goes from HIGH to LOW, so we use "GPIO_IRQ_EDGE_FALL". The fuction that will be executed, if a button is pressed, will be "button_irq_handler".\
+The second line ("gpio_set_irq_enabled") enables the handler to be used by the next pin. So, the button that decreases the counter ("BTN_DEC").\
+The main loop will repeat forever. It means that interrupts can happen at any time. If one happens, the program will get interrupted and properly handled using the functions and methods mentioned above.
+
+## Hardware - Layout
+![Layout](../ass4/images/hardware_task2.jpg)
+
+## Execution
+The program starts at 0000, so all LEDs are turned off.\
+![Layout](../ass4/images/hardware_task2.jpg)\
+If you press the first button (increase button), the counter will increase. The problem is that when you press once, it could increase the counter multiple times. But, according to the task, we don't have to worry about "bouncing buttons".\
+Here is the counter displaying  the value 2.\
+![exe_task2_countup_2](../ass4/images/exe_task2_countup_2.jpg)\
+If you press the second button (decrease button), the counter will decrease.\
+![exe_task2_countdown_1](../ass4/images/exe_task2_countdown_1.jpg)\
+If the counter reaches 15, all LEDs will glow. If you then try to press the increase button, nothing will happen.\
+![exe_task2_countup_LIMIT](../ass4/images/exe_task2_countup_LIMIT.jpg)\
+If the counter reaches 0, all LEDs will be turned off. If you then try to press the decrease button, nothing will happen.\
+![exe_task2_countup_LIMIT](../ass4/images/exe_task2_countdown_LIMIT.jpg)
+
+## Sourcecode files
+### Sanja
+[BinaryCounter.c](../ass4/task2-sanja/BinaryCounter.c)\
+[CMakeLists.txt](../ass4/task2-sanja/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass4/task2-sanja/pico_sdk_import.cmake)\
+[BinaryCounter.uf2](../ass4/task2-sanja/build/BinaryCounter.uf2)
+
+To get to the whole Task 2 directory instead, click [here](../ass4/task2-sanja/).
+
+### Michelle
+[BinaryCounterSDK.c](../ass4/task2-michelle/BinaryCounterSDK.c)\
+[CMakeLists.txt](../ass4/task2-michelle/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass4/task2-michelle/pico_sdk_import.cmake)\
+[BinaryCounterSDK.uf2](../ass4/task2-michelle/build/BinaryCounterSDK.uf2)
+
+To get to the whole Task 2 directory instead, click [here](../ass4/task2-michelle/).
+
+
+# Task 3
+Use the same counter setup as in the previos task, but this time, let the counter increase automatically using a timer interrupt. Also, connect a button to GP0 to reset the counter. You don’t need to use the buttons at GP5 and GP6 in this task.\
+Requirements:
+- There should be 1 second time interval between the counter values.
+- Stop the count when the counter reaches its maximum value 1111.
+- At any time, the Reset button should reset the counter to 0000 and after that, the counter shall resume its counting.
+- The counting must be implemented with a timer interrupt and you must use GPIO interrupts to handle the signals from the buttons!
+
+## Explanation Code
+This task is similar to task 2. But instead of having the buttons at GP5 and GP6, we use a reset button, that is connected to GP0.
+
+The function, that is called "repeating_timer_callback", increments the counter by 1 each second. So, the counter counts up by 1 each second and updates the LEDs after each increase. The counter keeps on counting up, until it reaches value 15 (1111). After the counter reaches 15, nothing will happen anymore.
+
+The function "reset_button_handler", resets the counter and updates the LEDs. The function gets used when the reset button is pressed. This button also uses interrupts just like the buttons in task 2.
+
+The main function is similar to task 2. The setup for the LEDs is the same as task 2 and the reset button will be initialized and set up the same way, as the buttons in task 2 (including interrupt). But this time the function that will be called for when the reset button is pressed, is called "reset_button_handler" and the button is called "RESET_BTN". So this variable and this function will be set in the in the interrupt.\
+The only difference is that, this time we use a timer interrupt. So instead of counting up and down with buttons, the counter will increase automatically after a specific time and the counter can be reset with the reset button.\
+We first make a variable named "timer" and let it be of type "repeating_timer". This was used in the raspberry pi documentation and on examples on github. "repeating_timer" is a structure that is defined inside the pico SDK. Those "structures" basically hold related variables together. It stores information about a repeating timer. The function "add_repeating_timer_ms" handles all the variables and the function "repeating_timer_callback", that we implemented. The counter counts up and then waits exactly 1 second. Thats what the "1000" in he function stands for.\
+So, we use a "structure", add a repeating timer every 1000ms = 1 s and automatically increment it every second. Then, we update_leds() to start the counter from zero and loop forever.
+
+## Hardware Layout
+![Layout](../ass4/images/hardware_task3.jpg)
+
+## Execution
+The program will start and the counter is 0 at the beginning, so all LEDs will be turned off.\
+![Layout](../ass4/images/hardware_task3.jpg)\
+After 1 second, the counter gets incremented by 1, so the LEDs will display that in binary value.\
+Below is an image of the counter displaying the binary value 1000.\
+![exe_task3_countup](../ass4/images/exe_task3_countup.jpg)\
+If the counter reaches 15, all LEDs will glow. The program stops counting up.\
+![exe_task3_LIMIT](../ass4/images/exe_task3_LIMIT.jpg)\
+If you press the reset button, the counter resets to 0, so all LEDs will be turned off again.\
+![exe_task3_RESET](../ass4/images/exe_task3_RESET.jpg)
+
+## Sourcecode files
+### Sanja
+[BinaryCounterResetButton.c](../ass4/task3-sanja/BinaryCounterResetButton.c)\
+[CMakeLists.txt](../ass4/task3-sanja/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass4/task3-sanja/pico_sdk_import.cmake)\
+[BinaryCounterResetButton.uf2](../ass4/task3-sanja/build/BinaryCounterResetButton.uf2)
+
+To get to the whole Task 3 directory instead, click [here](../ass4/task3-sanja/).
+
+### Michelle
+[BinaryCounterSDK.c](../ass4/task3-michelle/BinaryCounterSDK.c)\
+[CMakeLists.txt](../ass4/task3-michelle/CMakeLists.txt)\
+[pico_sdk_import.cmake](../ass4/task3-michelle/pico_sdk_import.cmake)\
+[BinaryCounterSDK.uf2](../ass4/task3-michelle/build/BinaryCounterSDK.uf2)
+
+To get to the whole Task 3 directory instead, click [here](../ass4/task3-michelle/).
+
+---
+# Sources
+
+## Pico Pinout
+https://pico2.pinout.xyz/ \
+https://datasheets.raspberrypi.com/pico/Pico-R3-A4-Pinout.pdf
+
+## Pico Instructions
+https://developer.arm.com/documentation/dui0473/m/arm-and-thumb-instructions/arm-and-thumb-instruction-summary \
+https://github.com/Apress/RP2040-Assembly-Language-Programming/tree/main \
+https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf
+
+## C coding
+https://stackoverflow.com/questions/55330597/how-do-i-execute-a-c-file \
+https://www.geeksforgeeks.org/c/c-switch-statement/ \
+https://www.youtube.com/watch?v=ciio80nkjB8&list=WL&index=12&t=240s \
+https://stackoverflow.com/questions/16037146/timer-interrupt-in-c \
+http://www.signal.uu.se/Staff/pd/DSP/Doc/ctools/apxc.pdf \
+https://forum.arduino.cc/t/interrupt-latency-in-c/665635/9 \
+https://www.raspberrypi.com/documentation/pico-sdk/high_level.html \
+https://github.com/raspberrypi/pico-examples/blob/master/timer/hello_timer/hello_timer.c
+
+## For general studying / Other
+https://www.raspberrypi.com/documentation/computers/getting-started.html \
+https://www.raspberrypi.com/documentation/microcontrollers/c_sdk.html \
+https://studio2.org.uk/jack/RP2040%20Assembly%20Language%20Programming%20%28Smith%29.pdf \
+https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico
