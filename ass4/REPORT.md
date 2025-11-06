@@ -243,6 +243,7 @@ So, we use a "structure", add a repeating timer every 1000ms = 1 s and automatic
 The program will start and the counter is 0 at the beginning, so all LEDs will be turned off.\
 ![Layout](../ass4/images/hardware_task3.jpg)\
 After 1 second, the counter gets incremented by 1, so the LEDs will display that in binary value.\
+Below is an image of the counter displaying the binary value 1000.\
 ![exe_task3_countup](../ass4/images/exe_task3_countup.jpg)\
 If the counter reaches 15, all LEDs will glow. The program stops counting up.\
 ![exe_task3_LIMIT](../ass4/images/exe_task3_LIMIT.jpg)\
