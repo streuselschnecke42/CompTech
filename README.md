@@ -23,5 +23,5 @@ Discipline: NGDNS, NGDPV
 
 ## Assignment 4 Links
 - [Directory](./ass4/)
-- [Task Sheet](./ass4/Lab%4%-%C%programming%with%interrupts.pdf)
+- [Task Sheet](./ass4/Lab%204%20-%20C%20programming%20with%20interrupts.pdf)
 - [Report](./ass4/REPORT.md)
